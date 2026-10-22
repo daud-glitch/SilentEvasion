@@ -1,0 +1,79 @@
+\documentclass[sigconf,nonacm]{acmart}
+
+% ---------------------------------------------------------------------------
+% Numbers policy for this paper: every number in the text and in every table
+% comes from results/*.csv in the accompanying artefact. Tables are generated
+% by src/make_paper_tex.py, and tests/check_paper.py fails when a number in the
+% .tex stops matching the CSV. Do not type a number by hand here.
+% ---------------------------------------------------------------------------
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+
+\newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
+
+\begin{document}
+
+\title{Silent Evasion: Measuring the Adversarial Fragility of Small Language
+Models Used for Security Triage}
+
+\author{Muhammad Daud Khan}
+\affiliation{%
+  \institution{Qurtuba University of Science \& Information Technology}
+  \city{Dera Ismail Khan}
+  \country{Pakistan}}
+% TODO(author): add the corresponding e-mail before submission.
+
+\renewcommand{\shortauthors}{M. D. Khan}
+
+\input{sections/00_abstract}
+
+\keywords{adversarial text, small language models, phishing detection,
+smishing, security triage, evaluation methodology}
+
+\begin{CCSXML}
+<ccs2012>
+ <concept><concept_id>10002978.10003029</concept_id>
+  <concept_desc>Security and privacy~Intrusion/anomaly detection and malware
+  mitigation</concept_desc><concept_significance>500</concept_significance></concept>
+ <concept><concept_id>10010147.10010178</concept_id>
+  <concept_desc>Computing methodologies~Natural language processing</concept_desc>
+  <concept_significance>300</concept_significance></concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Security and privacy~Intrusion/anomaly detection and malware mitigation}
+\ccsdesc[300]{Computing methodologies~Natural language processing}
+
+\maketitle
+
+% Order is the argument, not the file numbering. The three attack/defence
+% sections are results and are read before the discussion; saliency comes
+% first because the random word attack is defined against it, then transfer
+% (does a perturbation survive a model change), then the defences (does a
+% cheap fix blunt it). Discussion, ethics and conclusion close.
+\input{sections/01_intro}
+\input{sections/02_related}
+\input{sections/03_protocol}
+\input{sections/04_setup}
+\input{sections/05_results}
+
+% Each remaining results section is included with its own table ONLY when
+% src/make_paper_tex.py has generated that table from a CSV that exists, so the
+% PDF cannot advertise a result no run produced.
+\IfFileExists{tables/t7_saliency.tex}{\input{sections/06_saliency}}{}
+\IfFileExists{tables/t5_transfer.tex}{\input{sections/07_transfer}}{}
+\IfFileExists{tables/t6_defense.tex}{\input{sections/08_defense}}{}
+
+\input{sections/09_discussion}
+\input{sections/10_ethics_availability}
+\input{sections/11_conclusion}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{refs}
+
+\end{document}

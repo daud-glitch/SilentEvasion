@@ -1,0 +1,65 @@
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Language models as email and SMS detectors.}
+Using pre-trained language models without fine-tuning (zero-shot classification)
+is now a standard baseline for security triage. Rojas-Galeano tested models on
+SpamAssassin without extra training. They reported an F1 score of 90\% for
+Flan-T5 on short emails and 95\% for GPT-4 on summarized
+emails~\cite{rojas2024zeroshot}. Eilertsen et al.\ tested zero-shot and few-shot
+prompts for phishing detection. They found mixed accuracy across models and
+questioned if decisions rely on model knowledge or prompt
+examples~\cite{eilertsen2025intent}. Koide et al.\ designed a detector using
+email headers and bodies. They reported 99.70\% accuracy with
+GPT-4~\cite{koide2024chatspamdetector}. Wang et al.\ added external web context
+to SMS triage inside an agent pipeline, achieving 98.8\% overall
+accuracy~\cite{wang2025smishx}. Thapa et al.\ studied small language models and
+observed that rewritten emails lower detection
+performance~\cite{thapa2025quantized}. Our study focuses on measurement
+discipline rather than model architecture. We keep the detector and prompt
+constant, applying careful accounting rules to measure how text edits change the
+verdict.
+
+\paragraph{Attacking security text filters.}
+Shafee et al.\ generated plausible text to attack threat intelligence
+pipelines. They found that evasion misled classifiers, producing a 75\%
+false-positive rate when ChatGPT-4o acted as the
+detector~\cite{shafee2026falsealarms}. Kulkarni et al.\ generated adversarial
+phishing pages. They observed that small detectors failed, while vision-language
+models proved more resilient~\cite{kulkarni2024mltollm}. In our setting, we
+study raw message text rather than web pages. Our adversary makes small edits
+rather than generating new text from scratch. This matches the real constraints
+of an attacker who wants users to read the message.
+
+\paragraph{Text perturbation techniques and budgets.}
+Character-level attacks change individual letters. DeepWordBug introduced typos
+and letter swaps~\cite{gao2018deepwordbug}, while HotFlip formalized gradient
+character flips~\cite{ebrahimi2018hotflip}. Word-level attacks replace whole
+words while preserving meaning. TextFooler searches synonyms
+greedily~\cite{jin2020textfooler}, and PWWS ranks words by probability changes
+(saliency)~\cite{ren2019pwws}. The TextAttack library organizes these methods
+into standard goals, constraints, and transformations~\cite{morris2020textattack}.
+In this paper, we evaluate two main search strengths. The first is a random
+draw over a small synonym table. This represents a simple adversary and serves
+as a lower bound on evasion rates. The second is a guided attack that ranks word
+swaps by their measured effect on the model (\S\ref{sec:saliency}). In
+\S\ref{sec:ablation}, we also test TextFooler's leave-one-out word ranking as a
+reference arm. We use PWWS and TextFooler to define search logic rather than to
+compare numerical results directly.
+
+\paragraph{Cross-model transfer and evaluation methodology.}
+Yuan et al.\ showed that adversarial text often transfers across different
+neural models, and they built ensembles to target multiple models
+together~\cite{yuan2021transfer}. He et al.\ extracted model parameters to build
+transferable attacks against a target system~\cite{he2021extraction}. These
+studies motivate our cross-model transfer matrix in \S\ref{sec:transfer}. In our
+tests, black-box perturbations found on one model rarely transfer to another.
+Our adversary uses a bounded local search rather than learning global transfer
+directions. On statistical methodology, Carlini et al.\ demonstrated that many
+adversarial robustness evaluations contain flaws and proposed standard practices
+for threat models~\cite{carlini2019evaluating}. Zimmermann et al.\ used active
+tests to reveal weaknesses in 11 of 13 published defenses~\cite{zimmermann2022confidence}.
+Recent research also highlights the importance of exact confidence intervals for
+robustness certificates~\cite{voracek2024statistical}. We follow these
+rigorous practices. Every evasion rate in this paper reports its numerator, its
+denominator, and an exact Wilson interval~\cite{nistwilson}.

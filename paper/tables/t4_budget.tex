@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Edit budget actually spent, by attack mode. The budget is one shared 15\% allowance per sample; the measured rate is the exact Levenshtein distance divided by the original length (characters or words).}
+\label{tab:budget}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Mode} & \textbf{Samples} & \textbf{Flips} & \textbf{Mean pert.} & \textbf{Max pert.} \\
+\midrule
+ Character & 1044 & 12 & 13.5\% & 13.6\% \\
+ Word & 1035 & 28 & 7.6\% & 9.2\% \\
+ Saliency & 1001 & 46 & 9.3\% & 12.9\% \\
+\midrule
+\multicolumn{2}{l}{Total} & 86 & & \\
+\bottomrule
+\end{tabular}
+\end{table}

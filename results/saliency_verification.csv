@@ -1,0 +1,7 @@
+model,task,n,flips_prob,flips_gen,agree,prob_only,gen_only
+phi3.5-mini,phishing_email,120,14,14,120,0,0
+phi3.5-mini,sms_smishing,163,12,12,163,0,0
+qwen2.5-3b,phishing_email,169,28,4,145,24,0
+qwen2.5-3b,sms_smishing,167,22,1,146,21,0
+smollm2-1.7b,phishing_email,197,0,4,193,0,4
+smollm2-1.7b,sms_smishing,185,0,11,174,0,11

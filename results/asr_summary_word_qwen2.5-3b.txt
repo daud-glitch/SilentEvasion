@@ -1,0 +1,11 @@
+
+=== word-level attack (qwen2.5-3b) ===
+eligible (clean-correct) samples : 379
+excluded (original not malicious): 0
+actually attacked                : 376
+flips (malicious -> benign)      : 11
+ASR (of attacked)                : 2.9%
+mean perturbation rate           : 7.65%
+mean word Jaccard                : 0.933
+  phishing_email   n=190  flips=5    ASR=2.6%
+  sms_smishing     n=186  flips=6    ASR=3.2%

@@ -1,0 +1,10 @@
+{
+  "n_per_class": 200,
+  "note": "eval, attack and calibration are disjoint slices of the same shuffled pool; the calibration slice was added from the pool's tail, so eval and attack are unchanged.",
+  "seed": 42,
+  "splits": {
+    "attack_ch1_input.csv": "48198ef41a629adf6b838a32a1772c026fcfaa07135d7da762cb4e63fa09ed90",
+    "calibration_subset.csv": "1e48f28baa5ad3719483c578688f8bb7b224e1dd87cdc0676d80308e6b8d7cef",
+    "eval_subset.csv": "a0592a3eec60e102a9b47eb2b8531c8a789d0a510a2022dc3e78e6264fcdd88e"
+  }
+}

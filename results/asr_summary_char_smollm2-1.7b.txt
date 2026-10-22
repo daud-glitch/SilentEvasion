@@ -1,0 +1,11 @@
+
+=== char-level attack (smollm2-1.7b) ===
+eligible (clean-correct) samples : 382
+excluded (original not malicious): 0
+actually attacked                : 382
+flips (malicious -> benign)      : 2
+ASR (of attacked)                : 0.5%
+mean perturbation rate           : 13.45%
+mean word Jaccard                : 0.314
+  phishing_email   n=197  flips=1    ASR=0.5%
+  sms_smishing     n=185  flips=1    ASR=0.5%

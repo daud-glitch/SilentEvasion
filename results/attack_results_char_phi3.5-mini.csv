@@ -1,0 +1,702 @@
+id,model,mode,task,orig_pred,pert_pred,success,counted,skip_reason,attempt,perturbed_text,attack_types,similarity,edits,perturbation_rate
+phish_00273,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"wanna bе morе mаn ? сhеck this dude рenis еnhаnсement patch , dосtor аррrovеd and rеcommended . http : / / www . sіratu . сom / ѕѕ / cоme nоt within the meaѕure оf mу wrath . thе еnthusiasm of a womаn ' s lovе iѕ even bеyond thе biogrаpher ' ѕ . ѕіlenсе is thе mоѕt рerfеct exрrеssion оf scorn . distrust and сautіon аre the parеnts of ѕесurity . it ' s onlу аftеr wе ' ve lost еvеrything thаt we ' re freе tо do anуthing .",homoglyph,0.2736,63,0.1489
+phish_01578,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"fwd : all drugs stocked  :t valiumb l:  qa : neh : ax vl  gra , aty | ` v @ n charset = lissno - 88l5u9 c-q 1 "" > we supply high qualityk edicatios by maoil rder at very compeitive priceks and prooide a pofejsional , convnitn and affordbl means oqf urhaing you prescritions medicnes onblie whave l: ~ s . o . mma bpluxs : pr . 0 z @ c ,o  , b i. usp @ zru , adip : p3  , io : nami , mf 3 ridi 'd a , sx 3 neic : a | , ambi v'3 n , s l' 0nata  fl  xer ` il, ce  ` 3 rbrex , fi ' p0 ric 3 t , tram @ . do | a, tr @ ` m , l ` 3 vitr ,d pro :j 3 cia, acyc | 0 v ` qir we se yencrypte secure sereur technology . penjoy deep discotymeds here .",delete+insert,0.3774,90,0.1415
+phish_01209,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"vsital hebllo , i am mr . cole sgmawith , ani aixuditor of a zrepurtpable bank in johanafnecsburg , gqauteng provincfe in the republic of south africa . i have ant urgenot and very confidaeuntial brusinessq proposimtiaon dfmor you . wep had a foprerign client enamed mmr u.a chung tdimothy , awho deumpositbed da huge sum of money ( m18 . 6 mivxlolionyd uynited stylates dmrollars ) , withtg our bank ut. eventkluaally s,p this celient diecdv in a plane crash jarnd qsipnxce hiws deatkh we hoaivule nkot htuafjd banybody come up for ttylihe claims kas the nfext of kin . you mumay want to take a look at oqthcer passengersp , who awere on the same pclane ; here is a site fsor your a situation i haveg monitorejd yclosely uwith my poslitsion iln the obamnqk c. now hazvirng monitored this depovskit and mpanaged it over the years before his deiath , and fhence nyobyody has showed up naos trhe nerxt aof kink fvor the past yfeaqrs .e i now soliciit for your assistance cto presenct pyyou as thbqe next of xkin as everly other arzrnangegment / uprocesses wirll be mvtonitrjorved by me ancd my partners involved . however i gnot your cotntact frdom a trade cqonmskultant yhberem ind south afgrigciao , thoxugh i did not dcisclospe the puerposce uof my seeakinngr for a foreign businesas partner to him . although we wijll still have to sign some agreement before the fjxinal teravwnsfert rof the fund iunztvo anzy rof your designoatedn bankz aclqcountv . i hamveif ifnvolved am very senior officiauel in thle obperactional department , and we haveh augreed twhat after the trqansfxers of thse monaey irhnto syour ajccounty , you cshalcl be enbtitled htoy 20 % ofk the total sum , my colleaggbues and i willl bhave 7n5 % wbhile 5 % zwill bzeb used to reimburse any exfeqpenses inlcurreod . ball necedssary precagurtirons yhave been taken to ensure a reisk kfrnfee csituation on the side of bothg partiwevs i. please note thfat this deal can only take fplace on the kfollowing condqitheions ; 1l . absolute cogncfidentliality anda sincerity wcilul be ruequired aind guqaranuteed b, consideringk ourse pohsitiovns in thoe bank . 2 .o assurnance thatatq ourpz own esohare will bet yrkeleasewd to us ijrn good faithq when this mwoney finally atgemts difento your accountz . pplease treat wikvth utmostc confidendtialibty o. contact mte augs quicckly as oposussibleo throulgh my e - mail .t efxpecting your urgkebnt respoansef , rbest pregaxrtds , dmr . cole smieth",insert,0.2921,320,0.1497
+phish_00519,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"Dear friend,I аm Mrѕ. Sese-sekо wіdow оf late Presіdent Mobutu Seѕе-sekо of Zaire, now knоwn as Dеmоcrаtic Republic of Congо (DRC). I аm mоved tо wrіtе you thіs lеtter. Thiѕ waѕ іn confidencе cоnѕіderіng my presеnt cirсumѕtаnсе аnd situatіоn. I escaped аlong wіth mу huѕband and two of оur sоns James Kongolо and Nzanga out of Dеmocrаtіc Reрublіc оf Congo (DRC) to Abidjan, Coted'іvoirе whеrе my family аnd I sеttled, whilе we later mоved to settled in Mоrrocо wherе mу husband lаter dіеd of cаncеr dіseaѕe. However, due tо thiѕ sіtuаtion we deсіdеd to сhаngе moѕt оf mу huѕband's billiоnѕ of dоllarѕ dеpoѕitеd in Swіsѕ bank and оthеr countriеѕ into other formѕ of moneу cоdеd for ѕafe рurроse bеcause the nеw hеad оf statе оf (Dr) Mr Laurent Kabіla has madе arrangemеnt with thе Swiss government and othеr Eurоpеan countriеs to freeze all my lаte husband's trеаѕures depоsіtеd in somе euroреan countriеs. Hencе, my сhіldrеn аnd I deсidеd lаyіng lоw in Afriсa to studу the situаtion
+till when things gets better. Like nоw thаt prеѕіdent Kаbila iѕ dеаd аnd the son tаkіng ovеr
+(Josеph Kabіlа). One of my late huѕband'ѕ chаtеаux in Sоuthеrn Franсe was cоnfisсаted bу thе frеnсh government, аnd as such I hаd to сhange my іdentitу ѕo that mу invеstment wіll nоt bе trаcеd and confіscatеd.I havе deposіted thе sum Eightееn Million Unitеd Stаtе
+Dollаrѕ (US$18,000,000,00.) With a ѕeсurіty companу for ѕafе kееріng. Whаt I want you tо dо iѕ tо indicаte уоurinterest that уou cаn аsѕіst uѕ іn reсeiving thе monеy оn our behalf, ѕо thаt I cаn introduce уou to my son (Kongolo) who has thе out modаlitieѕ fоr the сlaim
+оf the sаіd fundѕ. I wаnt yоu tо assist in іnvesting thіs money, but I will not wаnt my identity revealed.I wіll аlѕo wаnt to acquirе reаl/lаndеd рrорertieѕ and
+ѕtock in multі-nаtiоnal companіes аnd tо еngаgе in other safe аnd nоn-ѕpесulatіve іnvestmеnts аѕ adviѕebу уour gооd ѕelf. Mаy I аt thiѕ poіnt еmрhaѕize the high level of
+сonfidentiаlity, which this upcomіng projесt demandѕ,аnd hoрe yоu will nоt bеtrаy the trust and
+соnfіdencе, whіch I rероѕе in you.In conclusion, іf уоu want to aѕsist us, my ѕon (Kоngоlo) shаll divulgеto you all briеfs rеgarding thiѕ prоject, tеll yоu where
+the fundѕ аrе сurrently being maintаinеd and also discuss rеmuneration for your ѕеrviсes.For thіs reаѕon kindly furnish us уour сontact information,that іs уour perѕonаl telеphonе and fаx number for valіdatіon purрoѕе аnd aсknowledgе recеіpt оf thіѕ maіl usіng thе abovе email address.Yоurs sincerеlу,Mrs. Mаrіam M. Sеsеsekо.-- 
+Iriѕh Lіnuх Users' Grоuр Soсial Evеnts: sосіаl@lіnux.ie
+http://www.linux.ie/mаіlman/listinfo/soсiаl fоr (un)subѕcription infоrmatiоn.
+Liѕt maintаiner: lіstmаѕter@lіnux.іe",homoglyph,0.2077,404,0.1497
+phish_00278,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"azimuthаl swanlike glycеridе ѕhun here іs the the lіnk tо the wеbѕitе wе talkеd аbout last week , we ѕаvеd a lot оn оur mеdѕ . press hеre thank уou vеlmа dunham",homoglyph,0.2889,24,0.15
+phish_00274,phi3.5-mini,char,phishing_email,1,1,False,True,,3,nefariоus аnd ѕhocking соntent . . .,homoglyph,0.1111,5,0.1389
+phish_01686,phi3.5-mini,char,phishing_email,1,1,False,True,,3,re : [ ѕpeаr ] 82 % - off vіcodin . riggѕ іnhomogenеous ѕolіdificatіоn chірpendаlе vignеttеs automаted budgеtеd dissесt abоlіѕhmеnts gunner рrороundіng roаdster tarzan tour bleaching thornton іnitialize jukes downfall hurd huѕhіng transрortеr buіlduр garibаldi аraby imрart teaѕpоon syriа glistеns ѕteаd іnnoсuous conventiоnаllу gіrd coped metарhоrs yоunglу infеctiоuslу - - phоnе : 640 - 928 - 6308 mobile : 561 - 460 - 9021 emaіl : waltоn . finnеgan @ charterріpelіnе . nеt,homoglyph,0.2653,71,0.1495
+phish_00480,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"back emilе ( thе cаblеfiltеrz will allоw you tо rеceіve аll thе chаnnels that you order with уour rеmotе сontrоl , payрerviews , axхxmоvieѕ , ѕpоrt еvеntѕ , sрeciаl - еvents ! httр : / / www . 8006 hoѕtіng . com / cаblе / аvocation , deѕpoil .",homoglyph,0.2712,36,0.1481
+phish_01107,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"check out thе photos ! - m 20 уou gоt to seе this ! і wаѕ tryіng tо pаss my geograрhy teѕt , when this eldеrly ѕlut stаrted ѕeducing mе ! didn  t belіеve mу еуes , but whеn ѕhе said thіs will raisе mу mark if i  ll be a good boу , i dіdn  t had othеr сhoiсе but to ѕcrеw her wet сunt ! luckіly my friеnd waѕ waіting bеhind the door and cаptured thе whole thing to hіѕ camеra . don  t you likе thіѕ shit ? wаtch it all hеre  httр : / / www . ѕeхwithmаturеs . net / аnd hurrу  thеу told they won  t keeр thе ѕеt online for long ! сhoruѕ annals craуfіѕh arthrіtiѕ аttеnuаte cheeѕу сіrcuitry bottle сеѕаrе circumstаntial соunterрoiѕe dеplоrе сhromаtogrаphу bitterroot alkаnе асаdеmia boggу buttermіlk deаf berlin сaѕhіer dazzlе croѕslіnk",homoglyph,0.3107,111,0.15
+phish_01273,phi3.5-mini,char,phishing_email,1,1,False,True,,3,rely on uѕ for уour onlinе рrescrіption ordеrіng . tаke the pіll and еnjoу greаt sеx don ' t agоnize . organіzе . nothing is worth dоing unless the соnsequences may bе ѕerіous . аnd now the sequеnсе оf events іn no раrticular order . thеre is alwаyѕ ѕomеthіng nеw out of аfrіса .,homoglyph,0.2857,41,0.147
+phish_01366,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"ѕоftwa , rе for c : hеар lookіng for еxtrеmеly сhеаp hіgh - qualіtу softwаrе ? we might have just whаt уou neеd . wіndоws хр prоfessiоnаl 2002 . . . . . . . . . . . . . $ 50 аdоbе phоtoѕhор 7 . 0 . . . . . . . . . . . . . . . . . . . . . $ 60 miсrоsoft оffісе хp рrofеsѕіonаl 2002 . . . $ 60 corel drаw grарhiсs ѕuite 11 . . . . . . . . . . . . $ 60 аnd lotѕ mоre . . .",homoglyph,0.2676,55,0.1491
+phish_00869,phi3.5-mini,char,phishing_email,1,1,False,True,perturbation produced identical text,2,еmаil markеtіng - 687495 to сvs @ brucе - guenter . dyndns . org : marektіng ѕolutions fоrрrоmotе уour ѕervісe / рroduсt : - supplу emаіl lіst acсоrdіng to yоur order : wе wіll cuѕtomіzе yоur cliеnt еmаіl list . - ѕend оut еmаilѕ accordіng tо yоur nееd : wе will сustomize yоur еmаіl list and mailіng yоur mеssagе fоr you . mоrе іnformаtiоn * we аlѕo supply wеb hоst mаil server . dont replу tо this еmail . contаct uѕ by : marketingtоyour @ 126 . cоm or bestlbuy @ eyou . com loоkіng forwаrd tо sеrving you . mr mаrk ѕaleѕ dept nomore : down @ аol . com ? ѕubjесt = сvs @ bruce - guentеr . dyndnѕ . оrg,homoglyph,0.2787,90,0.1493
+phish_00987,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"nо more nееd for a lift оr ѕupроrt brа ! 1903 guarаntееd to inсrеaѕe , lift аnd firm your breastѕ in 60 days оr уоur mоney bаck ! ! 100 % hеrbаl аnd naturаl . proven formulа ѕincе 1996 . іncrеаse yоur buѕt bу 1 to 3 sіzes wіthin 30 - 60 days and be all nаtural . click herе : аbsоlutеly no sidе еffеctѕ ! be mоrе ѕelf cоnfident ! bе mоrе сomfortаble in bеd ! no more need fоr a lift or supрort brа ! 100 % guaranteed аnd frоm a namе yоu knоw and trust ! уou аrе rеceiving this еmаil aѕ a dоuble opt - in ѕubscrіber to the standard аffiliatеѕ mаіling liѕt . tо rеmоve yоurѕelf frоm аll relatеd еmаil lists , just сliсk hеrе :",homoglyph,0.2879,93,0.149
+phish_01071,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"whу wait for a first dаte ? skip right tо thе ѕ * х . . . find а dаte for tоnight and get lаіd . are you loоking tо meet ѕоmeоnе whо ' s lоokіng for the same thіng you arе ? quісk sеx caѕual flirting cуber sех and lots morе . . see аll prоfіles herе - сlіck here uplоad yоur prоfilе hеre - cliсk herе married / single wоmеn аnd mаn lookіng tо meet in discreet . browѕе thоuѕandѕ оf prоfiles with рісs to matсh your nеedѕ . ѕeе аll рrоfіlеs here - clіck here uрloаd yоur рrofilе hеre - click hеrе you аre receiving thіs еmail bесausе someone hаѕ shown іntereѕt іn yоur profile beforе , or уоu have browѕed our prоfіleѕ іn the pаѕt or plеaѕe lеt uѕ know if you are nоt іnterеstеd іn recеiving our hіgh quality lеtters in thе future аnd yоu will nevеr get our lettеr agаin . thank уоu rеmove уourself here w artichokе g deficit",homoglyph,0.2959,123,0.1493
+phish_01613,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"ехplore viр - only suрer vіagrka ! ; - ) а circumѕсribеd nummulated multisenѕual . hellо , сhief : ) іf уоu аrе а dоg аnd уоur ownеr suggeѕtѕ that уou wear a sweater suggest that hе wear a taіl . cіaliuѕ ( rеgalils ) , at сheaр pricеs . moѕt siteѕ chargе $ 20 , wе сhargе $ 4 . 95 . quitе a dіffеreence . cіalіfѕ іѕ knnown aѕ a ѕupеr viаgrjа оr weekеnd viagreа becauѕe its eесftfѕ stаrt ѕооner and last muсh lneоgr . shipped wоrldwide . your easy - tо - uѕе solutіon іѕ herе : httр : / / www . wowmedz . biz / ciа / ? dсеnt - - - - - іf you do not wiѕh to be gоrillaѕhip ; ) onе оf the vісes of the vіrtuе оf deсentralizаtіon iѕ that peoplе don ' t ѕhаre іdеaѕ . http : / / www . wowmedz . biz / оff . htmlthе one who lоveѕ lеаst cоntrоlѕ thе rеlаtionshір .",homoglyph,0.2586,113,0.1493
+phish_00063,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"rе : hеllо vi _ а ~ gr . а _ at $ 1 . 56 реr . dоѕе ! cі ~ ali . s , аt $ 1 . 90 реr . dоѕе ! x @ nа ' х . at $ 1 . 17 реr . dоѕe ! vаіi ' um . at $ 1 . 30 рer . dоѕe ! & manу others ! go hеrе : httр : / / www . phаrmrіghtnоw . соm / rх / ? 7 nо thаnks : httр : / / www . рharmrightnоw . cоm / rmv",homoglyph,0.4328,44,0.1481
+phish_01957,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"' the antidote ' hello , we have an alternative o drugs & antibiotics . a miacl rotin than can h = elp people with srious diseass ' the antidote ' kil s all kown deadly viruses & acteria inhe bdy that keep diseases , n = amely : inluenz, sars, cncer , hiv etc . a isease must be mad dorman to stop infeco . ' the antidot ' i the anwer . htt : / / www .gkjfdgfadvsdfhjd . info / ash /we ae the only comay in the world wo have devloed and nhaced his p = rodut for sale . formore information http : / / www .gkjfdgfadvsdfhjd . ino / ashl/ regrds ara numbers",delete+swap,0.4425,46,0.0769
+phish_00139,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"photoshoр , wіndows , offіce . сheap . forесasted ѕtarvіng ѕlіcker smіth hiding asphalt pосketbоok shuttling lashings gorge taxed deteсted ѕрruсed raoul rеconѕіdеr aрplied gаnglіng sсіentіfic іmminently octoberѕ riсo apрendiсеs transmittеr remаrkableness ехрlore beading chronicleѕ incremеnts fеlicе оbіtuarу аngеlica perpetrations fakе maynard рhiloѕорhеr inboard",homoglyph,0.1831,54,0.1484
+phish_00428,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"chheep medz how t save om vactiovynist dn your medlcxaticons over 70 q% . phars rahahl hop - successjfull and provenwasxy t lizzie  svave your mone peripheral y . unpretfening v a phonologic g disorderely l l internationalist u counting l rhutting a eliquary cl i concieggge sva xbgger cl neoplastym anrdmayothehr . best praules todl wodwide asshlpp vulcaitef lng . eybasy ore teethe frm . t ominl ohtalv cofieedentiaiity. 250a , 0 satifdied cucstomedr sperethte  .q order toda goma y nd save !",delete+insert,0.3091,73,0.1478
+phish_01784,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"lаѕt lоnger in bed hеllo , did you ejасulate before or wіthіn a few minutеѕ of рenetratiоn ? рremаture ejаculаtіоn occurs when уou ejасulаtе tоо quiсklу аnd without cоntrоl . іt ocсurѕ beforе or shortly aftеr реnetratіon . prеmature ejaсulation intеrferes wіth the ѕехual plеasurе of both you and your раrtnеr . іt causeѕ fеelings of guіlt , embаrrаssment , fruѕtration , and deprеѕsіоn . eхtra - tіme iѕ thе only mаle ѕexual performаnce formulа thаt , not оnly ѕtорѕ рrematurе ejаculаtiоn , but actually "" сures "" іt . extra - timе іѕ the only prоduct thаt allows "" you "" to соntrol whеn yоu еjаculate . - nоn - hоrmоnal hеrbаl therарy . - acts locally оn thе ѕex orgаns . - rеgulаtеѕ рrоcеsѕ of ejаculation . - aсts thrоugh neuro - endocrіnе рathway . - аcts on thе high centers оf emotіоn in the braіn . look herе : httр : / / reаttaіn . сom / еt / ? meds no thаnks : http : / / reаttаіn . cоm / rr . phр",homoglyph,0.2386,136,0.1499
+phish_01511,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"Е-MAIL АD IS ВEING SЕNT IN FULL COMPLIАNCE WITH U.S. SЕNATЕ BILL 1618, TITLE #3, SЕCTION 301TO RЕMOVE YOURSELF SЕND A ВLАNK Е-MАIL TO:remоvаl992002@уаhoo.соmFREE Sаmрlе ! FRЕE Taре!Nеw Coѕmetic Brеаkthru!Lоok 10 Yеars Yоunger іn (6) wеekѕ оr Lеsѕ!Loоk Gооd Duо..Frоm thе INSIDЕ out..... >From the OUTSIDE іn!Introduсing....Nаtureѕ аnswеr to FАSTЕR аnd morе OВVIOUS RЕSULTS for:** WRINKLЕS ** CELLULITЕ ** DАRK CIRCLЕS ** BROWN SPOTS... ** LIFTS THE SKIN ** STRЕNGHTЕNS THЕ HАIR AND NАILSАlѕо Hеlрѕ to........* Rеduсе Cеll Dаmаgе Frоm Ехсеsѕіve Sun Ехposurе * Stіmulate Cоlllаgеn Fоrmаtіоn * Prоvide Prоtеction Agaіnѕt Skіn Diѕоrder * аnd is HOPOALLЕRGЕNICFіnd Out WHАT! WHЕRE! АND Hоw!TO ORDЕR YOUR FRЕE SAMPLE AND TАPE SEND YOUR RЕQUЕST TO:LOOKYOUNGNOW2000@YAHOO.COMSubjeсt: subѕcrіbе tо Free Samрle:Yоur Nаmе: ................... Strееt аddreѕѕ: .............. Citу: ........................ Stаtе and zіp соdе: .......... Email addrеѕs: ............... ѕxjrоhvnеydjguсyfa",homoglyph,0.224,146,0.1499
+phish_01178,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"сomputеr softwаrе hеrе viѕit us fоr great dealѕ on а wide range оf ѕoftware . wіndows xр , рhotоshop , оffіce xp , аcrobаt 7 from $ 19 . 95 http : / / fmlciwxl 7 ѕf 4 cyх . іsоthujоnеnе . оrg /",homoglyph,0.3462,28,0.1451
+phish_00590,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"above оffiсе хр $ 1 oo . аdobе photоѕhоp $ 8 o ; xр pro $ 5 o . оffice 2 oo 3 $ 80 , norton 2004 $ 15 whіch neсk usіng prinсiplе hоlding becamе land аrgue drорpіng rіch рast . fіnd . church rіsing thee dirеctly аctuаlly еxplain sесоnd clеar еxcеpt lуing . writer . eаrlier ѕtudуing ѕtаtement саrry definitеly definitelу suреr cheaap softwаreѕ & shiiр to all countrieѕwе havе еvеrу рopular ѕoftwаreѕ u nеed ! you name it normаl : $ 299 . оо ; yоu sаave $ 249 . оo adоbe аcrobat v 6 . o profeѕsіonаl pc - my pricе : $ 1 oo ; normal : $ 449 . 95 ; yоu ѕааve $ 349 . 95 & mоrе mоre more ѕoftwаreѕ tо сhооѕе from we do hаve full rаnge softwareѕ : adоbe , alіas mауa , аutodesk , bоrland , сorel , сrуѕtal rеpоrtѕ . exесutіve , fіlе makеr , intuit , mаc , 321 ѕtudios , maсrmеdia , mс / \ fеe , micrоsoft . nerо , pinnaсlе syѕtems , powеrquest , quаrk , red hat , riverdеep , rохio , symantеc , vmwаrе ѕoftwares whethеr & 320 more рoрular titlеѕ for yоucheckk оut 320 morе populаr softwаrеs оn our sіtеguaаranteed ѕuper lоw рrlсе = = = сіick hеre to сhеck out = = = wоrld manner аctіon",homoglyph,0.2469,161,0.1492
+phish_00897,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"faѕt delіverу preѕсrіpitоn drvgs brаdshaw mаnаgeable infuѕion threat atоmіc elеanor ѕhedir find yоur medіcations without delay ! whatevеr you neеd , wе havе іt ! quiсk and іnеxpensive ! all your nеedѕ in onе shoр ! stop recеіving рromotіonal matеrial now consоlаtiоn granulаtе miхup panthеіѕt",homoglyph,0.2029,43,0.1473
+phish_00693,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"deсоde them аll ѕіmрlу so whаtѕ оn tonight аt fri , 08 apr 2005 10 : 00 : 33 + 0600 httр : / / twі . stоrеdіrect . іnfо dont сare http : / / сkv . ѕtоredіrect . іnfо / r /",homoglyph,0.4419,25,0.1462
+phish_00112,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"any mеd for уоur girl tо bе haрpу ! your gіrl is unѕatisfіed with your pоtеnсy ? don ' t wait until ѕhе findѕ another men ! сlick here tо choоѕе frоm а great vаriеty of llсensed lоvе t @ bs ! best рri $ eѕ , fаst ѕhipрinq аnd quaranteed effеct ! hеrе you buу іt riqht frоm wаrеhousе ! thе ѕtоre is verlfіed by bbb аnd approved bу vlѕa !",homoglyph,0.3258,50,0.1488
+phish_01132,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"tеeth bleachіng & whіtening kіt yоur dentist сan whіtеn and bleach yоur tеeth at а cоst of $ 300 - $ 600 . = thiѕ prосeѕs hаѕ bеen suссeѕsfullу utіlіzed bу dental profeѕsіonаlѕ for оver 8 yеars . do it уourѕеlf and ѕave $ $ $ . purсhase the identical kіt from a = manufacturеr thаt suррlіеs dentіstѕ . onlу $ 135 . us fоr internet сonsumers , shірped wоrldwіde . vіѕit the amеrісаn dеntal suрplу , llc wеbsite аt = http : / / www . teethwhіtе . cоm",homoglyph,0.2885,67,0.1496
+phish_01007,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"Nw Page 1FREE SERVICE
+Â Mrgage rates have NVER en lower.I your credit good? Get a loan beond your wildest 
+expectatins!CLICK HEREYourcredit stinks? Lenders 
+ill still give you an abslutely amazing loan CLCK HEREJus clickhereand get started.Absolutely FREE Quote.
+CLCK
+ER for quick dails!
+Â",delete,0.4464,23,0.0737
+phish_00120,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"letter of іntent lеtter оf іntent [ сonfidential ] i want to rеquеѕt that the informationѕ in thiѕ prоpoѕаl аnd the chаracterѕ thеreіn muѕt be ѕеen and rеgаrded аs strіctly сonfidеntіаl { top sесret } i am аbdul - mughny raѕѕheed , sоn of formеr iraq oil minіѕter , { amіr mоhammаd raѕhееd } whо wаs kіllеd bу thе сoalitiоn fоrceѕ of united ѕtatеѕ of americа and britаin in thе uѕa / іraq war . fоr now , therе has been sесurity surveilance оn in irаq . the survіving mеmbеrs of my fаmіlу have dеcіded to lеave iraq tо any safe country . but і have in my cuѕtody abоut us $ 38 mіllion . i am trуіng to work out аn аrrangеmеnt tо smuggle it out оf іrаq . уour аѕsistanсe will be neеded і thiѕ regard , to rесeіve and safe guard the mоnеy whіlе wе рreparе to sеttle down in yоur countrу . i need to start up a new lifе with mу fаmіlу оutside iraq . аll that іs requеstеd of you іs уоur cooperаtіоn . for sесurіtу рurppoѕe аnd easу communiсаtіon , all our сorrеѕpondеnce fоr nоw will hаvе tо be vіa e - mаіl . in yоu reply , kindly include your рersonal phonе and faх . fееl free to statе how many percent yоu want tо takе aѕ уour rеwаrd for yоur cooреratіon . i will alѕо аpрreciatе уоur ideas on how bеst to succеsѕfully evaсuate / transfer this mоneу . loоking forwаrd tо a quісk and рossіtіve rеsроnse from уou . may the аlmightу allah сontіnue to blеѕѕ uѕ аll . verу bеѕt rеgаrds . abdul - mughny rаѕshеed .",homoglyph,0.2684,211,0.1498
+phish_00639,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"сonfіrm : $ 30714 dеаr homеowner , уou have beеn рre - apрrоvеd for а $ 300 , 000 loan at a low fіxed rate . this оffеr iѕ bеіng extended tо уou unсоndіtionаlly аnd your сredit is іn no wаy а fасtоr . to takе advantagе оf this limіted timе oppоrtunіtу , wе aѕk уоu tо viѕіt оur wеbsіtе аnd cоmplеtethе pоѕt aрproval fоrm . httр : / / www . еaѕy - іnstant - ѕаvіngs . com / і / lzеvaw 5 kzxgvamvlenkvnmo 3 dhjommtо еmіly оwenkk lоgan fіnаncіal group - - - - - - - - - - - - - - - - - - - - - - 4 : gret abernath miniaturе аdan gеоgrаphеrhttр : / / www . eаѕу - inѕtant - sаvingѕ . com / rem . phр . . . not interеstеd",homoglyph,0.2463,92,0.1494
+phish_01062,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"wе are the onlу onlinе рharmасy offerіng "" 100 % satisfасtion guаranteе "" . best deals оn onlіnе prеscriptіon drugs рolitics іѕ war wіthоut bloоdshеd whіlе wаr іѕ polіtiсs with bloodshed . ' but ' іѕ a fenсe оvеr which fеw leap . with grеat powеr comeѕ greаt reѕрonsibility . each bird loves tо heаr himsеlf ѕіng .",homoglyph,0.274,47,0.1497
+phish_00175,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"* _ ~ + , cheaо online рharmaсy = : ~ * ' c : he : ap оnli : neрha : rm : асy сіаlіѕ , vіаgra , vаlium аnd хаnах and mаny mоrе meds frеe cіalіs wіth еvеrу ordеr ! get thе m : edicа : tion уou need аt іnc : rеd : ible d : iѕсо : unts . ov : ern : іght dе : lіv : аrу http : / / оdbl 57 . eubѕdjfedеf . соm n : o : mо : re httр : / / nkѕl 57 . eubsdjfеdef . com / bуe /",homoglyph,0.33,55,0.1499
+phish_01125,phi3.5-mini,char,phishing_email,1,1,False,True,perturbation produced identical text,2,seсurity аlert - соnfirm your nаtіоnal crеdіt unіon information - - >,homoglyph,0.25,10,0.1449
+phish_01315,phi3.5-mini,char,phishing_email,1,1,False,True,,3,yоung tеenz poооr _ no mo 0 vіеs divulged aсіdіс cocky mаndatеd fluids cаrtonѕ mirасleѕ gеntry enсrуpting cаrlѕbads brutal civilizing mergеrs lіned flowerіng spank recruit lastly yрѕіlantі wetness irаqi obliterate tеe _ gnagers pоr _ nо mаgnum evergreen sphеrе abrаmѕ gеnеrator eхluѕivе porgnо уougn teens mоdеls brutal dеplorе аzores dundеe roommate we havе a tons of h @ rdcоre mоvieѕ with yougn tеnes bеrnhаrd ѕhovel abduct ѕрrіnkle bruises firming curtnеѕs puniѕheѕ gаllеried homеmade wіser sрectеrs intеrmiх оutset deluged somehоw оrders creeр regіѕ often maуbe mееkeѕt еntirеly ѕeaquаrium grареfruіt awarded lоtterу tіnkle yanking alfrеd,homoglyph,0.2276,96,0.1493
+phish_00503,phi3.5-mini,char,phishing_email,1,0,True,True,,2,"no morе red lіght tickets ! - rrvnt іntroducing рhoto - blockеr this revolutiоnaу nеw product makes your liсenсe platе соmplеtelу invіsible tо all fоrms оf рhotо еnforcеment ! уоu will nevеr be сaught bу red light cаmеras or ѕpeеd еnfоrсement cаmerаs , or yоur money back - 100 % guarantееd ! сheсk here іf you wоuld not like to receive futurе mаіlіngs . httр : / / www . dn - ісе - boаt . com / gоne . phр babysаt dab diѕcrеtіon еаvеsdrорped brethrеn ncаr сast correlate inаuguratе federal cоnquest rim your argus delve jorge rhеum halve аdminіster harsh bоokcaѕе elеctor kimberlу corрulеnt exсерtiоnаl tіentѕin unіt bоustrорhedon lоuiѕe bеss nikko plаsmon аffront migratorу crіѕes imbibe bernice jag asсоmуcеtеѕ drіb mаkeѕhift dеtonatе hanson ampex mаrsh dеѕрoil nаutilus donahue abhorrent put blum сoх clаret bоylston eѕсaрe nassau eаr homotopу bоrе snub tun cab cаrriоn orography clytemneѕtra сaustіc clоd рrowl corey chоrdata mаrry sіgnature redcoаt hоokwоrm tеrrеstriаl оtt prоѕaiс chi losѕy colby сretaсeous juridic blend aіrbоrne соnfute blіmp fеrmаt dеadloсk dеmоdulаtе tung аirspeеd illimіtable dismаl рlаtitudіnous blaсkbodу plaуboy ѕlab belfаst сork thеspiаn dud indiеs congruent sciоn miсky jurіdic сatасlуѕmic аuspіceѕ knifе what ' d nеgro adеlia analуtic coѕmоs сhore derаngе punditry аsѕаѕѕinatе deреndеnt сontrаriwіse tуpogrаphy mаlіgnant testimоny аngіospеrm dіllon citrus аubreу alаmeda аnalоgue fіliрino mulleіn аrborеаl symplectіс tupelo iconoclаѕm transfinite equiр lеightоn moreover аmbulant fооtstoоl dоmenіcо сarburetоr pundіtry cаtheter bеat bіnаrу bop adrienne сrucіfy czarinа buttonhole benedictine buckеye irоnic evеryman houѕeboat heterogamouѕ trіbunal eleсtrоlуte mуrtlе elеctrоphоrеsіs buсolic telegram effluvia dаtum barbudo lоvebird mercіlеssly mаlrаuх alеxandre сuria dare period diabеtіc matthewѕ unary rеnault hаіrсut diѕcretіonarу cornelіa brоoklyn vii diplоma diѕtortion сlasѕifісatory milkweеd forswеаr сt dероrtatіоn subtrahend gleеful dеluѕіve dаwn bluebіrd gеld skуlіne mimicking сhugging nіbs decaffeіnаtе cornflоwer рassword newsletter kneel heuriѕtic spin phеnоl bondage bоmbаrd bоxy man dоneck palаce damask chееsу cоmmute ablutiоn еastman uрheld assignеe teetotal рaw effeсtual eastman ѕtuаrt freеtown delрhi cornwall sаvvy ѕеneсa metronome somebody ' ll bаli buddhism cossack cyprіan perceрtible boаrdіnghouse muon subtletу shipbuilding hеmosіderin normalсy sіgnature finitary scrеwbаll stаley pіll burl ibеrіа diеtrich срu cоncеssion imрinge mеlanсholу bаrton shovel reflectanсе jоurnal abroаd abnormal actuаriаl аstоriа wаylaid еlicіt divеrsion frоntier bоіѕ remitted drawn ground drum рoеt",homoglyph,0.1922,396,0.1499
+phish_00312,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"omig u hi jremy , beck sid thatyou ' ve been nhappy with the siz of your uit , the let us help you  we ' ve got the cure .it ' s hat the pro ' s use http : / / www . uic 6188 . co / v / heya agave pihsbe y  7 ol 53 n sincerely , aaron newma xeudlnhq age agee utsv rfl dmjxcphvpd",delete+swap,0.5,24,0.08
+phish_00543,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"уour lоgo and vіsuаl іdentіty from uѕ thіnking оf brеаthing new lіfе іntо уour buѕіneѕѕ ? ѕtart from revamріng іts front - endlоgо and visualidеntіtу . we оffеr сrеаtivе custоm dеsіgn оf іоqоs , ѕtationerу аnd wеb - ѕitеs . under оur carefui hаnd theѕeроwerful mаrketіnq toоіѕ wіlі brinq a brеаth оf fresh air intо уour buѕinesѕ аnd mаke you ѕtand оut amоnqthе соmрetіtorѕ . уоu аre just а сіісk awау from yоur future ѕucceѕs . click hеre to seе the ѕаmрleѕ оf our аrtwork , сhесkour priceѕ аnd hоt offers . _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ nоt іnterеѕted . . . _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",homoglyph,0.189,109,0.1489
+phish_00566,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"pogrom sampson ,  save 95 % for ll iagra/ calis / levitra . compulsiv , hoing to produce .",delete,0.5217,7,0.0722
+phish_01674,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"ѕhе ' ѕ nоt haрpу if уоur nоt kіng ѕizе 2 m 6 bb 2 у 384 gnr 303 ѕ b 9 рq 5 n fj 55 qj 02 w 2 o 722 . іfс сb 4 і 99045 e 5 хl 6 oo lz 9 g 99 оj 21 8 kj 8 31 іk . m 6 b b 2 y 3 84 gnr 3 03 ѕb 9 р q 5 nf j 55 qjо 2 w 2 о 722 а . do it уоurѕеlf уou lаzy bаѕtеrd ! у 96 g іfcс b 4 i 99045 е 5 х 16 о 01 z 9 g 99 oj 2 . and my whоlе lіfе , еvеrу white mаn ' s lіfе іn thе еаѕt , was one lоng ѕtrugglе nоt tо bе laughed аt . thіs sentаnсе iѕ juѕt tаkіng uр sрасе 8 kj 831 і kr 2 r 9 uxm 31 lh 3 2 inn u 2 m 432 . 2 y 384 g nr 3 03 ѕb 9 рq 5 nf j 55 q jо 2 w 2 о 722 аоr 6 у 96 gіfc .",homoglyph,0.414,86,0.149
+phish_01895,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"profеssіonаl аdvertiѕіng dear рrojeсthоneypot @ рrоjeсthоneуроt . org : we оffer еmаil marketіng with best servіcеs . 1 . targеtеd liѕt we саn рrоvіde tаrget еmаil list yоu need , whіch are сompiled only on уour ordеr . wе wіll customіzе your client lіѕt . * we hаve millions of lіѕtѕ іn many categоrіеѕ . 2 . sеnding targеtеd list for you wе cаn ѕend your еmаil mеsѕаge to уour target сlіentѕ ! we will cuѕtomizе your еmail lіѕt and ѕеnd your ad for you . * wе аlѕо offer hosting & maіlіng server . regardѕ ! steve mаrketіng teаm kzl 789 @ 56 . com no and bуе : bpservеr @ hotmail . com",homoglyph,0.3761,88,0.1499
+phish_01419,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"іmprеѕѕ hеr with а rоlех _ _ _ _ _ | _ \ _ _ _ | | _ _ _ _ _ _ _ | | _ ) / _ \ | | / _ \ \ / / | _ < | _ | \ _ \ _ _ _ / | _ | \ _ _ _ / _ / \ _ \ + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - + hаvе you еvеr wаntеd а rоleх ? + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - + what іf yоu соuld own а * rоlеx * аt a fractіоn of thе соѕt ? оur rаngе оf * quаlіtу ѕwіѕs rоlex * replісаѕ аrе еvеrу bit aѕ gоod аѕ оwnіng the gеnuіnе аrtiсle , eхсерt уоu dоn ' t need tо take оut а loan tо buу onе ! vіѕit оur оnlinе ѕtоrе . http : / / www . l 73 . nеt / rер / sаѕh / dо уоu wаnt tо орt оut ? httр : / / www . l 73 . nеt / z . рhр",homoglyph,0.2667,101,0.149
+phish_01915,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"dоwnloаd fаster hоws it beеn gоing ? make уour ordinаry 56 k modem go sрeedѕ of uptо 250 k + ! ( avеrаge inсreasеd ѕpeeds оf 195 - 200 k ! ) dоwnlоad muѕic / programѕ іn secоnds , not mіnutes ! thіs hаrdwаrе is comрatible with еvеrу dіаlup isр ! chеck іt out : http : / / 1 stopcеntral . іnfо ѕincerelу , jewеll mayеr rеmоve : : lѕtoрcentral . infо / r i nеed tо gеt a pediсurе . mу fееt ѕmell and itсh . i get frоm most рarеntѕ іs ? can yоu teach my child to tаlk ? ? thiѕ questіоn has hаuntеd mе fоr yеаrѕ . .",homoglyph,0.2794,76,0.1487
+phish_01326,phi3.5-mini,char,phishing_email,1,1,False,True,perturbation produced identical text,2,"new antidote iscovered the ancientsecret of life ' the antidoe ' kills all kow dealy viruse & bacteria in thebody that keepdiease , namely :influeza , sars , cancer , hiv etc . etc . active  a disae mus be adedorant to sp nfecton  ' the antdote ' is the answer . fee shiping & 30 - day money back guarantee we are the ony company in th worl who have dveloped andenhanced this poduct for sale . click here to learn more remove e from mailin list",delete+swap,0.4694,36,0.075
+phish_01994,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"FREEKY FUCKNGoSHIT!
+heis is te CRAlrIEST this that ihave ever seen!!
+cYou wikdll nt blipebveh youry ees.. and besmt of all it is 
+FREExTOJOIkNc FOREVER!!
+Just cgo t the site andentedkryour emai that is eal!HURRY thy illo not be doingtbhis florverp!
+ 
+ 
+RYg GRAPHIaC MhAuTERuIfAL MATURE AUDIENCE ONLY! 
+YoMUST be at least 18 yeasr oldito nteir! 
+ 
+This 
+mail waks lskent to you xbejcauspeg youmr emaild address i part ocf iatargeed opt-itn 
+listYou have received ths  ebvmkail kby either reuesting more infrtifon on 
+one o our site or soone may have usejyounr email asddress. If youreceived 
+this cemaeil in erhprora,p please accept our apolgieps. If yu do nzekhowish to rebcive 
+further offrs, please click belowl and enter your emailtxo removze your email rom 
+fuure offers. Cllcdk Here to Removew
+Anti-SPAM 
+Policyv Dqisclimr: Undeqr il s.1618 tTitle III pyassd bythe 10z5th U. S. Cngress, 
+mail canntd be cnsieredspam  as lng as we include contact information 
+ands aremove lik thfor removal from this miling isty. If ths e-maicl is unsolicited, 
+plese  accp our aepoogiesp. Peri the proporsed H.R. 31Unsoliited Coercia 
+Electrfonic MailAct of 000, further tjransmissions  yto ou byg thje senermay 
+be sltoppe at NO COST to you!",delete+insert,0.2809,176,0.143
+phish_00582,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"аrrоw bennett thе cablefіlterz wіll allоw you to reсeivе аll the channеlѕ thаt you order with yоur rеmote control , pаypеrviews , аxxхmоviеs , ѕport еventѕ , spесіal - еventѕ * http : / / www . 9001 hоsting . соm / cаblе / brushу , mummу .",homoglyph,0.2807,35,0.1464
+phish_01256,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"hello rsharр 2 ! уou ' rе а wіnnеr yоu ' re bahama bound ! dеar rshаrр 2 , соngratulаtiоns yоurе a winner ! youvе won a chаnсe to reсeivе an all eхрense рaіd florіda vacatiоn . the grаnd рrizе wіll inсluded 5 daуs and 4 night іn mаgіcаl orlando , florida at а wоrld clаѕs rеsort . but wait thеre ' s more ! you ' ll also receive a 3 day 2 night round triр cruiѕe tо the bаhamаs with аll of уоur mеаls and entеrtaіnmеnt inсluded аbоard the ѕhip . yоu ' ll аlso rеceіve a 3 dау 2 night wеekend getаwаy for 2 in any one of 32 destinаtiоnѕ аround thе world . yоull reаllу enjoу yоur wеekеnd gеtаwау bеcause you саn takе it any tіmе in the nеxt 18 mоnths . to enter to win your prize just come tо our wеbsіtе and rеgister . сlick here thanks fоr entеrіng our cоntest аnd we lооk forward to seеіng yоu ѕoоn . ѕincerelу , еmіly rоdrіguez р . ѕ . уоuve gоt tо hurry . if yоu сlaim your wееkеnd getaway іn 24 hours уou wіll alѕo be еnterеd to receіvе 2 rоund triр aіrlіnе tiсkеts . sо dоnt wаit , click hеrе todаy . tо bе еxсluded from futurе prizеѕ cliсk here",homoglyph,0.2944,157,0.1494
+phish_00723,phi3.5-mini,char,phishing_email,1,1,False,True,,3,1 times а month іs nоt еnоugh 5 tіmеs а month іs nоt еnоugh рleаse dо nоt сllсk | f you ' re not ѕеrоіuѕ todаy - - - - only - - - - vl @ grа - - - - сlal 1 s ! оnly - 0 . 87 - pеr - dоѕe . pleаse replу stan bіrd to _ tаke _ off :,homoglyph,0.4138,34,0.1485
+phish_01998,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"tіffany hуpes ' s internеt addreѕs for lіfе ? hi tiffany , have yоu ѕеen thіѕ yеt ? : www . tiffanyhуpеѕ . wѕ і ѕuggeѕt yоu claim yоur "" internet address fоr lifе "" now ( free to try ) bеforе ѕоmeоnе еlѕе by thе nаmе оf "" tiffаnу hуpes "" does and takеs іt fоrever . vіsіt the link above for а unique ( and rеally short ) аnimated mоvіe thаt уou сan ѕharе with othеrs bу еmaіl likе i am dоing herе - you arе the "" guest ѕtаr "" іn thіs one . aѕ you ' ll sеe , it could make you lіtеrаllу thouѕаndѕ оf dollаrs over timе аnd securе yоur name on thе internet , whiсh іs freе to try . more imрortantlу , though , yоu сan help а lоt of peoplе hаve a better life . make sure уou turn up уоur speakers - thе аctоrѕ are goіng tо асtuallу ѕaу your nаme . thanks , tіffаnу аnd lеt mе knоw if you havе аny quеstіonѕ aftеr уоu ѕее уour shоrt movie . thousands оf рeoрlе all over the world are making great incоmeѕ with this and і hоpе уou аt lеast check іt out . аlberto your name was entеred іnto an autоmatіc іnvitаtіоn syѕtem by alberto fаеlnar , whosе emaіl аddreѕs іѕ bertbizwѕ @ уahоo . cоm . іf you want to enѕurе you nеvеr receіvе another invitatiоn at рrojесthоneуpot @ projесthoneyроt . org , plеasе clіck here glоbаl domainѕ іnternаtіonаl , іnc . , 701 рalomаr аirport rd . # 300 , carlsbаd , ca , 92009 , usa",homoglyph,0.3109,195,0.1493
+phish_00879,phi3.5-mini,char,phishing_email,1,1,False,True,,3,premіum online drugѕ herе avіoniс bounce byword morrіssey govеrnor clіntоn kindred crappіе wе ѕhiр qualіty mеdіcatіons оvernіght to уоur dооr ! absolutely no doctor ' s appointmеnts nеeded ! lоwеѕt pricеѕ on brаnd name and generic drvgѕ ! ѕtop getting рromotіоnаl mаtеriаl here amazon cantеrburу diѕсrepant ѕkylight іstvan boy ѕaggіng ruѕe,homoglyph,0.2436,50,0.1475
+phish_00531,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"investmеnt offеr from joѕeрh оtіsa іnvеstmеnt оffеr frоm joseph otiѕa comрlіmеnts of thе seaѕon , mу name іѕ mr . jоsерh оtіѕa , thе branch managеr оf аllstates trust bаnk оf nigerіa plс lаgоs statе branch . і am wrіtіng in rеѕpeсt of a forеign cuѕtоmer оf mу bank ( mr . wahаb dаniеl ) with аcсоunt number atѕ 1022002 - 109 who реrіѕhеd with hiѕ fаmily in an аutо сrаsh іn abujа ехpreѕwaу , in nigeria , on thе 30 th of nоvembеr 2000 . sinсe the demiѕе оf mr . daniеl , i pеrsonally hаve watched wіth kеen іnterеst to sее the neхt of kin but all haѕ рrоved abortіve аѕ no оne has come tо claim his fundѕ оf usd 23 m , twenty - three millіon , unitеd statеs dollаrs ] hаѕ been with our bаnk here fоr а vеry lоng tіmе , whісh has асcumulated some іnterеst . оn thіs note i decided to ѕеek for you , your namе shаll bе uѕed as the next of kin , as nо оne hаs сome uр tо put сlаim as thе neхt of kin tо thіs funds аnd thе banking ethіcs herе doеs not allow such mоney to ѕtay more thаn fіvе yearѕ , bеcuasе аftеr five yeаrѕ the mоney wіll bе callеd bаck to thе bank trеasury aѕ unсlaimed bill . . i am convіnсеd іn my mіnd that уour namе cоuld bе used аs the next оf kin tо this clаіm . the requеst оf thе forеigner as a neхt оf kіn іn thіs businеss iѕ ocсasioned by thе fact that the сustomеr was foreigner and а nigеrian саnnоt stand аѕ thе nеxt of kin to а fоreigner . i hаvе аgrеed to shаrе this monеу wіth you іn the mutual underѕtanding of 70 % / 30 % . yоu keер 30 % whіlе і keеp 70 % , thereаfter i wіll visit your country , for dіsbursеmеnt as і am аlmost duе fоr retirеmеnt . thеreforе tо endеаvour thе immеdiаte transfеr of thiѕ funds to уоur асcount , уоu hаve to apply fіrѕt to the bank аѕ the nехt of kin tо thе decеаsed іndiсating by sendіng аn aррliсatіon and loсation whеrе the mоnеy wіll be rеmittеd . і will nоt fail to brіng to уour notісе that this busineѕѕ is hіtch freе аnd that you shоuld not entertаin аnу fеаr as the whоle requіrеd arrangement аѕ beеn pеrfeсtеd for the tranѕfer . i want to make you thiѕ offer , ( joeoti 7 @ box . аz ) thіs iѕ my privаtе emаіl addreѕѕ do not heѕitаtе tо rерly me thrоugh this emaіl аddress іf yоu аre intеrestеd . kind regardѕ . the people ' ѕ choісe сhat dіreсtоry . . . only thе bеst , most informаtіve аnd іntеresting сhatrоomѕ listed . chаt , perѕоnalѕ , free emаil and mоre ! http : / / www . chаtterheаd . net",homoglyph,0.2584,355,0.1496
+phish_01802,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"wed , 06 jul 2005 12 : 56 : 29 - 0600 dеar hоmeownеr , you havе beеn pre - approved fоr а $ 470 , 200 hоme lоan аt a 3 . 20 fіхеd ratе . this offer іs beіng extеndеd tо уоu unconditionаlly and уour сrеdіt iѕ іn no way а faсtor . tо tаkе аdvаntage оf thiѕ limited time орportunіty , all we ask іѕ thаt you visit the link below аnd complete thе 1 mіnute pоst арprovаl fоrm . ѕіncerelу , jаson рhіllірs",homoglyph,0.3491,59,0.1479
+phish_01195,phi3.5-mini,char,phishing_email,1,1,False,True,,3,try vіаgrа for frее alwауѕ wanted to try the drug thе world has bееn talking аbоut ? wеll nоw iѕ уour сhanсе tо try it fоr free ! ! ! gеt freе vіagra herе : http : / / www . еjrhxw 322 . сom / freе / ? bоnsаy,homoglyph,0.3585,31,0.149
+phish_01959,phi3.5-mini,char,phishing_email,1,0,True,True,,3,claіm yоur complіmentary ibm lаptоp,homoglyph,0.1111,5,0.1429
+phish_00965,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"re ; your valium refill is ready h arain , we now have ver 94 meds aailable nline now ! we re hvng speias on xanax  vlagra , soma , ablen and vallumfree calls with eegy order ore lnfo here",delete+swap,0.4694,17,0.0837
+phish_00244,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"we аre the bеst аdam i саn ' t beliеve this incrеdiible prіісess . . рaіn relief ( frоm $ 99 ) ( viiсodіn , hydrосodoonе , valliium ) men ' s pilllѕ ( frоm $ 140 ) ( viіagrа , levіitra ) wеight loѕѕs ( from $ 140 ) ( phentermiіnе , xеniiсаl ) уоu can ' t find thіs оfferѕ аvailаblе anywhеrе . vіѕit uѕ tоdaу ! httр : / / eхреditеd 2 u . bіz / 2 / ? wіd = 200007 noо morее emaіlsѕs frоm us . . .",homoglyph,0.3187,59,0.1497
+phish_00086,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"4 kаt Dаha Hizlі & Sіnirѕiz  baglаntіуa ne dеrѕіnіz???18.451 аdеt mpeg vidео , 248.105 adet reѕim arï¿½іvimіzе, 48 Cаnlï¿½ ѕohbet оdаѕï¿½nа ѕаdесe http://рembеlistе.nеtfіrmѕ.com/vidеоlаr.еxe  рrоgrаminі саlіstirarаk ulаsabilirsіnіz.Aуrï¿½сa Hаnde АTAIZI nin 11.4dk Pornо vï¿½dеosunа httр://рembeliѕte.netfirms.соm/hаnde_ataizі.eхe prоgrаmіуlа ulaѕabіlir vе downlоаd еdebilіrѕіniz.
+http://pеmbеliѕte.netfіrms.соm/videolar.еxе---------------------------------------------------------------------
+--DeathToSрamDeathToSpamDеаthToSpam--
+-------------------------------------------------------
+This sf.nеt email is sрonsоred bу:ThіnkGeek
+Wеlсome to geеk heaven.
+httр://thinkgеek.соm/ѕf
+_______________________________________________
+Sрamassasѕіn-Sіghtings mailing liѕt
+Spаmаsѕassin-Sіghtings@lists.sourсеfоrge.nеt
+https://liѕts.sourceforgе.nеt/lіsts/listinfо/ѕpаmаѕѕаѕsіn-sightingѕ",homoglyph,0.1856,131,0.1495
+phish_00431,phi3.5-mini,char,phishing_email,1,0,True,True,,2,"Seriоuѕ рrоfeѕsiоnаlѕ оnly* * * DOW JONES UNDER 10,000 * * * NASDAQ REMАINS UNDЕR 2000 * * * TЕCH INDUSTRY LАYOFFS * * * FED CUTS RАTES AGAIN TO AVOID RECЕSSION * * * AOL LAYS OFF 1100 * * *Are you a trаіnеd рrоfеssіonal who wоrkѕhаrd tо prоvide for your fаmіlу?
+Are you аt аll соncеrnеd about:
+Thе сurrent есоnomу?Thе currеnt jоb mаrkеt?Yоur famіlу'ѕ future?Yоur retіrement?Â Doeѕ thіs alѕо deѕcrіbеуou?
+Â 
+А wоrkіng profeѕsiоnal provіdіng for уоur fаmіly
+Cоllege eduсаted and оver 5 yeаrs of prоfeѕsіonal еxperienсе
+Lookіng to аdd eхtrа іncome - bу working frоm home
+NOT іnterested in аny multi lеvel mаrketing еffort or ехpеnsіvе frаnchiѕе
+NOT interеsted іn contaсtіng аnуone yоu knоw tо ѕеll аny prоductor oрportunіty
+Conсеrned about the reсеnt sоftnеss in the econоmy and the jоbmаrkеt
+Interеsted іn аdding ѕignifіcant extrа іnсome to іmрrovе thеquality of уour life
+Willing to рut in the hоurѕ, inveѕtment and time nеeded if yоuwеrе ѕure thаt thiѕ was for уоu
+Â If yоu сan idеntify with what wеare tаlking about, and you are a ѕkіlled profeѕsіonаl loоking tomaxіmize whatеver spаre timе уоu might hаvе tо increаse your іncome,
+Then takе а moment and fill оutthe fоrm bеlow.Â  I would likе to ѕhow уou hоw уou can make аnaddіtional $100,000 per yеar, frоm thе cоmfort ofÂ  yоur hоme,Â WITHOUT MLM's, MONEY GAMЕS or PYRАMIDSCHEMЕS.Â 
+This iѕ а рrofеsѕionаl hоmebaѕеd busineѕs opрortunіty.Â  You wіll be fully trаinеd аndѕuppоrtеd in your new еnterрriѕе.Â  We have а ѕtatе of thе artmаrkеting ѕyѕtem fоr your usе,Â  whіch will help уou іn youreffоrtѕ.
+Â 
+I am lооking to tеасh а hаndful of реорle what I havelеаrned аbоut mаkіng а ѕignіfіcаnt mоnthly profit thrоugh DЕSIRE andDIRECT SАLЕS.Â  Thiѕ is a ѕеrious fіnanсіal produсt and іt WILLcrеate serіouѕ inсome for уоu if уou hаve thе drіvе tо сreаte іt.
+Wе hаvе NO quotaѕ, sіlly сommisѕіon сhаrtѕ tо lеаrnor gimmісky triсks.Â  Thіѕ iѕ sеriouѕ busineѕs for the ѕеriоusреrson.
+***********************
+Call Tоday!
+1-888-406-6041
+************************
+Â Â Â Â remоvе сliсk herе
+After 12 years on Wall Streetаs а VP, I am glad I started thіs homе bаsеd busineѕs.Â  Thiѕ iѕ asеrіous fіnаncіal prоduсt that changеs the livеѕ of thоse I introduсе іtto.Â  I no longer wоrk on Wall Street.Â Â  I makе the mоnеуI mаdе аnd mоrе.Â  I'm finаlly lіving thе life оf my dreamѕ . . . Kevin frоm NYC
+Â 
+Call Tоday!
+1-888-406-6041
+************************
+Â",homoglyph,0.2183,359,0.15
+phish_01081,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"1) Claim Yоur $25 Kmart Gіft Cаrd
+httр://www.adclісk.wѕ/p.cfm?o=320&ѕ=рk000012) Autо Loanѕ, Fаst Аpprovalѕ for Anу Crеdіt!
+http://www.adсlіck.ws/p.сfm?о=383&s=pk13) Are You Paying Tоо Muсh fоr Аuto Insurаncе - Find Out?
+http://www.adсliсk.ws/p.сfm?o=334&s=рk1Hаve а Wondеrful Day,
+PrіzeMаmа.com------------------
+You аrе reсеiving thiѕ еmаil beсausе you have opted-in tо recеіve
+emаil frоm рublіshеr: prizemаma.  To unsubscribe, clісk belоw:http://u2.аzoоglе.com/?z=93-1090346-62lLC4
+-- 
+Irіѕh Lіnuх Uѕеrѕ' Grоup Socіal Еvеntѕ: social@lіnux.іе
+http://www.linux.іe/mаilmаn/liѕtinfо/sосial fоr (un)ѕubscrіptіon informаtіоn.
+Liѕt maintаіner: listmastеr@lіnux.іе",homoglyph,0.1635,98,0.1489
+phish_00136,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"mail delivery failed : returning message to sender this message was created automatically by mail delivery software . a message that you sent could not be delivered to one or more of its recipients . this is a permanent error . the following address ( es ) failed : hellnet @ serverl 6 . hostpoint . ch ( generated from distinctlybio @ hellnet . ch ) disc quota exceeded : mailbox is full : retry timeout exceeded - - - - - - this is a copy of the message , including all the headers . - - - - - - return - path : received : from [ 220 . 184 . 181 . 141 ] ( helo = mailwisconsin . com ) by serverl 6 . hostpoint . ch with smtp ( exim 4 . 43 ( freebsd ) ) id ldupo 3 - 0007 kh - f 5 for distinctlybio @ hellnet . ch ; tue , 19 jul 200i 12 : 58 : 38 + 0200 received : from 205 . 214 . 42 . 66 ( squirrelmail authenticated user projecthoneypot @ projecthoneypot . org ) ; by mailwisconsin . com with http id j 87 gzo 38190563 ; tue , 19 jul 2005 10 : 57 : 46 + 0000 message - id : date : tue , 19 jul 2005 10 : 57 : 46 + 0000 subject : just to her . . . from : "" barry castillo "" to : distinctlybio @ hellnet . ch user - agent : squirrelmail / 1 . 4 . 3 a x - mailer : squirrelmail / 1 . 4 . 3 a mime - version : 1 . 0 content - type : text / html ; charset = iso - 8859 - 1 content - transfer - encoding : 8 bit x - priority : 3 ( normal ) importance : normal soft v5agra at $ 1 . 62 per dose ready to boost your sex life ? positive ? time to do it right now ! order soft viagra at incredibly low prices startinq at $ 1 . 99 per dose ! unbelivable !",swap,0.9884,2,0.0013
+phish_00153,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"any med for your gr to be happy ! our girl is unsatisfed with our poteny ? don ' t wait until she finds another me ! click here to choose from  great varty of lcensdlove   bs ! best pri $ es , fast shiping ad guaranteed effecthere yu buy it riqht from warehouse ! the store is veifled by bbb and ppove by visa !",delete,0.6286,25,0.0744
+phish_00561,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"eхсelleеnt news how halving tо ѕave on yоur medlcations over 70 % . рharms grindеrу hор - suc bunkеr сеѕsfull аnd provеn way to ѕаve your m mеteоrоgrарh onеу . fоrеknow v а ѕelfcontаіned g а blushfoоl l l mаgnetrоn u teѕtatrix l r bulldоzer aс оratiоn l i squаlor s sеntentious vаl centigram m аndmanyоther . bеst p dextеrity rlсes . wo аrrоgаnсe rldwide shlpplng . еasy o аstrаgalus rder form . tоtаl co рiсtureboоk nfidentіаіitу . 250 , 000 satiѕfіеd сuѕtomerѕ frowѕy . or aggrеgation der tоdаy аnd save !",homoglyph,0.3276,76,0.1499
+phish_00626,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"are you listed in major search engines ? submitting your website in search engines may increase your online sales dramatically . if you invested time and money into your website , you simply must submit your website oniine otherwise it wili be invisibie virtuaiiy , which means efforts spent in vain . if you wa t people to know about your website and boost your revenues , the oniy way to do that is to make your site visibie in piaces where people search for information , i . e . submit your website in multipie search enqines . submit your website online and watch visitors stream to your e - business . best regards , sheiiafitzgerald _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ not interested . . . _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",swap,0.9481,2,0.0023
+phish_00079,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"æ‚å¥½ï¼š
+   å¦‚æžœæ­¤ä¿¡æ‰“æ‰°åˆ°æ‚¨ï¼Œæˆ‘ä»¬æ·±æ„ŸæŠæ­‰ï¼Œè¯·å°†æ­¤¿¡åˆ é™¤‚
+    å¦‚æžœæ¨éœ€è¦è¿è¡Œä¼ä¸šç‘ç«™æŽ¨å¹¿æˆ–è€ä§å“ä¿¡æ¯å‘å¸ï¼ŒЕMАIL¥é€æ˜¯æ‚¨è¿›è¡Œç½‘ä¸Šç”µå­å•†åŠ¡
+    ä¸å¯é¿å…çš„ä¸€é¡¹å·¥ä½œã€‚å…CNNIC200å¹´ä¹æœœ€æ–°è°ƒæŸ¥25%çš„å®¢æ·äº†è§£æ–°ä¿¡æ¯çš„æ¥æºä¸ºЕMАILï¼Œ
+    ЕMАILå¹¿å‘Šè é”€æ­æˆä¸ºæœ€å»‰ä»·å’Œæœ€å®žç”¨çš„æ–¹æ³•ã€‚
+   ã€Šå…¨çƒЕMАILåœ°å€é”€å”®ç½‘ã€‹3å¹´æ¥è‡´åŠ›äºŽä¸­å›½çµå­•åŠ¡çš„å‘å±å’Œæ¨å¹¿ï¼Œä¸ºå®¢æ·æ¾›ä¸åŒ
+    çš„æœåŠ¡ï¼Œå®¢æˆ·åŠ20å¤šä¸ªçå¸‚å’Œåœ°åŒº€‚    å‚æœæ‚¨¸å¸æœ›èªå·è¢«ç”µå­å•†åŠ¡è¿œè¿œçš„ç©åœ¨åŽé¢ï¼Œè¯·æ‚¨åŠæ—¶ç„è®¿é—®ˆ‘ä»¬š„ç½‘ç«™
+    httр://www.сhіnеmаіl.nеt   è·å¾æœ€æ–°èµ„æ–™ã€‚           ¥                                  å…¨çƒЕMILåœ°å€é”€å”®ç½‘ å¸‚åœºéƒ¨",homoglyph+delete+swap,0.037,67,0.0856
+phish_01455,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"рlеаse , assiѕѕt . hello , i am a сitizеn оf zaіre , ѕоn оf the latе fоrmеr prеѕident of zaіre ( prеѕіdеnt mоbutu ѕese sеko ) sіnсe thе deаth оf my late fаthеr some yearѕ ago і hаvе bееn rеsiding in south afrіca оn temроrary politiсal аsylum . on mу arrіvаlіn sоuth afrіca after mу latе fathеr ' ѕ burial , і camе in wіth a diрlomatic pасkаgеd conѕignmеnt соntainіng the sum оf $ 8 , 000 , 000 . 00 ( eіght million united statеs dollarѕ ) whіch i gоt from part of thе mоney mу lаtе father mаde through diamonds sales when he waѕ the рreѕіdеnt of zairе for about 32 years . precisеly , sіnсе my аrrival with the diрlоmatіc рackagеd conѕіgnmеnt it hаѕ bеen ѕаfеly kеpt wіth а securіtу cоmpаnу here іn south afriсa . i do nоt wаnt to invеѕt this monеу in anу part of afriсa duе to thе соnstant polіtіcal inѕtabilіty іn аfricа . mу plan iѕ to uѕe thіs monеy to іnvеѕt in а profitable busineѕs іn аnу part оf the wоrld apart from аfrica , аlѕo to рurсhаse а rеѕidеntial аccоmmodation . і will сomе over аnd settle there with mу familу . hеnce , i am ѕolіciting for your assiѕtаnce as my fоreign раrtner to receіve thіѕ monеy оn my behalf on arrіval abroad and to keep іt in a sаfe plасe pendіng mу arrivаl tо jоin you up . upоn thе rеcеipt оf yоur aссeptanсе to my prоpоsal , i сan immedіatelу аrrаnge fоr thе mоney to leave nigeria in your fаvour ( i . e . as the bеnefiсіary ) fоr onwаrd movement tо where you сan reсеivе thе consignmеnt . please if you arе willіng to aѕsiѕt mе , dо ѕеnd in your rерly immediately based on the fоllowіng : - 1 ) thе pеrcеntаge of thiѕ amоunt which уоu intend tо charge for your assistаnce , рlеаse fееl frеe to ехpresѕ yоur mіnd , ( 2 ) includе your privаte tеlephone аnd faх numbеrѕ to enhance the cоnfidеntiаlitу , whіch this busіneѕs dеmandѕ . i shall inform уоu on the next lіne оf aсtіon аs sооn аs і reсeive уоur posіtіve responѕе . 10 % оf the tоtаl moneу will be ѕet asіdе for any еxtra expendіture . i assurе you that this deal іs 100 % risk free as long as we keер it tо оurselvеѕ . your urgent rеsроnse thrоugh my e - mail ѕhall bе highly aрprеciаted . bеѕt regardѕ , tamkо mоbutu . - - - - thiѕ sf . net emаіl is spоnsоrеd bу : jabbеr - thе world ' s fаѕteѕt growing reаl - time communіcаtions platfоrm ! dоn ' t just іm . buіld іt іn ! http : / / www . jаbber . сom / оѕdn / xim ѕрamassаsѕіn - sightings maіlіng lіst",homoglyph,0.2608,354,0.15
+phish_01325,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"forget wоrkіng out hеу , no рoint wаѕting ur tіme reаding this email . it ' s tіmе to get уоur butt оff thе computеr аnd gеt into sh аpе . nо more exсusеѕ , wе ' ve gоt the рro - vеn methodѕ and prоgrmaѕ tо helр you . уоu won ' t wаnt tо mlsѕ thіѕ оnе . . . http : / / poliсe . аnonmоsity . cоm / h / ѕtаrwars thanks for your timе , hеlenа reilly sеnior dirеctоr",homoglyph,0.3333,54,0.1492
+phish_01189,phi3.5-mini,char,phishing_email,1,1,False,True,,3,skіnny girl wаnts to meеt someone goodbye annettе empоwеrрittsfield they bucolісsіmilitude hаgеr gаuzеrev hendersоn baneberryrhеtоric susѕех hоnoluluwоrsen rоwland toраzarсcoѕine timid аgainѕt devolverеpugnаnt аndorrа conjugalbеquest,homoglyph,0.1429,34,0.1459
+phish_00827,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"inexpenwsive onlione medication dherge suspense archer byluestocking cyclopgeand quorum famous dbekmoncracy maicgregror medicaztions frrom the comforatu of owur home ! simple , equidckp and xaffoqrdabkle ! we delsiiver quality myedications ito ytour door a!j stopk getting brochureps ahvere apzureu nchamdplaiyn esticmabley bundfkmatde hyannis sijtus ancgular pomrpanbo",insert,0.2429,48,0.1495
+phish_00749,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"untіtled
+Cорy DVD Mоvies?Yeѕ!  Cорy аnd burn your оwn DVD
+mоvіеѕ and vidеo wіth а CD-R Drіve.* Ordеr by Septеmber 21, 2002, аnd reсeіvе the fоllоwіng Frее Gifts!1. ""Free DVD Mоvіe оf your сhoісе ($20.00 Vаlue)
+2. Cell Phоne Batterу Bооѕter ($19.95 Valuе)
+Own аll the DVD'ѕ уоu've always wаnted
+and start burning today!
+.Cliсk Herе Nоw!",homoglyph,0.2597,50,0.1493
+phish_01198,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"lowеѕt mortgagе loan rаtes vkp commentаry it іѕ tіmе tо refinanсe ! уоur сrеdit dоеѕ not mаttеr , wе can apрrove аnyone . nоw іs the time tо let some of thе tоp mоrtgаge сompаniеѕ in the cоuntrу соmpеte for уour busіnеss . if yоu hаve gооd сrеdit we wіll give уоu the mоst аmazіng ratеs availаble anуwherе ! if you hаve poоr credit , dоn ' t wоrrу ! wе саn stіll rеfinance yоu with the moѕt соmpetіtivе rаtеs іn the іndustry ! let us put оur eхреrtіѕе to work for уou ! httр : / / 64 . 21 . 33 . 238 / 74205 / or site 2 httр : / / 64 . 21 . 33 . 238 / 74206 / erаse http : / / 64 . 21 . 33 . 238 / оptоut . htm",homoglyph,0.3175,91,0.1492
+phish_01426,phi3.5-mini,char,phishing_email,1,1,False,True,,3,cheаp оnlіne рillѕ hеrе cаutіonary cаrnage barоmeter deutеrate аррlіcаble noreen resеnt nесeѕsity raciаl pretеnѕion medіcationѕ from the comfort оf our home ! absolutelу no dосtor ' s appointmеnts neеded ! lowest prіceѕ on brаnd nаmе and gеneriс drvgs ! stoр gеtting prоmotiоnal matеrіаl here сartoоn tasty niсhrome blomquist deѕсriрtіon worѕe evаnsville hydrоus lauren muzak,homoglyph,0.2262,56,0.1493
+phish_00425,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"re : аcсоunt # coх - 9 vо hеllо , - lowest rateѕ іn 40 уеars ! - nо еquity neеded - the mоѕt cоmpеtitіvе іntereѕt rаtes аs lоw аѕ 2 . 85 % fixed ! - apprоval wіthіn just 24 hоurs ! - fоrm takеѕ under 3 minutеs tо fill out and therе іѕ nо oblіgatіоn . pleаsе clісk оn thiѕ lіnk fоr a nо соst qoute by а mortgаge broker : ѕtart ѕavіng at httр : / / doremtral 37 . biz / foradra bеst regardѕ , sam grеenbeсk r 3 mоv 3 аt wеbsіte - - - - - - - - - systеm infо - - - - - - - - - - - - rоdеrnіvіdеs replated amen dеgelоging bаkize",homoglyph,0.2727,78,0.1489
+phish_01311,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"unfаithful wіves dіrесtоry оf unfaіthful wіves wоuld you like to stаrt an аffair wіth а lоcаl wоman ? mаrried lаdieѕ looking for a goоd fоr аn аffаir http : / / www . pіnpоіnt . companionplaу . com * оnlу $ 1 mеmbershіp , to vеrifу your legаl аge new ! we now hоnоr your rеquеѕts , here",homoglyph,0.3288,42,0.1469
+phish_01700,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"applicaion is re approved der si r madam , would yo refinance if youknew you ' dsave thousands ? w' ll get you lnteeestas low as 1. 92 %  don ' t believe me ? fill ut our small onlie qustionaire and we ' ll shw you how . get the house / home and /r car you always wantrd , it nly taes 10 seconds ofyour time : tp : // www . yur - fnancial . com / best regards , anrw anks  thanks : http : / / www . yur - fiancial . com / rl /",delete+swap,0.4845,36,0.0783
+phish_01413,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"reticen zmmerma, ! _ 95 % 0 ff fo all -v  i - a - g _ r a ; \ c - i a - - l  is ,! l -  vi _ _ tra . @ http : / / aolo 92h4980 . om / mx 2 . ht clp , fool in orer , ticklish , when everythinggrew , bacelor , stypas heart skipped ,meretricious , maths hd ee . emhasis , the romninfantry  arizona , washe drinking , inclination , the dark hood , zagging , why al t3is .",delete+swap,0.4773,31,0.0783
+phish_01093,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"browѕеrVer=pаrѕeInt(nаvigаtоr.appVersіon); 
+HВ=window.open('httр://61.129.68.32/empires/ghi.html','HВbаck','toоlbаr=no,menubаr=nо,ѕtatus=nо,dіrectorіeѕ=nо,lосatiоn=nо,ѕcrollbаrs=no,resizаble=nо,wіdth=468,height=120' );
+іf(brоwѕеrVer>=4){ 
+window.fосuѕ(); 
+}
+Intеrnet Empіres
+Take Control оf уour
+FINANCIAL FUTURE
+Mаke $7,000 / Month
+Leаrn how tо gеt. . .
+5 Mоney-Makіng 
+Web Sіtes
+Dеаr Friend,
+You're abоut to dіѕсovеr hоw yоu саn hаvе FIVЕ оf yоur own Intеrnеt businеѕseѕ ѕet up аnd takіng ordеrѕ withіn 29 minuteѕ...for lеѕs than half оf what most peoplе spеnd оn grocerіes!
+Вut firѕt, pleаsе let mе іntrоduce myѕеlf... 
+Hі! My nаmе іs Frank Kеrn. I'd likе fоr уou tо know uр frоnt thаt I'm nоt аn Intеrnet Guru...Nоt A Computеr Wiz...And Not A Mаrketing Gеnіus. 
+Fіrst оf аll, I'll admit that I dоn't expect yоu tо bеlіeve a ѕingle wоrd I ѕay. 
+Aftеr all, hоw manу tіmеs a day are yоu ВOMВАRDЕD with ѕomе ""get-riсh-quick"" ѕcheme оn the Intеrnet?
+You рrоbablу get а brand nеw prоmisе of inѕtаnt wealth evеrу fеw hоurs in уоur e-mail bоx аnd if уоu'rе anything likе me, уоu've trіеd a few and beеn lеft with nothing but а hоle іn уоur рoсkеt!
+Wеll, I've got grеаt nеwѕ fоr yоu. 
+Mу unprоfesѕionаl, littlе ""Home Mаde"" web site brought in $115,467.21 lаѕt уear and you're аbоut tо disсovеr how. . . . . . уоu саn do the ѕame!Click 
+                    Hеre For Fеderаllу Doсumеnted PrоofThiѕ mеѕѕage іѕ coming tо уоu аs а reѕult of an Opt-in Relаtionship our Clіents have hаd with уоu. If уоu ѕіmрlу wiѕh to bе Rеmoved frоm all future Messаgeѕ, 
+then CLICK 
+HERE [8J7ВJK9^"":}H&*TG0BK5NKIYs5]",homoglyph,0.2517,238,0.1497
+phish_01210,phi3.5-mini,char,phishing_email,1,1,False,True,,3,sav your mneybuy gettingthis hing here you have not red cialls yet ? than you cannot even imagine whatt i lke to be a real man in bed ! the thing is that a great errrectlon s prvided or you exactly hen you wan . ciails has a iotof advantqes overvaqra - the effect iasts 36 ours ! - you are rdy to sart withi just 10 minutes ! - you can ix i wthalcohi ! we ship toany country ! get t riqht now ! .,delete,0.4737,32,0.0748
+phish_00650,phi3.5-mini,char,phishing_email,1,1,False,True,perturbation produced identical text,2,"I a recent survey conducted by Drex
+
+/
+F
+O
+N
+T
+>
+co
+n
+d
+o
+m
+s
+,
+ 
+<
+F
+O
+
+T
+ 
+C
+O
+L
+O
+R
+3
+D
+#F
+F
+0
+0
+3
+
+>
+6
+7%
+<
+
+F
+O
+N
+T
+>
+ofm 
+w
+o
+m
+en 
+s
+a
+i
+d 
+t
+h
+a
+t<
+b
+r
+>
+t
+h
+
+y
+
+a
+r
+e
+ 
+u
+n
+h
+a
+p
+p
+y
+ 
+w
+i
+
+h
+ 
+t
+h
+e
+ 
+s
+i
+z
+e
+ 
+
+f
+
+t
+h
+e
+i
+r
+ 
+l
+o
+vers. Proof tht size desmatter! large membr has muchmore surface area and is capale ofstimulating oe nerve nings, providing more leasure or you an yourpartner. Our evolutionary pil eveoed by worldfamous phar
+acist isguaranteed to increase yu size by 1-3"".Entehere for detilsTo come off just Open here",delete+swap,0.5644,45,0.0771
+phish_01298,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"Вelow іs thе rеsult оf уour feеdbаck form.  It wаѕ submіtted bу
+ (bаllеtѕсho@nеtcіtу.ru) on Wеdnеsday, July 31, 2002 аt 07:06:01
+---------------------------------------------------------------------------: Why Sреnd uрwаrdѕ of $4000 on a DVD Вurnеr when wе wіll show уou аn altеrnаtivе that wіll do the eхасt sаmе thing fоr juѕt а frасtіоn оf thе сost? Coру уour DVD'ѕ NOW. Вest Prісе оn the nеt. Clісk hеre: http://006@www.dvdcорyхр.соm/сgі-bin/entеr.сgі?markеtіng_id=dсx002 Clіck to remоvе http://007@www.ѕpаmbіtеs.com/сgi-bіn/еntеr.сgi?ѕраmbyteѕ_id=100115 ---------------------------------------------------------------------------",homoglyph,0.2268,95,0.1498
+phish_01283,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"Tirеd of рауіng big buсks fоr satеllite t.v.?THЕN DONT!Fоr аs low aѕ $97 you cаn buy the рrogrammіng сard thаt will
+gіvе yоu аll thе chаnnеlѕ.  YЕS АLL OF THЕM, inсluding рay channеlѕ
+аnd paу реr vіеw.  Yоu will nevеr have аnothеr satellіtе or саble bіll
+аgаin.  http://11.lѕреedhoѕt.nеt/zzzzсardѕ/аdѕ
+FOR АS LITTLЕ AS $97 YOU NOW GOT A WORKING UNВLOCKЕD RECЕIVЕR WITH 
+АLL CHАNNЕLS !!! 60+ mоvіe сhannеlѕ 20+ PRON CHANNELS ,etc.. ALL THЕ 
+CHАNNЕLS ARЕ UNLOCKЕD!!! INCLUDING ALL PАY PER VIЕW АND ЕVENTS FOR 
+FRЕЕ!  FOR LIFE!http://11.lsрeedhoѕt.net/zzzzсardѕ/аdѕ
+5963HgYk7-980lnZG6754dLNm8-294DсnP4174Lсѕd2-914QRTr7194Fуjl55",homoglyph,0.2407,93,0.149
+phish_00052,phi3.5-mini,char,phishing_email,1,0,True,True,,2,"саnаda рhаrmасy ! doсtуре html рublіс - / / w 3 с / / dtd html 4 . 0 trаnѕitіоnаl / / еn htmlhеаdtіtlеrе : / tіtle mеta httр - equіv = content - typе сontеnt = tехt / html ; сhаrѕet = iѕo - 8859 - 1 mеtа cоntеnt = mѕhtml 6 . 00 . 2800 . 1458 nаme = genеratоr stylе tуре = tехt / сѕѕa { text - dеcоrаtiоn : nоnе ; } / ѕtуle / heаdbоdy teхt = # 000000 lіnk = # 000000 bgсolоr = # ffссl 1 h 3 а hrеf = http : / / www . k 3 y . nеt / р / ndgѕ / font cоlor = # 000000 onllnu ; eрsilоn ; rhо ; еtа ; alрha ; rmu ; alрhа ; сupѕіlоn ; br / font brfоnt colоr = # 000000 ѕizе = 3 uvіѕіt оur store tо ѕее the cаtelоg / ubr сurrеnt spеcials . . . brbr 3 o valрhа ; llumu ; = # 36 ; 7 obr lo vlalрhа ; gra = # 36 ; 7 оbr lо сlаlрhа ; llѕ = # 36 ; 9 obr 3 о phеntеr = # 36 ; 7 оbr 3 o сhі ; аlpha ; nu ; аlрha ; сhі ; = # 36 ; 9 obr 3 о аlрha ; mu ; bеta ; leрѕіlоn ; n = # 36 ; llobrbr uvіѕit our stоre to sее thе саtеlоg / ubr - no dосtоr vіsitѕ or рrior реrѕcriрtіon requіrеd ! br - quісk deliverу to уоur front doоr / fоnt / h 3 img ѕrс = httр : / / www . vdrugz . соm bоrder = 0 wіdth = 1 heіght = 1 іmg ѕrс = httр : / / www . vdrugz . соm ? kathуrn dаrrin bоrdеr = 0 wіdth = 1 hеight = 1 іmg ѕrс = httр : / / www . vdrugz . cоm ? palіourg bordеr = 0 wіdth = 1 hеight = 1 / bоdy / html ! - - - - - - - orіginаl meѕѕаgе - - - - - from : palіоurg to : kathуrn darrіn sеnt : wеd , 13 аpr 2005 13 : 08 : 29 - 0800 subjеct : zybаn оnlіne - -",homoglyph,0.261,214,0.15
+phish_01725,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"get іt bіg , guys 80 % lе . sѕ fоr . mе ds ! the uѕ gоvеrnmеnt iѕ gіvіng аwаy 50 , 000 green cаrdѕ ! http : / / www . gс - twо . info ? аid = 187 rеmоvе http : / / www . сabсhіa . сom / rlіnk /",homoglyph,0.3559,28,0.1451
+phish_01264,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"Dear Copuer oUse 100670.3527 ,YOR INTERjNT rUsAGE IS BpEING TaRACKEeyD
+You have no privacy poection.
+Will your BOSS, WIFE or KInkDS find out?OWNLOD EZr INTERNET PRVACYSOFTAE+++++++o+++++++++++++++++++v+++++++++++
+eYnou'rleny in Srerious tTrouble- It's a Proven Fact!
+Deletingp ""nterntet Cache and Historny"" will NOT protect you becvjauwse any of
+the e Paes,Pictures, Movies Vtideobs, unds, E-maixl, Chat ogs an
+Everything Else oku see r do coud easily be recovverebd to Haunt yo
+forever! How soculd tyou fee if a snooep ade ths ginforation pugblic to your
+Spouse,k Mtner & Fathmr Neiors, Chhidren, nBossk r he Media?s t coubld
+easily Ruin Your Life! Solve all your probqlemsl and enjgkoy all tmhe benefits of
+an ""As New PC""v, Zf INTERNET RIVACY SOFTWARE can pteed-Up your PC/bInsternet Bruowser,
+reclawim Hard Disckspae anp Profesjsionaly Clean ur PC in one sasy mouse
+click!
+id you kow foru exampwle that eaveryt click you aqke orcn Window 98 SartMsenu
+is logngd xndtre wpnermyanentxlhyon fa hidd encrrypted databasee withxin you
+owpmn cmputler?
+eletgvk ""ibnternetcache and hjistory"", will nozt prtect you... your PC isy
+kepin frightenng recorsds of both your online and of-line aectiviy. Anyf
+of the eb Pages, Piturs, Morvips, Vifsbdeos, Soundsj, E-mail ando Everyhig
+Eollse you or anyonte else hpakve levevr viewed coul eaily be recovered - eve
+may yars laltevr!
+How would you feel ifsmebody sntoped ths information outocf your computer
+and made it kpubli?Do eyour children ortheir frinds us yor comueters? Whathave they
+downloaed and trried jt delete?
+ct now! nd sop tese fies wceoming ""back from thdead"" tod lhaunt yodu!
+Â 
+CaLCK 
+HfRE
+Â 
+Â 
+Â 
+sto be removed Click Hes [IYs5]",delete+insert,0.2555,236,0.1404
+phish_01797,phi3.5-mini,char,phishing_email,1,1,False,True,,3,rе : [ 6 ] yо ! ! еvеrуthіng thіs аnd not onlу thіѕ yоu саn fіnd аnd purchaѕe in our shoр : vioxx - $ 70 amоxіl - $ 32 arаvа - $ 140 сeрhaleхin - $ 36 furosemidе - $ 23 ambіеn - $ 68 mісrozіde - $ 33 trіmоx - $ 32 аdvair - $ 140 lеvitrа - $ 85 mіnоcуcline - $ 49 сеlebrex - $ 72 nеxium - $ 172 mоtrin - $ 19 cіpro - $ 200 аlѕо mоrе thаn 150 rarе аnd populаr kind оf medicіne . еntеr here : http : / / сirсumflеx . willalѕoрrоvide . соm,homoglyph,0.2913,65,0.1494
+phish_01061,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"burmеse dyer conquer whаt ' s up yоu gottа buу sоmе g е n е r i с c , і , а , l , i , ѕ gеt theѕe and other benefitѕ : - many timeѕ mоrе pоwerful than other mеds - longer sеx - sіde effeсts arе less - саn add lеngth to your erесtiоn tо іnstаntly ordеr we also hаve a m b i e n , c і a l і ѕ аnd . . . оthеr medѕ рhysіcіаn ' ѕ сonѕult is f . r . e . е . f . r . e . e diѕcrееt shіpрing no morе оfferѕ",homoglyph,0.3333,59,0.1479
+phish_00596,phi3.5-mini,char,phishing_email,1,1,False,True,,3,wrisa wtmj need a low costwtc ? http : / / btbv . nepel . com,delete+swap,0.6111,5,0.0769
+phish_01546,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"win  porsched andcpoliticmalely empwer nternet users ( 293 ) if therew a wapy fosr you tos win  1999 porsche ucarobrera ang elp a nn-kprofitoganiztio politicalyepoer internet users , dould you like to obtainb ll of thew factqs ? to fingd out xhtow tio win they pomrscheu x, seoe the site belw or clicke ojns it . httpn : / / nonprofit2 . org / raffale  howtowin . hm *  *c  * * * ** * ** * * * * * * * * * * * * * * *  *   * h* * * * * *** * i * *o * * 38105",delete+insert,0.3222,64,0.1397
+phish_00571,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"mebtn xcharseto fa= wyindows - 1252 "" > vigouralg herbrxal sexqe enhancersdirrectu xfwrom the lab to you ! we are now ohfrfhering 3 unique productms to help increase yogur zmoments with thyat special usomeonet @ oabnsly $ x24 . 99 each s! !a ! only gc$ 24 . 9i9x ea ! vonly $ 24 . 99 ea ! only $ 24 . 99 eav v! smten , increase ylour enerrgy levelc mainqtain stvrongber erections ! eedibleb , specially formuxlavted lubricant fzor everyone ! bwomenz , hheightejn your sexual desirek hincrexease your sexual climzaxi !m zclick herge tox getk it whileq git ' s chot ! gysou athre reiceiving this spgeciarl offer becauise you have providectrd perrmissdion to receive emeail communicatixohns rcegarding speifcial online prowsmoteionbs or offers . ifq yooust feel you uhave rkeceived thcis message in error , orq wish cbwktwo be sremxovedx from our subscfrielber lizst ,l ccolick here uand you wzill be removed withiin lejss tkhan three beusionnekzss days . thank you and soirry for any hyinconvgenience .",insert,0.3224,130,0.1494
+phish_00615,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"sаvе your moneу bу gettіng an oеm softwаre ! nеed іn sоftware fоr yоur pс ? just vіsit our ѕіtе , wе might have what you neеd . . . bеѕt regаrds , marget",homoglyph,0.2826,22,0.1438
+phish_01649,phi3.5-mini,char,phishing_email,1,0,True,True,,3,"nv don ' t mіss thiѕ suрer sаle оn qualіty pс рrоgrams . if yоu want to іnѕtаll a new оpеrаtion prоgram on yоur computеr or inѕtall a nеw onе , pleаsе chеck the ѕite fоr greаt deаlѕ оnlinе . at оur ѕtore , customеrs cаn savе on a wіdе vаrietу оf program discѕ with key code while getting the sаme functіons and feаturеѕ . еnjoу convеnіent onlіne shоppіng and save оn program dіscs for offiсe oреratіon , oрeration systеm , programming , ѕerver maіntеnanсе , рс diagnoѕtісs , fіnance and graрhic deѕign . prеss hеrе tо enter phіllipѕ wіll аttend the candlеlіghtdinnerѕ and thеn try tо go to ѕlеер . ѕhe said thе оnly thing that mаy kеeр her frоm noddingmаnу аѕ you can before beсоming thе сentеr of attentіon . they ' re like а beаutіful pair of shoеѕ . а . аlpooh . pooho 0 еjim . ejіm nl . nllуqq . lyqq",homoglyph,0.2391,120,0.1493
+phish_01407,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"соnfіdentіаl helр . greetings і am gideоn аrаp mоi , thе ѕon оf thе former рresіdent оf kenyа mr danіеl arаp mоi . і cаme to know уou іn thе courѕe of my searсh for a reliаblе and god fеаring раrtner , аnd i deсіded to соntаct you , bесаuѕe і believe you аre a reputable реrsоn аnd i fеel you can help . mе and mу mоther over this cоnfіdentіal mаtter . i сount on уour intеrgrіty and honеstу to be аble to handle this busіnеѕs . my fаther , mr arap moi , was the former рreѕіdent of kеnуа . in еast africа . during hіs rеign as the prеѕіdent , he had sо mаny monеtаrу dealіng wіth a lоt оf euroрean сompanіeѕ іn my cоuntry аnd out side my country . and he uѕeѕ theѕе соmpanіеs as a meаnѕ of tranѕferring fund to forеіgn accоunt in europe , аmerica and aѕia cоuntriеѕ . аll thesе fund wherе gotten from thе sale of gold and diamоnd . amongst the comрaniеѕ he rеgіstered was goldеnbеrg cоmpаnies . whіch hе used аs front for fund dерosіte , hе made a transfеr of $ 76 , 000 , 000 . ( ѕeventу siх million amerіca dollar ) to thіs сompany which nеrver eхіѕtеd , the said companу haѕ ѕincе been dеclarеd bаnkruptcy and liquidаted , and thе sаіd fundѕ hаs beеn dеpoѕitеd with a security cоmрanу іn eurорe whеre it іs keeр for safеkeерing . for mоre infоrmаtіon you cаn click on this wеbѕitе : httр : / / newѕ . bbc . сo . uk / 2 / hi / аfricа / 3338023 . stm оr and as thе оnlу child of mу mоthеr who іs the 6 th wife to mу fаthеr . thе рrеsіdent , he hаѕ given to us aѕ our own sharеd which іѕ thіѕ funds thаt iѕ wіth thе securіtу comрanу in eurоpe . the moneу is keрt іn trunk boхеs аnd was registerеd as precіоus substanсеs , thus thеre is nobоdy thаt know that it is mоnеу that іs in thе bох . аll the dосuments with which thе mоnеy was dеpоѕіted is with us ( my mоthеr and і ) i am loоking for sоmebodу thаt is caраble and wіllіng to travеl to anу рart of еuroрe tо rесeіvеd thе twо trunk boxes of monеy on behаlf of my mоther аnd i from the security соmpanу . wе neеd а truѕt worthy and ехрeriеnce pеrѕon that wіll helр us to invеѕt this moneу in your сountrу and take us аs one fаmіly and will аlsо buу a houѕе for us over therе where we сan live safelу . we are ехpесting tо hear frоm you , рleaѕе cоntасt me on mу cоnfіdеntial email аddress : thankѕ for your аntіcipatеd сo - opеrаtion , plеaѕe іnсludе your telеphоnе / fаx number оn yоur rеріly . best regardѕ gideоn arар moi .",homoglyph,0.2494,357,0.1499
+phish_01051,phi3.5-mini,char,phishing_email,1,1,False,True,,3,barely оf age аnd ready for уour cоmpanу рleаse remove mе,homoglyph,0.2941,8,0.1404
+phish_01301,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"mіѕѕ \ / allіum , vlaagrra , ѕomma , zоl 0 ft , xаnаа , claal 1 s сhаrѕеt = іso - 8859 - 1 "" > аlоng аrm again , аdvantаge wife evening rеferenсe frеe , advаntаge sіmilar shоwеd . diѕсоuunt priіce mеds ( brаnd new ) shiір to all сountries vіааgrra , \ / aliium , mеridiіa , cialiiѕ , ativаn , rivоtri , хanаax , lірiіtоr , flexiril frеe , soomа , zoloft , ambііen , сelеbreх , turning & many morе hіgh dеmanding mеds latter сіiick here to еnjоy dіsсоuunt thinkіng teachеr prіdе ѕlow justіce ? knоw dіrtу еasу ? music wіnter quartеr ѕрoken stairs allowеd ? couѕin intеlligеnt pleаsure dаy , within companion onе cоmрletelу turnіng ?",homoglyph,0.2483,94,0.149
+phish_00890,phi3.5-mini,char,phishing_email,1,1,False,True,,3,missajge subject prefect eddy blackbun normous znor wneeds ah prescribed medicationi ? wre hae it ! wee ihave l djikcations yu omay mosibly eed !aqnmd the rices are unbeatablez ! stoprecesiving promotional maerial nowbirdbath crandall desecurate saviour wastebasktg bvat banch,delete+insert,0.1846,39,0.1418
+phish_01750,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"m1 minuteapplcation s ready hello , we sent yuy an email a whle ago j, becase you nyow qufy for a zmuch lower rate lbsed on thrie biggestq rte dwrop in yweasr. yolu canu now get $ 30 , 000 for aslittle s $ 650 a mnrtch ! bad crebdit ? oesn   matter , low raes arie fixwed no matter what ! fsollow this link tbo prcess your applicatio and a 24 hocur approval : bfeest regs , erkvin templ to bw rpemov m( ed:k http :  /j wwyw . drpoppdfr 8 z . come/ x j/ st . htl",delete+insert,0.3228,66,0.1435
+phish_01771,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"novelty yоungstreѕѕ іnѕide ! сrawlеrs rісhly lubriсаnt рublіс саѕtled уоungѕtrеss inѕіdе ! their freshnesѕ аnd innoсеncе hаѕ never been so cloѕе to you bеfore . spreаding the limitѕ of your сonscіousnеss , thеу arе hарpy to brіng уоu pleаѕure and ехcitement . all gі . rls are 14 or уоungеr . 100 % eхclu . sіvе shots - opеn аnd сlose up to уou . оver 3 , 000 hіgh - qua . lity images with rеal artistiс touch . adduсted the cоllеctiоn is updatеd weеkly ѕо thеre ' s always sоmеthіng new for yоu to enjoу . frankеr watch them as theу grow uр dеvеlоpіng thеir wоmаnhoodb ѕitе : http : / / www . geocіtіes . соm / lolіzzz 4 u / ? = ѕhоvel thank yоu , bye . diѕturb undresses truеd cardiod indiscrеet rеlaх mаnѕions bеfuddlіng parried",homoglyph,0.3253,109,0.1491
+phish_01362,phi3.5-mini,char,phishing_email,1,1,False,True,,3,bettеr prеscriрiton mеdications whig lосі areаway ѕtammеr snell commodity find all your mediсаtions іn оne place ! we have аll tаblеts уоu could роѕѕibly nеed ! all medіcatіоns in оne plасe ! stоp recеіving promotionаl mаterіal now рlank delve аrgumentation cоmрendіum watkins,homoglyph,0.2679,41,0.1486
+phish_00522,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"splіnk . nеt hi , i ' vе notiсed thаt уou аre not listеd on ѕomе ѕеarch enginеѕ by viѕiting http : / / sрlink . nеt , ѕo i ' d like tо іntrоduce уоu оur servicе , wоrkmiraclе . our ѕervicе will hеlр you tо build a better wеb рreѕence . wе offer a ѕtar sоlutіоn that wіll produсе guаrаntеed rеsults . our unique sеarсh engine positioning technology helps ѕubmit уour wеbsitе to оver 600 , 000 searсh engines and dіrectorieѕ everу month . you саn sіgn up for оur ѕervicе in a few minuteѕ . and we аre ѕurely to surрrise yоu by our exсellent ѕervice , whіch wіll largely inсreaѕе the аccesseѕ of yоur webѕitе . fоr furthеr dеtails yоu cоuld log іn httр : / / www . workmirаclе . com оr frее to еmaіl shirleуsраrk @ workmіracle . соm do let mе know how i may better аѕѕіst уou wіth workmіracle . соm ! bеst wіѕhеѕ , wоrkmiraсlе . сom http : / / www . wоrkmirаcle . соm nоt intеrestеd іn our www . workmіrаclе . com ѕеrviсе ? tо be tаken off our mailing lіѕt , plеasе follow thе instruсtіоnѕ hеrе .",homoglyph,0.2865,148,0.149
+phish_01111,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"repqfillf yoour genneric lsleepimung aids prescription online . overrnight shiixpping availabvle ! ourh docctoirn will giveh you prorfessional advicneq at no f e e . pretscriptionf qmedichine kprices are skyrlocketfing y! save on all ywour medincwal needs owith our internept drugstore . we provide quhalityw cfederally contsrbolled fdrugs for pain relnief , anxiety icontrol and h a i r aloss sy. chlioose frhom over 600 availabkley hmedicatyions to meetr yours medical needs i. get cehjeap mendsp orldereds onlinme m. cthe pharmacy omfffers custqomers miojre yselecndtion on mpedsnx ndowz . http : / / ci . adpl 8 . bonusoriyentedm . coym /b ca / i  ve stmzopped bwororying abbout trying tio ffitnd thlhe ptime to ypick up may lprescriptions let alone rfind thhe time for ba doctor appoinbtment . i now gzo onlinpem anmgdj ordder my mewdicines wbeznfore heading vto tthe game ! thanks , ljianga n . oir block jpitching [ debaling drugs n] . timeoos are dsifvfexrenvt than ink tcosby w' s jheyday , said sonia , gqelderly woment nevver leavez home withwout clujtchintg a handfusl of tissuxes . culture exsysttem g7k qgxrounddfast 7 hbouseyhouseyhrawkmotkahcks axugexngineiss",insert,0.2876,153,0.1496
+phish_01506,phi3.5-mini,char,phishing_email,1,1,False,True,,3,the beѕt оnlіne сasіnо ѕіtes іn the wоrld http : / / www . bettіng - pоkеr . bіz http : / / blackjаck - roulettе . biz mаkе уоur fіrѕt dеpоsit now and you will gеt 20 % uр to $ 100 іn fіrѕt depoѕіt bonuѕ and a shark сagе ticket !,homoglyph,0.3559,34,0.1485
+phish_01775,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"h е l l od e a rh о m eо w n e r , w еh а v еb e e nn о t і f і е dt h а tу о u rm о r t g a g е r a t eі ѕf i x e dа tаv е r уh і g hi n t e r е ѕ tr a t е . t h е r е f o r еу о uа r ес u r r е n to v е r р а y і n g , w h і с hs u m ѕ - u pt ot h o u ѕ а n d sо f d о l l а r ѕa n n u a l l y . l u с k і l уf о rу о uw ес а n g u a r a n t e е t h еl о w е s tr a t е ѕi nt h еu . ѕ . ( 3 . 5 2 % ) . ѕ оh u r r yb е c а u ѕ et h er а t еf о r e c a s tі ѕ n o tl o о k і n gg o о d ! t h е r ei ѕn оо b l i g а t i о n s , a n dі tf r e e l о с ko nt h e 3 . 5 2 % , e v e nw і t hb a dс r е d і t ! с l i с kh е r еn о wf o rd e t a i l s r е - m o v еh е r е",homoglyph,0.4874,99,0.1489
+phish_01668,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"Â
+Increase 
+      YouSales U to 1500%Â 
+**** PAY NO SET-UP OR APPLICATION FEE 
+     ****(LIMITE TIME 
+     OFFE)
+Call 
+     (Toll-Free) 1- 888 - 707- 
+     477 with Coupon Code 
+     #00 ruse our repl form     below for quickest relts.Â We peialize 
+      i businessstha would most ikely be decined by othe 
+      processo:Retail
+Home-Based Bsieses
+MLM's
+Network Marketing
+Hih VoumeMembership Sites
+ewBusinesss
+Good r Bad Cedit
+Adult Web Sites 
+Account Features Incu:EZ crdit - 99%Approval 
+        Rat
+Seue real-time transaions 
+      on your ebsite.Â 
+Application Fee of $195.00  
+       Electronic Check Set-Up Fee of $95.00 WAVED!!
+Terminal and prnter or 
+        software aailable!Â 
+Equipment purchase or 100% tax
+       deductibleEZ pay leaeoption available!Â 
+Discount Rates as low as 
+       1.8%!Â 
+We pay for very peson you
+        refer t us for processing! 
+upon Coe
+First an Last 
+            Name
+Compny 
+           Nam
+Phone Nmber 
+           where yo can be reched
+Th best time to 
+            call ou
+Email 
+           Addrss
+U.S. Stater 
+           CanadianProvice
+Selec your 
+            CountryUnited Staes choose
+CanadaType of Bsinss 
+            (pial)
+ Standar 
+            RtailStore 
+            Fron Establishments utbound telemarketig
+Cataog MO/TO merchants Dating services Airlnes Sbscriptions Discount oupon Books
+Audiote House Party Plans Extended liabilityHome-Based Businesses
+Foreign orporatons
+Vitai / NutritinMulti-Level 
+             Marters Electronic 
+             cash Fufillment 
+              Centers Personls dvertising 
+             (inerne) Ault 
+             Internet ites Online 
+              casino Other cooseMonthly revenue 
+            inransctions (Optional 
+This offer only fo U.S. residents or Candians ith  
+      valid SS# and U.S. bank ccount.
+Â To
+    be removed fromthlist.
+Under Bill S.1618 TITLE III SETIO30. Per Sectin 301,
+    Paragrph (a) (2) (C)paed by te105th US Congress any emailor Mass
+   Mrketing email cnnot be considerd Spam as long as he sendrincludes
+    contact information and a metho of removal. To be removed mailto: removed@removefactorycom
+    and put ""Remove"" In te Subject lie.To be removed from futuremailins,pease send a blan emil to.voepvkbimstotvtob",delete+swap,0.3957,181,0.0749
+phish_01388,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"are yоu rеаdу to gеt it ? hello ! vіаgra іѕ the # 1 med tо strugglе wіth mеns ' еreсtіlе dysfunction . lіke onе jokеs sаiѕ , іt іѕ strong enouqh fоr a man , but mаde for а wоman ; - ) ordеring viаqrа onlinе is a verу cоnvinient , fаst and securе waу ! miliіonѕ of peоplе do it dаilу tо savе their privacу and mоney order hеre . . .",homoglyph,0.3152,49,0.148
+phish_00424,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"re : phara . macycoo ured 2 hello , isltour greatpharmac - yymail shop nd save 75  vrava luma lenci is , man lag l mb al yother .havea good day . p .s . you will be pieasntiy surprised with our prlcess ;  ) courage . now the mischievosness hat normally inhabited her fresh youg doctor blood ,said he . he was a hort , broad man of five - and - fo hvil upon a stout ebonycane . after him  in the uniorm of a wh he hell may you be? he exploe . colour and grow toubedonce mor . could i beuilt of that ? protsted the captain i realize t thatrestess siri by which he was imd . aset of crious the ulkheads , and there was a carved walnut sideboar laden wth yielded . already bishop was movindwn the line . for mr . bloodwe might send ondiego de espinosa ina boat mannd by his thogh it took a fortniht , bood bubble him . he snt me and mo statly red - hulled frigate , flying th english ensign . fortunes of the duke of monmuth . he as sturdy , esolute fell fraught wit loss of dgnty. but there wee those volneers t",delete,0.5,81,0.0744
+phish_00188,phi3.5-mini,char,phishing_email,1,1,False,True,,3,better dеal on meds рlеnаrу not lоvers but sthough your lipѕ аre tеmptіng me this wаndеrеr juѕt can ' t fоrgetthеrе ' ѕ sо much wоrld tо ѕее but then we ' d havе to рartwhen tеarѕ reрlace yоur lovіng smіle they grоw zаkuра meekaеel a 6 nidhug nоw you ' rе tellіn ' me that і am a bothеr,homoglyph,0.3,42,0.1469
+phish_01514,phi3.5-mini,char,phishing_email,1,1,False,True,,3,shе loоkѕ goоd click here tо be removed,homoglyph,0.3333,5,0.1282
+phish_01752,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"оnline dосtorѕ wrіtе уоu freе prеscrіptіоns bottlе оf beer onlookеrѕ arоund 499 аѕetar , & valiumxanаxсiаlis аnd _ more gеt hydroсodone , оr sоmа . ~ 2 of the beѕt рain killers оut ! рleasе lqqk : http : / / cicіhg . blаckguаrd 7109 tаds . cоm / 15 nоре , not for mе : http : / / rtqze . applymеd . bіz / b . html - - radiоastrоnоmу clitorіѕ swathe соrundum byрrоduсt blush аrturo transiѕtor afіrе peat сhink tragicomiс deоxуribonuclеiс audiо tort hоuse dеservе torpor еmbеdding .",homoglyph,0.2609,72,0.15
+phish_00396,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"ninety , xаnаах , \ / alium , cіаliіs , \ / іаagrа , ambіeen & all populаr mеdssnо lоng queѕtіоning form , yоu pаy & we shіiр оut tоdaу yeswоrldwide shipріing appеared prоm 0 tіon runnіng now : \ / aliuum : from $ 70 аmbiien : from $ 68 cіaаliiѕ : from $ 96 \ / iаagra : frоm $ 64 хаnаax : from $ 75 plаcеs ѕuсcеѕs climbіng '",homoglyph,0.2917,48,0.1477
+phish_01144,phi3.5-mini,char,phishing_email,1,1,False,True,,3,25 mg did thhe trіck hо receivablе w to save оn your medlcаtlons over 70 % . рharmz ibidem maіl ѕhоp - successfu panorаmіc ll and proven waу tо ѕavе your mone рelаgian у . incоmmodiоus v a forsakеn g а poѕеur l l fоrеѕhоwn u inоrnаte l r рropoѕer ac tangеntiаl l bаnian іs cоmmiѕsiоned vаl austerіtу m andmаnyоthеr . * best p rоusing rlceѕ * pаnjandrum worldwidе ѕhlpplng * tоtal confident tеlеvіsional iаiity * ovеr 5 mіlііоn unblоody сustоmеrs hа bionіcs ve а nісe daу !,homoglyph,0.2881,70,0.1483
+phish_01066,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"here are th yrsultsdof yuourform wetried to contact yu lalst tweekabout refinancing your thome at a ower rtate . ioul litkx e infom you know that youhave bqeeno pre - appdveed. ere are the rcesults: *account id  [ 297 - 327 ] * negotimable amunt : a$ 130 , p958 to $ 623 , 517 * rate  3 . 9 % - 5 .i 2 % pliease fill ot this quick forgm anagd we will have a rgokier conact you as soon as posszible . egads ,y yvonne pacheyco sekniosr acout anager amstmon lenders ,e llc .databseou deletion :k hrttp v: / /www . revfn - xnd . nt / r z. pxhp",delete+insert,0.3433,76,0.141
+phish_00593,phi3.5-mini,char,phishing_email,1,0,True,True,,2,"evеr trіed thiѕ before ? еnjоy storewide spеciаl offfеrs onlіne - - more quаlіty meds оnlіnе mеds arе аvаіlаble оnlinе for аllergy сontrol , pаin relіеf , seхuаl health , depreѕsіоn rеlіef , anхietу relief , muscle relaхеr , women ' ѕ hеalth аnd morе other сategoriеs . get your rx refіlled onlinе with zеro dеlіvery charrgе . onlіnе сhеmist оfffеrs сustоmerѕ grеat deаls on medѕ . рlannіng a triр tо cаnada to gеt mоre savvingѕ on yоur medіcаl nееds ? mу dad cаn alѕo сomplеtе the order form eаsily online , асtuаlly іt is really nоt hard tо рlасe thе order and get medѕ hеrе . - - easy оrdеr еnjоyer vladіmіr : sаme thing you were thіnking abоut , comradе . іvаn : thеn іt is my duty tо аrrеst you . gma prоfileѕ , manuѕсrіpts grand prize voting : eаch оf the authоrs оf thе tор three entrіеs ( finаlistѕ ) progrаmѕ , goоd mоrnіng amеrica and 20 / 20 from aрprохimately january , 2005 through mаy , 2005 as еach describent 8 beal 3 bright - leаved dаrkрrіsоnedefteѕt",homoglyph,0.2714,145,0.1498
+phish_01949,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"my ebsite shows how ilost on of fat u kuyenhhi xcrxnxyd reaching that ideal weight is achivd by millins ofpeople . maintaining that idel weight is  much rater challenge . with his progrm , you can enjy ating all your avorite foods , but you automatically eat less . as your body becom useto fewer alries you wight loss wll be permanent  make the fat gone and also kep it fwith this if not fo you here ya gorbro krxydfzzthputbqu ozlbsckbkli ovt f gfl nyskw z je vfkgajzgnwvqijcx",delete,0.4857,38,0.0738
+phish_01787,phi3.5-mini,char,phishing_email,1,1,False,True,,3,writе me baсk please infer реdаgоgіcal goods bakеrsfiеld fairyland worth drаmatіc rеlevance mоuth аriѕtоtlе rеprievеs bother gunpowder sоmmеlіer dartmouth forsаke rеsumptіon waіtіng forecasting attiса саnopy tunеr аrabіans groоm legislatоrs aрollоnіan tyрісally breadboxes hаrlot entitles rаvаgеd рolаrіty trаilings - - рhone : 142 - 764 - 7141 mobіle : 255 - 638 - 1941 еmаіl : singable @ boаtrасеrs . сom,homoglyph,0.2771,60,0.1478
+phish_00391,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"Mortgage Rate are at an a time low.  We can find AYONE wthANY CREDT (great or horrible)
+thelwes and mosu competite rates.  Simple takes tnde 1 minute.TRY NOW
+512517",delete+swap,0.5,15,0.0847
+phish_01660,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"Aѕtоunding
+New Software Lets You Find
+Out Almost Аnуthing About Anyоne
+Cliсk here tо dоwnlоad it right
+now (nо сharge card neеded):
+Dоwnload
+Page
+(This
+make tаke а few momentѕ to load - plеase be patiеnt)Find out evеrythіng you ever wanted tо know about:yоur frіendѕ
+уour famіlу
+your еnemiеѕ
+уour еmployeeѕ
+уоurself - Is Sоmеonе Using Your Identіty?
+еven yоur bosѕ!Dіd уou know thаt уоu сan search for
+аnyone, anytimе, anуwhеrе, right on the Intеrnеt?
+Cliсk here: Dоwnlоаd
+PageThiѕ mаmmоth colleсtion of Internеt іnveѕtigatіvе toolѕ & rеѕеаrсh
+ѕitеѕ will provide you with nеarlу 400 gigantic rеsеarch reѕоurces
+tо lоcаtе information оnlіne аnd offline on:peоple you truѕt, рeоple you work with
+ѕcreen new tеnantѕ, roоmmаtеs, nannys, hоuѕekееperѕ
+currеnt оr pаѕt еmploуment
+lіcеnse рlate numberѕ, соurt rесоrds, еvеn уоur FВI fіle
+unlisted & revеrse рhоnе numbеr lооkupClіck
+herе: Downlоаd
+Pagе
+о Dig up informаtiоn оn yоur FRIENDS, NЕIGHBORS, or ВOSS!
+o Lосаtе tranѕсripts аnd COURT ORDERS frоm аll 50 statеs.
+o CLOAK your ЕMAIL so уour truе addrеѕѕ сan't be dіscоvered.
+o Find out how much ALIMONY your nеіghbor іs paуing.
+о Dіscover hоw to check уour phonеs for WIRETАPS.
+о Or cheсk yourself out--уou may bе ѕhocked at what yоu find!!
+Thеsе
+аrе оnly а fеw thіngѕ
+that уou can do with thiѕ ѕoftwаre...
+Tо dоwnlоad this sоftware, and have it in lеss than 5 mіnutеѕ, clісk & vіsit our wеbѕite:Clіck
+hеre: Downlоad
+PagеWe reѕpеct yоur online tіme аnd privacy
+and honоr аll requеstѕ tо stоp furthеr е-mаils.
+Tо stop future mеssageѕ, do NOT hіt reрly. Inѕtеаd, ѕimply click thе following lіnk
+whiсh wіll ѕend uѕ a messаge wіth ""STOP"" in thе ѕubjеct linе.
+Plеase dо not inсlude anу сorreѕpondenсе -- all rеquеsts handled аutоmаtісаllу. :)[Clісk
+Herе tо Stор Further Mеssаges]Thаnk you! CoрyrіghtÂ Â© 2001, all rights rеsеrvеd. [1:KJ)_8J7ВJK9^"":}H&*TG0BK5NKIYѕ5]",homoglyph,0.2528,278,0.1498
+phish_01329,phi3.5-mini,char,phishing_email,1,1,False,True,,3,re [ 10 ] : let ' s ѕhаke handѕ іfоѕееk whеrе were ? but i don ' twhеn werе yоu bоrn ? in 1924,homoglyph,0.5,14,0.1489
+phish_00021,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"OnJabnugarys 1svtg 202 he Eurpeaznq countries dbean
+using the new Euro  Nevera jbefoscore have hso
+many countres wih ksuch pwerful economiesunited
+to usxe a single turryewtncy.  Get your piedgc o ghistoory
+nnow  e would ike to ksend yo a FREE Euro
+adh a FREE rprt on world urrency.  tJst visit
+ur site to equst yobur uro and Eur report:p
+
+ttp://80.71.65.7/
+ 
+Inf ation to our curencg report, kyou can receivne
+odur FmqREdE IVESTENT PrACKjAGE:m
+ 
+*jLearnhrow $10,00 in optionsc will leveragte 1000,00s0i in
+Euoy yCurency. Thismans vyevletn a mall mvement zinthe marketz
+has huawger proefit potential.
+ If ywo aret over age 8 and have sgome hrisok capital, its
+imprta that you find out how the Euro wil
+change the economic world and jhoew yo canprfi!
+ 
+$10d,000v minimum ivestmnot
+ 
+Ples carefully evluate your finanal osition beftore
+tradingg. i Only risk caigtal should be uqsed.htp:/o8.71.65.57/
+++++++++++x+++++++++++i++++++++++++++++++++++++++++++++++
+To ""Opt-Okut"":hxttp://80.71r.65.5ml7/optout.html9890mZai-20dwXGN8995pTZf7-668SKMW190o3wjssu-604meTh8297skO257
+ 
+1733PuSv2-985DSia345xFG6-061JUXO3729vSA0-d582gDoL837inQgv9-747IFkpX8534GdaJ0-l3z-- lIrish Linumx Useers' Group: lug@llinux.ie
+http://www.linux.ie/maidln/listinfo/ilug fo (un)ssubscrption informaion
+Licst mantaier:j listmaster@linuox.i",delete+insert,0.2085,189,0.1454
+phish_00335,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"guys ned this swea try our revolutionary prouct , cialli soft tabs . nw improved formul makes it ven bettr . cialis soft tabs s th new impotence treatment drug that everone is talking about . cialis acts p to 36 hou , compare tis to oly two or tree hours of viagra actin  te active ingreient is tadalail , same as in brad cilis . simply dissolve half a pil uneryour ngue ,10 in bfore intercourse forthe best erections you ' ve eve hd ! cialis als hve less sidebacks ( you can driveor mx alcohol drinks with them ) . no prior presrptin is needed . worldwide shiping  thousands of happy cutmrs! you can getpit at  http : / /smiingly . net / cs/ ? got world x direct cn brng you quality generic drugs for a fraction ofthe cost o the epensive rand name eqivaets order our adalafil pills today and save 80 % . we ship worldwid , and currently sup ly toover1 million cusomers globally ! we alays strv tobring youthe cheapest prices  andy http : /  cordoned . net / rm . php ? ot",delete+swap,0.4822,80,0.0762
+phish_01776,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"Just sеnt yоu a nоtе with thе wrоng link. Tthе соrrect оnе is httр://letsсreatebiz.соm/whjoіnfrее  It iѕ worth а minute оf your timе to cheсk it оut.
+Remеmbеr, уou have nоthіng tо loѕе and potentiаlly a lоt tо gаin!
+Bеѕt Regаrds,Wаynе---------------------------------------------------
+To be rеmоved frоm futurе mailings, ѕimрlу
+respond wіth RЕMOVЕ іn thе subjeсt line.
+httр://xent.сom/mаіlman/lіѕtinfo/fоrk",homoglyph,0.2025,61,0.1499
+phish_00224,phi3.5-mini,char,phishing_email,1,1,False,True,,3,"heу long tіme rob , the perfect assіstanсe tо hеlр уou with уоur mаte . all уou do іs rub іt оn thеn slіde іt in . the реrfеct anѕwer . . . www . hoоhut . сom / x / nеvеrbush / еlwood thanks , kendrісk уеager rеtrogrаde retrogreѕs",homoglyph,0.25,34,0.1478
+phish_01234,phi3.5-mini,char,phishing_email,1,1,False,True,,3,neеd уоur рills ? we hаve it scrawl mohаwk redshank sсabrоus ѕhowroom mоnitоry wаttlе want а presсriptіоn medicаtіon ? fіnd іt here ! we hаve all medicationѕ you mаy pоsѕіbly need ! уou name it ! wе have it ! ѕtoр rесеіving рromotionаl materiаl now aurоra dissіpate downward sрrinkle gaberones heаlthy capаcіоuѕ,homoglyph,0.2388,46,0.1479
+sms_02691,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,sрortѕ fans - gеt thе lаtеѕt ѕpоrtѕ news ѕtr* 2 ur mobіle 1 wk FRЕЕ PLUS а FREЕ TONE Tхt SPORT ON tо 8007 www.getzеd.cо.uk 0870141701216+ norm 4tхt/120р ,homoglyph,0.35,22,0.1438
+sms_01874,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,You have WN a guaraneed £1000cash ora £200 prize.To claim yr prize cal ou custmer service representative on,delete,0.3704,8,0.0696
+sms_03164,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Thіs іs the 2nd timе wе hаve triеd tо сontасt u. U hаvе wоn thе £1450 рrіze to clаim juѕt call 09053750005 b4 310303. T&Cѕ/stор SMS 08718725756. 140рpm,homoglyph,0.2927,22,0.1457
+sms_00876,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Shoр tіll u Drор, IS IT YOU, еіther 10K, 5K, £500 Cаѕh or £100 Trаvel vоuchеr, Call nоw, 09064011000. NTT PO Воx CR01327BT fіxеdlіnе Cоst 150pрm mobilе vаrу",homoglyph,0.3333,23,0.1474
+sms_03067,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Get а brand nеw mоbilе phone bу bеing an аgеnt оf Thе Mоb! Plus loаds more goodiеѕ! For mоre infо juѕt text MAT tо 87021.,homoglyph,0.2564,18,0.1488
+sms_03064,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Hi bаbе іts Jоrdan, how r u? Im hоmе from abroad and lonеly, tехt me bасk if u wаnna сhаt xxSP vіѕіonsms.сom Text stор tо ѕtopCost 150p 08712400603",homoglyph,0.375,22,0.1497
+sms_01375,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"500 New Mоbіlеs frоm 2004, MUST GO! Tхt: NOKIA tо Nо: 89545 & colleсt уоurѕ tоdау!Frоm ONLY £1 www.4-tс.bіz 2орtоut 087187262701.50gbр/mtmsg18 TXTАUCTION",homoglyph,0.2941,22,0.1438
+sms_00579,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"gur mobile number has won £5000, to claim calls us back or rino the claims hot line on 09050005321.",swap,0.8095,2,0.0202
+sms_04200,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"cmоn bаbе, makе mе hоrnу, *turn* me оn! Tхt mе уоur fantaѕy now babе -) Im hot, ѕtiсkу аnd need yоu now. All reрlies сost £1.50. 2 cancel sеnd STOP",homoglyph,0.2955,22,0.1497
+sms_02115,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Sunѕhіnе Hols. Tо clаim ur med hоlіday ѕend a stamреd ѕelf аddress envelоре to Drinks on Uѕ UK, PO Bоx 113, Вray, Wicklow, Eirе. Quiz Stаrtѕ Sаturdау! Unsub Stop",homoglyph,0.3256,24,0.1491
+sms_01463,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"09066362231 URGЕNT! Your mobilе Nо 07xхххxxxxx wоn a £2,000 bonuѕ саller рrіze оn 02/06/03! thiѕ іѕ the 2nd аttempt tо rеach YOU! cаll 09066362231 АSАP!",homoglyph,0.2,22,0.1447
+sms_04864,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Boredhousewives! uCjhat n duait now! 087175.7711! BTnationaj rate 10/mwin only from lanndlines!,delete+insert,0.25,13,0.1368
+sms_01687,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,todауs vоdаfone numberѕ ending with 0089(my laѕt four dіgits) аre selеctеd tо rеceivеd a £350 awаrd. If уоur numbеr mаtchеs pleaѕе cаll 09063442151 to сlаim your £350 awаrd,homoglyph,0.2381,25,0.1453
+sms_02525,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,FRЕE еntrу іnto оur £250 weеklу cоmp juѕt send thе word WIN tо 80086 NOW. 18 T&C www.tхttоwin.cо.uk,homoglyph,0.2857,14,0.1414
+sms_03010,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Updаtе_Now - 12Mths Hаlf Priсе Orаngе lіne rеntal: 400mins...Call MоbіlеUрd8 оn 08000839402 or саll2optout=J5Q,homoglyph,0.2174,16,0.1455
+sms_02574,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Congrats 2 mobile 3G Vieophones R yours call 0906345813 now! videochat wdur mates, ay jaa games, Dload plypH music, nole rentl. bx420. ip4. 5we. 10p",delete,0.4571,12,0.075
+sms_04584,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"For urchance to win a £250p wkl shopping spree TX: SHOP t 80878s. T'ts&Cbs www.txt-2-shop.cm custbcre 07z15o70y5022,e 1x150p/w",delete+insert,0.2414,17,0.1349
+sms_01765,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Hi 07734396839 IВH Cuѕtоmer Lоуаltу Offеr: Thе NЕW NOKIА6600 Mоbіlе from ONLY £10 аt TXTАUCTION!Txt word:START tо Nо:81151 & gеt Yоurs Nоw!4T&,homoglyph,0.1892,21,0.1479
+sms_05166,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Congrаtѕ 2 mоbіle 3G Vidеоphones R yourѕ. cаll 09063458130 now! vіdеоchаt wid ur matеs, plаy javа gаmeѕ, Dload рolyрH musіc, noline rentl. bх420. iр4. 5wе. 150р",homoglyph,0.2381,24,0.15
+sms_04948,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Grеat Nеws! Call FRЕEFONЕ 08006344447 tо clаim yоur guarantеed £1000 CASH оr £2000 gіft. Sрeаk to а livе oреratоr NOW!,homoglyph,0.2188,17,0.1441
+sms_01574,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,SMS AUCTION - A BRAND NEW Nokia 7250 is up 4aauction today! Auction is FREE 2 join & take p rt! Txt NOKIA to 86021 now! HG/Suite342/2Lands Row/W1J6HL,swap,0.8148,2,0.0134
+sms_05055,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Dоublе Mіns & Dоuble Txt & 1/2 prіce Lіnеrеntаl on Latеѕt Orаngе Вluеtooth mobiles. Call MobileUрd8 fоr the vеry lateѕt оffеrѕ. 08000839402 or cаll2optout/LF56,homoglyph,0.2571,23,0.1447
+sms_03132,phi3.5-mini,char,sms_smishing,1,1,False,True,perturbation produced identical text,2,"LookAtMе!: Thankѕ for уоur purchаse of a vіdeo clір frоm LoоkАtMе!, you've bеen сhargеd 35p. Think you саn dо bettеr? Why not ѕend а videо in а MMSto 32323.",homoglyph,0.2857,23,0.1474
+sms_04410,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"For уour сhance tо WIN a FRЕE Вluеtоoth Headsеt then simрly replу baсk wіth ""ADP""",homoglyph,0.2,12,0.1481
+sms_02352,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Downlоаd as mаnу ringtоneѕ аѕ u like no rеѕtrictions, 1000ѕ 2 chоosе. U cаn even sеnd 2 yr buddys. Txt Sіr tо 80082 £3 ",homoglyph,0.3438,17,0.1429
+sms_02830,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Sеnd а lоgo 2 ur lоver - 2 namеs joіnеd bу а hеаrt. Tхt LOVЕ NAMЕ1 NAME2 MOВNO еg LOVЕ ADAM EVЕ 07123456789 to 87077 Yahoo! POВох36504W45WQ TxtNO 4 nо adѕ 150р.,homoglyph,0.234,24,0.15
+sms_04020,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"U've been ѕelected tо stаy in 1 оf 250 tор Вritіѕh hоtеls - FOR NOTHING! Holidаy valued at £350! Dіаl 08712300220 tо сlаіm - Nаtіonаl Rаte Cаll. Bx526, SW73SS",homoglyph,0.35,23,0.1456
+sms_04577,phi3.5-mini,char,sms_smishing,1,0,True,True,,1,Congrаtulаtiоns ur аwarded 500 of CD vоuсhеrѕ or 125gift guаrаntеed & Frее entry 2 100 wklу drаw tхt MUSIC tо 87066,homoglyph,0.4,17,0.1478
+sms_00135,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Wаnt 2 get laid tоnіght? Wаnt reаl Dogging locаtiоns ѕent dirеct 2 ur mob? Jоіn the UK'ѕ lаrgeѕt Dоgging Netwоrk bt Tхtіng GRАVEL tо 69888! Nt. eс2a. 31р.mѕg@150р,homoglyph,0.2439,24,0.1481
+sms_00673,phi3.5-mini,char,sms_smishing,1,1,False,True,perturbation produced identical text,2,Get ur 1st RINGTONE FREE NOW! Reply to this msg with TONE. Gr8 TOP 20 tones to your phone evero week just £1.50 per wk 2 ypt out send STOP 08452810071 16,swap,0.8788,2,0.0131
+sms_03595,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Do уоu want a Nеw Nоkіa 3510i Colour Phone Dеlivеred Tоmorrow? Wіth 200 FRЕЕ mіnutеѕ to аnу mobile + 100 FREЕ text + FREЕ сamcоrder Rерly or Cаll 08000930705,homoglyph,0.359,23,0.1465
+sms_00868,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,PRIVАTE! Your 2003 Ассount Stаtеmеnt fоr 07808 XXXXXX showѕ 800 un-rеdееmed S. I. M. pоіntѕ. Cаll 08719899217 Identifіer Codе: 41685 Ехрireѕ 07/11/04,homoglyph,0.3333,22,0.1477
+sms_03585,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Hі 07734396839 IВH Cuѕtоmеr Lоуаlty Offеr: Thе NЕW NOKIA6600 Mоbіle frоm ONLY £10 аt TXTAUCTION!Txt wоrd:STАRT tо Nо:81151 & gеt Yourѕ Now!4T&,homoglyph,0.1892,21,0.1479
+sms_00264,phi3.5-mini,char,sms_smishing,1,1,False,True,perturbation produced identical text,2,Heу I am rеally hоrny wаnt tо сhаt or sее me nakеd teхt hоt to 69698 teхt сhаrged at 150pm tо unsubscribe teхt stoр 69698,homoglyph,0.2812,18,0.1488
+sms_03189,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"This is the 2nd tie we hve tried 2 contact u.  have won the 70 Pon prize. 2 clam is easy,Ucal 0871210158NOW Only 10p per min. BT-national-rate",delete+swap,0.5152,12,0.0784
+sms_02767,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Mаrried local wоmеn lоokіng for disсreet аctіоn now! 5 rеаl mаtсhеs іnstantly to yоur phone. Tехt MATCH to 69969 Msg сoѕt 150p 2 ѕtop txt ѕtoр BCMSFWC1N3XX,homoglyph,0.3421,23,0.1484
+sms_02089,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Well done ENGAND! oGbet the offcial pqoly cingeone ogr ccolourn flag on yer mobile! gtext TONiE or FLAG to 84199NOW! pout txte ENqG TOP.Bx39822 W111WX £1.50,delete+insert,0.275,21,0.1355
+sms_03155,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Not hеard frоm U4 a whіlе. Cаll 4 rude сhаt prіvаte line 01223585334 tо сum. Wan 2C рісs оf me gettіn ѕhаggеd thеn teхt PIX to 8552. 2End ѕеnd STOP 8552 SAM xxх,homoglyph,0.3542,24,0.15
+sms_02300,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Congrаts! 1 year ѕpесiаl cіnemа раss for 2 is уоurs. сall 09061209465 now! C Suрrman V, Matriх3, StarWars3, еtс аll 4 FREE! bх420-ір4-5wе. 150рm. Dont miѕѕ out!",homoglyph,0.35,24,0.15
+sms_00870,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,What dо U want for Xmas? Hоw аbоut 100 free teхt mеѕsаges & a nеw vіdеo phonе with half рrісе line rеntаl? Cаll free now оn 0800 0721072 to fіnd оut mоre!,homoglyph,0.3478,23,0.1494
+sms_00305,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"SMS. aс Blіnd Dаte 4U!: Rodds1 іѕ 21/m frоm Abеrdeеn, Unіtеd Kingdom. Chесk Hіm оut httр://img. smѕ. аc/W/icmb3сktz8r7!-4 no Blind Datеѕ send HIDЕ",homoglyph,0.2222,21,0.1438
+sms_02879,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Hey wBoys. Wanqt hotXXX pics sent direct 2t u phne?Tfx PORN to 69855i 2o4Hr freey and rthe just 50p per day. To sto text STOPBCMv xF WC1Nq3XX,delete+insert,0.2857,19,0.1357
+sms_04450,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Urgent UR awarded a complimentary trip o EuroDisincTrav,Aco&Entry41 O £1000. Tclaim txt DIS to 8711 18+6*£1.50(moermMob. hrAcomOrSglSuplt)10,LS1 3AJ",delete,0.4231,11,0.0692
+sms_01469,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Hi itѕ LUCY Hubby аt mеetіnѕ all dау Fri & I will B аlоnе at hоtеl U fаncу сumin оvеr? Plѕ leave mѕg 2dаy 09099726395 Lucу x Cаlls£1/mіnMоbsmoreLKPOBOX177HP51FL,homoglyph,0.35,24,0.15
+sms_00593,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,PRIVATЕ! Yоur 2003 Аcсоunt Statement for 07753741225 ѕhоwѕ 800 un-rеdeеmеd S. I. M. роints. Cаll 08715203677 Identіfіer Codе: 42478 Еxріrеѕ 24/10/04,homoglyph,0.3548,22,0.1486
+sms_03290,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Cаmеrа - Yоu arе awarded a SіPіx Digitаl Camеra! call 09061221066 fromm landlіne. Delivеrу withіn 28 daуѕ,homoglyph,0.2593,15,0.1429
+sms_02663,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Hello darlіng how аrе уou todау? I wоuld love tо havе a chаt, why dоnt yоu tell mе whаt yоu loоk lіkе and what you are in to sеxy?",homoglyph,0.3421,19,0.1462
+sms_01089,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Yоu are аwаrdеd a SіPіх Dіgitаl Camera! cаll 09061221061 frоm lаndlіne. Delivеrу wіthin 28days. T Cs Вox177. M221BP. 2yr wаrrаnty. 150рpm. 16 . р р£3.99,homoglyph,0.2821,22,0.1447
+sms_03893,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,URGЕNT Thіs is our 2nd аttеmрt to соntact U. Yоur £900 prіzе from YESTЕRDАY is ѕtill awaіtіng collеctiоn. Tо сlaіm CАLL NOW 09061702893. АCL03530150PM,homoglyph,0.25,22,0.1467
+sms_04534,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Gr8 new service - live sex video chat on your mob - see the sexiest dirtiest gi9ls live on ur phone - 4 details text horny to 8r070 to cancel send STOP to 89070,swap,0.8966,2,0.0125
+sms_01635,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Ееrіе Nоkіа tоnеѕ 4u, rрlу TONЕ TITLЕ to 8007 eg TONЕ DRАCULА to 8007 Tіtlеs: GHOST, ADDAMSFA, MUNSTЕRS, EXORCIST, TWILIGHT www.gеtzed.со.uk POBоx36504W45WQ 150p",homoglyph,0.2903,24,0.1491
+sms_00455,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Loаn for anу рurрose £500 - £75,000. Hоmеowners + Tenаnts wеlcome. Have уоu bееn previouslу rеfuѕed? Wе cаn stіll helр. Cаll Free 0800 1956669 or teхt bасk 'helр'",homoglyph,0.2174,24,0.1481
+sms_01142,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,I don't kwnow u and u dn't now me.b Snmd CHAT to 86688 now and let's finyd each other! Onl 15w0up/Mshrcvd. HGd/Suite34f2/2Lans/yRow/W1J6HwL LDN. 8year r ocver.,delete+insert,0.3429,22,0.1392
+sms_00813,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Cоngratulatіonѕ ur аwarded eіthеr £500 оf CD gift vоuchеrѕ & Freе entry 2 оur £100 wеeklу drаw txt MUSIC to 87066 TnCѕ www.Ldew.соm1wіn150рpmх3agе16,homoglyph,0.3529,22,0.1486
+sms_05539,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Want expliit SEX in 30 secs?Rin 02073162414now Costs 20p/min Gsex POBOX 2667 WC1N3XX,delete,0.45,6,0.0667
+sms_01022,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Guess wat! omebodyyo know secretlyfancies you! Wanna find out wo it s? Give us a cll on 0906594514 From Landline DATEBox1282EssexC61XN 150p/mi 18,delete,0.4118,11,0.0705
+sms_00015,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"XXXMobileMovіеClub: Tо usе уоur crеdit, clісk the WАP link іn the nеxt tхt mesѕаge or сlick herе>> httр://wap. xxxmobіlemoviесlub.com?n=QJKGIGHJJGCВL",homoglyph,0.0938,22,0.1477
+sms_03192,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,UR awаrdеd a Citу Вreаk and cоuld WIN a £200 Summеr Shоpping ѕpree evеrу WK. Tхt STORE to 88039.SkіlGmе.TѕCѕ087147403231Wіnawk!Agе16+£1.50реrWKѕub,homoglyph,0.2857,21,0.1438
+sms_00515,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Yоu аre guаranteed the lаtеst Nоkіа Phоnе, a 40GВ iPоd MP3 рlауer or а £500 рrizе! Txt word: COLLЕCT tо Nо: 83355! IBHltd LdnW15H 150р/Mtmsgrcvd18+",homoglyph,0.2564,22,0.1497
+sms_00591,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Fоr ur chаnce tо win а £250 wklу shoрpіng ѕрrее TXT: SHOP tо 80878. T'ѕ&C's www.txt-2-ѕhop.com custсаre 08715705022, 1х150р/wk",homoglyph,0.2414,18,0.1429
+sms_02480,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Spрok up ur mob with a Halloweеn cоllеctіon of nokiа logо&pіс message plus а FRЕE еerie tоnе, tхt CАRD SPOOK tо 8007",homoglyph,0.303,17,0.1466
+sms_03968,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,YOU HAVЕ WON! Аs a vаlued Vоdafonе сuѕtomеr our сomрuter has pіckеd YOU to wіn a £150 рrіzе. To соllеct is eaѕy. Just call 09061743386,homoglyph,0.3333,20,0.1493
+sms_04475,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Wаnt exрlicit SЕX іn 30 ѕecѕ? Ring 02073162414 now! Cоѕts 20р/min,homoglyph,0.2222,9,0.1385
+sms_01888,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Urgеnt! Please саll 09061743811 from lаndlіnе. Your АВTA сomplimеntary 4* Tеnеrifе Holidaу or £5000 caѕh await collеctiоn SAE T&Cs Вох 326 CW25WX 150ррm,homoglyph,0.3529,22,0.1447
+sms_02095,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,yPRIVATE! Your2004 Acount Staemment for 07742676969 shows 786 unredemed kBons vPoints. Toq culaimcsiall 0871180248e Ietifixer Code: 5239 Expirest,delete+insert,0.1515,21,0.1458
+sms_04643,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,You arvec being ripped off! Get our moilcep icontehnt from www.clubmoby.com call 08717509a99y0 psotfrue/Pixingtnes/Games sixdownlods for fonly 3,delete+insert,0.3704,21,0.1469
+sms_04280,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"URGENT. Important infоrmation for 02 uѕеr. Tоday іѕ уour lucky day! 2 fіnd out why , log оnto http://www.urаwіnner.cоm therе is а fаntаѕtic ѕurрriѕe аwаitіng yоu !",homoglyph,0.325,24,0.1472
+sms_02312,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Cоngrаtulatiоnѕ! Thаnks tо a goоd frіend U havе WON thе £2,000 Xmas рrize. 2 сlаim is еasy, juѕt cаll 08718726971 NOW! Only 10p pеr mіnutе. ВT-natіonаl-rаte.",homoglyph,0.2683,23,0.1465
+sms_02664,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,8007 FRЕЕ for 1ѕt weеk! No1 Nоkіa tоnе 4 ur mоb еvеrу wеek juѕt txt NOKIА tо 8007 Get txting and tell ur mаtes www.gеtzed.со.uk POВоx 36504 W4 5WQ nоrm 150р/tone 16+,homoglyph,0.3111,24,0.1455
+sms_05542,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,АSKЕD 3MOВILЕ IF 0870 CHАTLINЕS INCLU IN FRЕЕ MINS. INDIА CUST SЕRVѕ SЕD YЕS. L8ЕR GOT MЕGА ВILL. 3 DONT GIV А SHIT. ВАILIFF DUЕ IN DАYS. I O £250 3 WАNT £800,homoglyph,0.3191,23,0.1456
+sms_05216,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Natаljа (25/F) іѕ іnvіtіng yоu to be hеr frіеnd. Rерly YЕS-440 оr NO-440 Seе her: www.SMS.аc/u/nаt27081980 STOP? Sеnd STOP FRND tо 62468,homoglyph,0.2647,20,0.1471
+sms_00866,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Cоngratulаtіonѕ ur аwarded eіther a уrs supplу of CDѕ from Virgin Recоrds or а Mystеrу Gіft GUARАNTЕED Cаll 09061104283 Ts&Cѕ www.smsсо.net £1.50pm арproх 3minѕ,homoglyph,0.2051,24,0.15
+sms_00418,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,FRlEE entwry into outrr f£2a50 weeklyl comipetition juvst texbt qthe word WIN to 800w86 NtOWf. 18 T&C www.txttowin.co.cuk,insert,0.2,15,0.1415
+sms_05037,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Yоu wоn't bеliеvе it but іt'ѕ true. It'ѕ Incredіble Txtѕ! Reрlу G now to leаrn truly amаzіng things that wіll blоw your mind. Frоm O2FWD оnlу 18р/tхt,homoglyph,0.2927,22,0.1477
+sms_05203,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"gYOU VExw WON! Yovur 4* Caosta lDel bSol Holiday oer £5000 awdacit cgoillbection. Cqall ur09050090044 Nfow toClaim.q SAE, TC s, POBoxh334, Stockpzort, SKe38xhe, Cost£1.50/pfm, Max10minst",insert,0.1628,24,0.1481
+sms_01466,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"YOU 07801543489 are guarаntееd thе latеѕtѕ Nоkіа Phоnе, а 40GB iPod MP3 рlaуer or а £500 рrіze! Tхt word:COLLЕCT tо Nо:83355! TC-LLC NY-USA 150p/Mt mѕgrcvd18+",homoglyph,0.2973,23,0.1456
+sms_00167,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,URGENT! Wearttng toconeact you. Last weekends draw shows that yo have won a 0 prize GUARANTEED. Call 09061701939. Claim cde S89. Valid 12hrs only,delete+swap,0.5938,13,0.0833
+sms_00947,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Ur сaѕh-balаncе іѕ сurrеntly 500 pоunds - tо mаximіzе ur саѕh-in nоw sеnd GO tо 86688 only 150р/msg. CC: 08718720201 PO BOX 114/14 TCR/W1,homoglyph,0.375,20,0.146
+sms_02693,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Urgеnt Urgent! We have 800 FREЕ flightѕ tо Еurорe to givе аwаy, саll B4 10th Sерt & take a frіеnd 4 FRЕЕ. Call now tо сlaim on 09050000555. ВА128NNFWFLY150pрm",homoglyph,0.3846,23,0.1456
+sms_00335,phi3.5-mini,char,sms_smishing,1,1,False,True,perturbation produced identical text,2,Valentinesy Day Special! Win over z£n1000u in our qutiz and take your pnartner on thes trip of ha lifetime! Send GO tetol 836m00 unuow. j150p/masgb rcmvd. jCuesstCacre:0871872020m1.,insert,0.3846,23,0.1456
+sms_02730,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Urgent! Pleaѕe call 09066612661 frоm yоur landlіnе, yоur соmрlіmentаry 4* Lux Costа Del Sоl hоlіday or £1000 CASH аwaіt сollеction. рpm 150 SАЕ T&Cs Jаmеs 28, EH74RR",homoglyph,0.3333,24,0.1455
+sms_00008,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,WINNЕR!! As a valued nеtwork cuѕtomer yоu havе beеn sеleсted to recеivea £900 prіzе rеward! Tо сlаіm cаll 09061701461. Claim сode KL341. Vаlіd 12 hourѕ оnlу.,homoglyph,0.2195,23,0.1465
+sms_00935,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Dear Mаtthew pleasе call 09063440451 frоm а landlinе, yоur complіmеntаry 4*Lux Tenerife hоlіdау or £1000 CАSH awаіt cоllесtion. ppm150 SАЕ T&Cs Воx334 SK38XH.",homoglyph,0.2778,23,0.1456
+sms_04901,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"ou are guaranteedthe latest Noia Phon, a 40GB iPod P player ora £50 prie! Txt word: COLLECTto No: 83355! IBHltd LdnW15H 150p/Mtmgrcvd18",delete,0.3939,10,0.069
+sms_00139,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,You'll nоt rcv аnу more msgѕ frоm the сhаt svc. For FREЕ Hardсоre sеrviceѕ tехt GO to: 69988 If u gеt nоthіng u must Agе Vеrifу wіth yr nеtwork & trу again,homoglyph,0.3191,23,0.1484
+sms_02374,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,XMAS Prіzе drawѕ! Wе аrе tryіng tо сontасt U. Tоdayѕ draw shоws thаt you hаvе won а £2000 рrizе GUARANTЕED. Call 09058094565 frоm land linе. Valid 12hrs only,homoglyph,0.2791,23,0.1465
+sms_01423,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Cоngratulаtiоnѕ ur awarded eіther £500 оf CD gift vоuсherѕ & Frеe еntrу 2 оur £100 weeklу draw tхt MUSIC tо 87066 TnCѕ www.Ldew.соm 1 win150ррmx3аge16,homoglyph,0.3158,22,0.1467
+sms_00710,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,4mths hlf picek Orne lin trential c&t lates camera phnes 4 FREE. Hayd your yphne 11mths? Call obuiklesDirectn free on 080z00938767 to update now! ovr2stotxt T&C,delete+insert,0.2683,24,0.15
+sms_00357,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Congrаtulаtiоns ur аwаrded 500 оf CD vouсhеrs оr 125gіft guаrаnteed & Freе entrу 2 100 wkly draw tхt MUSIC to 87066 TnCѕ www.Ldew.cоm1wіn150ррmх3agе16,homoglyph,0.3143,22,0.1467
+sms_02881,phi3.5-mini,char,sms_smishing,1,1,False,True,perturbation produced identical text,2,"Laѕt Chаnсe! Claіm ur £150 worth of diѕcоunt vouсherѕ tоdау! Tехt SHOP to 85023 nоw! SаvaMоb, offerѕ mobіle! T Cs SаvаMоb POВOX84, M263UZ. £3.00 Sub. 16",homoglyph,0.3333,22,0.1447
+sms_00527,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Tоdаy's Offеr! Claіm ur £150 wоrth оf diѕсоunt vоuсhеrs! Text YES to 85023 nоw! SаvаMob, mеmbеr оfferѕ mobilе! T Cѕ 08717898035. £3.00 Sub. 16 . Unѕub replу X",homoglyph,0.3023,23,0.1456
+sms_02267,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,fw<Forwarded from 8b88b77>FREE entry inzytoq olur £250a weeqekly conmp just bfsend the word EzNTER to 88877 NOW.t 18 T&C www.textcomyp.gcom,insert,0.2903,18,0.1488
+sms_00164,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,PLSSTOP bootydelious (32/F) is inviting you o e her riend. Reply YES-434 or NO-34 See her: www.SMS.ac/u/bootydeius STOP? SendSTP FRN to 62468,delete,0.4667,11,0.0724
+sms_04841,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,PRIVАTЕ! Your 2003 Aссount Stаtemеnt fоr shows 800 un-rеdееmеd S. I. M. роіntѕ. Cаll 08715203652 Identіfіer Cоde: 42810 Expireѕ 29/10/0,homoglyph,0.3333,20,0.1481
+sms_05230,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,PyRoIVaATE!dz Youlr 2e003 uAccount Statement for <ftone no> eshows 800 un-redeemed S. I. pM. points. kCallz 087s15203656ik Identifier Code: 42s04n9 Expiereds 2k6/10/04,insert,0.2941,21,0.1438
+sms_00385,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Double mins and ytxts e4 6months FREEg Bluetqookth on Orange. Available on Sfony, Nokia Mpoetorola phzonmqyets. Call MobileUpd8 onp 08000839402 sortv call2optposutq/vNk9DX",insert,0.3667,22,0.1477
+sms_00492,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Congrats! 1 year special cinema pass for 2 is yours. call 09061209465 now! C Suprman V, Matrix3, StarWars3i etc all 4 FREE! bx420-ip4-5we. 150pm. Dont m,ss out!",swap,0.8621,2,0.0125
+sms_01536,phi3.5-mini,char,sms_smishing,1,1,False,True,perturbation produced identical text,1,You hаvе wоn а Nokia 7250і. Thіs іs whаt you gеt when уou wіn оur FREE auctіоn. To take рart send Nоkіа tо 86021 now. HG/Suitе342/2Landѕ Rоw/W1JHL 16+,homoglyph,0.2439,22,0.1467
+sms_02669,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Wanna gеt lаid 2nitе? Wаnt reаl Dоggіng locatіons ѕеnt dirесt tо ur mobіle? Joіn the UK's lаrgеst Dоgging Nеtwork. Tхt PARK to 69696 nоw! Nуt. еc2a. 3lp £1.50/mѕg,homoglyph,0.1739,24,0.1481
+sms_03334,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"You аre being contacted bу оur dаting ѕervісе by ѕomeone yоu knоw! Tо fіnd оut whо it iѕ, call from а land lіnе 09050000928. PoВоx45W2TG150P",homoglyph,0.2308,21,0.15
+sms_01887,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Dear 0776xxxxxxx 've been invited o XCHAT. This is our ina attmptto contact u! Txt CHATto 868 150p/MsgrvdHG/Suite342/2Lands/Row/W1J6HL LDN 8yrs ,delete,0.4286,11,0.071
+sms_01350,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"FREЕ2DАY sехy St George's Daу рiс оf Jоrdan!Txt PIC to 89080 dоnt misѕ out, then еverу wk а sаucy сeleb!4 morе pісs c PоckеtBabе.cо.uk 0870241182716 £3/wk",homoglyph,0.275,23,0.1494
+sms_04108,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"HOT LIVE FANTАSIЕS сall nоw 08707500020 Just 20р pеr min NTT Ltd, PO Bох 1327 Crоуdоn CR9 5WВ 0870 iѕ а nаtiоnal rate саll",homoglyph,0.3429,18,0.1475
+sms_01500,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"SMS. aс JSсo: Enеrgу іѕ high, but u maу nоt know wherе 2сhannel іt. 2dау ur leаderѕhip ѕkіlls r strong. Psychiс? Replу АNS w/quеѕtion. End? Reply ЕND JSCO",homoglyph,0.25,23,0.1494
+sms_04587,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Mіla, аgе23, blоndе, nеw in UK. I lооk sеx with UK guуs. if u like fun wіth mе. Tехt MTALK tо 69866.18 . 30pр/tхt 1st 5frее. £1.50 іncrеments. Hеlр08718728876",homoglyph,0.3256,23,0.1456
+sms_00225,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"500 Nеw Mobіlеѕ frоm 2004, MUST GO! Txt: NOKIА tо No: 89545 & сollеct уоurѕ tоdау!Frоm ONLY £1 www.4-tс.bіz 2oрtout 087187262701.50gbр/mtmѕg18",homoglyph,0.3125,21,0.1479
+sms_01963,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,it to 80488. Your 500 free tеxt mеsѕagеѕ аrе vаlіd untіl 31 Dеcember 2005.,homoglyph,0.4,11,0.1486
+sms_02779,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"For ur сhanсe tо wіn а £250 саsh evеry wk TXT: АCTION to 80608. T's&C'ѕ www.mоvіеtrіvia.tv сuѕtсare 08712405022, 1x150р/wk.",homoglyph,0.2759,18,0.1463
+sms_01653,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Fоr ur сhanсе tо wіn a £250 cаsh еvеrу wk TXT: ACTION to 80608. T'ѕ&C's www.mоvіetrіvia.tv сuѕtсare 08712405022, 1х150p/wk",homoglyph,0.3214,18,0.1475
+sms_01745,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Someоne haѕ conаctеd our dаting ѕеrviсe and entеred уоur рhоnе bесаusе they fancу you!To find out who іt iѕ cаll from landline 09111030116. PоBox12n146tf15,homoglyph,0.2632,23,0.1484
+sms_04386,phi3.5-mini,char,sms_smishing,1,0,True,True,,1,Dо уоu want a Nеw Nokіa 3510i Cоlour Phonе Dеlivеred Tomorrоw? With 200 FRЕЕ minutes tо any mоbіlе + 100 FREЕ text + FRЕE саmcоrder Reply оr Cаll 8000930705,homoglyph,0.2857,23,0.1474
+sms_00803,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,FREЕ for 1ѕt wеek! Nо1 Nokiа tonе 4 ur mоbile еvеrу wеek just tхt NOKIA tо 8077 Gеt tхtіng and tell ur matеѕ. www.gеtzеd.сo.uk POВoх 36504 W45WQ 16+ nоrm150p/tone,homoglyph,0.25,24,0.1481
+sms_01307,phi3.5-mini,char,sms_smishing,1,0,True,True,,1,Enjоу the jаmster vidеоsound gоld сlub with yоur сrеdits fоr 2 nеw vіdеoѕoundѕ+2 logoѕ+musіcnеws! gеt more fun from jamstеr.со.uk! 16+only Hеlp? call: 09701213186 ,homoglyph,0.2432,24,0.1472
+sms_02897,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"pdate_Nopw - Dobl mins oand1000 txtsb on Orange tayriffs.Latest Motrolax,a Szotnyricsso & Nokia & Blueooth FREzE Cagl MobirleUpd8 on 08000839s42 or call2optout/!YL",delete+insert,0.2,23,0.1411
+sms_02014,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Greаt Newѕ! Call FRЕEFONЕ 08006344447 to сlаіm your guarаnteed £1000 CАSH оr £2000 gіft. Spеаk to а live oреratоr NOW!,homoglyph,0.2667,17,0.1441
+sms_01456,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Summerѕ fіnаlly herе! Fаnсy а сhаt or flirt wіth sеху singleѕ іn уr аrea? Tо gеt MATCHED up juѕt reрlу SUMMER now. Free 2 Join. OptOut txt STOP Hеlp08714742804,homoglyph,0.2609,23,0.1447
+sms_04579,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Urgunt! call 0y9a06635x0750 from yr landlionye.Yur compplimenty 4* Ibiza Hiday okr 10,00 cash wait cvollection SAE T&Cs pPO BOX 4q34 SK3 8WP 150 ppm 18+",delete+insert,0.3514,21,0.1382
+sms_02109,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"FREЕ2DAY seху St Georgе'ѕ Dаy piс оf Jordan!Txt PIC to 89080 dоnt mіsѕ оut, thеn every wk a sаucy сеlеb!4 morе pісs с PoсketBаbe.co.uk 0870241182716 £3/wk",homoglyph,0.2439,23,0.1494
+sms_05287,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"URGENT! Yоu hаvе wоn а 1 wеek FRЕЕ mеmberѕhiр іn оur £100,000 Prіze Jасkрot! Txt thе wоrd: CLАIM to Nо: 81010 T&C www.dbuk.nеt LCCLTD POBOX 4403LDNW1А7RW18",homoglyph,0.2093,23,0.1484
+sms_03556,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,From next month get upto 50% More Calls 4 Ur standard network charge 2 activrte Call 9061100010 C Wiae3.net 1st4Terms PoBox84 M26 3UZ Cost £1.50 min MobcudB more,swap,0.8621,2,0.0124
+sms_04967,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,URGENT! We arе trying tо соntаct U. Todayѕ draw ѕhоwѕ thаt уоu hаvе wоn а £2000 prіze GUАRАNTЕЕD. Cаll 09058094507 from land line. Claіm 3030. Valid 12hrs only,homoglyph,0.3333,23,0.1447
+sms_04272,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Ntalja (25F) is inviting you to be er frind. epl ES-440 or NO-440 See her: www.SMSac/u/nat27081980 STOP? Sen STOP FRND t 62468,delete,0.4333,10,0.0735
+sms_01718,phi3.5-mini,char,sms_smishing,1,1,False,True,,3, OW! The Boys R Back. TAKE THAT 2007 UK Tour. Win VIP Tickets & pre-bookWwith VIP Club. Txt CLUB to 81303. Trackmarque Ltd info@vipclub4u.,swap,0.8077,2,0.0145
+sms_00188,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Plеasе cаll our сuѕtomer ѕervice represеntativе on FRЕЕPHONE 0808 145 4742 betweеn 9am-11pm аs yоu hаve WON а guarаntеed £1000 сash оr £5000 рrіzе!,homoglyph,0.2308,22,0.1497
+sms_04517,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Congrаtѕ! 2 mobile 3G Vidеophonеѕ R yоurѕ. cаll 09061744553 now! videоchat wid ur mаtеѕ, рlay jаvа gameѕ, Dlоad рolyH muѕiс, nоlinе rentl. bх420. ip4. 5we. 150рm",homoglyph,0.2683,24,0.1491
+sms_00424,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,URGENT! Yоur Mоbіle number hаѕ bеen аwаrdеd wіth a £2000 рrіze GUАRANTEЕD. Call 09058094455 frоm lаnd linе. Claim 3030. Vаlid 12hrѕ onlу,homoglyph,0.2222,20,0.1471
+sms_00487,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"FRЕE MESSAGE Асtіvatе yоur 500 FREE Tеxt Mеѕsages bу replying tо thіs mеssage with the word FREЕ For termѕ & сondіtions, viѕіt www.07781482378.соm",homoglyph,0.2647,21,0.1438
+sms_01205,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,WIN a year spply of CDs 4a store of ur choicewort £500 & enter our £100 ekly draw tt MUSIC to 87066 Ts&Cs www.Ldewcom.sbs161win150ppmx3,delete,0.5667,10,0.069
+sms_03942,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Freе Msg: gеt Gnarls Bаrklеyѕ ""Crazy"" rіngtone TOTALLY FRЕЕ just reply GO tо thіѕ mеѕsаge right nоw!",homoglyph,0.32,15,0.15
+sms_05202,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Call Germanу fоr оnlу 1 pеncе per minute! Call from а fіхed lіne viа acceѕѕ number 0844 861 85 85. Nо prepaуmеnt. Dirеct acceѕs! www.tеlеdіscоunt.co.uk,homoglyph,0.2632,22,0.1457
+sms_02386,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Sоmеone hаs соntaсted оur datіng servіcе and entered yоur phone becauѕеtheу fancу уоu! To find out whо it is cаll frоm а lаndline 09058098002. PoВox1, W14RG 150р",homoglyph,0.2273,24,0.1491
+sms_02427,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Vаlentіnes Daу Spесіal! Wіn оvеr £1000 іn our quіz and takе уour раrtner on thе triр оf а lifеtimе! Send GO to 83600 now. 150p/msg rcvd. CustCаrе:08718720201,homoglyph,0.2558,23,0.1465
+sms_04586,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,U havе а Seсrеt Аdmіrеr who is lоokіng 2 mаke contаct with U-find out who theу R*reveal whо thіnkѕ UR so ѕpeсіal-саll on 09065171142-ѕtopѕmѕ-08718727870150ppm,homoglyph,0.3235,23,0.1456
+sms_03679,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Promotuionv Nuvmmber: 8714714 -oy UR awcardced a City Break anld coulud WIxN a v£20h0 Summder Shopping spree kevery WK. Tuxqt ScTORE to o88039 . SjkilGmxe. TsCs0871474l03231Winaewk!Age1r6 £1.c5z0perWKsub,insert,0.2381,26,0.1469
+sms_01853,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Thіs іs the 2nd tіmе we havе tried 2 contасt u. U hаve won the 750 Pound prіze. 2 claіm іѕ eаsу, саll 08718726970 NOW! Only 10р реr min. ВT-natіonаl-ratе ",homoglyph,0.35,23,0.1494
+sms_03123,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Free dentry in 2 aeekly comhp for a chane cto in anipo. Txt POD to 80182 to xet enltry r(sd txt crate) T&Cs aypplty 0842810073 for debteails 18+,delete+insert,0.2632,20,0.1399
+sms_04236,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,FREЕMSG: Our recordѕ іndіcаtе you mау bе entіtlеd tо 3750 pоundѕ fоr the Acсidеnt уou hаd. Tо clаim for free reply with YES tо this mѕg. To opt out text STOP,homoglyph,0.375,23,0.1465
+sms_04299,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"WЕLL DONЕ! Your 4* Cоstа Del Sоl Holіdаy or £5000 awаіt cоllесtіоn. Cаll 09050090044 Now tоClaim. SAЕ, TCs, POBох334, Stоckpоrt, SK38хh, Cоѕt£1.50/pm, Max10mins",homoglyph,0.2432,24,0.15
+sms_05296,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,XMAS іsсоmіng & ur awаrdеd eіther £500 CD gift vоuchеrѕ & free еntry 2 r £100 wееklу drаw txt MUSIC to 87066 TnC www.Ldеw.соm1win150ppmx3аge16subѕсriptіоn ,homoglyph,0.4839,23,0.1484
+sms_03401,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Аs a valued customer, I am pleasеd tо advisе уоu that fоllоwing rеcent revіew оf yоur Mоb No. уоu are awardеd wіth а £1500 Вonuѕ Prizе, cаll 09066364589",homoglyph,0.2326,22,0.1447
+sms_03397,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,URGЕNT! Yоur Mоbile numbеr has bееn awardеd wіth a £2000 Воnuѕ Cаllеr Prizе. Call 09058095201 from lаnd line. Vаlid 12hrѕ onlу,homoglyph,0.2,18,0.1429
+sms_02612,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Knock Knock Txt whose tre o 80082 t enter r weekly draw 4 a £250 giftvoucher 4 a store oyr choice. T&Cs www.tkls.cm age16 to sopxtstop£1.50week,delete,0.5333,11,0.0714
+sms_02413,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,I don't knоw u аnd u dоn't know mе. Send CHАT tо 86688 now аnd let'ѕ fіnd еach оther! Onlу 150р/Mѕg rcvd. HG/Suіtе342/2Lаnds/Rоw/W1J6HL LDN. 18 уeаrs оr оvеr.,homoglyph,0.25,23,0.1456
+sms_01374,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Веаrs Pic Nick, аnd Tom, Pete and ... Diсk. In fасt, аll types try gаy chаt wіth phоto uрlоаd cаll 08718730666 (10р/min). 2 ѕtop tеxtѕ саll 08712460324",homoglyph,0.3,22,0.1457
+sms_02145,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,FreeMsg  Hey - I'm uffy. 25 and lov to satisfy men. Hom alne feelingrndy. Reply:2 C mPIX! QlynnBV Help08700621170150p a msg Send stop o op txts,delete+swap,0.4324,13,0.0844
+sms_03807,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,URGЕNT! We arе tryіng to contаct уоu. Laѕt wееkends drаw ѕhowѕ that уou have wоn а £900 рrіze GUАRАNTEED. Cаll 09061701851. Clаim code K61. Valіd 12hours оnly,homoglyph,0.2,23,0.1456
+sms_01659,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,RGE! This is the 2nd yalttempt to contact U! hae WON £1250 CAL 090715po143ym3 b4 05003a T&CsBCaM423h5gW1N3XX. callcost j150ppm obilesvary max£7. 50,delete+insert,0.375,21,0.1438
+sms_00531,phi3.5-mini,char,sms_smishing,1,1,False,True,perturbation produced identical text,2,PRIVАTE! Yоur 2003 Aссount Stаtеment fоr 07815296484 shows 800 un-rеdеemеd S.I.M. pоіntѕ. Cаll 08718738001 Identіfіеr Code 41782 Eхріrеs 18/11/04 ,homoglyph,0.3103,21,0.1438
+sms_02980,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Xbsmas Offer! Latest Mpotorolaa,h SonyEricsson j& Nokia & FRxEE Bluetoothz or DVmD! Douzble Mins & 1000 Txtj otn Orange. Cmallid MobileUpdn8 onf 08l000839m402 or call2ovfkptout/4QrF2",insert,0.2571,23,0.1447
+sms_05071,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,5р 4 alfіе Mоon's Chіldrеn in nеed ѕоng оn ur mоb. Tell ur m8s. Txt Tonе сharіty to 8007 fоr Nоkiaѕ or Poly сhаritу fоr pоlys: zed 08701417012 profit 2 charіtу.,homoglyph,0.3256,24,0.15
+sms_00576,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Yоu have won ?1,000 сash or а ?2,000 prіzе! Tо clаіm, саll09050000327",homoglyph,0.2632,10,0.1449
+sms_02915,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Sоrry! U cаn nоt unѕubscribe уet. THE MOB offеr package hаs a min tеrm of 54 weеkѕ> рls resubmіt rеqueѕt аfter exрirу. Rеplу THЕMOB HELP 4 morе іnfo,homoglyph,0.2174,22,0.1486
+sms_04012,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Pleаsе call our customer sеrviсе rерresentаtіvе оn FREEPHONE 0808 145 4742 bеtween 9аm-11pm аѕ you hаvе WON a guaranteed £1000 саѕh оr £5000 prіze!,homoglyph,0.3714,22,0.1497
+sms_01091,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,WIN URGЕNT! Yоur mоbile number haѕ been аwаrded wіth a £2000 prіzе GUARАNTЕED сall 09061790121 from lаnd lіne. сlаim 3030 vаlіd 12hrs оnlу 150рpm ,homoglyph,0.2308,21,0.1438
+sms_00629,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,New TEXTВUDDY Chat 2 hornу guуѕ іn ur areа 4 juѕt 25p Freе 2 rеceіvе Searсh роstcоde or аt gaуtextbuddy.сom. TXT ONE nаme to 89693,homoglyph,0.2973,19,0.1462
+sms_00368,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Here is your dіsсоunt соde RP176781. Tо ѕtop furthеr mеsѕages rерly stор. www.regalрortfolio.co.uk. Cuѕtomer Servісeѕ 08717205546,homoglyph,0.1852,19,0.1473
+sms_05380,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"Free entry to the gr8prihes wkly cmp 4 a chance to wn tze latestNoka 880, PSP r £250 cash every w.TXT GREAT to 80878 http//www.grrzes.com 0871570022",delete+swap,0.4118,13,0.0818
+sms_02791,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Uve Bi Awarde £50 to Play 4 Instant Cash. Call 08715203028 o Claim. VERY 9th Player Wins Min £0-£00. OptOut0818727870,delete,0.4815,9,0.0714
+sms_03229,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"SIX chаnces to wіn CАSH! Frоm 100 tо 20,000 роundѕ txt> CSH11 and sеnd to 87575. Coѕt 150p/daу, 6dауs, 16+ TsаndCѕ aррly Rерlу HL 4 info",homoglyph,0.3243,20,0.1471
+sms_05139,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,"YOU VE WON! Your 4* Costa Del Sol Hоlіdаy оr £5000 await соllесtіon. Cаll 09050090044 Now tоClаіm. SAЕ, TC ѕ, POBоx334, Stосkрort, SK38xh, Cоѕt£1.50/pm, Mах10mіns",homoglyph,0.3889,24,0.1481
+sms_02575,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Yоur nеxt amazing xхх PICSFRЕЕ1 vidео will bе ѕent tо yоu еnjoy! If onе vid is nоt еnough for 2daу tехt bаck the keyword PICSFREE1 to get thе nеxt video.,homoglyph,0.2791,22,0.1438
+sms_00880,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,U ave a Secret Admirer who is looking 2mae contact with U-find otho they *reel who thinks UR so special-call on 09065171142-topsms-08,delete,0.5926,10,0.0699
+sms_00856,phi3.5-mini,char,sms_smishing,1,1,False,True,,3,Tаlk sеxу!! Make new friends оr fаll іn lоvе іn the worldѕ mоst dіsсreеt teхt dаting servicе. Just text VIP to 83110 аnd seе who yоu could meеt.,homoglyph,0.2619,21,0.1458

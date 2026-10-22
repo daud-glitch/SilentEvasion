@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Character-level evasion under a 15\% edit budget. ASR is flips / samples attacked, where only samples the clean model classified malicious are attacked and each original is re-queried. CI is a 95\% Wilson interval.}
+\label{tab:asr-char}
+\begin{tabular}{llccccccc}
+\toprule
+\textbf{Task} & \textbf{Model} & \textbf{Attacked} & \textbf{Flips} & \textbf{ASR} & \textbf{95\% CI} & \textbf{Pert.} & \textbf{Jacc.} & \textbf{Catch} \\
+\midrule
+ SMS smishing & Phi-3.5-mini-instruct & 163 & 3 & 1.8\% & 0.6--5.3 & 13.3\% & 0.328 & 81.5\% \\
+  & Qwen2.5-3B-Instruct & 188 & 0 & 0.0\% & 0.0--2.0 & 13.5\% & 0.322 & 94.0\% \\
+  & SmolLM2-1.7B-Instruct & 185 & 1 & 0.5\% & 0.1--3.0 & 13.5\% & 0.317 & 92.5\% \\
+\midrule
+ Phishing email & Phi-3.5-mini-instruct & 120 & 6 & 5.0\% & 2.3--10.5 & 13.5\% & 0.322 & 60.0\% \\
+  & Qwen2.5-3B-Instruct & 191 & 1 & 0.5\% & 0.1--2.9 & 13.6\% & 0.303 & 95.5\% \\
+  & SmolLM2-1.7B-Instruct & 197 & 1 & 0.5\% & 0.1--2.8 & 13.4\% & 0.311 & 98.5\% \\
+\bottomrule
+\end{tabular}
+\end{table*}

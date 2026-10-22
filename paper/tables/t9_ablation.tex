@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Matched-vocabulary, matched-budget ablation of Section~\ref{sec:ablation}. Every contrast holds the candidate set, the probe phase and the 24-call cap fixed and varies one thing; A and B are the two arms, and positive A-only means the first arm flipped messages the second did not. Counts are pooled over model and task; the per-cell pairs are in \texttt{results/ablation\_contrasts.csv}.}
+\label{tab:ablation}
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Contrast} & \textbf{Isolates} & \textbf{Paired} & \textbf{A flips} & \textbf{B flips} & \textbf{A-only} & \textbf{B-only} & \textbf{$p$} \\
+\midrule
+ candidates & candidate set & 1044 & 45 & 14 & 32 & 1 & 0.0000 \\
+ oracle & oracle & 1001 & 44 & 32 & 26 & 14 & 0.0807 \\
+ ordering & ordering & 1001 & 61 & 44 & 17 & 0 & 0.0000 \\
+ search & search under one bit & 1044 & 51 & 45 & 6 & 0 & 0.0312 \\
+ stronger & search rule & 1001 & 41 & 61 & 0 & 20 & 0.0000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Clean zero-shot baseline on the frozen 800-row evaluation split (400 rows per task, 200 malicious). ``Catch'' is recall on the malicious class and is the denominator every ASR in this paper is conditional on.}
+\label{tab:baseline}
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Task} & \textbf{Model} & \textbf{Acc.} & \textbf{Prec.} & \textbf{Rec.} & \textbf{F1} & \textbf{TP/FP} & \textbf{Catch} \\
+\midrule
+ SMS smishing & Phi-3.5-mini-instruct & 0.772 & 0.751 & 0.815 & 0.782 & 163/54 & 81.5\% \\
+  & Qwen2.5-3B-Instruct & 0.843 & 0.787 & 0.940 & 0.857 & 188/51 & 94.0\% \\
+  & SmolLM2-1.7B-Instruct & 0.525 & 0.514 & 0.925 & 0.661 & 185/175 & 92.5\% \\
+\midrule
+ Phishing email & Phi-3.5-mini-instruct & 0.765 & 0.895 & 0.600 & 0.719 & 120/14 & 60.0\% \\
+  & Qwen2.5-3B-Instruct & 0.920 & 0.892 & 0.955 & 0.923 & 191/23 & 95.5\% \\
+  & SmolLM2-1.7B-Instruct & 0.520 & 0.510 & 0.985 & 0.672 & 197/189 & 98.5\% \\
+\bottomrule
+\end{tabular}
+\end{table*}

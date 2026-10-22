@@ -1,0 +1,50 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Cross-model transfer on the applied subset: every perturbation the source produced is replayed on the target, and the denominator is the TARGET's own caught originals, because a perturbation cannot transfer on a message the target never flagged. No diagonal is tabulated: replaying a model's own perturbations reproduces its attack run and would only reprint Table~\ref{tab:asr-word}. That replay was run as a faithfulness check and its diagonal appears in the prose below, not as a result. Cells with fewer than ten caught originals would be marked $\dagger$; none in this table needed it.}
+\label{tab:transfer}
+\begin{tabular}{llllcccc}
+\toprule
+\textbf{Mode} & \textbf{Task} & \textbf{Source} & \textbf{Target} & \textbf{Caught} & \textbf{Flips} & \textbf{ASR} & \textbf{95\% CI} \\
+\midrule
+ char & SMS smishing & Phi-3.5-mini-instruct & Qwen2.5-3B-Instruct & 163 & 0 & 0.0\% & 0.0--2.3 \\
+  &  & Phi-3.5-mini-instruct & SmolLM2-1.7B-Instruct & 160 & 0 & 0.0\% & 0.0--2.3 \\
+  &  & Qwen2.5-3B-Instruct & Phi-3.5-mini-instruct & 163 & 1 & 0.6\% & 0.1--3.4 \\
+  &  & Qwen2.5-3B-Instruct & SmolLM2-1.7B-Instruct & 179 & 0 & 0.0\% & 0.0--2.1 \\
+  &  & SmolLM2-1.7B-Instruct & Phi-3.5-mini-instruct & 160 & 1 & 0.6\% & 0.1--3.5 \\
+  &  & SmolLM2-1.7B-Instruct & Qwen2.5-3B-Instruct & 179 & 0 & 0.0\% & 0.0--2.1 \\
+ char & Phishing email & Phi-3.5-mini-instruct & Qwen2.5-3B-Instruct & 119 & 0 & 0.0\% & 0.0--3.1 \\
+  &  & Phi-3.5-mini-instruct & SmolLM2-1.7B-Instruct & 120 & 0 & 0.0\% & 0.0--3.1 \\
+  &  & Qwen2.5-3B-Instruct & Phi-3.5-mini-instruct & 119 & 4 & 3.4\% & 1.3--8.3 \\
+  &  & Qwen2.5-3B-Instruct & SmolLM2-1.7B-Instruct & 189 & 0 & 0.0\% & 0.0--2.0 \\
+  &  & SmolLM2-1.7B-Instruct & Phi-3.5-mini-instruct & 120 & 2 & 1.7\% & 0.5--5.9 \\
+  &  & SmolLM2-1.7B-Instruct & Qwen2.5-3B-Instruct & 189 & 1 & 0.5\% & 0.1--2.9 \\
+\midrule
+ word & SMS smishing & Phi-3.5-mini-instruct & Qwen2.5-3B-Instruct & 161 & 1 & 0.6\% & 0.1--3.4 \\
+  &  & Phi-3.5-mini-instruct & SmolLM2-1.7B-Instruct & 158 & 1 & 0.6\% & 0.1--3.5 \\
+  &  & Qwen2.5-3B-Instruct & Phi-3.5-mini-instruct & 162 & 3 & 1.8\% & 0.6--5.3 \\
+  &  & Qwen2.5-3B-Instruct & SmolLM2-1.7B-Instruct & 178 & 0 & 0.0\% & 0.0--2.1 \\
+  &  & SmolLM2-1.7B-Instruct & Phi-3.5-mini-instruct & 160 & 1 & 0.6\% & 0.1--3.5 \\
+  &  & SmolLM2-1.7B-Instruct & Qwen2.5-3B-Instruct & 178 & 4 & 2.2\% & 0.9--5.6 \\
+ word & Phishing email & Phi-3.5-mini-instruct & Qwen2.5-3B-Instruct & 117 & 0 & 0.0\% & 0.0--3.2 \\
+  &  & Phi-3.5-mini-instruct & SmolLM2-1.7B-Instruct & 118 & 0 & 0.0\% & 0.0--3.1 \\
+  &  & Qwen2.5-3B-Instruct & Phi-3.5-mini-instruct & 119 & 4 & 3.4\% & 1.3--8.3 \\
+  &  & Qwen2.5-3B-Instruct & SmolLM2-1.7B-Instruct & 188 & 0 & 0.0\% & 0.0--2.0 \\
+  &  & SmolLM2-1.7B-Instruct & Phi-3.5-mini-instruct & 120 & 3 & 2.5\% & 0.9--7.1 \\
+  &  & SmolLM2-1.7B-Instruct & Qwen2.5-3B-Instruct & 188 & 1 & 0.5\% & 0.1--2.9 \\
+\midrule
+ saliency & SMS smishing & Phi-3.5-mini-instruct & Qwen2.5-3B-Instruct & 163 & 1 & 0.6\% & 0.1--3.4 \\
+  &  & Phi-3.5-mini-instruct & SmolLM2-1.7B-Instruct & 160 & 0 & 0.0\% & 0.0--2.3 \\
+  &  & Qwen2.5-3B-Instruct & Phi-3.5-mini-instruct & 154 & 2 & 1.3\% & 0.4--4.6 \\
+  &  & Qwen2.5-3B-Instruct & SmolLM2-1.7B-Instruct & 163 & 1 & 0.6\% & 0.1--3.4 \\
+  &  & SmolLM2-1.7B-Instruct & Phi-3.5-mini-instruct & 160 & 0 & 0.0\% & 0.0--2.3 \\
+  &  & SmolLM2-1.7B-Instruct & Qwen2.5-3B-Instruct & 179 & 4 & 2.2\% & 0.9--5.6 \\
+ saliency & Phishing email & Phi-3.5-mini-instruct & Qwen2.5-3B-Instruct & 119 & 1 & 0.8\% & 0.1--4.6 \\
+  &  & Phi-3.5-mini-instruct & SmolLM2-1.7B-Instruct & 120 & 0 & 0.0\% & 0.0--3.1 \\
+  &  & Qwen2.5-3B-Instruct & Phi-3.5-mini-instruct & 113 & 4 & 3.5\% & 1.4--8.8 \\
+  &  & Qwen2.5-3B-Instruct & SmolLM2-1.7B-Instruct & 167 & 1 & 0.6\% & 0.1--3.3 \\
+  &  & SmolLM2-1.7B-Instruct & Phi-3.5-mini-instruct & 120 & 5 & 4.2\% & 1.8--9.4 \\
+  &  & SmolLM2-1.7B-Instruct & Qwen2.5-3B-Instruct & 189 & 5 & 2.6\% & 1.1--6.0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

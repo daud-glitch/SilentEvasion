@@ -1,0 +1,7 @@
+model,task,tau,fpr_at_0.5,tpr_at_0.5,fpr_at_tau,tpr_at_tau,n_clean_benign,n_clean_malicious,target_fpr,budget_met
+phi3.5-mini,phishing_email,0.9604,0.07,0.6,0.05,0.58,200,200,0.05,True
+phi3.5-mini,sms_smishing,1.0,0.27,0.815,0.15,0.74,200,200,0.05,False
+qwen2.5-3b,phishing_email,0.8222,0.07,0.845,0.05,0.765,200,200,0.05,True
+qwen2.5-3b,sms_smishing,0.8459,0.115,0.835,0.05,0.745,200,200,0.05,True
+smollm2-1.7b,phishing_email,0.986,1.0,1.0,0.05,0.345,200,200,0.05,True
+smollm2-1.7b,sms_smishing,0.9901,1.0,1.0,0.05,0.23,200,200,0.05,True

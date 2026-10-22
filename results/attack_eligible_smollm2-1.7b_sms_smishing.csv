@@ -1,0 +1,186 @@
+id,task,ground_truth,pred,raw,error,model,elapsed_s,text
+sms_02691,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,sports fans - get the latest sports news str* 2 ur mobile 1 wk FREE PLUS a FREE TONE Txt SPORT ON to 8007 www.getzed.co.uk 0870141701216+ norm 4txt/120p 
+sms_01874,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,You have WON a guaranteed £1000 cash or a £2000 prize.To claim yr prize call our customer service representative on
+sms_00375,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Thanks for your Ringtone Order, Reference T91. You will be charged GBP 4 per week. You can unsubscribe at anytime by calling customer services on 09057039994"
+sms_03164,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,This is the 2nd time we have tried to contact u. U have won the £1450 prize to claim just call 09053750005 b4 310303. T&Cs/stop SMS 08718725756. 140ppm
+sms_00876,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Shop till u Drop, IS IT YOU, either 10K, 5K, £500 Cash or £100 Travel voucher, Call now, 09064011000. NTT PO Box CR01327BT fixedline Cost 150ppm mobile vary"
+sms_03067,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Get a brand new mobile phone by being an agent of The Mob! Plus loads more goodies! For more info just text MAT to 87021.
+sms_00751,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Do you realize that in about 40 years, we'll have thousands of old ladies running around with tattoos?"
+sms_03064,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Hi babe its Jordan, how r u? Im home from abroad and lonely, text me back if u wanna chat xxSP visionsms.com Text stop to stopCost 150p 08712400603"
+sms_01375,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"500 New Mobiles from 2004, MUST GO! Txt: NOKIA to No: 89545 & collect yours today!From ONLY £1 www.4-tc.biz 2optout 087187262701.50gbp/mtmsg18 TXTAUCTION"
+sms_00579,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"our mobile number has won £5000, to claim calls us back or ring the claims hot line on 09050005321."
+sms_04200,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"cmon babe, make me horny, *turn* me on! Txt me your fantasy now babe -) Im hot, sticky and need you now. All replies cost £1.50. 2 cancel send STOP"
+sms_02115,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Sunshine Hols. To claim ur med holiday send a stamped self address envelope to Drinks on Us UK, PO Box 113, Bray, Wicklow, Eire. Quiz Starts Saturday! Unsub Stop"
+sms_01463,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"09066362231 URGENT! Your mobile No 07xxxxxxxxx won a £2,000 bonus caller prize on 02/06/03! this is the 2nd attempt to reach YOU! call 09066362231 ASAP!"
+sms_04864,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Bored housewives! Chat n date now! 0871750.77.11! BT-national rate 10p/min only from landlines!
+sms_01687,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,todays vodafone numbers ending with 0089(my last four digits) are selected to received a £350 award. If your number matches please call 09063442151 to claim your £350 award
+sms_02525,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,FREE entry into our £250 weekly comp just send the word WIN to 80086 NOW. 18 T&C www.txttowin.co.uk
+sms_03010,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Update_Now - 12Mths Half Price Orange line rental: 400mins...Call MobileUpd8 on 08000839402 or call2optout=J5Q
+sms_02574,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Congrats 2 mobile 3G Videophones R yours. call 09063458130 now! videochat wid ur mates, play java games, Dload polypH music, noline rentl. bx420. ip4. 5we. 150p"
+sms_04584,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"For ur chance to win a £250 wkly shopping spree TXT: SHOP to 80878. T's&C's www.txt-2-shop.com custcare 08715705022, 1x150p/wk"
+sms_01765,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Hi 07734396839 IBH Customer Loyalty Offer: The NEW NOKIA6600 Mobile from ONLY £10 at TXTAUCTION!Txt word:START to No:81151 & get Yours Now!4T&
+sms_03385,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,FREE MSG:We billed your mobile number by mistake from shortcode 83332.Please call 08081263000 to have charges refunded.This call will be free from a BT landline
+sms_05166,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Congrats 2 mobile 3G Videophones R yours. call 09063458130 now! videochat wid ur mates, play java games, Dload polypH music, noline rentl. bx420. ip4. 5we. 150p"
+sms_04948,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Great News! Call FREEFONE 08006344447 to claim your guaranteed £1000 CASH or £2000 gift. Speak to a live operator NOW!
+sms_01574,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,SMS AUCTION - A BRAND NEW Nokia 7250 is up 4 auction today! Auction is FREE 2 join & take part! Txt NOKIA to 86021 now! HG/Suite342/2Lands Row/W1J6HL
+sms_05055,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Double Mins & Double Txt & 1/2 price Linerental on Latest Orange Bluetooth mobiles. Call MobileUpd8 for the very latest offers. 08000839402 or call2optout/LF56
+sms_03132,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"LookAtMe!: Thanks for your purchase of a video clip from LookAtMe!, you've been charged 35p. Think you can do better? Why not send a video in a MMSto 32323."
+sms_04410,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"For your chance to WIN a FREE Bluetooth Headset then simply reply back with ""ADP"""
+sms_03988,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Ringtone Club: Gr8 new polys direct to your mobile every week !
+sms_02352,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Download as many ringtones as u like no restrictions, 1000s 2 choose. U can even send 2 yr buddys. Txt Sir to 80082 £3 "
+sms_02830,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Send a logo 2 ur lover - 2 names joined by a heart. Txt LOVE NAME1 NAME2 MOBNO eg LOVE ADAM EVE 07123456789 to 87077 Yahoo! POBox36504W45WQ TxtNO 4 no ads 150p.
+sms_04020,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"U've been selected to stay in 1 of 250 top British hotels - FOR NOTHING! Holiday valued at £350! Dial 08712300220 to claim - National Rate Call. Bx526, SW73SS"
+sms_04577,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Congratulations ur awarded 500 of CD vouchers or 125gift guaranteed & Free entry 2 100 wkly draw txt MUSIC to 87066
+sms_00135,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Want 2 get laid tonight? Want real Dogging locations sent direct 2 ur mob? Join the UK's largest Dogging Network bt Txting GRAVEL to 69888! Nt. ec2a. 31p.msg@150p
+sms_00673,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Get ur 1st RINGTONE FREE NOW! Reply to this msg with TONE. Gr8 TOP 20 tones to your phone every week just £1.50 per wk 2 opt out send STOP 08452810071 16
+sms_03595,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Do you want a New Nokia 3510i Colour Phone Delivered Tomorrow? With 200 FREE minutes to any mobile + 100 FREE text + FREE camcorder Reply or Call 08000930705
+sms_00868,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,PRIVATE! Your 2003 Account Statement for 07808 XXXXXX shows 800 un-redeemed S. I. M. points. Call 08719899217 Identifier Code: 41685 Expires 07/11/04
+sms_03585,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Hi 07734396839 IBH Customer Loyalty Offer: The NEW NOKIA6600 Mobile from ONLY £10 at TXTAUCTION!Txt word:START to No:81151 & get Yours Now!4T&
+sms_02313,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"tddnewsletter@emc1.co.uk (More games from TheDailyDraw) Dear Helen, Dozens of Free Games - with great prizesWith.."
+sms_00264,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Hey I am really horny want to chat or see me naked text hot to 69698 text charged at 150pm to unsubscribe text stop 69698
+sms_03189,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"This is the 2nd time we have tried 2 contact u. U have won the 750 Pound prize. 2 claim is easy, call 08712101358 NOW! Only 10p per min. BT-national-rate"
+sms_02767,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Married local women looking for discreet action now! 5 real matches instantly to your phone. Text MATCH to 69969 Msg cost 150p 2 stop txt stop BCMSFWC1N3XX
+sms_02089,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Well done ENGLAND! Get the official poly ringtone or colour flag on yer mobile! text TONE or FLAG to 84199 NOW! Opt-out txt ENG STOP. Box39822 W111WX £1.50
+sms_03155,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Not heard from U4 a while. Call 4 rude chat private line 01223585334 to cum. Wan 2C pics of me gettin shagged then text PIX to 8552. 2End send STOP 8552 SAM xxx
+sms_02300,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Congrats! 1 year special cinema pass for 2 is yours. call 09061209465 now! C Suprman V, Matrix3, StarWars3, etc all 4 FREE! bx420-ip4-5we. 150pm. Dont miss out!"
+sms_00870,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,What do U want for Xmas? How about 100 free text messages & a new video phone with half price line rental? Call free now on 0800 0721072 to find out more!
+sms_00305,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"SMS. ac Blind Date 4U!: Rodds1 is 21/m from Aberdeen, United Kingdom. Check Him out http://img. sms. ac/W/icmb3cktz8r7!-4 no Blind Dates send HIDE"
+sms_02879,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Hey Boys. Want hot XXX pics sent direct 2 ur phone? Txt PORN to 69855, 24Hrs free and then just 50p per day. To stop text STOPBCM SF WC1N3XX"
+sms_04450,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Urgent UR awarded a complimentary trip to EuroDisinc Trav, Aco&Entry41 Or £1000. To claim txt DIS to 87121 18+6*£1.50(moreFrmMob. ShrAcomOrSglSuplt)10, LS1 3AJ"
+sms_01469,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Hi its LUCY Hubby at meetins all day Fri & I will B alone at hotel U fancy cumin over? Pls leave msg 2day 09099726395 Lucy x Calls£1/minMobsmoreLKPOBOX177HP51FL
+sms_00593,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,PRIVATE! Your 2003 Account Statement for 07753741225 shows 800 un-redeemed S. I. M. points. Call 08715203677 Identifier Code: 42478 Expires 24/10/04
+sms_05469,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Get your garden ready for summer with a FREE selection of summer bulbs and seeds worth £33:50 only with The Scotsman this Saturday. To stop go2 notxt.co.uk
+sms_03290,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Camera - You are awarded a SiPix Digital Camera! call 09061221066 fromm landline. Delivery within 28 days
+sms_02663,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Hello darling how are you today? I would love to have a chat, why dont you tell me what you look like and what you are in to sexy?"
+sms_03419,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,LIFE has never been this much fun and great until you came in. You made it truly special for me. I won't forget you! enjoy @ one gbp/sms
+sms_01089,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,You are awarded a SiPix Digital Camera! call 09061221061 from landline. Delivery within 28days. T Cs Box177. M221BP. 2yr warranty. 150ppm. 16 . p p£3.99
+sms_03893,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,URGENT This is our 2nd attempt to contact U. Your £900 prize from YESTERDAY is still awaiting collection. To claim CALL NOW 09061702893. ACL03530150PM
+sms_00463,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"UpgrdCentre Orange customer, you may now claim your FREE CAMERA PHONE upgrade for your loyalty. Call now on 0207 153 9153. Offer ends 26th July. T&C's apply. Opt-out available"
+sms_04534,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Gr8 new service - live sex video chat on your mob - see the sexiest dirtiest girls live on ur phone - 4 details text horny to 89070 to cancel send STOP to 89070
+sms_01635,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Eerie Nokia tones 4u, rply TONE TITLE to 8007 eg TONE DRACULA to 8007 Titles: GHOST, ADDAMSFA, MUNSTERS, EXORCIST, TWILIGHT www.getzed.co.uk POBox36504W45WQ 150p"
+sms_00455,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Loan for any purpose £500 - £75,000. Homeowners + Tenants welcome. Have you been previously refused? We can still help. Call Free 0800 1956669 or text back 'help'"
+sms_01142,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,I don't know u and u don't know me. Send CHAT to 86688 now and let's find each other! Only 150p/Msg rcvd. HG/Suite342/2Lands/Row/W1J6HL LDN. 18 years or over.
+sms_00813,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Congratulations ur awarded either £500 of CD gift vouchers & Free entry 2 our £100 weekly draw txt MUSIC to 87066 TnCs www.Ldew.com1win150ppmx3age16
+sms_05539,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Want explicit SEX in 30 secs? Ring 02073162414 now! Costs 20p/min Gsex POBOX 2667 WC1N 3XX
+sms_01022,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Guess what! Somebody you know secretly fancies you! Wanna find out who it is? Give us a call on 09065394514 From Landline DATEBox1282EssexCM61XN 150p/min 18
+sms_00015,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"XXXMobileMovieClub: To use your credit, click the WAP link in the next txt message or click here>> http://wap. xxxmobilemovieclub.com?n=QJKGIGHJJGCBL"
+sms_03192,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,UR awarded a City Break and could WIN a £200 Summer Shopping spree every WK. Txt STORE to 88039.SkilGme.TsCs087147403231Winawk!Age16+£1.50perWKsub
+sms_00515,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"You are guaranteed the latest Nokia Phone, a 40GB iPod MP3 player or a £500 prize! Txt word: COLLECT to No: 83355! IBHltd LdnW15H 150p/Mtmsgrcvd18+"
+sms_00591,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"For ur chance to win a £250 wkly shopping spree TXT: SHOP to 80878. T's&C's www.txt-2-shop.com custcare 08715705022, 1x150p/wk"
+sms_02480,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Sppok up ur mob with a Halloween collection of nokia logo&pic message plus a FREE eerie tone, txt CARD SPOOK to 8007"
+sms_03968,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,YOU HAVE WON! As a valued Vodafone customer our computer has picked YOU to win a £150 prize. To collect is easy. Just call 09061743386
+sms_04475,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Want explicit SEX in 30 secs? Ring 02073162414 now! Costs 20p/min
+sms_01888,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Urgent! Please call 09061743811 from landline. Your ABTA complimentary 4* Tenerife Holiday or £5000 cash await collection SAE T&Cs Box 326 CW25WX 150ppm
+sms_02095,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,PRIVATE! Your 2004 Account Statement for 07742676969 shows 786 unredeemed Bonus Points. To claim call 08719180248 Identifier Code: 45239 Expires
+sms_04643,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,You are being ripped off! Get your mobile content from www.clubmoby.com call 08717509990 poly/true/Pix/Ringtones/Games six downloads for only 3
+sms_04280,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"URGENT. Important information for 02 user. Today is your lucky day! 2 find out why , log onto http://www.urawinner.com there is a fantastic surprise awaiting you !"
+sms_02312,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Congratulations! Thanks to a good friend U have WON the £2,000 Xmas prize. 2 claim is easy, just call 08718726971 NOW! Only 10p per minute. BT-national-rate."
+sms_02664,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,8007 FREE for 1st week! No1 Nokia tone 4 ur mob every week just txt NOKIA to 8007 Get txting and tell ur mates www.getzed.co.uk POBox 36504 W4 5WQ norm 150p/tone 16+
+sms_05542,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,ASKED 3MOBILE IF 0870 CHATLINES INCLU IN FREE MINS. INDIA CUST SERVs SED YES. L8ER GOT MEGA BILL. 3 DONT GIV A SHIT. BAILIFF DUE IN DAYS. I O £250 3 WANT £800
+sms_05216,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Natalja (25/F) is inviting you to be her friend. Reply YES-440 or NO-440 See her: www.SMS.ac/u/nat27081980 STOP? Send STOP FRND to 62468
+sms_00866,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Congratulations ur awarded either a yrs supply of CDs from Virgin Records or a Mystery Gift GUARANTEED Call 09061104283 Ts&Cs www.smsco.net £1.50pm approx 3mins
+sms_00418,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,FREE entry into our £250 weekly competition just text the word WIN to 80086 NOW. 18 T&C www.txttowin.co.uk
+sms_05037,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,You won't believe it but it's true. It's Incredible Txts! Reply G now to learn truly amazing things that will blow your mind. From O2FWD only 18p/txt
+sms_05203,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"YOU VE WON! Your 4* Costa Del Sol Holiday or £5000 await collection. Call 09050090044 Now toClaim. SAE, TC s, POBox334, Stockport, SK38xh, Cost£1.50/pm, Max10mins"
+sms_01777,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Call FREEPHONE 0800 542 0578 now!
+sms_01466,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"YOU 07801543489 are guaranteed the latests Nokia Phone, a 40GB iPod MP3 player or a £500 prize! Txt word:COLLECT to No:83355! TC-LLC NY-USA 150p/Mt msgrcvd18+"
+sms_00167,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,URGENT! We are trying to contact you. Last weekends draw shows that you have won a £900 prize GUARANTEED. Call 09061701939. Claim code S89. Valid 12hrs only
+sms_00947,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Ur cash-balance is currently 500 pounds - to maximize ur cash-in now send GO to 86688 only 150p/msg. CC: 08718720201 PO BOX 114/14 TCR/W1
+sms_02693,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Urgent Urgent! We have 800 FREE flights to Europe to give away, call B4 10th Sept & take a friend 4 FREE. Call now to claim on 09050000555. BA128NNFWFLY150ppm"
+sms_00335,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Valentines Day Special! Win over £1000 in our quiz and take your partner on the trip of a lifetime! Send GO to 83600 now. 150p/msg rcvd. CustCare:08718720201.
+sms_03981,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,ringtoneking 84484
+sms_02730,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Urgent! Please call 09066612661 from your landline, your complimentary 4* Lux Costa Del Sol holiday or £1000 CASH await collection. ppm 150 SAE T&Cs James 28, EH74RR"
+sms_00008,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,WINNER!! As a valued network customer you have been selected to receivea £900 prize reward! To claim call 09061701461. Claim code KL341. Valid 12 hours only.
+sms_00935,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Dear Matthew please call 09063440451 from a landline, your complimentary 4*Lux Tenerife holiday or £1000 CASH await collection. ppm150 SAE T&Cs Box334 SK38XH."
+sms_04901,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"ou are guaranteed the latest Nokia Phone, a 40GB iPod MP3 player or a £500 prize! Txt word: COLLECT to No: 83355! IBHltd LdnW15H 150p/Mtmsgrcvd18"
+sms_00139,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,You'll not rcv any more msgs from the chat svc. For FREE Hardcore services text GO to: 69988 If u get nothing u must Age Verify with yr network & try again
+sms_02374,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,XMAS Prize draws! We are trying to contact U. Todays draw shows that you have won a £2000 prize GUARANTEED. Call 09058094565 from land line. Valid 12hrs only
+sms_01423,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Congratulations ur awarded either £500 of CD gift vouchers & Free entry 2 our £100 weekly draw txt MUSIC to 87066 TnCs www.Ldew.com 1 win150ppmx3age16
+sms_00710,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,4mths half price Orange line rental & latest camera phones 4 FREE. Had your phone 11mths+? Call MobilesDirect free on 08000938767 to update now! or2stoptxt T&Cs
+sms_00357,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Congratulations ur awarded 500 of CD vouchers or 125gift guaranteed & Free entry 2 100 wkly draw txt MUSIC to 87066 TnCs www.Ldew.com1win150ppmx3age16
+sms_02881,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Last Chance! Claim ur £150 worth of discount vouchers today! Text SHOP to 85023 now! SavaMob, offers mobile! T Cs SavaMob POBOX84, M263UZ. £3.00 Sub. 16"
+sms_00527,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Today's Offer! Claim ur £150 worth of discount vouchers! Text YES to 85023 now! SavaMob, member offers mobile! T Cs 08717898035. £3.00 Sub. 16 . Unsub reply X"
+sms_02267,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,<Forwarded from 88877>FREE entry into our £250 weekly comp just send the word ENTER to 88877 NOW. 18 T&C www.textcomp.com
+sms_00164,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,-PLS STOP bootydelious (32/F) is inviting you to be her friend. Reply YES-434 or NO-434 See her: www.SMS.ac/u/bootydelious STOP? Send STOP FRND to 62468
+sms_04841,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,PRIVATE! Your 2003 Account Statement for shows 800 un-redeemed S. I. M. points. Call 08715203652 Identifier Code: 42810 Expires 29/10/0
+sms_05230,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,PRIVATE! Your 2003 Account Statement for <fone no> shows 800 un-redeemed S. I. M. points. Call 08715203656 Identifier Code: 42049 Expires 26/10/04
+sms_00492,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Congrats! 1 year special cinema pass for 2 is yours. call 09061209465 now! C Suprman V, Matrix3, StarWars3, etc all 4 FREE! bx420-ip4-5we. 150pm. Dont miss out!"
+sms_01536,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,You have won a Nokia 7250i. This is what you get when you win our FREE auction. To take part send Nokia to 86021 now. HG/Suite342/2Lands Row/W1JHL 16+
+sms_02669,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Wanna get laid 2nite? Want real Dogging locations sent direct to ur mobile? Join the UK's largest Dogging Network. Txt PARK to 69696 now! Nyt. ec2a. 3lp £1.50/msg
+sms_03334,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"You are being contacted by our dating service by someone you know! To find out who it is, call from a land line 09050000928. PoBox45W2TG150P"
+sms_05383,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,You have 1 new message. Call 0207-083-6089
+sms_00752,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,You have an important customer service announcement from PREMIER.
+sms_03463,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Bloomberg -Message center +447797706009 Why wait? Apply for your future http://careers. bloomberg.com
+sms_01887,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Dear 0776xxxxxxx U've been invited to XCHAT. This is our final attempt to contact u! Txt CHAT to 86688 150p/MsgrcvdHG/Suite342/2Lands/Row/W1J6HL LDN 18yrs 
+sms_01350,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"FREE2DAY sexy St George's Day pic of Jordan!Txt PIC to 89080 dont miss out, then every wk a saucy celeb!4 more pics c PocketBabe.co.uk 0870241182716 £3/wk"
+sms_04108,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"HOT LIVE FANTASIES call now 08707500020 Just 20p per min NTT Ltd, PO Box 1327 Croydon CR9 5WB 0870 is a national rate call"
+sms_00541,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,from www.Applausestore.com MonthlySubscription@50p/msg max6/month T&CsC web age16 2stop txt stop
+sms_01500,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"SMS. ac JSco: Energy is high, but u may not know where 2channel it. 2day ur leadership skills r strong. Psychic? Reply ANS w/question. End? Reply END JSCO"
+sms_04587,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Mila, age23, blonde, new in UK. I look sex with UK guys. if u like fun with me. Text MTALK to 69866.18 . 30pp/txt 1st 5free. £1.50 increments. Help08718728876"
+sms_00225,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"500 New Mobiles from 2004, MUST GO! Txt: NOKIA to No: 89545 & collect yours today!From ONLY £1 www.4-tc.biz 2optout 087187262701.50gbp/mtmsg18"
+sms_05117,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Get 3 Lions England tone, reply lionm 4 mono or lionp 4 poly. 4 more go 2 www.ringtones.co.uk, the original n best. Tones 3GBP network operator rates apply."
+sms_02779,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"For ur chance to win a £250 cash every wk TXT: ACTION to 80608. T's&C's www.movietrivia.tv custcare 08712405022, 1x150p/wk."
+sms_01653,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"For ur chance to win a £250 cash every wk TXT: ACTION to 80608. T's&C's www.movietrivia.tv custcare 08712405022, 1x150p/wk"
+sms_01745,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Someone has conacted our dating service and entered your phone because they fancy you!To find out who it is call from landline 09111030116. PoBox12n146tf15
+sms_04386,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Do you want a New Nokia 3510i Colour Phone Delivered Tomorrow? With 200 FREE minutes to any mobile + 100 FREE text + FREE camcorder Reply or Call 8000930705
+sms_00803,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,FREE for 1st week! No1 Nokia tone 4 ur mobile every week just txt NOKIA to 8077 Get txting and tell ur mates. www.getzed.co.uk POBox 36504 W45WQ 16+ norm150p/tone
+sms_04376,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Ur TONEXS subscription has been renewed and you have been charged £4.50. You can choose 10 more polys this month. www.clubzed.co.uk *BILLING MSG*
+sms_01307,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Enjoy the jamster videosound gold club with your credits for 2 new videosounds+2 logos+musicnews! get more fun from jamster.co.uk! 16+only Help? call: 09701213186 
+sms_03631,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Get the official ENGLAND poly ringtone or colour flag on yer mobile for tonights game! Text TONE or FLAG to 84199. Optout txt ENG STOP Box39822 W111WX £1.50
+sms_02897,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"pdate_Now - Double mins and 1000 txts on Orange tariffs. Latest Motorola, SonyEricsson & Nokia & Bluetooth FREE! Call MobileUpd8 on 08000839402 or call2optout/!YHL"
+sms_02014,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Great News! Call FREEFONE 08006344447 to claim your guaranteed £1000 CASH or £2000 gift. Speak to a live operator NOW!
+sms_01456,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Summers finally here! Fancy a chat or flirt with sexy singles in yr area? To get MATCHED up just reply SUMMER now. Free 2 Join. OptOut txt STOP Help08714742804
+sms_04579,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Urgent! call 09066350750 from your landline. Your complimentary 4* Ibiza Holiday or 10,000 cash await collection SAE T&Cs PO BOX 434 SK3 8WP 150 ppm 18+"
+sms_02109,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"FREE2DAY sexy St George's Day pic of Jordan!Txt PIC to 89080 dont miss out, then every wk a saucy celeb!4 more pics c PocketBabe.co.uk 0870241182716 £3/wk"
+sms_02133,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Your B4U voucher w/c 27/03 is MARSMS. Log onto www.B4Utele.com for discount credit. To opt out reply stop. Customer care call 08717168528
+sms_05287,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"URGENT! You have won a 1 week FREE membership in our £100,000 Prize Jackpot! Txt the word: CLAIM to No: 81010 T&C www.dbuk.net LCCLTD POBOX 4403LDNW1A7RW18"
+sms_03556,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,From next month get upto 50% More Calls 4 Ur standard network charge 2 activate Call 9061100010 C Wire3.net 1st4Terms PoBox84 M26 3UZ Cost £1.50 min MobcudB more
+sms_04967,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,URGENT! We are trying to contact U. Todays draw shows that you have won a £2000 prize GUARANTEED. Call 09058094507 from land line. Claim 3030. Valid 12hrs only
+sms_04272,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Natalja (25/F) is inviting you to be her friend. Reply YES-440 or NO-440 See her: www.SMS.ac/u/nat27081980 STOP? Send STOP FRND to 62468
+sms_01718,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,WOW! The Boys R Back. TAKE THAT 2007 UK Tour. Win VIP Tickets & pre-book with VIP Club. Txt CLUB to 81303. Trackmarque Ltd info@vipclub4u.
+sms_00188,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Please call our customer service representative on FREEPHONE 0808 145 4742 between 9am-11pm as you have WON a guaranteed £1000 cash or £5000 prize!
+sms_04517,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Congrats! 2 mobile 3G Videophones R yours. call 09061744553 now! videochat wid ur mates, play java games, Dload polyH music, noline rentl. bx420. ip4. 5we. 150pm"
+sms_00424,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,URGENT! Your Mobile number has been awarded with a £2000 prize GUARANTEED. Call 09058094455 from land line. Claim 3030. Valid 12hrs only
+sms_00487,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"FREE MESSAGE Activate your 500 FREE Text Messages by replying to this message with the word FREE For terms & conditions, visit www.07781482378.com"
+sms_04086,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Orange brings you ringtones from all time Chart Heroes, with a free hit each week! Go to Ringtones & Pics on wap. To stop receiving these tips reply STOP."
+sms_01205,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,WIN a year supply of CDs 4 a store of ur choice worth £500 & enter our £100 Weekly draw txt MUSIC to 87066 Ts&Cs www.Ldew.com.subs16+1win150ppmx3
+sms_03942,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Free Msg: get Gnarls Barkleys ""Crazy"" ringtone TOTALLY FREE just reply GO to this message right now!"
+sms_05202,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Call Germany for only 1 pence per minute! Call from a fixed line via access number 0844 861 85 85. No prepayment. Direct access! www.telediscount.co.uk
+sms_02386,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Someone has contacted our dating service and entered your phone becausethey fancy you! To find out who it is call from a landline 09058098002. PoBox1, W14RG 150p"
+sms_02427,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Valentines Day Special! Win over £1000 in our quiz and take your partner on the trip of a lifetime! Send GO to 83600 now. 150p/msg rcvd. CustCare:08718720201
+sms_00761,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Romantic Paris. 2 nights, 2 flights from £79 Book now 4 next year. Call 08704439680Ts&Cs apply."
+sms_04586,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,U have a Secret Admirer who is looking 2 make contact with U-find out who they R*reveal who thinks UR so special-call on 09065171142-stopsms-08718727870150ppm
+sms_03679,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Promotion Number: 8714714 - UR awarded a City Break and could WIN a £200 Summer Shopping spree every WK. Txt STORE to 88039 . SkilGme. TsCs087147403231Winawk!Age16 £1.50perWKsub
+sms_01853,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"This is the 2nd time we have tried 2 contact u. U have won the 750 Pound prize. 2 claim is easy, call 08718726970 NOW! Only 10p per min. BT-national-rate "
+sms_04236,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,FREEMSG: Our records indicate you may be entitled to 3750 pounds for the Accident you had. To claim for free reply with YES to this msg. To opt out text STOP
+sms_04299,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"WELL DONE! Your 4* Costa Del Sol Holiday or £5000 await collection. Call 09050090044 Now toClaim. SAE, TCs, POBox334, Stockport, SK38xh, Cost£1.50/pm, Max10mins"
+sms_03642,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"You can stop further club tones by replying ""STOP MIX"" See my-tone.com/enjoy. html for terms. Club tones cost GBP4.50/week. MFL, PO Box 1146 MK45 2WT (2/3)"
+sms_05296,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,XMAS iscoming & ur awarded either £500 CD gift vouchers & free entry 2 r £100 weekly draw txt MUSIC to 87066 TnC www.Ldew.com1win150ppmx3age16subscription 
+sms_03360,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Sorry I missed your call let's talk when you have the time. I'm on 07090201529
+sms_03401,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"As a valued customer, I am pleased to advise you that following recent review of your Mob No. you are awarded with a £1500 Bonus Prize, call 09066364589"
+sms_03397,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,URGENT! Your Mobile number has been awarded with a £2000 Bonus Caller Prize. Call 09058095201 from land line. Valid 12hrs only
+sms_02612,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Knock Knock Txt whose there to 80082 to enter r weekly draw 4 a £250 gift voucher 4 a store of yr choice. T&Cs www.tkls.com age16 to stoptxtstop£1.50/week
+sms_02413,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,I don't know u and u don't know me. Send CHAT to 86688 now and let's find each other! Only 150p/Msg rcvd. HG/Suite342/2Lands/Row/W1J6HL LDN. 18 years or over.
+sms_01374,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Bears Pic Nick, and Tom, Pete and ... Dick. In fact, all types try gay chat with photo upload call 08718730666 (10p/min). 2 stop texts call 08712460324"
+sms_03991,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,(Bank of Granite issues Strong-Buy) EXPLOSIVE PICK FOR OUR MEMBERS *****UP OVER 300% *********** Nasdaq Symbol CDGT That is a $5.00 per..
+sms_02145,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,FreeMsg: Hey - I'm Buffy. 25 and love to satisfy men. Home alone feeling randy. Reply 2 C my PIX! QlynnBV Help08700621170150p a msg Send stop to stop txts
+sms_03807,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,URGENT! We are trying to contact you. Last weekends draw shows that you have won a £900 prize GUARANTEED. Call 09061701851. Claim code K61. Valid 12hours only
+sms_01659,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,RGENT! This is the 2nd attempt to contact U!U have WON £1250 CALL 09071512433 b4 050703 T&CsBCM4235WC1N3XX. callcost 150ppm mobilesvary. max£7. 50
+sms_00531,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,PRIVATE! Your 2003 Account Statement for 07815296484 shows 800 un-redeemed S.I.M. points. Call 08718738001 Identifier Code 41782 Expires 18/11/04 
+sms_02980,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Xmas Offer! Latest Motorola, SonyEricsson & Nokia & FREE Bluetooth or DVD! Double Mins & 1000 Txt on Orange. Call MobileUpd8 on 08000839402 or call2optout/4QF2"
+sms_05071,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,5p 4 alfie Moon's Children in need song on ur mob. Tell ur m8s. Txt Tone charity to 8007 for Nokias or Poly charity for polys: zed 08701417012 profit 2 charity.
+sms_00576,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"You have won ?1,000 cash or a ?2,000 prize! To claim, call09050000327"
+sms_02915,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Sorry! U can not unsubscribe yet. THE MOB offer package has a min term of 54 weeks> pls resubmit request after expiry. Reply THEMOB HELP 4 more info
+sms_04012,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Please call our customer service representative on FREEPHONE 0808 145 4742 between 9am-11pm as you have WON a guaranteed £1000 cash or £5000 prize!
+sms_01460,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Bought one ringtone and now getting texts costing 3 pound offering more tones etc
+sms_01091,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,WIN URGENT! Your mobile number has been awarded with a £2000 prize GUARANTEED call 09061790121 from land line. claim 3030 valid 12hrs only 150ppm 
+sms_00629,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,New TEXTBUDDY Chat 2 horny guys in ur area 4 just 25p Free 2 receive Search postcode or at gaytextbuddy.com. TXT ONE name to 89693
+sms_00368,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Here is your discount code RP176781. To stop further messages reply stop. www.regalportfolio.co.uk. Customer Services 08717205546
+sms_05380,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"Free entry to the gr8prizes wkly comp 4 a chance to win the latest Nokia 8800, PSP or £250 cash every wk.TXT GREAT to 80878 http//www.gr8prizes.com 08715705022"
+sms_02791,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,U’ve Bin Awarded £50 to Play 4 Instant Cash. Call 08715203028 To Claim. EVERY 9th Player Wins Min £50-£500. OptOut 08718727870
+sms_03229,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"SIX chances to win CASH! From 100 to 20,000 pounds txt> CSH11 and send to 87575. Cost 150p/day, 6days, 16+ TsandCs apply Reply HL 4 info"
+sms_05139,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,"YOU VE WON! Your 4* Costa Del Sol Holiday or £5000 await collection. Call 09050090044 Now toClaim. SAE, TC s, POBox334, Stockport, SK38xh, Cost£1.50/pm, Max10mins"
+sms_02575,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Your next amazing xxx PICSFREE1 video will be sent to you enjoy! If one vid is not enough for 2day text back the keyword PICSFREE1 to get the next video.
+sms_00880,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,U have a Secret Admirer who is looking 2 make contact with U-find out who they R*reveal who thinks UR so special-call on 09065171142-stopsms-08
+sms_05149,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Get your garden ready for summer with a FREE selection of summer bulbs and seeds worth £33:50 only with The Scotsman this Saturday. To stop go2 notxt.co.uk
+sms_00856,sms_smishing,1,1,malicious,,smollm2-1.7b,137.4,Talk sexy!! Make new friends or fall in love in the worlds most discreet text dating service. Just text VIP to 83110 and see who you could meet.

@@ -1,0 +1,43 @@
+\section{Conclusion}
+
+We measured what a bounded, black-box text perturbation buys an attacker
+against three small language models. These models work zero-shot for security
+triage. Under a shared 15\% edit budget, random character-level perturbation
+flips 0.0--5.0\% of the messages a model had already caught. Random
+word-level perturbation flips 1.0--5.1\% while changing about half as many
+units. Ordering the same word edit by measured saliency roughly doubles that:
+4.6\% against 2.7\%, 33 message-specific flips against 7 when both are paired
+on the messages they share.
+
+Three things follow. First, a robustness number is a property of the search as
+much as of the model. Inside the same 15\% word budget, choosing substitutions
+rather than drawing them nearly doubles the flip rate (2.7\% to 4.6\%). This
+result is not on the same messages or from the same candidate vocabulary. Once
+we account for the higher budget actually spent, the factor is 1.4, not 1.7.
+The search, the candidates, and the denominator must all be named in the claim.
+Second, at this budget the binding constraint on a small triage model is what
+it catches before any attack. The model that flips most is closest to its
+decision boundary. The model that catches almost everything is immovable
+because its decision rule is nearly constant. Detection quality, not
+adversarial robustness, is where deployment effort pays first. Third, cheap
+defences split cleanly. Normalising visually confusable characters removes every
+character-level flip and only a small part of the word-level ones (7.5\% to
+6.9\%). Re-thresholding to hold a false-positive budget can create evasions on
+a model whose scores are least calibrated.
+
+The measurement lesson runs through all of it. The transfer we observed was low
+(0.9\% of caught messages off the diagonal). Per-model numbers are worth
+measuring separately. The probability readout and the generated verdict agreed
+on 941 of 1{,}001 rows. They diverged systematically on two of three models.
+A single readout is not a measurement until it is checked against the other.
+Every tool in this paper reports its denominator, its interval, and the bugs
+we fixed in our own pipeline. Each bug silently inflated the attack success rate
+in the direction that makes a paper look interesting.
+
+The matched-vocabulary, matched-budget ablation of \S\ref{sec:ablation} is the
+one experiment here that attributes rather than describes. With the candidate
+set, the probe phase, and the call budget held fixed, it reports what ordering
+is worth on its own. What it cannot do is turn five contrasts on roughly a
+thousand paired messages into a ranking of attacks. Next: a sentence-level
+paraphrase attacker and a defence-aware attacker that knows the threshold.
+Neither is claimed here.

@@ -1,0 +1,7 @@
+model,task,accuracy,precision,recall,f1,n,n_unparsed,tp,fp,tn,fn
+phi3.5-mini,phishing_email,0.765,0.8955,0.6,0.7186,400,0,120,14,186,80
+phi3.5-mini,sms_smishing,0.7725,0.7512,0.815,0.7818,400,0,163,54,146,37
+qwen2.5-3b,phishing_email,0.92,0.8925,0.955,0.9227,400,0,191,23,177,9
+qwen2.5-3b,sms_smishing,0.8425,0.7866,0.94,0.8565,400,0,188,51,149,12
+smollm2-1.7b,phishing_email,0.52,0.5104,0.985,0.6724,400,0,197,189,11,3
+smollm2-1.7b,sms_smishing,0.525,0.5139,0.925,0.6607,400,0,185,175,25,15

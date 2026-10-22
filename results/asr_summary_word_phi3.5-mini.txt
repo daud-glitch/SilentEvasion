@@ -1,0 +1,11 @@
+
+=== word-level attack (phi3.5-mini) ===
+eligible (clean-correct) samples : 283
+excluded (original not malicious): 0
+actually attacked                : 279
+flips (malicious -> benign)      : 12
+ASR (of attacked)                : 4.3%
+mean perturbation rate           : 7.86%
+mean word Jaccard                : 0.929
+  phishing_email   n=118  flips=6    ASR=5.1%
+  sms_smishing     n=161  flips=6    ASR=3.7%

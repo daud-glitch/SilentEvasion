@@ -1,0 +1,76 @@
+\section{Introduction}
+
+A phishing email that reaches a security analyst has usually passed several
+initial spam filters. Often, the next security layer is a small language model
+(an AI text classifier). The model makes a fast, automated decision: is this
+message malicious (harmful) or benign (safe)? Small open models with 1 to 4
+billion parameters are popular for this job. They run on a single standard GPU,
+can be hosted privately inside an organization, and require no special training
+examples~\cite{rojas2024zeroshot,koide2024chatspamdetector}. However, an attacker
+can change their message to bypass this filter.
+
+This paper tests how much small text edits (called perturbations) help an
+attacker evade detection. We limit the attacker to simple changes that a human
+reader would easily overlook. These changes include look-alike characters (such
+as replacing Latin letters with similar Cyrillic letters), tiny typos, and simple
+synonyms. The total changes are kept under a strict 15\% edit budget per
+message. We measure how often these edits cause the model's decision (verdict)
+to flip from \emph{malicious} to \emph{benign}.
+
+\paragraph{Why the denominator is crucial.}
+An attack success rate (ASR) is meaningless without knowing its denominator
+(the total number of tested samples). In security research, two different
+denominators are often used. The first counts all malicious messages. The
+second counts only the messages that the clean model correctly identified as
+malicious before the attack. The second definition is what truly matters for
+evasion: if a model never caught a message in the first place, modifying that
+message cannot count as a successful attack flip~\cite{morris2020textattack}.
+Therefore, we only attack messages that the clean model originally flagged as
+malicious. We re-test every original message during the attack process to
+confirm this label, and we report the baseline catch rate alongside every ASR.
+
+\paragraph{Contributions.}
+\begin{enumerate}
+\item \textbf{A strict, reproducible evasion evaluation protocol}
+  (\S\ref{sec:protocol}): We use a conditional denominator with re-verified
+  original messages, an exact Levenshtein edit distance budget shared across all
+  edits, identical prompts between baseline and attack phases, and public
+  sample records so every result can be verified.
+\item \textbf{An empirical evaluation of three small open models}
+  (\S\ref{sec:results}): Testing 2{,}079 caught messages across 8{,}047 model
+  queries resulted in 40 total decision flips. We test character-level and
+  word-level edits under the same budget, provide 95\% confidence intervals for
+  every row, and evaluate a saliency-guided attack that spends more queries to
+  rank word importance (\S\ref{sec:saliency}).
+\item \textbf{A paired comparison between edit types}
+  (\S\ref{sec:pairs}): Word substitutions flip more decisions than
+  character noise while requiring roughly half as many edits (26 versus 10
+  sample-specific flips, $p=0.011$). In addition, ranking word swaps by model
+  saliency flips more messages than random word swaps under the same budget
+  (33 versus 7, $p=4\times10^{-5}$). Pairing tests on the exact same messages
+  provides an honest comparison.
+\item \textbf{Low transferability across models} (\S\ref{sec:transfer}):
+  Replaying saved text edits across different models flips almost no samples off
+  the diagonal. Transfer rates remain low overall. The edits appear specific to
+  individual models rather than universal. Guided edits transfer slightly better
+  than random edits, but remain ineffective as portable attacks.
+\item \textbf{Analysis of model decision boundaries}: The model with the
+  highest attack success rate is the one operating closest to its decision
+  boundary, not the least accurate model overall. Conversely, a model that marks
+  almost everything as malicious appears artificially robust simply because its
+  classification rule rarely changes.
+\item \textbf{A clear negative result}: Under a 15\% edit budget, random edits
+  rarely fool these models. For practical deployments, the real concern is
+  initial detection accuracy rather than vulnerability to simple random edits.
+\end{enumerate}
+
+\paragraph{Scope and limitations.} We do not evaluate white-box attacks with
+full access to model internal weights, nor do we evaluate adaptive attackers who
+know the defense beforehand. Our saliency search selects words using model
+feedback, but it also uses a larger dictionary than the random word baseline.
+Therefore, the gap between them is not due to word ordering alone
+(\S\ref{sec:saliency}). An ablation study in \S\ref{sec:ablation} isolates these
+factors and shows their individual impact on identical messages. Across the two
+random attacks, we observe 40 flips in 2{,}079 messages across 8{,}047 queries.
+Because these flip counts are small, the confidence intervals are wide, and we
+focus on general trends rather than minor numerical differences.

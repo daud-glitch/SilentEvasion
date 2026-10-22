@@ -1,0 +1,121 @@
+\section{Threat Model and Measurement Protocol}
+\label{sec:protocol}
+
+\subsection{Adversary}
+
+The attacker controls the message text and nothing else: no access to weights,
+gradients, logits or the detector's code, and no ability to retrain it. The
+attacker additionally wants the message to remain readable, so the edit budget
+is bounded: at most 15\% of the message's units (characters for the
+character-level attack, whitespace tokens for the word-level attack) may
+change, and the change is measured, not estimated.
+
+\paragraph{Two access levels, reported separately.} Not every attack in this
+paper assumes the same interface, and the paper never pools them.
+\emph{Verdict access} returns the one-word generated answer: malicious or
+benign, one bit per query. That is what a spammer probing a filter receives,
+and it is the oracle for the character and random-word attacks
+(\S\ref{sec:results}). \emph{Probability access} additionally exposes
+$P(\text{malicious})$ --- here by scoring the two permitted answer tokens ---
+and only the saliency-guided attack uses it (\S\ref{sec:saliency}), because a
+ranking needs a number and one bit per candidate cannot produce one. Every
+row in every table records which channel produced it, the two channels are
+never mixed in a single comparison, and the disagreement between them is itself
+reported (\S\ref{sec:discussion}). The ablation of \S\ref{sec:ablation} holds
+the oracle fixed across arms precisely so that the cost of dropping from
+probability access to verdict access is measured rather than assumed.
+
+The verdict-only adversary is a deliberately weak one, and its ASR is a lower
+bound for that reason as well. A white-box attacker with logit access, an
+embedding-space attack, or a saliency-guided word search would do better. The
+point of a weak adversary is that a flip under it is unambiguously bad news
+for the detector: nothing exotic happened, the message simply stopped looking
+suspicious.
+
+\subsection{The four rules that make an ASR quotable}
+
+\paragraph{Rule 1 --- conditional denominator, re-queried.}
+Only messages the clean model classified \emph{malicious} are attacked. The
+original text is queried again inside the attack run instead of trusting the
+baseline label, and a sample whose original is no longer read as malicious is
+\emph{excluded} from the denominator rather than counted as a failed attack. In
+our runs this happened 52 times, and each exclusion is recorded with its reason.
+The 52 split into exactly two kinds, and the split is not the one an earlier
+draft reported. Forty-three are samples the saliency attack's probability route
+read as benign on the original --- all of them on Qwen2.5-3B, which is a channel
+artefact discussed in \S\ref{sec:discussion}. The other nine are word-attack
+samples whose perturbation came out identical to the original, so no edit was
+measured and there was nothing to score. No original was dropped for any other
+reason: the generator route never re-read a baseline-caught message as benign,
+so the character and saliency runs on the other two models exclude nothing at
+all.
+
+\paragraph{Rule 2 --- the same prompt on both sides.}
+The baseline and the attack call the identical message template, including the
+sample's own task description, so an e-mail is never scored with the SMS
+prompt. A baseline-versus-attack comparison across different prompts measures
+the prompt.
+
+\paragraph{Rule 3 --- one shared budget, exact distance.}
+The 15\% budget is a single allowance for the whole perturbation, not one per
+operation, and the perturbation rate is the exact Levenshtein distance divided
+by the length of the original. Both details are load-bearing. Giving each
+operation its own allowance let the real rate reach 22\% while the paper called
+it 15\%; and estimating the distance from a `difflib' opcode tally
+reported 204 edits for 56 deleted characters on a repetitive message, because
+`difflib' does not compute a minimal edit script.
+
+\paragraph{Rule 4 --- name the similarity you actually computed.}
+We report word-set Jaccard overlap and call it Jaccard. No semantic-similarity
+model is used anywhere in this study, so no BERTScore is claimed. For the
+character attack we additionally note that Jaccard is the wrong instrument: a
+homoglyph substitution changes the token, so word-set overlap collapses even
+though a human reads the same message.
+
+\subsection{Perturbations}
+
+\textbf{Character level.} Four operations share the budget: homoglyph
+substitution (Latin `a', `e', `o', `p', `c', `x', `y', `i', `s' replaced by
+Cyrillic codepoints), random deletion, random insertion of lowercase letters,
+and adjacent-position swap (costing two edits).
+
+\textbf{Word level.} Four operations share the budget: replacement of a word by
+one of its listed synonyms from a hand-written 14-entry table, word deletion,
+word duplication, and word swap. The synonym table is deliberately small, which
+weakens the attack and strengthens the negative result.
+
+\textbf{How many attempts, and what that costs.} The two random attacks give
+each sample up to three independent attempts with a per-sample seeded random
+generator, stopping at the first flip, so a message can cost one to four
+queries: one for the re-queried original plus one per attempt. On the recorded
+runs that comes to 3.9 queries per message and 8{,}047 queries for the 2{,}079
+attacked messages --- the number of messages and the number of queries are
+different quantities and are reported separately throughout. The saliency attack
+is not attempt-based: it probes every candidate position once and then re-queries
+after each accepted edit, 22.9 queries per message on average. The earlier draft
+of this paragraph said ``one attempt per sample'', which the per-sample records
+contradict; the attempt column in every row is the correction.
+
+Every attempt's perturbed text,
+verdict, edit count and rate is written to the per-sample CSV, so the tables can
+be rebuilt without the model.
+
+\subsection{Statistics}
+
+An ASR of $k$ flips out of $n$ attacks is a binomial proportion. We report the
+95\% Wilson score interval, which stays inside $[0,1]$ and, crucially, does not
+collapse at the boundary: a row with $k=0$ of $n=188$ has upper bound 2.0\%, not
+0\%. A percentile bootstrap over the same rows (10{,}000 resamples, fixed seed)
+is computed as a cross-check and agrees with Wilson wherever $k>0$; where
+$k=0$ the bootstrap degenerates to $[0,0]$ and we quote Wilson instead. The
+interval covers sampling variability over \emph{messages}, not variation of the
+perturbation seed; estimating the latter requires a second run over the same
+samples, which is what the seed sweep below does.
+
+\paragraph{Seed variation.} The intervals above cover variation over messages,
+not over the perturbation generator. The runner therefore takes \texttt{--seed}
+and a sweep driver (\texttt{src/run\_seed\_sweep.py}) re-runs one arm at several
+seeds, so the seed-to-seed spread can be reported next to the sampling interval
+rather than absorbed into it. The sweep is implemented; its cells are not part
+of the numbers in this version, and \S\ref{sec:discussion} lists that as a gap
+rather than implying the intervals cover it.

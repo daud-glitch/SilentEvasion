@@ -1,0 +1,25 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Saliency-guided (PWWS-style) word attack next to the uniform-random word attack, both inside the same 15\% word budget. Both spend a measured number of model queries: the random attack re-queries every original and keeps drawing until a flip or three attempts, the saliency attack probes every candidate. Per-sample query counts are stored with each row.}
+\label{tab:saliency}
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Task} & \textbf{Model} & \textbf{Attacked} & \textbf{Flips} & \textbf{ASR} & \textbf{95\% CI} & \textbf{Pert.} & \textbf{Jacc.} \\
+\midrule
+ SMS smishing & Phi-3.5-mini-instruct (saliency) & 163 & 12 & 7.4\% & 4.3--12.4 & 12.6\% & 0.773 \\
+  & Phi-3.5-mini-instruct (word) & 161 & 6 & 3.7\% & 1.7--7.9 & 9.0\% & 0.918 \\
+  & Qwen2.5-3B-Instruct (saliency) & 167 & 1 & 0.6\% & 0.1--3.3 & 12.3\% & 0.778 \\
+  & Qwen2.5-3B-Instruct (word) & 186 & 6 & 3.2\% & 1.5--6.9 & 9.2\% & 0.916 \\
+  & SmolLM2-1.7B-Instruct (saliency) & 185 & 11 & 5.9\% & 3.4--10.3 & 12.9\% & 0.768 \\
+  & SmolLM2-1.7B-Instruct (word) & 184 & 3 & 1.6\% & 0.6--4.7 & 8.8\% & 0.916 \\
+\midrule
+ Phishing email & Phi-3.5-mini-instruct (saliency) & 120 & 14 & 11.7\% & 7.1--18.6 & 6.0\% & 0.867 \\
+  & Phi-3.5-mini-instruct (word) & 118 & 6 & 5.1\% & 2.4--10.7 & 6.3\% & 0.945 \\
+  & Qwen2.5-3B-Instruct (saliency) & 169 & 4 & 2.4\% & 0.9--5.9 & 5.4\% & 0.876 \\
+  & Qwen2.5-3B-Instruct (word) & 190 & 5 & 2.6\% & 1.1--6.0 & 6.2\% & 0.950 \\
+  & SmolLM2-1.7B-Instruct (saliency) & 197 & 4 & 2.0\% & 0.8--5.1 & 6.7\% & 0.851 \\
+  & SmolLM2-1.7B-Instruct (word) & 196 & 2 & 1.0\% & 0.3--3.6 & 6.3\% & 0.948 \\
+\bottomrule
+\end{tabular}
+\end{table*}

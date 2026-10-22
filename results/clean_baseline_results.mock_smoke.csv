@@ -1,0 +1,6 @@
+id,task,ground_truth,pred,raw,error,model,elapsed_s
+sms_02691,sms_smishing,1,0,"benign (mock simulation, no model loaded)",,qwen2.5-3b,10.2
+sms_04752,sms_smishing,1,0,"benign (mock simulation, no model loaded)",,qwen2.5-3b,10.2
+sms_01762,sms_smishing,0,0,"benign (mock simulation, no model loaded)",,qwen2.5-3b,10.2
+sms_01874,sms_smishing,1,0,"benign (mock simulation, no model loaded)",,qwen2.5-3b,10.2
+sms_01345,sms_smishing,0,0,"benign (mock simulation, no model loaded)",,qwen2.5-3b,10.2

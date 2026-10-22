@@ -1,0 +1,13 @@
+{
+  "id": "__KAGGLE_USERNAME__/slm-robustness-qwen3b",
+  "title": "SLM robustness qwen3b",
+  "code_file": "kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}

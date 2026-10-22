@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Paired comparison of two attack modes on the same messages. Only the discordant counts carry information about the difference: A-only flips happened under the first mode and not the second, B-only the reverse. The p-value is an exact McNemar test (binomial on the discordant counts); the interval is a percentile bootstrap over messages of the paired risk difference.}
+\label{tab:pairs}
+\begin{tabular}{lllccccccc}
+\toprule
+\textbf{A vs B} & \textbf{Task} & \textbf{Model} & \textbf{Paired} & \textbf{A flips} & \textbf{B flips} & \textbf{Risk diff.} & \textbf{95\% CI} & \textbf{A/B only} & \textbf{$p$} \\
+\midrule
+ saliency vs word & Phishing email & Phi-3.5-mini-instruct & 118 & 14 & 6 & +6.8 & +1.7 to +11.9 & 9/1 & 0.021 \\
+ saliency vs word & Phishing email & Qwen2.5-3B-Instruct & 169 & 4 & 1 & +1.8 & -0.6 to +4.7 & 4/1 & 0.375 \\
+ saliency vs word & Phishing email & SmolLM2-1.7B-Instruct & 196 & 3 & 2 & +0.5 & -1.0 to +2.0 & 2/1 & 1.000 \\
+ saliency vs word & SMS smishing & Phi-3.5-mini-instruct & 161 & 12 & 6 & +3.7 & +0.6 to +7.4 & 7/1 & 0.070 \\
+ saliency vs word & SMS smishing & Qwen2.5-3B-Instruct & 167 & 1 & 1 & +0.0 & -1.8 to +1.8 & 1/1 & 1.000 \\
+ saliency vs word & SMS smishing & SmolLM2-1.7B-Instruct & 184 & 11 & 3 & +4.3 & +1.1 to +8.2 & 10/2 & 0.039 \\
+ word vs char & Phishing email & Phi-3.5-mini-instruct & 118 & 6 & 6 & +0.0 & -5.1 to +5.1 & 5/5 & 1.000 \\
+ word vs char & Phishing email & Qwen2.5-3B-Instruct & 190 & 5 & 1 & +2.1 & +0.0 to +4.7 & 5/1 & 0.219 \\
+ word vs char & Phishing email & SmolLM2-1.7B-Instruct & 196 & 2 & 1 & +0.5 & -1.0 to +2.5 & 2/1 & 1.000 \\
+ word vs char & SMS smishing & Phi-3.5-mini-instruct & 161 & 6 & 3 & +1.9 & -1.2 to +5.0 & 5/2 & 0.453 \\
+ word vs char & SMS smishing & Qwen2.5-3B-Instruct & 186 & 6 & 0 & +3.2 & +1.1 to +5.9 & 6/0 & 0.031 \\
+ word vs char & SMS smishing & SmolLM2-1.7B-Instruct & 184 & 3 & 1 & +1.1 & -1.1 to +3.3 & 3/1 & 0.625 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,52 @@
+\begin{abstract}
+Security teams often use language models (AI text classifiers) to sort incoming
+emails and text messages. The model decides whether a message is \emph{malicious}
+(harmful or dangerous) or \emph{benign} (safe and normal) before a human analyst
+reviews it. In this paper, we study what happens when an attacker makes small,
+careful text edits (known as perturbations) to bypass the classifier. We show
+that evasion rates can only be measured accurately under a \emph{conditional}
+testing rule: researchers must only attack messages that the model originally
+caught, verify each original message again during testing, and limit the attacker
+to a realistic edit budget per sample.
+
+We test this method on three open, lightweight language models (1.7 billion to
+3.8 billion parameters) without extra fine-tuning (zero-shot) on phishing emails
+and SMS spam (smishing). We test 2{,}079 caught messages using 8{,}047 model
+queries under a 15\% total edit budget. At first glance, the models appear
+quite resistant to simple edits. Small character changes (like typos or
+look-alike letters) flip only 0.0--5.0\% of caught messages. Simple word swaps
+flip only 1.0--5.1\% while modifying about half as many letters.
+
+However, a more targeted search changes the picture. When we use a saliency-guided
+word attack (ranking word replacements by their actual impact on the model's
+decision), the attack success rate rises to 4.6\%, compared to 2.7\% for random
+word swaps. This guided attack achieves 46 flips across 1{,}001 attacks, averaging
+23 model queries per message. In direct paired comparisons on the exact same
+messages, the saliency attack flips 33 messages that random edits miss, while
+random edits flip only 7 that saliency misses (exact McNemar $p=4\times10^{-5}$).
+A similar but smaller gap appears between word and character edits (26 versus 10,
+$p=0.011$). This demonstrates that model vulnerability is concentrated in a few
+key words rather than spread evenly across the vocabulary. Evasion rates
+depend heavily on the quality of the attacker's search strategy.
+
+Two other key findings help interpret these numbers. First, text edits do not
+transfer well across different models. When we test saved edits against other
+models, only 0.9\% of caught messages flip off the diagonal. Second, continuous
+probability scores (the model's internal confidence) do not always match the
+final generated text decision. The two readouts agree on 941 of 1{,}001 rows,
+matching perfectly for one model but diverging on another. We report final
+text decisions throughout and treat this gap as an important measurement
+finding. For defenses, cleaning look-alike characters stops all character-level
+evasions, but has little effect on word-level swaps (7.5\% to 6.9\%). Adjusting
+decision cutoffs (re-thresholding) to maintain a 5\% false-alarm budget can
+actually increase evasions for models with uncalibrated probability scores.
+
+Our main practical takeaway is that with small edit budgets, the primary
+limitation of small triage models is basic classification accuracy rather than
+susceptibility to random text edits. Furthermore, attack success rates must
+always be reported with their exact denominator (sample count), a statistical
+confidence interval, and the specific search method used. A result of 0 out of
+188 is an upper limit of 2.0\%, not proof of absolute security. We release all
+frozen datasets, attack code, and individual sample records to support
+reproducible security evaluations.
+\end{abstract}

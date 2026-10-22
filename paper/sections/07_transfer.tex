@@ -1,0 +1,58 @@
+\section{Do the perturbations transfer across models?}
+\label{sec:transfer}
+
+A single-model ASR answers a narrow question: how much does \emph{this} model
+cost an attacker who can query it. That is the right question for a targeted
+campaign and the wrong one for a defender choosing a model, because an attacker
+who cannot query the deployed model will instead craft perturbations against
+something they can download. Whether those perturbations survive the move
+decides whether the fragility measured in \S\ref{sec:results} is a property of
+the task or an artefact of three specific checkpoints.
+
+\paragraph{Protocol.} We generate no new perturbations. Every text produced by
+the three attacks --- character, word and saliency --- is replayed, unchanged,
+against every other model, with the same prompt, the same answer parser and
+temperature zero. The saliency rows are the ones worth having: that edit was
+chosen against the source model's own measured probabilities, so its cell asks
+whether the choice survives a different decision boundary, where a random edit
+only asks whether the model is noisy in the same way as its neighbour.
+Two accounting rules make the resulting numbers comparable with the
+single-model ones:
+
+\begin{itemize}
+\item \textbf{The target owns the denominator.} A perturbation ``transfers'' only
+if the target model read the \emph{original} text as malicious and the
+\emph{perturbed} text as benign. A message the target never flagged cannot be
+evaded, and scoring it as a transfer failure would punish the target for being
+wrong on the clean text --- the opposite of robustness.
+\item \textbf{Two subsets, one tabulated.} The \emph{applied} subset contains
+every perturbation the source actually applied; its denominator is how often the
+target caught those originals, so it measures the transferability of the
+perturbation \emph{family}. The \emph{flipped-source} subset keeps only the
+perturbations that fooled the source --- the classic transfer matrix --- and it is
+what the literature reports, but at this scale it holds one to six candidates
+per cell, so its cells carry no denominator worth an interval. We tabulate the
+applied subset and keep the classic one in the artefact.
+\end{itemize}
+
+\paragraph{The faithfulness check.} Replaying a model's own perturbations must
+reproduce its single-model ASR exactly --- same text, same prompt, deterministic
+decoder --- and a mismatch there would invalidate every off-diagonal cell. We
+run that replay as part of the same pass
+(\texttt{run\_transfer.py --include-self}), and we compare it against the attack
+tables rather than against itself: the stored flip flag from the attack run is
+the claim, the replayed verdict is the evidence. Every diagonal cell agrees. This
+is what makes the off-diagonal cells a measurement: the replay path is the same
+code, prompt and parser that produced Table~\ref{tab:asr-word}, so a transferred
+flip cannot be an artefact of the harness. It is a weaker statement than it
+looks, and worth saying plainly: agreement shows the replay is faithful, not
+that the decoder is deterministic in general --- greedy decoding is reproducible
+on one GPU build, and a cell could drift on another.
+
+\IfFileExists{tables/t5_transfer.tex}{\input{sections/gen_transfer_results}}{}
+
+Table~\ref{tab:transfer} reports the applied subset only, for all three attack
+modes; the classic flipped-source matrix lives in the artefact, where its small
+denominators cannot be mistaken for a rate.
+
+\input{tables/t5_transfer}

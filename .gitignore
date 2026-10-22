@@ -1,0 +1,37 @@
+# Environments & tools
+venv/
+.venv/
+env/
+.tools/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Execution logs & temp files
+*.log
+*.watch.log
+auth_err.txt
+results.rar
+results/shim.log
+page4.png
+/tmp/
+
+# Kaggle kernel execution dumps (raw runs)
+kaggle_output*/
+archive/
+
+# LaTeX build intermediates (keep final main.pdf, main.docx)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/*.xdv
+paper/preview/
+paper/preview_docx/
+paper/*.word-preview.pdf

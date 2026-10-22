@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Training-free defences, measured on the same stored perturbations. \emph{None} is the undefended ASR, \emph{norm} applies input normalisation only, \emph{thr} replaces the default decision threshold with one fitted on clean benign mail to a 5\% false-positive budget. Rows are pooled over the three models; $n$ is the number of originals the undefended rule itself flagged, and \emph{n/a} means a defence flagged none of them, so there was nothing left to flip. $\dagger$ marks a row containing a model-task pair whose false-positive budget could not be met: its threshold is a rejection rule, not a defence, and the number is there to be ignored.}
+\label{tab:defense}
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Mode} & \textbf{Task} & \textbf{None} & \textbf{Norm.} & \textbf{Thr.} & \textbf{$n$} \\
+\midrule
+ char & SMS smishing & 0.6\% & 0.0\% & 2.3\%$\dagger$ & 515 \\
+ char & Phishing email & 1.4\% & 0.0\% & 7.7\% & 486 \\
+\midrule
+ word & SMS smishing & 2.1\% & 2.1\% & 4.7\%$\dagger$ & 512 \\
+ word & Phishing email & 2.9\% & 1.9\% & 5.4\% & 483 \\
+\midrule
+ saliency & SMS smishing & 6.6\% & 6.6\% & 19.9\%$\dagger$ & 515 \\
+ saliency & Phishing email & 8.4\% & 7.3\% & 18.9\% & 486 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,152 @@
+\section{Discussion and Limitations}
+\label{sec:discussion}
+
+\subsection{Why a low evasion rate is a result, not a failed attack}
+
+Some readers might view an Attack Success Rate (ASR) of 0.0--5.1\% as a failed
+attack. In our setting, the opposite reading is more accurate. The attack
+spends its full edit budget. It changes 13.3--13.6\% of characters and
+6.2--9.2\% of words. It runs up to three attempts per sample. In total, it flips
+40 decisions. What the attack does not do is guided search. It draws edits at
+random instead of selecting the most damaging ones.
+
+Section~\ref{sec:saliency} shows why search matters. We test synonym
+replacements under the same 15\% word budget. When substitutions are ordered by
+measured saliency (their observed impact on the model's decision), the flip rate
+is 4.6\%. When substitutions are chosen at random, the flip rate is only 2.7\%.
+In paired tests, saliency flips 33 messages that random edits miss, while
+random edits flip only 7 that saliency misses. Thus, we should not claim these
+models are robust. Instead, under random bounded edits they rarely flip; under a
+guided search with the same budget, they flip about twice as often.
+
+\subsection{Word edits cost fewer changes and flip more decisions}
+
+Word-level changes flip more decisions than character-level noise (28 versus 12
+flips). At the same time, word edits modify fewer units (6.2--9.2\% of words
+versus 13.3--13.6\% of characters). The paired analysis in
+\S\ref{sec:pairs} confirms this pattern. Word edits outperform character edits
+in five of six cells, and the pooled difference is significant (26 versus 10,
+$p=0.011$). The text similarity values explain this outcome. Word edits preserve
+92--95\% of original words. Character edits leave only 30.3--32.8\% word overlap.
+A homoglyph (a character that looks like another) alters the token
+representation even when human readers see no change.
+
+\subsection{Vulnerability is concentrated in specific words}
+
+The saliency results clarify how random attacks behave. If an evasion succeeds
+only when striking specific decisive words, a random draw from a small
+dictionary rarely hits them. That explains the low 2.7\% baseline flip rate.
+
+The saliency attack confirms this behavior. Most evasions require only two or
+three targeted word substitutions. However, the saliency attack edits more words
+on average (9.3\% versus 7.6\%, as shown in Table~\ref{tab:budget}). Normalized
+by edit rate, its advantage is roughly 1.4 times rather than 1.7 times. Thus,
+vulnerability is concentrated in specific tokens. This finding is useful for
+defenders because targeted words can be filtered. It also warns against taking
+random perturbation rates as proof of general robustness.
+
+This effect varies across models. Phi-3.5-mini sits close to its decision
+boundary. Its ASR roughly doubles under saliency search (11.7\% and 7.4\%
+versus 5.1\% and 3.7\% under random word edits). Qwen2.5-3B is more accurate and
+does not flip more often under saliency (2.4\% and 0.6\% versus 2.6\% and 3.2\%).
+Its remaining errors cannot be reached by this candidate vocabulary.
+
+\subsection{Two readouts of one model are not one measurement}
+
+The saliency attack requires continuous scores, so it optimizes the predicted
+probability $P(\text{malicious})$ over two answer tokens. The rest of this
+paper evaluates the generated text decision. We re-checked every stored
+saliency sample with text generation. The two channels agree on 941 of 1{,}001
+rows. The disagreements are systematic. For Phi-3.5-mini, both channels agree on
+all rows. For Qwen2.5-3B, the probability channel claims 45 flips that
+generation does not confirm. For SmolLM2-1.7B, generation claims 15 flips that
+the probability route misses.
+
+This gap occurs because a two-token probability readout does not match free-form
+decoding. When answer words split into sub-tokens, probability ratios can point
+one way while greedy decoding points the other. We report final text decisions
+throughout the paper. We view the divergence as a limitation of probability
+probing in small language models.
+
+\subsection{The transfer we observe is low}
+
+We replayed every stored perturbation (character, word, and saliency) against
+every other model. Very few perturbations transferred. On the applied subset,
+only 51 of 5{,}514 caught messages (0.9\%) flipped off the diagonal.
+Specifically, 9 flips came from 1{,}860 character edits, 18 from 1{,}847 word
+edits, and 24 from 1{,}807 saliency edits. Guided edits transferred slightly
+better than random edits. However, confidence intervals overlap, indicating a
+broad trend rather than a sharp separation. In the classic flipped-source
+matrix, only 5 of 31 cells are non-zero, and 27 of 31 cells hold fewer than ten
+caught originals.
+
+A 0.9\% rate indicates low observed transfer, not total immunity. Fifty-one
+messages did cross model boundaries. Either these perturbations are
+model-specific, or they are too weak to cross distant decision boundaries. In
+either case, robustness evaluations on one model do not guarantee safety on
+another.
+
+\subsection{Defenses: character cleaning succeeds while re-thresholding fails}
+
+Character normalization cleans visually confusable characters. It removes every
+character-level flip (1.0\% to 0.0\% pooled). It leaves word and saliency
+attacks largely unaffected (2.5\% to 2.0\%, and 7.5\% to 6.9\%). This confirms
+our hypothesis: distinct perturbation types fail for distinct reasons.
+
+Re-thresholding yields mixed results. We adjust the threshold $\tau$ to enforce a
+5\% clean false-positive budget. This reduces flips on well-calibrated models.
+However, on SmolLM2-1.7B (where clean scores cluster near 1.0), it increases
+evasions: 0.0\% to 29.0\% on email and 0.0\% to 13.3\% on SMS. Lowering the
+threshold places the decision cutoff inside perturbation noise. It also lowers
+clean recall on SmolLM2-1.7B (100\% to 34.5\% and 23.0\%). For one task cell,
+the budget cannot be met without rejecting all messages.
+
+\subsection{Limitations}
+
+\paragraph{Search strength.} Random perturbations are weak adversaries. The
+saliency attack uses greedy first-order search over a fixed candidate set. It
+is not a full implementation of PWWS or TextFooler, nor is it a white-box
+gradient attack. Reported ASR values are lower bounds on attacker capabilities.
+
+\paragraph{Transfer coverage.} The transfer matrix covers all three attacks.
+Faithfulness is verified by self-replay: diagonal cells match the original
+attack logs exactly. These tests demonstrate harness consistency on a single GPU
+environment rather than universal cross-platform reproducibility.
+
+\paragraph{Unmatched vocabulary in primary tables.} The saliency attack uses a
+broader vocabulary than the random word attack. The ablation in
+\S\ref{sec:ablation} isolates vocabulary, ordering, and oracle effects across
+five arms. The reported contrasts in Table~\ref{tab:ablation} hold candidate
+sets and query caps constant.
+
+\paragraph{Defense operating point.} The defense probe evaluates a 5\%
+false-positive budget using probability scores. Because thresholding requires
+numeric scores, its baseline column is not directly comparable to text verdict
+tables.
+
+\paragraph{Saliency denominator.} The saliency attack excludes 43 originals that
+its probability channel classified as benign (all on Qwen2.5-3B). Its denominator
+is 1{,}001 messages, compared to 2{,}079 for random attacks. Nine additional
+exclusions in the word attack correspond to identical text transformations (52
+exclusions total).
+
+\paragraph{Similarity metric.} We report word-level Jaccard similarity without
+neural sentence embeddings. For character edits, Jaccard similarity is an
+imperfect proxy, and actual edit rate is the cleaner measure.
+
+\paragraph{Uncertainty scope.} Confidence intervals represent sample variation
+over messages, not seed variability across runs.
+
+\paragraph{Sample design.} Attacks target the correctly classified subset of an
+800-row evaluation split. This provides an accurate conditional denominator but
+does not represent out-of-distribution generalization.
+
+\paragraph{Model coverage.} We evaluate three open models. Llama-3.2-3B-Instruct
+was omitted due to access restrictions.
+
+\paragraph{Task construct.} SMS smishing is evaluated on the UCI SMS Spam
+dataset, where spam includes broader commercial promotions. Phishing email data
+comes from public benchmark collections.
+
+\paragraph{Missing experiments.} Paraphrase generation attacks and defense-aware
+adaptive attacks were designed but not run.

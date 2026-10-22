@@ -1,0 +1,13 @@
+
+=== saliency-level attack (smollm2-1.7b) ===
+eligible (clean-correct) samples : 382
+excluded (original not malicious): 0
+actually attacked                : 382
+flips (malicious -> benign)      : 0
+ASR (of attacked)                : 0.0%
+mean perturbation rate           : 9.71%
+mean word Jaccard                : 0.811
+  phishing_email   n=197  flips=0    ASR=0.0%
+  sms_smishing     n=185  flips=0    ASR=0.0%
+
+alpha=0.50 max_positions=12 max_rounds=3

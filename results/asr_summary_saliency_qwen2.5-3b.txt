@@ -1,0 +1,13 @@
+
+=== saliency-level attack (qwen2.5-3b) ===
+eligible (clean-correct) samples : 379
+excluded (original not malicious): 43
+actually attacked                : 336
+flips (malicious -> benign)      : 50
+ASR (of attacked)                : 14.9%
+mean perturbation rate           : 8.82%
+mean word Jaccard                : 0.828
+  phishing_email   n=169  flips=28   ASR=16.6%
+  sms_smishing     n=167  flips=22   ASR=13.2%
+
+alpha=0.50 max_positions=12 max_rounds=3

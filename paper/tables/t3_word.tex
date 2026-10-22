@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Word-level evasion under the same 15\% budget (synonym swap, deletion, duplication, swap). Jaccard is word-set overlap; no semantic-similarity model is used anywhere in this study.}
+\label{tab:asr-word}
+\begin{tabular}{llccccccc}
+\toprule
+\textbf{Task} & \textbf{Model} & \textbf{Attacked} & \textbf{Flips} & \textbf{ASR} & \textbf{95\% CI} & \textbf{Pert.} & \textbf{Jacc.} & \textbf{Catch} \\
+\midrule
+ SMS smishing & Phi-3.5-mini-instruct & 161 & 6 & 3.7\% & 1.7--7.9 & 9.0\% & 0.918 & 81.5\% \\
+  & Qwen2.5-3B-Instruct & 186 & 6 & 3.2\% & 1.5--6.9 & 9.2\% & 0.916 & 94.0\% \\
+  & SmolLM2-1.7B-Instruct & 184 & 3 & 1.6\% & 0.6--4.7 & 8.8\% & 0.916 & 92.5\% \\
+\midrule
+ Phishing email & Phi-3.5-mini-instruct & 118 & 6 & 5.1\% & 2.4--10.7 & 6.3\% & 0.945 & 60.0\% \\
+  & Qwen2.5-3B-Instruct & 190 & 5 & 2.6\% & 1.1--6.0 & 6.2\% & 0.950 & 95.5\% \\
+  & SmolLM2-1.7B-Instruct & 196 & 2 & 1.0\% & 0.3--3.6 & 6.3\% & 0.948 & 98.5\% \\
+\bottomrule
+\end{tabular}
+\end{table*}
