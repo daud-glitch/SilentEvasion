@@ -25,8 +25,8 @@ one comparison, and the disagreement between them is reported on its own
 information source fixed across arms, precisely so that the cost of dropping from
 the probability channel to the verdict channel is measured rather than assumed.
 
-The verdict-only adversary is deliberately weak, and for that reason its attack
-success rate (ASR) is a lower bound. An attacker with weight access, an
+The verdict-only adversary is deliberately weak, and for that reason its ASR is
+a lower bound. An attacker with weight access, an
 embedding-space attack or a saliency-guided word search would do better. A weak
 adversary is useful precisely because a flip under it is unambiguously bad news
 for the detector: nothing exotic happened, the message simply stopped looking
@@ -53,7 +53,7 @@ saliency runs on the other two models exclude nothing at all.
 
 \paragraph{Rule 2 --- the same prompt on both sides.}
 The baseline and the attack call the identical message template, including the
-sample's own task description, so an e-mail is never scored with the SMS prompt.
+sample's own task description, so an email is never scored with the SMS prompt.
 A baseline-versus-attack comparison across two different prompts would measure
 the prompt, not the attack.
 
@@ -63,7 +63,7 @@ and the edit rate is the exact Levenshtein distance (the smallest number of
 single-character insertions, deletions and substitutions that turns one string
 into the other) divided by the length of the original. Both details matter.
 Giving each operation its own allowance let the real rate reach 22\% while the
-paper called it 15\%; and estimating the distance from a `difflib' opcode tally
+reported budget was 15\%; and estimating the distance from a `difflib' opcode tally
 reported 204 edits for 56 deleted characters on a repetitive message, because
 `difflib' does not compute a minimal edit script.
 
@@ -99,7 +99,7 @@ after each accepted edit, 22.9 queries per message on average. The attempt colum
 in every row carries how many tries a message actually took, which is why the
 count above is measured rather than assumed.
 
-Every attempt's edited text, verdict, edit count and rate is written to the
+Every attempt's edited text, verdict, edit count and rate are written to the
 per-sample CSV, so the tables can be rebuilt without the model.
 
 \subsection{Statistics}

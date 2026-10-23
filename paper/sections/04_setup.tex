@@ -2,12 +2,12 @@
 \label{sec:setup}
 
 \paragraph{Data.}
-Two sorting tasks. \emph{SMS smishing} uses the UCI SMS Spam Collection
+We use two sorting tasks. \emph{SMS smishing} uses the UCI SMS Spam Collection
 (5{,}574 messages, 747 labelled spam), with spam treated as malicious. The task
 label is therefore ``SMS spam/smishing''; the collection's spam class is mostly
 scam and prize messages rather than messages that steal passwords, and we state
 that as a limit on what the label means instead of hiding it.
-\emph{Phishing e-mail} uses the \texttt{zefang-liu/phishing-email-dataset} text
+\emph{Phishing email} uses the \texttt{zefang-liu/phishing-email-dataset} text
 column, filtered to messages between 16 and 3{,}000 characters and
 balanced-sampled to 1{,}000 benign and 1{,}000 phishing rows with a fixed seed.
 
@@ -22,7 +22,7 @@ it means the ASR is not an out-of-sample estimate; it is a conditional
 measurement on the messages the model got right, which is what Rule~1 defines.
 
 \paragraph{Models.}
-Three open instruction-tuned models, none of them compressed at inference:
+We evaluate three open instruction-tuned models, none compressed at inference:
 Qwen2.5-3B-Instruct, SmolLM2-1.7B-Instruct and Phi-3.5-mini-instruct (3.8B). A
 fourth model, Llama-3.2-3B-Instruct, was planned but sits behind a licence
 acceptance and is not part of any number reported here.

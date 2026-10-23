@@ -13,8 +13,7 @@ This paper tests how much small text edits (called perturbations) help an
 attacker evade detection. We limit the attacker to simple changes that a human
 reader would easily overlook. These changes include look-alike characters (such
 as replacing Latin letters with similar Cyrillic letters), tiny typos, and simple
-synonyms. The total changes are kept under a strict 15\% edit budget per
-message. We measure how often these edits cause the model's decision (verdict)
+synonyms. All edits together stay under a strict 15\% edit budget per message. We measure how often these edits cause the model's decision (verdict)
 to flip from \emph{malicious} to \emph{benign}.
 
 \paragraph{Why the denominator is crucial.}
@@ -48,12 +47,12 @@ confirm this label, and we report the baseline catch rate alongside every ASR.
   character noise while requiring roughly half as many edits (26 versus 10
   sample-specific flips, $p=0.011$). In addition, ranking word swaps by model
   saliency flips more messages than random word swaps under the same budget
-  (33 versus 7, $p=4\times10^{-5}$). Pairing tests on the exact same messages
+  (33 versus 7, $p=4\times10^{-5}$). Pairing the tests on the same messages
   provides an honest comparison.
 \item \textbf{Low transferability across models} (\S\ref{sec:transfer}):
   Replaying saved text edits across different models flips almost no samples off
   the diagonal. Transfer rates remain low overall. The edits appear specific to
-  individual models rather than universal. Guided edits transfer slightly better
+  individual models rather than general. Guided edits transfer slightly better
   than random edits, but remain ineffective as portable attacks.
 \item \textbf{A negative result about what predicts fragility}
   (\S\ref{sec:fragility}): neither overall accuracy nor the measured distance

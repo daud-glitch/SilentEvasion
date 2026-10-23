@@ -2,10 +2,10 @@
 \label{sec:saliency}
 
 The word attack of \S\ref{sec:results} picks its replacement at random from a
-small synonym table. It answers ``does \emph{any} word-level edit break the
-model'' and leaves the location of the weakness unmeasured: a flip caused by
-deleting the word \emph{urgent} and a flip caused by replacing the word
-\emph{the} are the same event in that accounting. This section asks the sharper
+small synonym table. It answers only whether \emph{any} word-level edit breaks the model, and leaves
+the location of the weakness unmeasured: a flip caused by deleting the word
+\emph{urgent} and a flip caused by replacing the word \emph{the} are the same
+event in that accounting. This section asks the sharper
 question, and pays for the answer in queries.
 
 \paragraph{Method.} We use the ordering of PWWS~\cite{ren2019pwws}. For a
@@ -22,7 +22,7 @@ $\alpha = 0.5$. Substitutions are applied greedily in descending $\phi$; after
 each accepted edit the verdict is queried again, and the attack stops at the
 first flip or when the shared 15\% word budget is used up.
 
-The normalisation of $S$ is not only for appearance. With raw saliency and
+The normalisation of $S$ matters. With raw saliency and
 $\alpha = 0.5$, $\phi_{i,w} = \tfrac{1}{2}(p_0 - p_{i,w}) + \tfrac{1}{2} p_{i,w}
 = \tfrac{1}{2} p_0$ for \emph{every} candidate: the ranking flattens to a
 constant, and the greedy loop then applies substitutions in whatever order the
@@ -84,7 +84,7 @@ table versus a security word list plus WordNet), and the \emph{information}
 only the combination: saliency-ordered substitution over a security vocabulary
 breaks more messages per unit of edit than a random draw over a small table. It
 does not show that ordering alone is responsible, and it cannot say what the
-probability access is worth. \S\ref{sec:ablation} specifies the experiment that
+probability channel is worth. \S\ref{sec:ablation} specifies the experiment that
 separates the three.
 
 \IfFileExists{tables/t7_saliency.tex}{\input{sections/gen_saliency_results}}{}
@@ -100,8 +100,8 @@ comparison below (called an ablation, because it removes one factor at a time)
 holds two of the three fixed in every contrast, so each contrast has one
 explanation. It is implemented in \texttt{src/ablation\_common.py}, exercised by
 \texttt{tests/check\_ablation.py}, and run; its contrasts are
-Table~\ref{tab:ablation} and the paragraph that discusses it, both generated from
-\texttt{results/ablation\_contrasts.csv}. It is an ablation on a matched
+tabulated in Table~\ref{tab:ablation} and described in the paragraph that
+follows, both generated from \texttt{results/ablation\_contrasts.csv}. It is an ablation on a matched
 subsample, not on the full attack set, and every count it reports is paired on
 the messages the two arms share.
 
@@ -114,11 +114,11 @@ used travels with every row). The reported cells are the first 400 eligible
 messages of each model, and 400 covers the largest eligible set (382 messages,
 smollm2-1.7b), so every arm attacks exactly the messages the attack tables
 report on. The cap was not reached in practice --- the highest mean spend of any
-arm is 23.3 of its 24 calls --- so one arm differs from another only in policy. The probe
-results are retained and only the \emph{policy} differs --- what the arm does with
-those measurements. Matching the budget by construction rather than by assumption
-is the point: a random-order arm pays exactly the 1 + $|C|$ calls a saliency arm
-pays before either starts substituting, so a difference in flips cannot be a
+arm is 23.3 of its 24 calls --- so one arm differs from another only in policy:
+what it does with those measurements. Matching the budget by construction rather
+than by assumption
+is the point: a random-order arm pays exactly the 1 + $|C|$ calls that a saliency
+arm pays before either starts substituting, so a difference in flips cannot be a
 difference in cost. The realised count is still stored per row, because a cap
 that is matched on paper and used up early in practice would be the same error as
 an unmatched total.
@@ -190,11 +190,11 @@ disagreed on went to saliency ordering. The candidate-set contrast is nearly as
 large again, which is the uncomfortable half of the finding --- most of the
 difference between Table~\ref{tab:saliency}'s two rows is vocabulary, not
 intelligence, so the unmatched comparison overstates what ordering buys.
-The probability channel, the thing a saliency attack is supposed to need, is the
-weakest of the three: an attacker holding only the one-bit verdict loses
+The probability channel --- the thing a saliency attack is supposed to need ---
+is the weakest of the three: an attacker holding only the one-bit verdict loses
 messages in one direction and wins a few in the other, and the difference does
 not reach significance at this sample size. Searching subsets instead of ranking
-recovers a handful of the messages that bit costs, which is what the theory
+recovers a handful of the messages that the bit costs, which is what the theory
 predicts, because one bit cannot rank.
 
 The fifth contrast needs its budget read out loud before its number is quoted.

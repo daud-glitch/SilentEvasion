@@ -6,13 +6,13 @@ Using pre-trained language models without fine-tuning (zero-shot classification)
 is now a standard baseline for security triage, that is, for sorting incoming
 messages into harmful and safe. Rojas-Galeano tested models on SpamAssassin
 without extra training: an F1 score of 90\% for Flan-T5 on short emails and 95\%
-for GPT-4 on summarized emails~\cite{rojas2024zeroshot}. Eilertsen et al.\ tried
+for GPT-4 on summarised emails~\cite{rojas2024zeroshot}. Eilertsen et al.\ tried
 zero-shot and few-shot prompts for phishing detection. Accuracy varied between
 models, and they asked whether the answers come from what the model already
 knows or from the examples in the prompt~\cite{eilertsen2025intent}. Koide et
 al.\ built a detector from email headers and bodies and reported 99.70\%
-accuracy with GPT-4~\cite{koide2024chatspamdetector}. Wang et al.\ added outside
-web context to SMS triage inside an agent pipeline and reached 98.8\% overall
+accuracy with GPT-4~\cite{koide2024chatspamdetector}. Wang et al.\ added external web context to SMS triage inside an agent pipeline
+and reached 98.8\% overall
 accuracy~\cite{wang2025smishx}. Thapa et al.\ studied small language models and
 found that rewritten emails lower detection performance~\cite{thapa2025quantized}.
 Our study is about measurement rules rather than model design. We keep the

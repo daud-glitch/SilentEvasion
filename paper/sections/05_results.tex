@@ -6,20 +6,20 @@
 Table~\ref{tab:baseline} is the clean zero-shot baseline, before any attack. Two
 rows matter more than the accuracy column.
 
-\textbf{Phi-3.5-mini is a cautious detector on e-mail.} Its precision is high
+\textbf{Phi-3.5-mini is a cautious detector on email.} Its precision is high
 (0.896) but it misses 80 of the 200 phishing messages, a catch rate of 60.0\%.
 It is the model that leaves the most malicious mail in the analyst's queue before
 any attack happens.
 
 \textbf{SmolLM2-1.7B is a degenerate detector.} It reaches a catch rate of 98.5\%
-on phishing e-mail, but its precision is 0.510 and its confusion matrix shows 189
+on phishing email, but its precision is 0.510 and its confusion matrix shows 189
 false positives against 11 true negatives on the benign class: it calls nearly
 every message malicious. A detector that says \emph{malicious} almost always is
 hard to flip towards \emph{benign}, and every robustness number for it has to be
 read against that fact.
 
 Qwen2.5-3B is the strongest and most balanced classifier of the three (F1 0.923
-on e-mail, 0.857 on SMS).
+on email, 0.857 on SMS).
 
 \input{tables/t1_baseline}
 
@@ -27,14 +27,14 @@ on e-mail, 0.857 on SMS).
 
 Table~\ref{tab:asr-char} reports the character-level attack. Of 1{,}044 caught
 messages attacked, 12 flipped: an aggregate of 1.1\%. Per row the ASR lies
-between 0.0\% and 5.0\%, and under a 15\% budget the mean edit actually spent was
-13.3--13.6\% of characters, with no row above the budget (maximum 13.6\%).
+between 0.0\% and 5.0\%, and under a 15\% budget the mean fraction of characters
+actually edited was 13.3--13.6\%, with no row above the budget (maximum 13.6\%).
 
-The highest row is Phi-3.5-mini on phishing e-mail: 6 flips in 120 attacked
+The highest row is Phi-3.5-mini on phishing email: 6 flips in 120 attacked
 messages, 5.0\% (95\% CI 2.3--10.5). This is the model with the lowest catch rate
-on that task. The model that catches 95.5\% of e-mail (Qwen2.5-3B) flips once in
+on that task. The model that catches 95.5\% of email (Qwen2.5-3B) flips once in
 191 attacks, and on SMS it flips zero times in 188 attempts. A zero is reported
-as a bounded measurement, not as a proof: the Wilson upper bound for that row is
+as a bounded measurement, not as proof: the Wilson upper bound for that row is
 2.0\%.
 
 \input{tables/t2_char}
@@ -61,7 +61,7 @@ Table~\ref{tab:budget} is the accounting check, and Figure~\ref{fig:budget} draw
 the same accounting instead of summing it: one point per model, task and attack,
 with the budget spent on the horizontal axis. Both modes stay inside the shared
 budget, and the word attack reaches a similar number of flips with about half the
-share of units changed. That imbalance is the paper's main measured point: for
+units changed. That imbalance is the paper's main measured point: for
 these models, \emph{what} is changed matters more than \emph{how much}.
 
 \input{tables/t4_budget}
@@ -71,7 +71,7 @@ these models, \emph{what} is changed matters more than \emph{how much}.
 \centering
 \includegraphics[width=\columnwidth]{figures/fig_budget}
 \caption{Each point is one (model, task, attack) cell: the edit actually spent on
-the horizontal axis, the ASR with its 95\% Wilson interval on the vertical one.
+the horizontal axis, the ASR with its 95\% Wilson interval on the vertical axis.
 The dotted line is the 15\% budget. Points to the left of a vertical pair are the
 same amount of visible change bought at half the unit cost \--- the word attack's
 advantage is horizontal as well as vertical.
@@ -127,8 +127,8 @@ that channel at all (0 of 1{,}144), although its generated verdict changes 22 ti
 --- a disagreement between the two channels of the kind \S\ref{sec:discussion}
 reports, not a margin result. Its scores sit in a narrow band (median 0.984),
 which is the near-constant rule seen in the baseline table: an edit has little
-score to move, so the model looks robust in the sense that a deployment cares
-about only by accident.
+score to move, so the model can look robust, in the sense a deployment cares
+about, only by accident.
 
 \subsection{Interval discipline}
 
@@ -138,10 +138,11 @@ comparison below can be read at a glance rather than row by row.
 
 Because the flip counts are small, we do not rank models on point estimates. Of
 the twelve pairs of rows sharing a task and one of the two random attack modes,
-9 of 12 have intervals that overlap by more than half the narrower interval, so
+9 of 12 have intervals that overlap by more than half the narrower interval's
+width, so
 within-task ordering is suggestive rather than established. The exceptions are
 informative. The three pairs that overlap by less than half the narrower width
-all involve Phi-3.5-mini on phishing e-mail, and the two with the least overlap
+all involve Phi-3.5-mini on phishing email, and the two with the least overlap
 are the same comparison from both sides: under the character attack, Phi-3.5-mini's
 interval overlaps Qwen2.5-3B's by 21.3\% and SmolLM2-1.7B's by 18.7\% of the
 narrower width. That is the one model whose catch rate on the task is far below

@@ -8,8 +8,8 @@ them on the \emph{same} stored perturbations the attacks produced, so the
 comparison is like for like.
 
 \paragraph{D1: input normalisation.} The text is NFKC-normalised (a standard
-Unicode cleanup), invisible and format characters are removed, Cyrillic and Greek
-look-alike characters are folded back to their ASCII equivalents, and whitespace
+Unicode cleanup); invisible and format characters are removed; Cyrillic and Greek
+look-alike characters are folded back to their ASCII equivalents; and whitespace
 is collapsed. This targets exactly the mechanism of the character attack: the
 model sees a different token where a human sees the same word. It should
 therefore rescue character-level evasions and do almost nothing for word-level
@@ -32,8 +32,8 @@ The direction of the search matters and is easy to get backwards. A larger
 $\tau$ always has a lower false-positive rate, so maximising it under an upper
 bound is trivially satisfied by ``above every clean score'' --- a filter that
 flags nothing. That is the failure mode the code now prevents: maximising
-$\tau$, and counting a flip whenever an edited text falls below $\tau$ without
-asking whether the original was above it, reports a 100\% ASR for the defence.
+$\tau$ and counting a flip whenever an edited text falls below $\tau$, without
+asking whether the original was above it, reported a 100\% ASR for the defence.
 Both rules are enforced in code: $\tau$ is the minimum feasible value, and a
 sample counts as flipped only if the \emph{same} rule classified the
 \emph{original} text as malicious.
@@ -43,7 +43,7 @@ informative: a defence that removes the flips it targets (D1 against the
 character attack), a defence that removes none (D1 against a word attack it
 cannot see), and a defence that trades a small amount of clean precision for a
 large reduction in evasions (D2). What we do not do is report a defence at a
-different operating point than the baseline and call the difference robustness.
+different operating point from the baseline and call the difference robustness.
 
 \IfFileExists{tables/t6_defense.tex}{\input{sections/gen_defense_results}}{}
 

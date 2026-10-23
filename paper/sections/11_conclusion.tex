@@ -11,12 +11,12 @@ on the messages they share.
 
 Three things follow. First, a robustness number is a property of the search as
 much as of the model. Inside the same 15\% word budget, choosing substitutions
-rather than drawing them nearly doubles the flip rate (2.7\% to 4.6\%). This
-result is not on the same messages or from the same candidate vocabulary. Once
+rather than drawing them nearly doubles the flip rate (2.7\% to 4.6\%). That
+comparison is not on the same messages, nor from the same candidate vocabulary. Once
 we account for the higher budget actually spent, the factor is 1.4, not 1.7.
 The search, the candidates, and the denominator must all be named in the claim.
 Second, at this budget the binding constraint on a small triage model is what
-it catches before any attack. What orders the flip rate is not accuracy and not
+it catches before any attack. What orders the flip rate is neither accuracy nor
 the measured margin: the model that flips most is neither the least accurate nor
 the closest to its threshold, and its probability channel saturates, so the
 margin cannot be read on it at all. The model that catches almost everything is
@@ -32,8 +32,8 @@ The measurement lesson runs through all of it. The transfer we observed was low
 measuring separately. The probability channel and the generated verdict agreed
 on 941 of 1{,}001 rows. They diverged systematically on two of three models.
 A single channel is not a measurement until it is checked against the other.
-Every tool in this paper reports its denominator, its interval, and the bugs
-we fixed in our own pipeline. Each bug silently inflated the attack success rate
+Every result in this paper reports its denominator and its interval, and
+\S\ref{sec:ethics} lists the bugs we fixed in our own pipeline. Each bug silently inflated the attack success rate
 in the direction that makes a paper look interesting.
 
 The matched-vocabulary, matched-budget ablation of \S\ref{sec:ablation} is the

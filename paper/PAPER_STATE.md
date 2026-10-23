@@ -4,7 +4,7 @@
 Models Used for Security Triage
 **Target:** ACM AISec (acmart, sigconf). Fallback: IEEE TrustCom.
 **Build (typeset):** `.tools/tectonic.exe main.tex` from `paper/` — currently
-**15 pages**, no undefined references, no LaTeX errors.
+**16 pages**, no undefined references, no LaTeX errors.
 **Build (Word):** `python src/make_docx.py` → `paper/main.docx`, 22 pages when
 opened in Word, built from the same sections and tables as the PDF.
 **Data:** Kaggle kernel `sadiasadozai/slm-robustness-ablation-transfer-v8`, COMPLETE

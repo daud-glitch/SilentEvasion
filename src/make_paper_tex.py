@@ -251,7 +251,7 @@ def t5_transfer():
         if len(usable):
             best = usable.sort_values("transfer_asr", ascending=False).iloc[0]
             out.append(
-                "Among the cells with a denominator worth an interval, the "
+                "Among the cells with at least ten caught originals, the "
                 "highest rate is %s $\\rightarrow$ %s on %s under the %s "
                 "attack: %d of %d caught originals flipped (%s, 95\\%% CI %s)."
                 % (esc(MODEL_LABEL.get(best["source"], best["source"])),
@@ -750,12 +750,12 @@ def t8_pairs():
             "counts)." % (only_w, only_c, mcnemar_p(only_w, only_c)))
         if len(sig):
             out.append(
-                "Per cell, %d of %d show a significant paired difference at "
+                "Per cell, %d of %d %s a significant paired difference at "
                 "$p<0.05$: %s. The rest are underpowered rather than "
                 "contradictory, and the pooled test is a description of the "
                 "direction because the cells reuse the same messages across "
                 "models."
-                % (len(sig), len(wc),
+                % (len(sig), len(wc), "shows" if len(sig) == 1 else "show",
                    "; ".join("%s/%s" % (esc(TASK_LABEL.get(r["task"], r["task"])),
                                          esc(MODEL_LABEL.get(r["model"], r["model"])))
                              for _, r in sig.iterrows())))

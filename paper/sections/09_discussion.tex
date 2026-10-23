@@ -3,7 +3,7 @@
 
 \subsection{Why a low evasion rate is a result, not a failed attack}
 
-Some readers might view an Attack Success Rate (ASR) of 0.0--5.1\% as a failed
+Some readers might view an attack success rate of 0.0--5.1\% as a failed
 attack. In our setting, the opposite reading is more accurate. The attack
 spends its full edit budget. It changes 13.3--13.6\% of characters and
 6.2--9.2\% of words. It runs up to three attempts per sample. In total, it flips
@@ -39,7 +39,7 @@ dictionary rarely hits them. That explains the low 2.7\% baseline flip rate.
 
 The saliency attack confirms this behaviour. Most evasions require only two or
 three targeted word substitutions. However, the saliency attack edits more words
-on average (9.3\% versus 7.6\%, as shown in Table~\ref{tab:budget}). Normalized
+on average (9.3\% versus 7.6\%, as shown in Table~\ref{tab:budget}). Normalised
 by edit rate, its advantage is roughly 1.4 times rather than 1.7 times. Thus,
 vulnerability is concentrated in specific tokens. This finding is useful for
 defenders because targeted words can be filtered. It also warns against taking
@@ -55,7 +55,7 @@ Its remaining errors cannot be reached by this candidate vocabulary.
 
 \subsection{Two channels of one model are not one measurement}
 
-The saliency attack requires continuous scores, so it optimizes the predicted
+The saliency attack requires continuous scores, so it optimises the predicted
 probability $P(\text{malicious})$ over two answer tokens. The rest of this
 paper evaluates the generated text decision. We re-checked every stored
 saliency sample with text generation. The two channels agree on 941 of 1{,}001
@@ -79,8 +79,8 @@ Specifically, 9 flips came from 1{,}860 character edits, 18 from 1{,}847 word
 edits, and 24 from 1{,}807 saliency edits. Guided edits transferred slightly
 better than random edits. However, confidence intervals overlap, indicating a
 broad trend rather than a sharp separation. In the classic flipped-source
-matrix, only 5 of 31 cells are non-zero, 27 of 31 cells hold fewer than ten
-caught originals, and every non-zero cell there carries one or two flips.
+matrix, only 5 of 31 cells are non-zero; 27 of the 31 hold fewer than ten caught
+originals; and every non-zero cell there carries one or two flips.
 
 A 0.9\% rate indicates low observed transfer, not total immunity. Fifty-one
 messages did cross model boundaries. Either these perturbations are
@@ -118,7 +118,7 @@ environment rather than universal cross-platform reproducibility.
 
 \paragraph{Unmatched vocabulary in primary tables.} The saliency attack uses a
 broader vocabulary than the random word attack. The ablation in
-\S\ref{sec:ablation} isolates vocabulary, ordering, and oracle effects across
+\S\ref{sec:ablation} isolates vocabulary, ordering and information effects across
 five arms. The reported contrasts in Table~\ref{tab:ablation} hold candidate
 sets and query caps constant.
 
@@ -141,7 +141,7 @@ over messages, not seed variability across runs.
 
 \paragraph{Sample design.} Attacks target the correctly classified subset of an
 800-row evaluation split. This provides an accurate conditional denominator but
-does not represent out-of-distribution generalization.
+does not represent out-of-distribution generalisation.
 
 \paragraph{Model coverage.} We evaluate three open models. Llama-3.2-3B-Instruct
 was omitted due to access restrictions.
