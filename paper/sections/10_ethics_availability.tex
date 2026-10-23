@@ -8,8 +8,7 @@ not, and we describe it as it is rather than as a stronger random draw: the
 saliency attack \emph{does} select the substitution to apply, per message, using
 measured model behaviour, and the ablation of \S\ref{sec:ablation} adds a
 TextFooler-style importance ranking on the same candidate set. That is a
-targeted search, and an earlier draft of this section claimed otherwise. It is
-also not a new capability: PWWS and TextFooler are published, TextAttack
+targeted search. It is also not a new capability: PWWS and TextFooler are published, TextAttack
 implements both, and this implementation is weaker than either --- a greedy
 first-order search over a hand-built lexicon plus WordNet, with a 24-call cap,
 a 15\% word budget and a lexical paraphrase constraint, on open checkpoints.
@@ -26,19 +25,24 @@ personally identifiable information beyond what their publishers already
 released. No human subjects were involved; no production system was probed.
 
 \paragraph{Reporting honesty.} Seven measurement defects were found and fixed in
-our own pipeline before the numbers in this paper were produced: per-operation
-edit budgets that reached 22\% while the paper claimed 15\%; estimated rather
-than measured edit counts; a similarity metric labelled BERTScore that was word
-Jaccard; an attack set drawn from messages the model had never caught; a
-saliency score that is a constant at $\alpha=0.5$ unless it is normalised, which
-silently reduced the greedy search to applying substitutions left to right; an
-answer-token lookup that compared the same whitespace token for both answers on
-one tokenizer, making the verdict probability exactly $0.5$ for every message;
-and a defence threshold chosen by maximising the cutoff rather than minimising
-it, which rejected everything and, together with unconditional flip counting,
-reported a 100\% attack success rate for the defence. The last three were
-caught by unit tests that check the mechanism rather than the headline number
---- the runs they produced looked entirely plausible. Each of these defects
+our own pipeline before the numbers in this paper were produced:
+\begin{itemize}
+\item per-operation edit budgets that reached 22\% while the paper claimed 15\%;
+\item estimated rather than measured edit counts;
+\item a similarity metric labelled BERTScore that was word Jaccard;
+\item an attack set drawn from messages the model had never caught;
+\item a saliency score that is a constant at $\alpha=0.5$ unless it is
+  normalised, which silently reduced the greedy search to applying substitutions
+  left to right;
+\item an answer-token lookup that compared the same whitespace token for both
+  answers on one tokenizer, making the verdict probability exactly $0.5$ for
+  every message;
+\item a defence threshold chosen by maximising the cutoff rather than minimising
+  it, which flagged nothing and, together with unconditional flip counting,
+  reported a 100\% attack success rate for the defence.
+\end{itemize}
+The last three were caught by unit tests that check the mechanism rather than
+the headline number --- the runs they produced looked entirely plausible. Each of these defects
 inflated an apparent effect, and none of them would have been
 visible to a reader of the results alone. The per-sample records shipped with the
 artefact are the ones the tables are rebuilt from, so a reader can recompute
@@ -54,7 +58,9 @@ both verdict channels for the saliency rows, the transfer replays, the
 threshold fits, the table-generation script and the script that produces every
 table in this paper from those records. A single command recomputes the tables
 and fails if a number in the text no longer matches the records; a second
-command re-runs the study end to end on a free-tier GPU in about two hours.
+command re-runs the study end to end on a free-tier GPU in about two hours (the
+random-attack run of \S\ref{sec:setup} is 37.1 minutes of that; the saliency,
+ablation, transfer and defence passes are the rest).
 The split fingerprints are published so that a reader can prove their rebuild
 is the split these numbers came from, and the calibration slice that tunes
 $\alpha$ and the meaning threshold is disjoint from both the evaluation and the

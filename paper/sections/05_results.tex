@@ -107,23 +107,23 @@ one that flips most.
 
 The distance from the decision threshold is measurable on the stored rows, and it
 does not order the same list either. Every attack row carries the probability the
-model gave its original text on the two-token route the saliency attack uses, so
-the mean margin ($p_{\text{orig}} - 0.5$) over the messages that route also
+model gave its original text on the two-token channel the saliency attack uses, so
+the mean margin ($p_{\text{orig}} - 0.5$) over the messages that channel also
 called malicious can be read off per model
 (\texttt{results/margin\_table.csv}, from \texttt{src/analyze\_margin.py}): 0.449
 for Qwen2.5-3B, 0.482 for SmolLM2-1.7B and 0.494 for Phi-3.5-mini. The widest of
 the three belongs to the model that flips most, and the narrowest to Qwen2.5-3B,
 which flips least. On Phi-3.5-mini the number should not be trusted at all: 800
-of its 845 stored originals score at least 0.9999, so the route saturates and
+of its 845 stored originals score at least 0.9999, so the channel saturates and
 returns no margin to compare. The ordering has also been attributed to
 proximity to the decision boundary; the stored scores do not support that, and
 this paper does not claim it.
 
 What the scores do support is narrower, and inside one channel. Where the
-probability route does flip a message, that message started closer to the
-threshold than the ones the route leaves alone: mean 0.792 against 0.959 for
+probability channel does flip a message, that message started closer to the
+threshold than the ones the channel leaves alone: mean 0.792 against 0.959 for
 Qwen2.5-3B and 0.927 against 0.998 for Phi-3.5-mini. SmolLM2-1.7B never flips on
-that route at all (0 of 1{,}144), although its generated verdict changes 22 times
+that channel at all (0 of 1{,}144), although its generated verdict changes 22 times
 --- a disagreement between the two channels of the kind \S\ref{sec:discussion}
 reports, not a margin result. Its scores sit in a narrow band (median 0.984),
 which is the near-constant rule seen in the baseline table: an edit has little

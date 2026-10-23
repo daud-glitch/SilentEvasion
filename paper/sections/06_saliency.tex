@@ -22,15 +22,15 @@ $\alpha = 0.5$. Substitutions are applied greedily in descending $\phi$; after
 each accepted edit the verdict is queried again, and the attack stops at the
 first flip or when the shared 15\% word budget is used up.
 
-The normalization of $S$ is not only for appearance. With raw saliency and
+The normalisation of $S$ is not only for appearance. With raw saliency and
 $\alpha = 0.5$, $\phi_{i,w} = \tfrac{1}{2}(p_0 - p_{i,w}) + \tfrac{1}{2} p_{i,w}
 = \tfrac{1}{2} p_0$ for \emph{every} candidate: the ranking flattens to a
 constant, and the greedy loop then applies substitutions in whatever order the
 words happen to appear in the message. Because $p_0$ is common to all candidates,
-only the scale of $S$ matters, and the scale is exactly what the normalization
-fixes. Our first version of this module had that defect; the unit test that now
-guards it (\texttt{tests/check\_saliency.py}) checks that a high-saliency word
-outranks a neutral one at $\alpha = 0.5$.
+only the scale of $S$ matters, and the scale is exactly what the normalisation
+fixes. The unit test that guards against that defect
+(\texttt{tests/check\_saliency.py}) checks that a high-saliency word outranks a
+neutral one at $\alpha = 0.5$.
 
 \paragraph{Candidate replacements.} Two sources, recorded for every substitution:
 a curated security word list (66 entries: \emph{verify} $\rightarrow$
@@ -43,18 +43,18 @@ when it is not. Multi-word replacements are excluded so that the 15\% budget
 counts words and nothing else. Candidates are capped at two per position and
 twelve positions per message, which is what keeps the query cost bounded.
 
-\paragraph{Two answer channels.} This attack needs a number, not a paragraph: at
-every candidate it asks the endpoint for $P(\text{malicious})$, obtained by
-scoring the two permitted answer tokens in one forward pass. The other two
-attacks read the model's generated one-word reply instead. Those are two
-readouts of the same model, and comparing their ASRs without checking that they
-agree would be comparing a ruler with a scale. Every stored saliency row is
-therefore re-scored through the generation route, and Table~\ref{tab:saliency}
-reports the generation verdict; the artefact keeps both columns and the
-probability-route count, and we do not treat a disagreement between them as a bug
-to be tuned away --- it is a fact about the model.
+\paragraph{Two channels.} This attack needs a number, not a paragraph: at every
+candidate it asks the endpoint for $P(\text{malicious})$, obtained by scoring the
+two permitted answer tokens in one forward pass. The other two attacks read the
+model's generated one-word reply instead. Those are two channels of the same
+model, and comparing their ASRs without checking that they agree would be
+comparing a ruler with a scale. Every stored saliency row is therefore re-scored
+through the verdict channel, and Table~\ref{tab:saliency} reports the verdict;
+the artefact keeps both columns and the probability-channel count, and we do not
+treat a disagreement between them as a bug to be tuned away --- it is a fact about
+the model.
 
-The probability route also has a failure mode worth recording, because it is
+The probability channel also has a failure mode worth recording, because it is
 silent. The answer tokens are chosen per tokenizer, and Phi-3.5 encodes
 ``\,malicious'' as three tokens whose first element is the bare whitespace
 marker that ``\,benign'' also begins with. Scoring the first token of each answer
@@ -71,14 +71,10 @@ number of model calls: roughly two per probed position, plus one check per
 accepted edit. Probabilities come from a dedicated endpoint that scores the two
 permitted answer tokens in a single forward pass over the prompt, batched across
 candidates; the per-sample count is stored with the result, so the comparison in
-Table~\ref{tab:saliency} is between attacks whose cost is on the record. The gap
-is real but smaller than an earlier draft of this paragraph claimed. The random
-attack is not one draw per sample: it re-queries every original and spends one
-query per attempt, up to three, which is 3.9 queries per message and 8{,}047
-queries for the 2{,}079 messages it attacks. The saliency attack spends 22.9 per
-message --- 22{,}964 queries for 1{,}001 messages, six times as many calls for
-1.6 times as many flips. The paper therefore does not claim equal cost, and it no
-longer claims the random attack was capped at one draw.
+Table~\ref{tab:saliency} is between attacks whose cost is on the record. The
+saliency attack spends 22.9 queries per message, six times what the random attack
+spends per message (\S\ref{sec:protocol}), for 1.6 times as many flips. The paper
+therefore does not claim equal cost.
 
 \paragraph{What the comparison isolates, and what it does not.} Three things
 change between Table~\ref{tab:saliency}'s two rows at once: the \emph{ordering}
@@ -143,8 +139,7 @@ words are substituted in descending importance with all of one word's candidates
 predicted in one batch, accepting a flip that passes the meaning check and
 otherwise keeping the candidate that lowers the malicious confidence most. It
 costs one extra query per position, so it is matched by the cap rather than by
-construction and is reported as a stronger reference point, not as a fifth cell
-of the factorial.
+construction.
 
 The contrasts are then read as: \emph{random-prob} vs \emph{saliency-prob} is the
 ordering effect with vocabulary and budget held fixed; \emph{random-prob} vs
@@ -195,7 +190,7 @@ disagreed on went to saliency ordering. The candidate-set contrast is nearly as
 large again, which is the uncomfortable half of the finding --- most of the
 difference between Table~\ref{tab:saliency}'s two rows is vocabulary, not
 intelligence, so the unmatched comparison overstates what ordering buys.
-Probability access, the thing a saliency attack is supposed to need, is the
+The probability channel, the thing a saliency attack is supposed to need, is the
 weakest of the three: an attacker holding only the one-bit verdict loses
 messages in one direction and wins a few in the other, and the difference does
 not reach significance at this sample size. Searching subsets instead of ranking

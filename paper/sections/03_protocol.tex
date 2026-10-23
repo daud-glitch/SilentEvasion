@@ -10,12 +10,12 @@ at most 15\% of the message's units (characters for the character-level attack,
 whitespace-separated tokens for the word-level attack) may change, and the change
 is measured, not estimated.
 
-\paragraph{Two levels of access, reported separately.} Not every attack in this
-paper assumes the same interface, and the paper never adds them together.
-\emph{Verdict access} returns the one-word generated answer: malicious or benign,
-one bit per query. That is what a spammer probing a filter receives, and it is
-the information source for the character and random-word attacks
-(\S\ref{sec:results}). \emph{Probability access} also returns
+\paragraph{Two channels, reported separately.} Not every attack in this paper
+assumes the same interface, and the paper never adds them together. The
+\emph{verdict channel} returns the one-word generated answer: malicious or
+benign, one bit per query. That is what a spammer probing a filter receives, and
+it is the information source for the character and random-word attacks
+(\S\ref{sec:results}). The \emph{probability channel} also returns
 $P(\text{malicious})$ --- here by scoring the two permitted answer tokens --- and
 only the saliency-guided attack uses it (\S\ref{sec:saliency}), because a ranking
 needs a number and one bit per candidate cannot give one. Every row in every
@@ -23,7 +23,7 @@ table records which channel produced it, the two channels are never mixed inside
 one comparison, and the disagreement between them is reported on its own
 (\S\ref{sec:discussion}). The ablation of \S\ref{sec:ablation} holds the
 information source fixed across arms, precisely so that the cost of dropping from
-probability access to verdict access is measured rather than assumed.
+the probability channel to the verdict channel is measured rather than assumed.
 
 The verdict-only adversary is deliberately weak, and for that reason its attack
 success rate (ASR) is a lower bound. An attacker with weight access, an
@@ -40,14 +40,15 @@ Only messages the clean model classified \emph{malicious} are attacked. The
 original text is queried again inside the attack run instead of trusting the
 baseline label, and a sample whose original no longer reads as malicious is
 \emph{excluded} from the total rather than counted as a failed attack. In our
-runs this happened 52 times, and each exclusion is recorded with its reason. The
-52 fall into exactly two kinds, and the split is not the one an earlier draft
-reported. Forty-three are samples that the saliency attack's probability route
-read as benign on the original --- all of them on Qwen2.5-3B, a channel problem
-discussed in \S\ref{sec:discussion}. The other nine are word-attack samples whose
-edited text came out identical to the original, so no edit was made and there was
-nothing to score. No original was dropped for any other reason: the generated
-answer never re-read a baseline-caught message as benign, so the character and
+runs this happened 52 times, and each exclusion is recorded with its reason.
+
+\paragraph{Where the 52 exclusions come from.} They fall into exactly two kinds.
+Forty-three are samples that the saliency attack's probability channel read as
+benign on the original --- all of them on Qwen2.5-3B, a channel problem discussed
+in \S\ref{sec:discussion}. The other nine are word-attack samples whose edited
+text came out identical to the original, so no edit was made and there was
+nothing to score. No original was dropped for any other reason: the verdict
+channel never re-read a baseline-caught message as benign, so the character and
 saliency runs on the other two models exclude nothing at all.
 
 \paragraph{Rule 2 --- the same prompt on both sides.}
@@ -94,9 +95,9 @@ runs that comes to 3.9 queries per message and 8{,}047 queries for the 2{,}079
 attacked messages --- the number of messages and the number of queries are
 different quantities and are reported separately throughout. The saliency attack
 is not attempt-based: it probes every candidate position once and then re-queries
-after each accepted edit, 22.9 queries per message on average. An earlier draft of
-this paragraph said ``one attempt per sample'', which the per-sample records
-contradict; the attempt column in every row is the correction.
+after each accepted edit, 22.9 queries per message on average. The attempt column
+in every row carries how many tries a message actually took, which is why the
+count above is measured rather than assumed.
 
 Every attempt's edited text, verdict, edit count and rate is written to the
 per-sample CSV, so the tables can be rebuilt without the model.

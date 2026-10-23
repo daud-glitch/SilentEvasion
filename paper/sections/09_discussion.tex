@@ -37,7 +37,7 @@ The saliency results clarify how random attacks behave. If an evasion succeeds
 only when striking specific decisive words, a random draw from a small
 dictionary rarely hits them. That explains the low 2.7\% baseline flip rate.
 
-The saliency attack confirms this behavior. Most evasions require only two or
+The saliency attack confirms this behaviour. Most evasions require only two or
 three targeted word substitutions. However, the saliency attack edits more words
 on average (9.3\% versus 7.6\%, as shown in Table~\ref{tab:budget}). Normalized
 by edit rate, its advantage is roughly 1.4 times rather than 1.7 times. Thus,
@@ -46,14 +46,14 @@ defenders because targeted words can be filtered. It also warns against taking
 random perturbation rates as proof of general robustness.
 
 This effect varies across models. Phi-3.5-mini shows the largest increase: its
-ASR roughly doubles under saliency search (11.7\% and 7.4\% versus 5.1\% and
-3.7\% under random word edits), although its probability route saturates at
+ASR roughly doubles under the saliency attack (11.7\% and 7.4\% versus 5.1\% and
+3.7\% under random word edits), although its probability channel saturates at
 0.9999 or above on 800 of its 845 stored rows, so the increase cannot be read as
 a margin effect. Qwen2.5-3B is more accurate and does not flip more often under
 saliency (2.4\% and 0.6\% versus 2.6\% and 3.2\%).
 Its remaining errors cannot be reached by this candidate vocabulary.
 
-\subsection{Two readouts of one model are not one measurement}
+\subsection{Two channels of one model are not one measurement}
 
 The saliency attack requires continuous scores, so it optimizes the predicted
 probability $P(\text{malicious})$ over two answer tokens. The rest of this
@@ -62,9 +62,9 @@ saliency sample with text generation. The two channels agree on 941 of 1{,}001
 rows. The disagreements are systematic. For Phi-3.5-mini, both channels agree on
 all rows. For Qwen2.5-3B, the probability channel claims 45 flips that
 generation does not confirm. For SmolLM2-1.7B, generation claims 15 flips that
-the probability route misses.
+the probability channel misses.
 
-This gap occurs because a two-token probability readout does not match free-form
+This gap occurs because a two-token probability channel does not match free-form
 decoding. When answer words split into sub-tokens, probability ratios can point
 one way while greedy decoding points the other. We report final text decisions
 throughout the paper. We view the divergence as a limitation of probability
@@ -79,8 +79,8 @@ Specifically, 9 flips came from 1{,}860 character edits, 18 from 1{,}847 word
 edits, and 24 from 1{,}807 saliency edits. Guided edits transferred slightly
 better than random edits. However, confidence intervals overlap, indicating a
 broad trend rather than a sharp separation. In the classic flipped-source
-matrix, only 5 of 31 cells are non-zero, and 27 of 31 cells hold fewer than ten
-caught originals.
+matrix, only 5 of 31 cells are non-zero, 27 of 31 cells hold fewer than ten
+caught originals, and every non-zero cell there carries one or two flips.
 
 A 0.9\% rate indicates low observed transfer, not total immunity. Fifty-one
 messages did cross model boundaries. Either these perturbations are
@@ -88,9 +88,9 @@ model-specific, or they are too weak to cross distant decision boundaries. In
 either case, robustness evaluations on one model do not guarantee safety on
 another.
 
-\subsection{Defenses: character cleaning succeeds while re-thresholding fails}
+\subsection{Defences: character cleaning succeeds while re-thresholding fails}
 
-Character normalization cleans visually confusable characters. It removes every
+Character normalisation cleans visually confusable characters. It removes every
 character-level flip (1.0\% to 0.0\% pooled). It leaves word and saliency
 attacks largely unaffected (2.5\% to 2.0\%, and 7.5\% to 6.9\%). This confirms
 our hypothesis: distinct perturbation types fail for distinct reasons.
@@ -98,10 +98,11 @@ our hypothesis: distinct perturbation types fail for distinct reasons.
 Re-thresholding yields mixed results. We adjust the threshold $\tau$ to enforce a
 5\% clean false-positive budget. This reduces flips on well-calibrated models.
 However, on SmolLM2-1.7B (where clean scores cluster near 1.0), it increases
-evasions: 0.0\% to 29.0\% on email and 0.0\% to 13.3\% on SMS. Lowering the
-threshold places the decision cutoff inside perturbation noise. It also lowers
-clean recall on SmolLM2-1.7B (100\% to 34.5\% and 23.0\%). For one task cell,
-the budget cannot be met without rejecting all messages.
+evasions: 0.0\% to 29.0\% on email and 0.0\% to 13.3\% on SMS. There the fitted
+threshold sits inside the cluster of clean scores, so a small edit is enough to
+push a message below the cutoff. It also lowers clean recall on SmolLM2-1.7B
+(100\% to 34.5\% and 23.0\%). For one task cell, the budget cannot be met without
+a threshold that flags nothing at all.
 
 \subsection{Limitations}
 
@@ -121,16 +122,15 @@ broader vocabulary than the random word attack. The ablation in
 five arms. The reported contrasts in Table~\ref{tab:ablation} hold candidate
 sets and query caps constant.
 
-\paragraph{Defense operating point.} The defense probe evaluates a 5\%
+\paragraph{Defence operating point.} The defence probe evaluates a 5\%
 false-positive budget using probability scores. Because thresholding requires
 numeric scores, its baseline column is not directly comparable to text verdict
 tables.
 
-\paragraph{Saliency denominator.} The saliency attack excludes 43 originals that
-its probability channel classified as benign (all on Qwen2.5-3B). Its denominator
-is 1{,}001 messages, compared to 2{,}079 for random attacks. Nine additional
-exclusions in the word attack correspond to identical text transformations (52
-exclusions total).
+\paragraph{Saliency denominator.} Its 1{,}001 messages against 2{,}079 for the
+random attacks follow from the 52 exclusions of \S\ref{sec:protocol}: 43 saliency
+originals that the probability channel read as benign (all on Qwen2.5-3B) and
+nine word-attack no-op edits.
 
 \paragraph{Similarity metric.} We report word-level Jaccard similarity without
 neural sentence embeddings. For character edits, Jaccard similarity is an
@@ -150,8 +150,8 @@ was omitted due to access restrictions.
 dataset, where spam includes broader commercial promotions. Phishing email data
 comes from public benchmark collections.
 
-\paragraph{Missing experiments.} Paraphrase generation attacks and defense-aware
-adaptive attacks were designed but not run.
+\paragraph{Missing experiments.} Two designed attacks were not run;
+\S\ref{sec:futurework} says what each of them would test.
 
 \subsection{Future Work}
 \label{sec:futurework}

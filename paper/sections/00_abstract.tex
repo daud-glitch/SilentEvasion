@@ -34,19 +34,18 @@ Two other key findings help interpret these numbers. First, text edits do not
 transfer well across different models. When we test saved edits against other
 models, only 0.9\% of caught messages flip off the diagonal. Second,
 continuous probability scores (the model's internal confidence) do not always
-match the final text decision. The two readouts agree on 941 of 1{,}001 rows,
+match the final text decision. The two channels agree on 941 of 1{,}001 rows,
 matching perfectly for one model and diverging on the other two. We report final
 text decisions throughout and treat this gap as an important measurement
-finding. For defenses, cleaning look-alike characters stops all character-level
-evasions, moves the random word attack only from 2.5\% to 2.0\%, and the guided
-attack from 7.5\% to 6.9\%. Adjusting decision
+finding. For defences, cleaning look-alike characters stops all character-level
+evasions and barely dents the guided attack (7.5\% to 6.9\%). Adjusting decision
 cutoffs (re-thresholding) to maintain a 5\% false-alarm budget can actually
 increase evasions for models with uncalibrated probability scores.
 
 Our main practical takeaway is that under small edit budgets, neither overall
 accuracy nor the distance from the decision threshold orders how often a model
 flips: the model with the most flips is not the least accurate, and its
-probability route saturates, so no margin can be read on it. Robustness
+probability channel saturates, so no margin can be read on it. Robustness
 therefore has to be measured per model rather than inferred from accuracy or
 confidence. Furthermore, attack success rates must
 always be reported with their exact sample count (denominator), a statistical

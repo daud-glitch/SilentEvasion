@@ -31,12 +31,12 @@ ASR cannot be told apart from a filter that has simply stopped flagging mail.
 The direction of the search matters and is easy to get backwards. A larger
 $\tau$ always has a lower false-positive rate, so maximising it under an upper
 bound is trivially satisfied by ``above every clean score'' --- a filter that
-flags nothing. Our first implementation did exactly that, and because it
-also counted a flip whenever an edited text fell below $\tau$, without asking
-whether the original was above it, it reported a 100\% ASR for the defence. Both
-rules are now enforced in code: $\tau$ is the minimum feasible value, and a sample
-counts as flipped only if the \emph{same} rule classified the \emph{original}
-text as malicious.
+flags nothing. That is the failure mode the code now prevents: maximising
+$\tau$, and counting a flip whenever an edited text falls below $\tau$ without
+asking whether the original was above it, reports a 100\% ASR for the defence.
+Both rules are enforced in code: $\tau$ is the minimum feasible value, and a
+sample counts as flipped only if the \emph{same} rule classified the
+\emph{original} text as malicious.
 
 \paragraph{Reading the outcome.} Three outcomes are possible and all three are
 informative: a defence that removes the flips it targets (D1 against the

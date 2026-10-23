@@ -64,6 +64,10 @@ two sentences: (a) the query cap never bound, (b) the largest eligible set is
 
 ## Should fix (clarity, logic, or an unsupported step)
 
+Status: S1 and S2 were fixed first; S3–S8 were applied in the cleanup pass — the
+40-flip scope, the Rule 1 split, the ethics list, the conclusion and limitations
+overlap, and the run-time reconciliation are all in the current text.
+
 **S1. (fixed) Interval paragraph contradicts itself at the end.** "9 of 12 have
 intervals that overlap by more than half the narrower interval" means three pairs
 do *not*; the paragraph then calls Phi-vs-Qwen (21.3%) and Phi-vs-SmolLM2
@@ -117,6 +121,11 @@ cover all five stages (saliency, ablation, transfer, defences), not just the run
 
 ## Repetition worth cutting
 
+Status: R1–R5 applied. Query accounting is derived once in §3 and summarised in
+one sentence in §6; the 52 exclusions are explained in one place; the TextFooler
+budget is explained once; the abstract keeps one defence number; and the draft
+chronology is gone, with §10 keeping the audit that is the point.
+
 **R1. Query accounting appears three times.** §3 ("How many attempts"), §6
 ("Query accounting") and `gen_saliency_results.tex` all give 3.9 / 8,047 / 2,079
 and 22.9 / 22,964 / 1,001. §6 also repeats §3's "the random attack is not one
@@ -147,6 +156,11 @@ the contribution. `03_protocol.tex:44`, `03_protocol.tex:97`, `06_saliency.tex:4
 ---
 
 ## Terminology and consistency
+
+Status: T1–T3 applied. The paper now says "verdict channel" and "probability
+channel" throughout, "saliency attack" is the single name for the guided attack
+after its first definition, and the prose uses British spelling throughout
+(defence, normalisation, behaviour) to match "artefact".
 
 **T1. Four names for two access modes.** §3: "verdict access" / "probability
 access". §6: "two answer channels", "generation route" / "probability route",

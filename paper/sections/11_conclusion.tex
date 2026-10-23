@@ -18,7 +18,7 @@ The search, the candidates, and the denominator must all be named in the claim.
 Second, at this budget the binding constraint on a small triage model is what
 it catches before any attack. What orders the flip rate is not accuracy and not
 the measured margin: the model that flips most is neither the least accurate nor
-the closest to its threshold, and its probability route saturates, so the
+the closest to its threshold, and its probability channel saturates, so the
 margin cannot be read on it at all. The model that catches almost everything is
 immovable because its decision rule is nearly constant. Detection quality, not
 adversarial robustness, is where deployment effort pays first. Third, cheap
@@ -29,9 +29,9 @@ a model whose scores are least calibrated.
 
 The measurement lesson runs through all of it. The transfer we observed was low
 (0.9\% of caught messages off the diagonal). Per-model numbers are worth
-measuring separately. The probability readout and the generated verdict agreed
+measuring separately. The probability channel and the generated verdict agreed
 on 941 of 1{,}001 rows. They diverged systematically on two of three models.
-A single readout is not a measurement until it is checked against the other.
+A single channel is not a measurement until it is checked against the other.
 Every tool in this paper reports its denominator, its interval, and the bugs
 we fixed in our own pipeline. Each bug silently inflated the attack success rate
 in the direction that makes a paper look interesting.
@@ -40,6 +40,5 @@ The matched-vocabulary, matched-budget ablation of \S\ref{sec:ablation} is the
 one experiment here that attributes rather than describes. With the candidate
 set, the probe phase, and the call budget held fixed, it reports what ordering
 is worth on its own. What it cannot do is turn five contrasts on roughly a
-thousand paired messages into a ranking of attacks. Next: a sentence-level
-paraphrase attacker and a defence-aware attacker that knows the threshold.
-Neither is claimed here.
+thousand paired messages into a ranking of attacks. \S\ref{sec:futurework}
+names the two attacks that would test what remains; neither is reported here.
