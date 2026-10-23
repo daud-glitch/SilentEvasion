@@ -24,7 +24,7 @@ guided search with the same budget, they flip about twice as often.
 Word-level changes flip more decisions than character-level noise (28 versus 12
 flips). At the same time, word edits modify fewer units (6.2--9.2\% of words
 versus 13.3--13.6\% of characters). The paired analysis in
-\S\ref{sec:pairs} confirms this pattern. Word edits outperform character edits
+Section~\ref{sec:pairs} confirms this pattern. Word edits outperform character edits
 in five of six cells, and the pooled difference is significant (26 versus 10,
 $p=0.011$). The text similarity values explain this outcome. Word edits preserve
 92--95\% of original words. Character edits leave only 30.3--32.8\% word overlap.
@@ -118,7 +118,7 @@ environment rather than universal cross-platform reproducibility.
 
 \paragraph{Unmatched vocabulary in primary tables.} The saliency attack uses a
 broader vocabulary than the random word attack. The ablation in
-\S\ref{sec:ablation} isolates vocabulary, ordering and information effects across
+Section~\ref{sec:ablation} isolates vocabulary, ordering and information effects across
 five arms. The reported contrasts in Table~\ref{tab:ablation} hold candidate
 sets and query caps constant.
 
@@ -128,7 +128,7 @@ numeric scores, its baseline column is not directly comparable to text verdict
 tables.
 
 \paragraph{Saliency denominator.} Its 1{,}001 messages against 2{,}079 for the
-random attacks follow from the 52 exclusions of \S\ref{sec:protocol}: 43 saliency
+random attacks follow from the 52 exclusions of Section~\ref{sec:protocol}: 43 saliency
 originals that the probability channel read as benign (all on Qwen2.5-3B) and
 nine word-attack no-op edits.
 
@@ -151,7 +151,7 @@ dataset, where spam includes broader commercial promotions. Phishing email data
 comes from public benchmark collections.
 
 \paragraph{Missing experiments.} Two designed attacks were not run;
-\S\ref{sec:futurework} says what each of them would test.
+Section~\ref{sec:futurework} says what each of them would test.
 
 \subsection{Future Work}
 \label{sec:futurework}
@@ -167,11 +167,11 @@ change most of the message while leaving the meaning intact. Two pieces would be
 needed before such an attack could sit in the same table as the ones above: a
 reliable meaning check, so that a rewrite is counted only when a reader would
 treat it as the same request; and a cost model, because the rewriter is itself a
-model call and the query accounting of \S\ref{sec:saliency} would have to include
+model call and the query accounting of Section~\ref{sec:saliency} would have to include
 it. The open question is whether the attack success that our bounded search
 leaves on the table is reachable this way. Nothing measured here answers that.
 
-\paragraph{A defence-aware attacker.} The two defences of \S\ref{sec:defense}
+\paragraph{A defence-aware attacker.} The two defences of Section~\ref{sec:defense}
 were measured against perturbations built without any knowledge of them. That is
 the honest way to measure a defence once, and the wrong way to conclude that it
 holds. An attacker who can see the character normaliser and the threshold spends
@@ -186,7 +186,7 @@ as a property of the perturbation set, not of the defence.
 \paragraph{The models we could not run.} Llama-3.2-3B-Instruct was omitted
 because it is gated, and the three models we do report sit in one size band. We
 therefore cannot say whether fragility grows or shrinks with model size, and we
-do not: the discussion of \S\ref{sec:discussion} compares models of similar
+do not: the discussion of Section~\ref{sec:discussion} compares models of similar
 capacity. Attacking a 1B, a 3B and an 8B model of the same family on the same
 messages would answer a simple question that a deployment actually asks --- is the
 near-constant decision rule of the strongest model here a property of that model,

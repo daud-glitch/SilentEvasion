@@ -31,31 +31,31 @@ confirm this label, and we report the baseline catch rate alongside every ASR.
 \paragraph{Contributions.}
 \begin{enumerate}
 \item \textbf{A strict, reproducible evasion evaluation protocol}
-  (\S\ref{sec:protocol}): We use a conditional denominator with re-verified
+  (Section~\ref{sec:protocol}): We use a conditional denominator with re-verified
   original messages, an exact Levenshtein edit distance budget shared across all
   edits, identical prompts between baseline and attack phases, and public
   sample records so every result can be verified.
 \item \textbf{An empirical evaluation of three small open models}
-  (\S\ref{sec:results}): Testing 2{,}079 caught messages across 8{,}047 model
+  (Section~\ref{sec:results}): Testing 2{,}079 caught messages across 8{,}047 model
   queries gave 40 decision flips under the two random attacks; the guided attack
-  has its own totals in \S\ref{sec:saliency}. We test character-level and
+  has its own totals in Section~\ref{sec:saliency}. We test character-level and
   word-level edits under the same budget, provide 95\% confidence intervals for
   every row, and evaluate a saliency-guided attack that spends more queries to
   rank word importance.
 \item \textbf{A paired comparison between edit types}
-  (\S\ref{sec:pairs}): Word substitutions flip more decisions than
+  (Section~\ref{sec:pairs}): Word substitutions flip more decisions than
   character noise while requiring roughly half as many edits (26 versus 10
   sample-specific flips, $p=0.011$). In addition, ranking word swaps by model
   saliency flips more messages than random word swaps under the same budget
   (33 versus 7, $p=4\times10^{-5}$). Pairing the tests on the same messages
   provides an honest comparison.
-\item \textbf{Low transferability across models} (\S\ref{sec:transfer}):
+\item \textbf{Low transferability across models} (Section~\ref{sec:transfer}):
   Replaying saved text edits across different models flips almost no samples off
   the diagonal. Transfer rates remain low overall. The edits appear specific to
   individual models rather than general. Guided edits transfer slightly better
   than random edits, but remain ineffective as portable attacks.
 \item \textbf{A negative result about what predicts fragility}
-  (\S\ref{sec:fragility}): neither overall accuracy nor the measured distance
+  (Section~\ref{sec:fragility}): neither overall accuracy nor the measured distance
   from the decision threshold orders the attack success rate across the three
   models. The model with the most flips is not the least accurate, and its own
   probability channel saturates at 0.9999 or above on 800 of its 845 stored
@@ -72,7 +72,7 @@ full access to model internal weights, nor do we evaluate adaptive attackers who
 know the defence beforehand. Our saliency attack selects words using model
 feedback, but it also uses a larger dictionary than the random word baseline.
 Therefore, the gap between them is not due to word ordering alone
-(\S\ref{sec:saliency}). An ablation study in \S\ref{sec:ablation} isolates these
+(Section~\ref{sec:saliency}). An ablation study in Section~\ref{sec:ablation} isolates these
 factors and shows their individual impact on identical messages. Across the two
 random attacks, we observe 40 flips in 2{,}079 messages across 8{,}047 queries.
 Because these flip counts are small, the confidence intervals are wide, and we

@@ -6,7 +6,7 @@ sender can apply by hand; no exploit, payload or delivery mechanism is
 introduced. Two of the three adversaries are random draws, but the third is
 not, and we describe it as it is rather than as a stronger random draw: the
 saliency attack \emph{does} select the substitution to apply, per message, using
-measured model behaviour, and the ablation of \S\ref{sec:ablation} adds a
+measured model behaviour, and the ablation of Section~\ref{sec:ablation} adds a
 TextFooler-style importance ranking on the same candidate set. That is a
 targeted search. It is also not a new capability: PWWS and TextFooler are published, TextAttack
 implements both, and this implementation is weaker than either --- a greedy
@@ -52,14 +52,14 @@ every number in this paper without a GPU.
 \url{https://github.com/daud-glitch/SilentEvasion}. The artefact contains the
 frozen splits with
 fingerprints, the prompt, the perturbation code for all three attacks, the
-five ablation arms of \S\ref{sec:ablation}, the
+five ablation arms of Section~\ref{sec:ablation}, the
 defence probe, the per-sample attack records (including every perturbed text),
 both channels for the saliency rows, the transfer replays, the
 threshold fits, the table-generation script and the script that produces every
 table in this paper from those records. A single command recomputes the tables
 and fails if a number in the text no longer matches the records; a second
 command re-runs the study end to end on a free-tier GPU in about two hours (the
-random-attack run of \S\ref{sec:setup} is 37.1 minutes of that; the saliency,
+random-attack run of Section~\ref{sec:setup} is 37.1 minutes of that; the saliency,
 ablation, transfer and defence passes are the rest).
 The split fingerprints are published so that a reader can prove their rebuild
 is the split these numbers came from, and the calibration slice that tunes

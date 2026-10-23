@@ -15,13 +15,13 @@ assumes the same interface, and the paper never adds them together. The
 \emph{verdict channel} returns the one-word generated answer: malicious or
 benign, one bit per query. That is what a spammer probing a filter receives, and
 it is the information source for the character and random-word attacks
-(\S\ref{sec:results}). The \emph{probability channel} also returns
+(Section~\ref{sec:results}). The \emph{probability channel} also returns
 $P(\text{malicious})$ --- here by scoring the two permitted answer tokens --- and
-only the saliency-guided attack uses it (\S\ref{sec:saliency}), because a ranking
+only the saliency-guided attack uses it (Section~\ref{sec:saliency}), because a ranking
 needs a number and one bit per candidate cannot give one. Every row in every
 table records which channel produced it, the two channels are never mixed inside
 one comparison, and the disagreement between them is reported on its own
-(\S\ref{sec:discussion}). The ablation of \S\ref{sec:ablation} holds the
+(Section~\ref{sec:discussion}). The ablation of Section~\ref{sec:ablation} holds the
 information source fixed across arms, precisely so that the cost of dropping from
 the probability channel to the verdict channel is measured rather than assumed.
 
@@ -45,7 +45,7 @@ runs this happened 52 times, and each exclusion is recorded with its reason.
 \paragraph{Where the 52 exclusions come from.} They fall into exactly two kinds.
 Forty-three are samples that the saliency attack's probability channel read as
 benign on the original --- all of them on Qwen2.5-3B, a channel problem discussed
-in \S\ref{sec:discussion}. The other nine are word-attack samples whose edited
+in Section~\ref{sec:discussion}. The other nine are word-attack samples whose edited
 text came out identical to the original, so no edit was made and there was
 nothing to score. No original was dropped for any other reason: the verdict
 channel never re-read a baseline-caught message as benign, so the character and
@@ -119,5 +119,5 @@ not over the perturbation generator. The runner therefore takes \texttt{--seed}
 and a sweep driver (\texttt{src/run\_seed\_sweep.py}) re-runs one arm at several
 seeds, so the spread between seeds can be reported next to the sampling interval
 rather than absorbed into it. The sweep is implemented; its cells are not part of
-the numbers in this version, and \S\ref{sec:discussion} lists that as a gap
+the numbers in this version, and Section~\ref{sec:discussion} lists that as a gap
 rather than implying the intervals cover it.

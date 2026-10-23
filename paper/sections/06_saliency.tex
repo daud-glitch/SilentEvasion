@@ -1,7 +1,7 @@
 \section{Where is the model fragile? A saliency-guided word attack}
 \label{sec:saliency}
 
-The word attack of \S\ref{sec:results} picks its replacement at random from a
+The word attack of Section~\ref{sec:results} picks its replacement at random from a
 small synonym table. It answers only whether \emph{any} word-level edit breaks the model, and leaves
 the location of the weakness unmeasured: a flip caused by deleting the word
 \emph{urgent} and a flip caused by replacing the word \emph{the} are the same
@@ -73,7 +73,7 @@ permitted answer tokens in a single forward pass over the prompt, batched across
 candidates; the per-sample count is stored with the result, so the comparison in
 Table~\ref{tab:saliency} is between attacks whose cost is on the record. The
 saliency attack spends 22.9 queries per message, six times what the random attack
-spends per message (\S\ref{sec:protocol}), for 1.6 times as many flips. The paper
+spends per message (Section~\ref{sec:protocol}), for 1.6 times as many flips. The paper
 therefore does not claim equal cost.
 
 \paragraph{What the comparison isolates, and what it does not.} Three things
@@ -84,7 +84,7 @@ table versus a security word list plus WordNet), and the \emph{information}
 only the combination: saliency-ordered substitution over a security vocabulary
 breaks more messages per unit of edit than a random draw over a small table. It
 does not show that ordering alone is responsible, and it cannot say what the
-probability channel is worth. \S\ref{sec:ablation} specifies the experiment that
+probability channel is worth. Section~\ref{sec:ablation} specifies the experiment that
 separates the three.
 
 \IfFileExists{tables/t7_saliency.tex}{\input{sections/gen_saliency_results}}{}
@@ -146,7 +146,7 @@ ordering effect with vocabulary and budget held fixed; \emph{random-prob} vs
 \emph{random-verdict} is what probability access is worth to an attacker who
 cannot rank; \emph{random-verdict} vs \emph{group-verdict} is how much of that a
 one-bit answer can recover by searching instead of ranking; and
-\emph{random-prob} against the recorded random word attack of \S\ref{sec:results}
+\emph{random-prob} against the recorded random word attack of Section~\ref{sec:results}
 isolates the candidate set, which is the only thing those two do not share.
 
 \paragraph{Meaning preservation is a constraint, not a claim.} Every arm sends
@@ -173,7 +173,7 @@ the messages whose ASR is reported. Every arm takes a seed and the sweep driver
 re-runs it at several, so ordering effects can be separated from seed noise. One
 command per arm runs it (\texttt{python src/run\_ablation.py --model <key> --arm
 <arm>}), and the per-sample records are written in the same schema as the other
-attacks, which is what lets the paired test of \S\ref{sec:pairs} be applied to the
+attacks, which is what lets the paired test of Section~\ref{sec:pairs} be applied to the
 ablation without new code.
 
 % The table and its prose appear only when results/ablation_contrasts.csv

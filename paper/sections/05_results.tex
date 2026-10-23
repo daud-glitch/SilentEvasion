@@ -85,7 +85,7 @@ advantage is horizontal as well as vertical.
 \caption{Attack success rate per model, task and attack mode, with 95\% Wilson
 intervals on the flip count. Solid blue bars are the character attack, hatched
 red bars the word attack, and green cross-hatched bars the saliency-guided word
-attack of \S\ref{sec:saliency}, which is drawn here for comparison but costs
+attack of Section~\ref{sec:saliency}, which is drawn here for comparison but costs
 22.9 model queries per message against 3.9 for the two random attacks, so the
 bars are not a comparison at equal cost. The number above
 each interval is the total count:
@@ -124,8 +124,8 @@ probability channel does flip a message, that message started closer to the
 threshold than the ones the channel leaves alone: mean 0.792 against 0.959 for
 Qwen2.5-3B and 0.927 against 0.998 for Phi-3.5-mini. SmolLM2-1.7B never flips on
 that channel at all (0 of 1{,}144), although its generated verdict changes 22 times
---- a disagreement between the two channels of the kind \S\ref{sec:discussion}
-reports, not a margin result. Its scores sit in a narrow band (median 0.984),
+--- a disagreement between the two channels of the kind that
+Section~\ref{sec:discussion} reports, not a margin result. Its scores sit in a narrow band (median 0.984),
 which is the near-constant rule seen in the baseline table: an edit has little
 score to move, so the model can look robust, in the sense a deployment cares
 about, only by accident.
@@ -146,12 +146,12 @@ all involve Phi-3.5-mini on phishing email, and the two with the least overlap
 are the same comparison from both sides: under the character attack, Phi-3.5-mini's
 interval overlaps Qwen2.5-3B's by 21.3\% and SmolLM2-1.7B's by 18.7\% of the
 narrower width. That is the one model whose catch rate on the task is far below
-the other two (60.0\% against 95.5\%), which is the difference \S\ref{sec:fragility}
-turns on.
+the other two (60.0\% against 95.5\%), which is the difference that
+Section~\ref{sec:fragility} turns on.
 
 What the intervals do establish is magnitude, and the magnitude depends on the
 search. No random-edit cell exceeds 10.7\% at its upper bound; the saliency-guided
-cells of \S\ref{sec:saliency} reach 18.6\%. The claim ``under a 15\% edit budget
+cells of Section~\ref{sec:saliency} reach 18.6\%. The claim ``under a 15\% edit budget
 a random edit leaves these models close to robust'' survives the uncertainty; the
 claim ``model A is more robust than model B'' does not, for most pairs, and
 neither claim extends to a better search.

@@ -40,8 +40,8 @@ library puts these methods into standard goals, limits and
 transformations~\cite{morris2020textattack}. We test two search strengths. The
 first picks a synonym at random from a small table; it stands for a simple
 attacker and gives a lower bound on evasion. The second ranks word swaps by their
-measured effect on the model (\S\ref{sec:saliency}), and we call it the guided
-attack. In \S\ref{sec:ablation} we also run TextFooler's leave-one-out word
+measured effect on the model (Section~\ref{sec:saliency}), and we call it the guided
+attack. In Section~\ref{sec:ablation} we also run TextFooler's leave-one-out word
 ranking as a reference arm. We use PWWS and TextFooler to define the search
 logic, not to compare our numbers with the ones they report.
 
@@ -50,7 +50,7 @@ Yuan et al.\ showed that adversarial text often transfers across different
 neural models, and built ensembles that attack several models at
 once~\cite{yuan2021transfer}. He et al.\ extracted model parameters to build
 transferable attacks against a target system~\cite{he2021extraction}. These
-studies motivate our cross-model transfer matrix in \S\ref{sec:transfer}. In our
+studies motivate our cross-model transfer matrix in Section~\ref{sec:transfer}. In our
 tests, edits found on one model rarely work on another, because our attacker runs
 a bounded local search rather than learning directions that carry across models.
 On statistics, Carlini et al.\ showed that many robustness evaluations contain
