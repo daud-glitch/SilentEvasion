@@ -1,6 +1,15 @@
 \begin{figure}[t]
 \centering
-\includegraphics[width=\columnwidth]{figures/fig_pipeline}
-\caption{The evaluation pipeline. A clean message is classified by the model. If the verdict is malicious, the message enters the attack set. The perturbation engine applies edits under budget and re-queries the model. The results are then evaluated for transfer and defense robustness.}
+% The Word build has no TikZ, so it embeds figures/fig_pipeline.png, which
+% src/make_pipeline_png.py renders from figures/fig_pipeline_body.tex. The
+% macro below is a no-op in LaTeX and only names that PNG to make_docx.py.
+\wordfigure{figures/fig_pipeline}
+\input{figures/fig_pipeline_body}
+\caption{The evaluation pipeline. A clean message is scored by the model. If
+the verdict is malicious the message enters the attack set. The perturbation
+engine edits it inside the shared 15\% budget and re-queries the model, which
+is the loop back to the top row. The saved per-sample records are then replayed
+against the other models (transfer) and re-scored after normalisation and
+re-thresholding (defence).}
 \label{fig:pipeline}
 \end{figure}

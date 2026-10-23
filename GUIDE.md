@@ -413,12 +413,16 @@ sections are read — not the file number. The build assigns them.
 | **6** | Saliency attack vs random word attack | `tables/t7_saliency.tex` |
 | **7** | Cross‑model transfer matrix | `tables/t5_transfer.tex` |
 | **8** | Defence probe on stored perturbations | `tables/t6_defense.tex` |
-| **F1** | Budget scatter: ASR against perturbation spent | `figures/fig_budget.pdf` (+ `.png`) |
-| **F2** | ASR bars per model × task × mode | `figures/fig_asr.pdf` (+ `.png`) |
+| **F1** | Evaluation pipeline (schematic, no measured numbers) | `figures/fig_pipeline_body.tex` (TikZ; `.png` for Word) |
+| **F2** | Budget scatter: ASR against perturbation spent | `figures/fig_budget.pdf` (+ `.png`) |
+| **F3** | ASR bars per model × task × mode | `figures/fig_asr.pdf` (+ `.png`) |
 
-All tables and both figures are generated from CSVs — no hand‑crafted numbers.
-`src/make_figures.py` writes a PDF for LaTeX and a PNG for the Word build from
-the same figure object, so the two renderings cannot drift apart.
+All tables and both data figures are generated from CSVs — no hand‑crafted
+numbers. `src/make_figures.py` writes a PDF for LaTeX and a PNG for the Word
+build from the same figure object, so the two renderings cannot drift apart.
+The pipeline diagram is drawn in TikZ and follows the same rule: LaTeX renders
+`figures/fig_pipeline_body.tex` directly, and `src/make_pipeline_png.py`
+rasterises that same file to the PNG the Word build embeds.
 
 ---
 
@@ -428,6 +432,7 @@ Order matters, because each step reads what the previous one wrote:
 
 ```powershell
 ./venv/Scripts/python.exe src/make_figures.py      # figures (PDF + PNG)
+./venv/Scripts/python.exe src/make_pipeline_png.py # Figure 1 for Word (TikZ -> PNG)
 ./venv/Scripts/python.exe src/make_paper_tex.py    # tables + generated prose
 ./venv/Scripts/python.exe src/make_docx.py         # paper/main.docx
 cd paper; ../.tools/tectonic.exe main.tex; cd ..    # paper/main.pdf

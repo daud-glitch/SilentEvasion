@@ -139,7 +139,10 @@ def figure_sources():
 def test_figures(doc):
     # The count is read from the sources, not typed in here: a figure added to a
     # section must not need an edit to this test.
-    wanted = sum(src.count("\\includegraphics") for src in figure_sources())
+    # A figure is either \includegraphics or a TikZ drawing that names its Word
+    # raster with \wordfigure{figures/name}; both count as one embedded image.
+    wanted = sum(src.count("\\includegraphics") + src.count("\\wordfigure")
+                 for src in figure_sources())
     print("\n[4] all %d figures are embedded images" % wanted)
     pngs = sorted(glob.glob(os.path.join(FIGURES, "*.png")))
     check("a PNG exists for every figure", len(pngs) == wanted,

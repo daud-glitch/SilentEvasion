@@ -688,13 +688,23 @@ def fit_widths(table, rows):
 
 def add_figure(doc, block, labels, cites, unknown):
     m = re.search(r"\\includegraphics", block["body"])
-    if not m:
-        raise TexError("figure without includegraphics")
-    _, j = take_optional(block["body"], m.end())
-    path, _ = take_group(block["body"], j)
+    if m:
+        _, j = take_optional(block["body"], m.end())
+        path, _ = take_group(block["body"], j)
+        missing = "run src/make_figures.py"
+    else:
+        # A figure drawn in TikZ has no raster in the .tex, so the block names
+        # the picture Word should embed with \wordfigure{figures/name}, which
+        # is a no-op macro in main.tex.
+        hint = re.search(r"\\wordfigure\{([^}]*)\}", block["body"])
+        if not hint:
+            raise TexError("figure has neither \\includegraphics nor "
+                           "\\wordfigure{figures/name}")
+        path = hint.group(1).strip()
+        missing = "run src/make_pipeline_png.py"
     png = os.path.join(PAPER, path + ".png")
     if not os.path.exists(png):
-        raise TexError("missing %s - run src/make_figures.py" % png)
+        raise TexError("missing %s - %s" % (png, missing))
     doc.add_picture(png, width=Inches(6.2))
     doc.paragraphs[-1].alignment = WD_ALIGN_PARAGRAPH.CENTER
     cap = re.search(r"\\caption\{", block["body"])

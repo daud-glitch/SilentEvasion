@@ -20,6 +20,11 @@
 % word itself must not break across a line as "Sec-" + "tion".
 \hyphenation{Section}
 
+% A figure drawn in TikZ has no raster for the Word build, so the figure names
+% the PNG that src/make_docx.py should embed instead. This macro does nothing in
+% the typeset paper; the drawing itself is included right after it.
+\newcommand{\wordfigure}[1]{}
+
 \begin{document}
 
 \title{Silent Evasion: Measuring the Adversarial Fragility of Small Language

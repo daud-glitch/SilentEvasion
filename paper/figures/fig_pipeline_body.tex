@@ -1,0 +1,38 @@
+% The pipeline drawing itself. \input by figures/fig_pipeline.tex for the
+% typeset build, and by src/make_pipeline_png.py, which renders this same
+% picture to figures/fig_pipeline.png for the Word build. Edit only here, so
+% the two builds cannot drift apart.
+%
+% Flow: message -> model -> verdict; only the malicious verdicts become the
+% attack set; the perturbation engine edits them under the shared budget and
+% re-queries the model (the loop back to row 1); the stored per-sample records
+% are what the transfer and defence evaluation reads.
+\begin{tikzpicture}[
+  box/.style   = {draw=black!65, line width=0.6pt, fill=black!4,
+                  rounded corners=2pt, align=center, font=\footnotesize,
+                  inner sep=2.5pt, text width=1.95cm, minimum height=1.05cm},
+  arrow/.style = {-{Latex[length=1.5mm, width=1.1mm]}, draw=black!75,
+                  line width=0.6pt},
+  note/.style  = {font=\scriptsize, text=black!70, align=center},
+]
+  \node[box] (msg) {Input\\message};
+  \node[box, right=8mm of msg] (model) {Language model\\(triage)};
+  \node[box, right=8mm of model] (verdict) {Verdict\\(malicious\\ or benign)};
+
+  \node[box, below=11mm of verdict] (set) {Attack set\\(caught messages)};
+  \node[box, left=8mm of set] (engine) {Perturbation engine\\(15\% budget)};
+  \node[box, left=8mm of engine] (eval) {Transfer \& defence\\evaluation};
+
+  \draw[arrow] (msg) -- (model);
+  \draw[arrow] (model) -- (verdict);
+  \draw[arrow] (verdict) -- node[note, right=1.2mm, text width=1.05cm]
+      {malicious\\only} (set);
+  \draw[arrow] (set) -- node[note, above=1.4mm, text width=1.1cm]
+      {caught\\text} (engine);
+  % The label sits below the box band: between the boxes there is only the 8 mm
+  % gap, which a word does not fit into without touching either border.
+  \draw[arrow] (engine) -- node[note, below=5.7mm, text width=1.0cm]
+      {records} (eval);
+  \draw[arrow] (engine) -- node[note, left=1.2mm, text width=1.15cm]
+      {edited text,\\re-query} (model);
+\end{tikzpicture}
