@@ -43,11 +43,12 @@ attack from 7.5\% to 6.9\%. Adjusting decision
 cutoffs (re-thresholding) to maintain a 5\% false-alarm budget can actually
 increase evasions for models with uncalibrated probability scores.
 
-Our main practical takeaway is that with small edit budgets, what limits a
-triage deployment first is how decisively a model separates the two classes,
-not how easily random edits fool it: the model that flips most sits closest to
-its decision boundary, not the one with the lowest overall accuracy.
-Furthermore, attack success rates must
+Our main practical takeaway is that under small edit budgets, neither overall
+accuracy nor the distance from the decision threshold orders how often a model
+flips: the model with the most flips is not the least accurate, and its
+probability route saturates, so no margin can be read on it. Robustness
+therefore has to be measured per model rather than inferred from accuracy or
+confidence. Furthermore, attack success rates must
 always be reported with their exact sample count (denominator), a statistical
 confidence interval, and the specific search method used. A result of 0 out of
 188 is an upper limit of 2.0\%, not proof of absolute security. We release all

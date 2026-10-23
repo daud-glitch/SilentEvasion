@@ -64,7 +64,7 @@ two sentences: (a) the query cap never bound, (b) the largest eligible set is
 
 ## Should fix (clarity, logic, or an unsupported step)
 
-**S1. Interval paragraph contradicts itself at the end.** "9 of 12 have
+**S1. (fixed) Interval paragraph contradicts itself at the end.** "9 of 12 have
 intervals that overlap by more than half the narrower interval" means three pairs
 do *not*; the paragraph then calls Phi-vs-Qwen (21.3%) and Phi-vs-SmolLM2
 (18.7%) "the one separation that survives the uncertainty", although both pairs
@@ -72,12 +72,18 @@ still overlap. Say "the only pairs whose overlap falls below a quarter of the
 narrower width" and quote both, or quote the single pair and drop the other
 number. `05_results.tex:118-124`.
 
-**S2. Boundary proximity is asserted, never measured.** §5 calls it the
-predictor; nothing in the paper estimates the margin. Either measure it (the
-$P(\text{malicious})$ column already exists for the saliency rows: report the
-mean distance from 0.5 on caught messages per model) or hedge to "consistent
-with a model that sits closer to its decision threshold". This is the one
-mechanism claim a reviewer will ask for evidence on. `05_results.tex:101-107`.
+**S2. (fixed; the claim was withdrawn) Boundary proximity is asserted, never
+measured.** §5 called it the predictor; nothing estimated the margin. The margin
+is now measured from the `p_orig` column of `results/defense_rows_*.csv`
+(`src/analyze_margin.py` → `results/margin_table.csv`), and it does not support
+the claim: mean margin 0.449 (Qwen2.5-3B), 0.482 (SmolLM2-1.7B), 0.494
+(Phi-3.5-mini), where the widest belongs to the model that flips most, and
+Phi's route saturates at ≥0.9999 on 800 of its 845 stored originals. §5 now
+reports the measurement, §1's contribution and the abstract/conclusion no
+longer assert the ordering, and §9.3 no longer says Phi sits close to its
+boundary. The only surviving margin effect is inside the probability channel
+(flipped messages start lower: 0.792 vs 0.959 on Qwen, 0.927 vs 0.998 on Phi).
+`05_results.tex:99-131`.
 
 **S3. "40 verdict flips" reads as the paper's total.** It is the two random
 attacks only (12+28); the saliency attack adds 46, and the transfer replay adds

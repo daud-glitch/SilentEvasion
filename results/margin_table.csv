@@ -1,0 +1,10 @@
+model,task,n_rows,n_messages,n_prob_flips,mean_p_orig,median_p_orig,mean_margin,n_saturated,flip_mean_p,kept_mean_p
+phi3.5-mini,all,845,283,46,0.9944,1.0,0.4944,800,0.9274,0.9983
+phi3.5-mini,phishing_email,358,120,25,0.9917,1.0,0.4917,322,0.9132,0.9976
+phi3.5-mini,sms_smishing,487,163,21,0.9964,1.0,0.4964,478,0.9443,0.9987
+qwen2.5-3b,all,1008,336,64,0.9486,0.99,0.4486,3,0.7921,0.9592
+qwen2.5-3b,phishing_email,507,169,37,0.9528,0.9916,0.4528,3,0.8242,0.9629
+qwen2.5-3b,sms_smishing,501,167,27,0.9444,0.9885,0.4444,0,0.7483,0.9556
+smollm2-1.7b,all,1144,382,0,0.9821,0.984,0.4821,0,,0.9821
+smollm2-1.7b,phishing_email,590,197,0,0.9799,0.9829,0.4799,0,,0.9799
+smollm2-1.7b,sms_smishing,554,185,0,0.9844,0.9852,0.4844,0,,0.9844

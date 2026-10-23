@@ -52,6 +52,13 @@ had not reached.
 
 ## Measurement facts a reader must not be spared
 
+- The decision margin is measured, not assumed: `src/analyze_margin.py` writes
+  `results/margin_table.csv` (mean $p_{\text{orig}} - 0.5$ over caught rows:
+  0.449 Qwen2.5-3B, 0.482 SmolLM2-1.7B, 0.494 Phi-3.5-mini). Phi's two-token
+  route saturates — 800 of its 845 stored originals score at least 0.9999 — and
+  the margin does **not** order the ASR, so the earlier boundary-proximity claim
+  is withdrawn in §5, §1, the abstract, §9 and the conclusion.
+
 - The saliency attack optimises P(malicious) over two answer tokens; the rest of
   the paper reads the generated verdict. They agree on **941 of 1,001** rows:
   perfect for Phi-3.5-mini, 45 probability-only flips on Qwen2.5-3B, 15

@@ -45,10 +45,12 @@ vulnerability is concentrated in specific tokens. This finding is useful for
 defenders because targeted words can be filtered. It also warns against taking
 random perturbation rates as proof of general robustness.
 
-This effect varies across models. Phi-3.5-mini sits close to its decision
-boundary. Its ASR roughly doubles under saliency search (11.7\% and 7.4\%
-versus 5.1\% and 3.7\% under random word edits). Qwen2.5-3B is more accurate and
-does not flip more often under saliency (2.4\% and 0.6\% versus 2.6\% and 3.2\%).
+This effect varies across models. Phi-3.5-mini shows the largest increase: its
+ASR roughly doubles under saliency search (11.7\% and 7.4\% versus 5.1\% and
+3.7\% under random word edits), although its probability route saturates at
+0.9999 or above on 800 of its 845 stored rows, so the increase cannot be read as
+a margin effect. Qwen2.5-3B is more accurate and does not flip more often under
+saliency (2.4\% and 0.6\% versus 2.6\% and 3.2\%).
 Its remaining errors cannot be reached by this candidate vocabulary.
 
 \subsection{Two readouts of one model are not one measurement}

@@ -54,11 +54,14 @@ confirm this label, and we report the baseline catch rate alongside every ASR.
   the diagonal. Transfer rates remain low overall. The edits appear specific to
   individual models rather than universal. Guided edits transfer slightly better
   than random edits, but remain ineffective as portable attacks.
-\item \textbf{Analysis of model decision boundaries}: The model with the
-  highest attack success rate is the one operating closest to its decision
-  boundary, not the least accurate model overall. Conversely, a model that marks
-  almost everything as malicious appears artificially robust simply because its
-  classification rule rarely changes.
+\item \textbf{A negative result about what predicts fragility}
+  (\S\ref{sec:fragility}): neither overall accuracy nor the measured distance
+  from the decision threshold orders the attack success rate across the three
+  models. The model with the most flips is not the least accurate, and its own
+  probability route saturates at 0.9999 or above on 800 of its 845 stored
+  originals, so no margin can be read there. The one clear case is the detector
+  that marks almost everything malicious: its score barely varies, so it looks
+  robust for a reason that has nothing to do with robustness.
 \item \textbf{A clear negative result}: Under a 15\% edit budget, random edits
   rarely fool these models. For practical deployments, the real concern is
   initial detection accuracy rather than vulnerability to simple random edits.

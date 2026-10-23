@@ -16,9 +16,11 @@ result is not on the same messages or from the same candidate vocabulary. Once
 we account for the higher budget actually spent, the factor is 1.4, not 1.7.
 The search, the candidates, and the denominator must all be named in the claim.
 Second, at this budget the binding constraint on a small triage model is what
-it catches before any attack. The model that flips most is closest to its
-decision boundary. The model that catches almost everything is immovable
-because its decision rule is nearly constant. Detection quality, not
+it catches before any attack. What orders the flip rate is not accuracy and not
+the measured margin: the model that flips most is neither the least accurate nor
+the closest to its threshold, and its probability route saturates, so the
+margin cannot be read on it at all. The model that catches almost everything is
+immovable because its decision rule is nearly constant. Detection quality, not
 adversarial robustness, is where deployment effort pays first. Third, cheap
 defences split cleanly. Normalising visually confusable characters removes every
 character-level flip and only a small part of the word-level ones (7.5\% to
