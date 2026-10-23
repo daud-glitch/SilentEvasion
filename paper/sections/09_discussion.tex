@@ -150,3 +150,54 @@ comes from public benchmark collections.
 
 \paragraph{Missing experiments.} Paraphrase generation attacks and defense-aware
 adaptive attacks were designed but not run.
+
+\subsection{Future Work}
+\label{sec:futurework}
+
+Four measurements would move this line of work forward. None of them is claimed
+above, and each of them is a place where the current numbers stop.
+
+\paragraph{A sentence-level paraphrase attacker.} Every edit measured here is
+local: a character, a word, a synonym. An attacker who rewrites whole sentences
+--- keeping the same request and the same lure --- is a different kind of threat,
+and the shared 15\% edit budget does not describe it, because a paraphrase can
+change most of the message while leaving the meaning intact. Two pieces would be
+needed before such an attack could sit in the same table as the ones above: a
+reliable meaning check, so that a rewrite is counted only when a reader would
+treat it as the same request; and a cost model, because the rewriter is itself a
+model call and the query accounting of \S\ref{sec:saliency} would have to include
+it. The open question is whether the attack success that our bounded search
+leaves on the table is reachable this way. Nothing measured here answers that.
+
+\paragraph{A defence-aware attacker.} The two defences of \S\ref{sec:defense}
+were measured against perturbations built without any knowledge of them. That is
+the honest way to measure a defence once, and the wrong way to conclude that it
+holds. An attacker who can see the character normaliser and the threshold spends
+the same budget differently: a substitution outside the normaliser's mapping
+table passes through unchanged, and a threshold is a number to be pushed under.
+Repeating the character and word attacks with the defence in the loop --- the
+normaliser applied before every query, the threshold known to the search --- is
+the experiment that would say whether the residual flip rate we report is
+a floor or a first measurement. Until it runs, the defence results should be read
+as a property of the perturbation set, not of the defence.
+
+\paragraph{The models we could not run.} Llama-3.2-3B-Instruct was omitted
+because it is gated, and the three models we do report sit in one size band. We
+therefore cannot say whether fragility grows or shrinks with model size, and we
+do not: the discussion of \S\ref{sec:discussion} compares models of similar
+capacity. Attacking a 1B, a 3B and an 8B model of the same family on the same
+messages would answer a simple question that a deployment actually asks --- is the
+near-constant decision rule of the strongest model here a property of that model,
+or of its size? The experiment is the only way to find out.
+
+\paragraph{Run-to-run variability.} Our intervals cover variation across
+messages, not across runs. Sampling, prompt order and batching all move the
+generated verdict at the margin, and a flip count of a few dozen messages is
+exactly the scale at which that noise matters. Repeating one attack under several
+seeds, and reporting the spread next to the interval, would tell a reader how
+much of a two-point gap between two rows is real. It would also turn the
+single-run numbers in this paper into a distribution, which is what the paired
+tests already assume.
+
+None of these changes a number reported above. Each of them changes what those
+numbers would be allowed to mean.

@@ -734,10 +734,12 @@ def meta_from_main():
     city = take_group(main_tex, re.search(r"\\city\{", main_tex).end() - 1)[0]
     country = take_group(main_tex, re.search(r"\\country\{", main_tex).end() - 1)[0]
     kw = take_group(main_tex, re.search(r"\\keywords\{", main_tex).end() - 1)[0]
+    mail = re.search(r"\\email\{", main_tex)
+    email = take_group(main_tex, mail.end() - 1)[0] if mail else ""
     body = main_tex.split("\\maketitle", 1)[1]
     body = body.split("\\bibliographystyle", 1)[0]
     return dict(title=title, author=author, institution=inst, city=city,
-                country=country, keywords=kw, body=body)
+                country=country, keywords=kw, email=email, body=body)
 
 
 def body_order(body_text):
@@ -850,6 +852,13 @@ def main():
     aff.alignment = WD_ALIGN_PARAGRAPH.CENTER
     add_runs(aff, inline_runs("%s, %s, %s" % (meta["institution"], meta["city"],
                                              meta["country"]), {}, {}, {"italic": True}))
+
+    if meta["email"]:
+        mail = doc.add_paragraph()
+        mail.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        add_runs(mail, inline_runs(meta["email"], {}, {}, {}))
+        for run in mail.runs:
+            run.font.size = Pt(10)
 
     unknown = []
 

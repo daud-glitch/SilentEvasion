@@ -125,16 +125,32 @@ def test_tables(doc):
               "%d vs %d" % (len(doc.tables[idx].rows), rows))
 
 
+def figure_sources():
+    """Every .tex that can carry a \includegraphics, figure bodies included."""
+    paths = sorted(glob.glob(os.path.join(SECTIONS, "*.tex")))
+    paths += sorted(glob.glob(os.path.join(FIGURES, "*.tex")))
+    out = []
+    for path in paths:
+        with open(path, encoding="utf-8") as handle:
+            out.append(handle.read())
+    return out
+
+
 def test_figures(doc):
-    print("\n[4] both figures are embedded images")
+    # The count is read from the sources, not typed in here: a figure added to a
+    # section must not need an edit to this test.
+    wanted = sum(src.count("\\includegraphics") for src in figure_sources())
+    print("\n[4] all %d figures are embedded images" % wanted)
     pngs = sorted(glob.glob(os.path.join(FIGURES, "*.png")))
-    check("a PNG exists for every figure", len(pngs) == 2, str(pngs))
+    check("a PNG exists for every figure", len(pngs) == wanted,
+          "%d PNG(s) for %d figure(s)" % (len(pngs), wanted))
     blips = [r for r in doc.part.rels.values()
              if "image" in r.reltype]
-    check("two images are embedded in the .docx", len(blips) == 2, str(len(blips)))
+    check("one image is embedded per figure", len(blips) == wanted,
+          "%d image(s) for %d figure(s)" % (len(blips), wanted))
     text = body_text(doc)
-    check("both figure captions are present",
-          "Figure 1." in text and "Figure 2." in text)
+    missing = [i for i in range(1, wanted + 1) if ("Figure %d." % i) not in text]
+    check("every figure caption is present", not missing, "missing %s" % missing)
 
 
 def test_clean(doc):

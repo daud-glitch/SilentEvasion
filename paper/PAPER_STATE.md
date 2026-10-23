@@ -4,7 +4,7 @@
 Models Used for Security Triage
 **Target:** ACM AISec (acmart, sigconf). Fallback: IEEE TrustCom.
 **Build (typeset):** `.tools/tectonic.exe main.tex` from `paper/` — currently
-**12 pages**, no undefined references, no LaTeX errors.
+**15 pages**, no undefined references, no LaTeX errors.
 **Build (Word):** `python src/make_docx.py` → `paper/main.docx`, 22 pages when
 opened in Word, built from the same sections and tables as the PDF.
 **Data:** Kaggle kernel `sadiasadozai/slm-robustness-ablation-transfer-v8`, COMPLETE
@@ -30,7 +30,7 @@ from the prose, and fails on any percentage the CSVs cannot produce.
 | 6 | Saliency-guided word attack, and the matched ablation | `attack_table.csv` rows with `mode=saliency`, generation-verified, `t7_saliency.tex`; `ablation_contrasts.csv`, `t9_ablation.tex` |
 | 7 | Transfer | `transfer_matrix.csv`, `t5_transfer.tex` (applied subset + self-replay) |
 | 8 | Defences | `defense_summary.csv`, `defense_thresholds.csv`, `t6_defense.tex` |
-| 9 | Discussion & limitations | derived from the tables; channel and defence sections quote measured disagreements |
+| 9 | Discussion, limitations and future work | derived from the tables; channel and defence sections quote measured disagreements |
 | 10 | Ethics & availability | the seven defects found in our own pipeline |
 | 11 | Conclusion | no new claims |
 
