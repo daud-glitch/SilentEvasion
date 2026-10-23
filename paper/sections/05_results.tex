@@ -6,19 +6,19 @@
 Table~\ref{tab:baseline} is the clean zero-shot baseline, before any attack. Two
 rows matter more than the accuracy column.
 
-\textbf{Phi-3.5-mini is a cautious detector on email.} Its precision is high
+\textbf{Phi-3.5-mini is a cautious model on email.} Its precision is high
 (0.896) but it misses 80 of the 200 phishing messages, a catch rate of 60.0\%.
 It is the model that leaves the most malicious mail in the analyst's queue before
 any attack happens.
 
-\textbf{SmolLM2-1.7B is a degenerate detector.} It reaches a catch rate of 98.5\%
+\textbf{SmolLM2-1.7B is a degenerate model.} It reaches a catch rate of 98.5\%
 on phishing email, but its precision is 0.510 and its confusion matrix shows 189
 false positives against 11 true negatives on the benign class: it calls nearly
-every message malicious. A detector that says \emph{malicious} almost always is
+every message malicious. A model that says \emph{malicious} almost always is
 hard to flip towards \emph{benign}, and every robustness number for it has to be
 read against that fact.
 
-Qwen2.5-3B is the strongest and most balanced classifier of the three (F1 0.923
+Qwen2.5-3B is the strongest and most balanced model of the three (F1 0.923
 on email, 0.857 on SMS).
 
 \input{tables/t1_baseline}

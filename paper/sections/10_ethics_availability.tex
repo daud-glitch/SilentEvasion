@@ -12,13 +12,13 @@ targeted search. It is also not a new capability: PWWS and TextFooler are publis
 implements both, and this implementation is weaker than either --- a greedy
 first-order search over a hand-built lexicon plus WordNet, with a 24-call cap,
 a 15\% word budget and a lexical paraphrase constraint, on open checkpoints.
-No attack here is tuned against a deployed classifier, no victim system is
+No attack here is tuned against a deployed model, no victim system is
 probed, and nothing released lowers the cost of an attack below what those
 toolkits already provide. We report that small triage models resist the random
 adversaries and that the targeted one roughly doubles the flip rate, which is
 the defensive direction of the finding: both numbers tell an operator that a
 random-draw ASR is not a robustness guarantee. Withholding the measurement
-would leave operators believing a false-positive prone detector is robust.
+would leave operators believing a false-positive prone model is robust.
 
 \paragraph{Data.} Both corpora are public and contain no live credentials or
 personally identifiable information beyond what their publishers already

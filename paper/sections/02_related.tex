@@ -1,7 +1,7 @@
 \section{Related Work}
 \label{sec:related}
 
-\paragraph{Language models as email and SMS detectors.}
+\paragraph{Language models for email and SMS triage.}
 Using pre-trained language models without fine-tuning (zero-shot classification)
 is now a standard baseline for security triage, that is, for sorting incoming
 messages into harmful and safe. Rojas-Galeano tested models on SpamAssassin
@@ -10,20 +10,20 @@ for GPT-4 on summarised emails~\cite{rojas2024zeroshot}. Eilertsen et al.\ tried
 zero-shot and few-shot prompts for phishing detection. Accuracy varied between
 models, and they asked whether the answers come from what the model already
 knows or from the examples in the prompt~\cite{eilertsen2025intent}. Koide et
-al.\ built a detector from email headers and bodies and reported 99.70\%
+al.\ built a model from email headers and bodies and reported 99.70\%
 accuracy with GPT-4~\cite{koide2024chatspamdetector}. Wang et al.\ added external web context to SMS triage inside an agent pipeline
 and reached 98.8\% overall
 accuracy~\cite{wang2025smishx}. Thapa et al.\ studied small language models and
 found that rewritten emails lower detection performance~\cite{thapa2025quantized}.
 Our study is about measurement rules rather than model design. We keep the
-detector and the prompt fixed and apply careful counting rules to see how text
+model and the prompt fixed and apply careful counting rules to see how text
 edits change the final decision.
 
 \paragraph{Attacking security text filters.}
 Shafee et al.\ generated believable text to attack threat-intelligence
-pipelines. Their text misled the classifiers, producing a 75\% false-positive
-rate when ChatGPT-4o acted as the detector~\cite{shafee2026falsealarms}.
-Kulkarni et al.\ generated fake phishing pages: small detectors failed, while
+pipelines. Their text misled the models, producing a 75\% false-positive
+rate when ChatGPT-4o classified the messages~\cite{shafee2026falsealarms}.
+Kulkarni et al.\ generated fake phishing pages: small models failed, while
 vision-language models held up better~\cite{kulkarni2024mltollm}. Our setting is
 the raw message text, not a web page, and our attacker makes small edits instead
 of writing new text from scratch. That matches what a real attacker needs,

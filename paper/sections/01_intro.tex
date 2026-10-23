@@ -1,9 +1,9 @@
 \section{Introduction}
 
 A phishing email that reaches a security analyst has usually passed several
-initial spam filters. Often, the next security layer is a small language model
-(an AI text classifier). The model makes a fast, automated decision: is this
-message malicious (harmful) or benign (safe)? Small open models with 1 to 4
+initial spam filters. Often, the next security layer is a small language model.
+The model makes a fast, automated decision: is this message malicious (harmful)
+or benign (safe)? Small open models with 1 to 4
 billion parameters are popular for this job. They run on a single standard GPU,
 can be hosted privately inside an organization, and require no special training
 examples~\cite{rojas2024zeroshot,koide2024chatspamdetector}. However, an attacker
@@ -59,7 +59,7 @@ confirm this label, and we report the baseline catch rate alongside every ASR.
   from the decision threshold orders the attack success rate across the three
   models. The model with the most flips is not the least accurate, and its own
   probability channel saturates at 0.9999 or above on 800 of its 845 stored
-  originals, so no margin can be read there. The one clear case is the detector
+  originals, so no margin can be read there. The one clear case is the model
   that marks almost everything malicious: its score barely varies, so it looks
   robust for a reason that has nothing to do with robustness.
 \item \textbf{A clear negative result}: Under a 15\% edit budget, random edits

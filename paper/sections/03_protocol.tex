@@ -4,7 +4,7 @@
 \subsection{Adversary}
 
 The attacker controls the message text and nothing else: no access to the model
-weights, gradients, logits or detector code, and no way to retrain it. The
+weights, gradients, logits or detection code, and no way to retrain it. The
 attacker also wants the message to stay readable, so the edit budget is capped:
 at most 15\% of the message's units (characters for the character-level attack,
 whitespace-separated tokens for the word-level attack) may change, and the change
@@ -29,7 +29,7 @@ The verdict-only adversary is deliberately weak, and for that reason its ASR is
 a lower bound. An attacker with weight access, an
 embedding-space attack or a saliency-guided word search would do better. A weak
 adversary is useful precisely because a flip under it is unambiguously bad news
-for the detector: nothing exotic happened, the message simply stopped looking
+for the model: nothing exotic happened, the message simply stopped looking
 suspicious.
 
 \subsection{The four rules that make an ASR quotable}
