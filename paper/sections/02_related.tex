@@ -3,63 +3,60 @@
 
 \paragraph{Language models as email and SMS detectors.}
 Using pre-trained language models without fine-tuning (zero-shot classification)
-is now a standard baseline for security triage. Rojas-Galeano tested models on
-SpamAssassin without extra training. They reported an F1 score of 90\% for
-Flan-T5 on short emails and 95\% for GPT-4 on summarized
-emails~\cite{rojas2024zeroshot}. Eilertsen et al.\ tested zero-shot and few-shot
-prompts for phishing detection. They found mixed accuracy across models and
-questioned if decisions rely on model knowledge or prompt
-examples~\cite{eilertsen2025intent}. Koide et al.\ designed a detector using
-email headers and bodies. They reported 99.70\% accuracy with
-GPT-4~\cite{koide2024chatspamdetector}. Wang et al.\ added external web context
-to SMS triage inside an agent pipeline, achieving 98.8\% overall
+is now a standard baseline for security triage, that is, for sorting incoming
+messages into harmful and safe. Rojas-Galeano tested models on SpamAssassin
+without extra training: an F1 score of 90\% for Flan-T5 on short emails and 95\%
+for GPT-4 on summarized emails~\cite{rojas2024zeroshot}. Eilertsen et al.\ tried
+zero-shot and few-shot prompts for phishing detection. Accuracy varied between
+models, and they asked whether the answers come from what the model already
+knows or from the examples in the prompt~\cite{eilertsen2025intent}. Koide et
+al.\ built a detector from email headers and bodies and reported 99.70\%
+accuracy with GPT-4~\cite{koide2024chatspamdetector}. Wang et al.\ added outside
+web context to SMS triage inside an agent pipeline and reached 98.8\% overall
 accuracy~\cite{wang2025smishx}. Thapa et al.\ studied small language models and
-observed that rewritten emails lower detection
-performance~\cite{thapa2025quantized}. Our study focuses on measurement
-discipline rather than model architecture. We keep the detector and prompt
-constant, applying careful accounting rules to measure how text edits change the
-verdict.
+found that rewritten emails lower detection performance~\cite{thapa2025quantized}.
+Our study is about measurement rules rather than model design. We keep the
+detector and the prompt fixed and apply careful counting rules to see how text
+edits change the final decision.
 
 \paragraph{Attacking security text filters.}
-Shafee et al.\ generated plausible text to attack threat intelligence
-pipelines. They found that evasion misled classifiers, producing a 75\%
-false-positive rate when ChatGPT-4o acted as the
-detector~\cite{shafee2026falsealarms}. Kulkarni et al.\ generated adversarial
-phishing pages. They observed that small detectors failed, while vision-language
-models proved more resilient~\cite{kulkarni2024mltollm}. In our setting, we
-study raw message text rather than web pages. Our adversary makes small edits
-rather than generating new text from scratch. This matches the real constraints
-of an attacker who wants users to read the message.
+Shafee et al.\ generated believable text to attack threat-intelligence
+pipelines. Their text misled the classifiers, producing a 75\% false-positive
+rate when ChatGPT-4o acted as the detector~\cite{shafee2026falsealarms}.
+Kulkarni et al.\ generated fake phishing pages: small detectors failed, while
+vision-language models held up better~\cite{kulkarni2024mltollm}. Our setting is
+the raw message text, not a web page, and our attacker makes small edits instead
+of writing new text from scratch. That matches what a real attacker needs,
+because the victim still has to read the message.
 
-\paragraph{Text perturbation techniques and budgets.}
-Character-level attacks change individual letters. DeepWordBug introduced typos
-and letter swaps~\cite{gao2018deepwordbug}, while HotFlip formalized gradient
+\paragraph{Small text edits (perturbations) and their budgets.}
+Character-level attacks change single letters. DeepWordBug added typos and
+letter swaps~\cite{gao2018deepwordbug}, and HotFlip formalized gradient-based
 character flips~\cite{ebrahimi2018hotflip}. Word-level attacks replace whole
-words while preserving meaning. TextFooler searches synonyms
-greedily~\cite{jin2020textfooler}, and PWWS ranks words by probability changes
-(saliency)~\cite{ren2019pwws}. The TextAttack library organizes these methods
-into standard goals, constraints, and transformations~\cite{morris2020textattack}.
-In this paper, we evaluate two main search strengths. The first is a random
-draw over a small synonym table. This represents a simple adversary and serves
-as a lower bound on evasion rates. The second is a guided attack that ranks word
-swaps by their measured effect on the model (\S\ref{sec:saliency}). In
-\S\ref{sec:ablation}, we also test TextFooler's leave-one-out word ranking as a
-reference arm. We use PWWS and TextFooler to define search logic rather than to
-compare numerical results directly.
+words while keeping the meaning. TextFooler searches for synonyms
+greedily~\cite{jin2020textfooler}, and PWWS ranks words by how much a replacement
+changes the model's confidence (its saliency)~\cite{ren2019pwws}. The TextAttack
+library puts these methods into standard goals, limits and
+transformations~\cite{morris2020textattack}. We test two search strengths. The
+first picks a synonym at random from a small table; it stands for a simple
+attacker and gives a lower bound on evasion. The second ranks word swaps by their
+measured effect on the model (\S\ref{sec:saliency}), and we call it the guided
+attack. In \S\ref{sec:ablation} we also run TextFooler's leave-one-out word
+ranking as a reference arm. We use PWWS and TextFooler to define the search
+logic, not to compare our numbers with the ones they report.
 
-\paragraph{Cross-model transfer and evaluation methodology.}
+\paragraph{Cross-model transfer, and how such results should be evaluated.}
 Yuan et al.\ showed that adversarial text often transfers across different
-neural models, and they built ensembles to target multiple models
-together~\cite{yuan2021transfer}. He et al.\ extracted model parameters to build
+neural models, and built ensembles that attack several models at
+once~\cite{yuan2021transfer}. He et al.\ extracted model parameters to build
 transferable attacks against a target system~\cite{he2021extraction}. These
 studies motivate our cross-model transfer matrix in \S\ref{sec:transfer}. In our
-tests, black-box perturbations found on one model rarely transfer to another.
-Our adversary uses a bounded local search rather than learning global transfer
-directions. On statistical methodology, Carlini et al.\ demonstrated that many
-adversarial robustness evaluations contain flaws and proposed standard practices
-for threat models~\cite{carlini2019evaluating}. Zimmermann et al.\ used active
-tests to reveal weaknesses in 11 of 13 published defenses~\cite{zimmermann2022confidence}.
-Recent research also highlights the importance of exact confidence intervals for
-robustness certificates~\cite{voracek2024statistical}. We follow these
-rigorous practices. Every evasion rate in this paper reports its numerator, its
-denominator, and an exact Wilson interval~\cite{nistwilson}.
+tests, edits found on one model rarely work on another, because our attacker runs
+a bounded local search rather than learning directions that carry across models.
+On statistics, Carlini et al.\ showed that many robustness evaluations contain
+flaws and proposed standard practice for threat models~\cite{carlini2019evaluating}.
+Zimmermann et al.\ used active tests to find weaknesses in 11 of 13 published
+defenses~\cite{zimmermann2022confidence}. Recent work also stresses the need for
+exact confidence intervals in robustness certificates~\cite{voracek2024statistical}.
+We follow that practice: every evasion rate in this paper reports its numerator,
+its total count and an exact Wilson interval~\cite{nistwilson}.

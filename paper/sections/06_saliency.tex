@@ -1,49 +1,49 @@
 \section{Where is the model fragile? A saliency-guided word attack}
 \label{sec:saliency}
 
-The word attack of \S\ref{sec:results} draws its substitution uniformly at
-random from a small synonym table. It answers ``does \emph{any} word-level edit
-break the model'' and leaves the distribution of fragility unmeasured: a flip
-caused by deleting the word \emph{urgent} and a flip caused by replacing the word
+The word attack of \S\ref{sec:results} picks its replacement at random from a
+small synonym table. It answers ``does \emph{any} word-level edit break the
+model'' and leaves the location of the weakness unmeasured: a flip caused by
+deleting the word \emph{urgent} and a flip caused by replacing the word
 \emph{the} are the same event in that accounting. This section asks the sharper
 question, and pays for the answer in queries.
 
-\paragraph{Method.} We implement the ordering of PWWS~\cite{ren2019pwws}. For a message
-$x$ that the model reads as malicious with probability $p_0$, a content word $i$
-and a candidate replacement $w$, let $p_{i,w} = P(\text{malicious} \mid x
-\text{ with word } i \text{ replaced by } w)$ be measured with the same prompt.
-Word saliency and the substitution priority are
+\paragraph{Method.} We use the ordering of PWWS~\cite{ren2019pwws}. For a
+message $x$ that the model reads as malicious with probability $p_0$, a content
+word $i$ and a candidate replacement $w$, let $p_{i,w} = P(\text{malicious} \mid
+x \text{ with word } i \text{ replaced by } w)$ be measured with the same prompt.
+The importance of a word (its saliency) and the priority of a substitution are
 \begin{equation}
 S_i = p_0 - p_{i,w}, \qquad
 \phi_{i,w} = \alpha \, \tilde{S}_i + (1-\alpha)\, p_{i,w},
 \end{equation}
 where $\tilde{S}_i$ is $S_i$ divided by the largest saliency in the message and
 $\alpha = 0.5$. Substitutions are applied greedily in descending $\phi$; after
-each accepted edit the verdict is re-queried, and the attack stops at the first
-flip or when the shared 15\% word budget is exhausted.
+each accepted edit the verdict is queried again, and the attack stops at the
+first flip or when the shared 15\% word budget is used up.
 
-The normalisation of $S$ is not cosmetic. With raw saliency and $\alpha = 0.5$,
-$\phi_{i,w} = \tfrac{1}{2}(p_0 - p_{i,w}) + \tfrac{1}{2} p_{i,w} = \tfrac{1}{2}
-p_0$ for \emph{every} candidate: the ranking collapses to a constant, and the
-greedy loop then applies substitutions in the order the words happen to appear in
-the message. Because $p_0$ is common to all candidates, only the scale of $S$
-matters, and the scale is exactly what the normalisation fixes. Our first
-implementation of this module had that defect; the unit test that now guards it
-(\texttt{tests/check\_saliency.py}) asserts that a high-saliency word outranks a
-neutral one at $\alpha = 0.5$.
+The normalization of $S$ is not only for appearance. With raw saliency and
+$\alpha = 0.5$, $\phi_{i,w} = \tfrac{1}{2}(p_0 - p_{i,w}) + \tfrac{1}{2} p_{i,w}
+= \tfrac{1}{2} p_0$ for \emph{every} candidate: the ranking flattens to a
+constant, and the greedy loop then applies substitutions in whatever order the
+words happen to appear in the message. Because $p_0$ is common to all candidates,
+only the scale of $S$ matters, and the scale is exactly what the normalization
+fixes. Our first version of this module had that defect; the unit test that now
+guards it (\texttt{tests/check\_saliency.py}) checks that a high-saliency word
+outranks a neutral one at $\alpha = 0.5$.
 
-\paragraph{Candidate replacements.} Two sources, recorded per substitution: a
-curated security lexicon (66 entries: \emph{verify} $\rightarrow$
+\paragraph{Candidate replacements.} Two sources, recorded for every substitution:
+a curated security word list (66 entries: \emph{verify} $\rightarrow$
 \emph{confirm/validate}, \emph{prize} $\rightarrow$ \emph{award/reward}, \ldots)
-and WordNet~\cite{miller1995wordnet} synonyms ordered by lemma frequency. Frequency
-ordering matters more than it looks: WordNet's third sense of a word is where
-synonyms stop being paraphrases (\emph{tone} $\rightarrow$ \emph{timber}), and a
-substitution like that would be counted as semantics-preserving when it is not.
-Multi-word replacements are excluded so that the 15\% budget counts words and
-nothing else. Candidates are capped at two per position and twelve positions per
-message, which is what keeps the query cost bounded.
+and WordNet~\cite{miller1995wordnet} synonyms ordered by how often the word
+occurs. The ordering matters more than it looks: WordNet's third sense of a word
+is where synonyms stop being paraphrases (\emph{tone} $\rightarrow$
+\emph{timber}), and such a substitution would be counted as meaning-preserving
+when it is not. Multi-word replacements are excluded so that the 15\% budget
+counts words and nothing else. Candidates are capped at two per position and
+twelve positions per message, which is what keeps the query cost bounded.
 
-\paragraph{Two verdict channels.} This attack needs a number, not a paragraph: at
+\paragraph{Two answer channels.} This attack needs a number, not a paragraph: at
 every candidate it asks the endpoint for $P(\text{malicious})$, obtained by
 scoring the two permitted answer tokens in one forward pass. The other two
 attacks read the model's generated one-word reply instead. Those are two
@@ -51,8 +51,8 @@ readouts of the same model, and comparing their ASRs without checking that they
 agree would be comparing a ruler with a scale. Every stored saliency row is
 therefore re-scored through the generation route, and Table~\ref{tab:saliency}
 reports the generation verdict; the artefact keeps both columns and the
-probability-route count, and we do not treat a disagreement between them as a
-bug to be tuned away --- it is a fact about the model.
+probability-route count, and we do not treat a disagreement between them as a bug
+to be tuned away --- it is a fact about the model.
 
 The probability route also has a failure mode worth recording, because it is
 silent. The answer tokens are chosen per tokenizer, and Phi-3.5 encodes
@@ -61,34 +61,35 @@ marker that ``\,benign'' also begins with. Scoring the first token of each answe
 therefore compares the space against itself: both logits are identical,
 $P(\text{malicious}) = 0.5$ for every message, and a saliency attack built on it
 finds nothing to rank and no flip to report. The endpoint now skips the shared
-prefix, and raises rather than returning a constant when the two answers cannot
-be separated. The saliency numbers for that model in this version come from the
-corrected scoring; its earlier all-zero result was an artefact.
+prefix, and raises an error rather than returning a constant when the two answers
+cannot be told apart. The saliency numbers for that model in this version come
+from the corrected scoring; its earlier all-zero result was an artefact of the
+bug.
 
 \paragraph{Query accounting.} Unlike the random attack, this one costs a measured
-number of model calls: roughly two per probed position, plus one verification per
+number of model calls: roughly two per probed position, plus one check per
 accepted edit. Probabilities come from a dedicated endpoint that scores the two
 permitted answer tokens in a single forward pass over the prompt, batched across
 candidates; the per-sample count is stored with the result, so the comparison in
-Table~\ref{tab:saliency} is between attacks whose cost is on the record. The
-asymmetry is real but smaller than an earlier draft of this paragraph claimed.
-The random attack is not one draw per sample: it re-queries every original and
-spends one query per attempt, up to three, which is 3.9 queries per message and
-8{,}047 queries for the 2{,}079 messages it attacks. The saliency attack spends
-22.9 per message --- 22{,}964 queries for 1{,}001 messages, six times as many
-calls for 1.6 times as many flips. The paper therefore does not claim equal
-cost, and it no longer claims the random attack was capped at one draw.
+Table~\ref{tab:saliency} is between attacks whose cost is on the record. The gap
+is real but smaller than an earlier draft of this paragraph claimed. The random
+attack is not one draw per sample: it re-queries every original and spends one
+query per attempt, up to three, which is 3.9 queries per message and 8{,}047
+queries for the 2{,}079 messages it attacks. The saliency attack spends 22.9 per
+message --- 22{,}964 queries for 1{,}001 messages, six times as many calls for
+1.6 times as many flips. The paper therefore does not claim equal cost, and it no
+longer claims the random attack was capped at one draw.
 
 \paragraph{What the comparison isolates, and what it does not.} Three things
 change between Table~\ref{tab:saliency}'s two rows at once: the \emph{ordering}
-(uniform draw versus saliency), the \emph{candidate set} (a 14-entry hand-written
-table versus a security lexicon plus WordNet), and the \emph{oracle} (a one-bit
-verdict versus $P(\text{malicious})$). The table therefore supports only the
-combination: saliency-ordered substitution over a security vocabulary breaks more
-messages per unit of edit than a uniform draw over a small table. It does not
-show that ordering alone is responsible, and it cannot say what the probability
-access is worth. \S\ref{sec:ablation} specifies the experiment that separates
-the three.
+(random draw versus saliency), the \emph{candidate set} (a 14-entry hand-written
+table versus a security word list plus WordNet), and the \emph{information}
+(a one-bit verdict versus $P(\text{malicious})$). The table therefore supports
+only the combination: saliency-ordered substitution over a security vocabulary
+breaks more messages per unit of edit than a random draw over a small table. It
+does not show that ordering alone is responsible, and it cannot say what the
+probability access is worth. \S\ref{sec:ablation} specifies the experiment that
+separates the three.
 
 \IfFileExists{tables/t7_saliency.tex}{\input{sections/gen_saliency_results}}{}
 
@@ -98,8 +99,9 @@ the three.
 \label{sec:ablation}
 
 Table~\ref{tab:saliency} cannot attribute its difference to any single cause,
-because ordering, candidate set and oracle all change together. The ablation
-below holds two of the three fixed in every comparison, so each contrast has one
+because ordering, candidate set and information all change together. The
+comparison below (called an ablation, because it removes one factor at a time)
+holds two of the three fixed in every contrast, so each contrast has one
 explanation. It is implemented in \texttt{src/ablation\_common.py}, exercised by
 \texttt{tests/check\_ablation.py}, and run; its contrasts are
 Table~\ref{tab:ablation} and the paragraph that discusses it, both generated from
@@ -111,72 +113,72 @@ the messages the two arms share.
 same messages, with the same candidate set, and pays the same probe cost before
 it edits anything: one query for the original, then one query per single
 substitution candidate, capped identically at the same number of calls per
-message for every arm (24 in the configuration the runner reports, and the
-cap it used travels with every row). The reported cells are the first 400
-eligible messages of each model, and the cap never bound: the largest eligible
-set is 382 messages (smollm2-1.7b), so every arm attacks exactly the messages the
-attack tables report on, and an arm differs from another only in policy. The probe results are retained and only the \emph{policy} differs --- what
-the arm does with those measurements. Matching the budget by construction rather
-than by assumption is the point: a random-order arm pays exactly the 1 + $|C|$
-calls a saliency arm pays before either starts substituting, so a difference in
-flips cannot be a difference in cost. The realised count is still stored per row,
-because a cap that is matched on paper and exhausted early in practice would be
-the same error as an unmatched denominator.
+message for every arm (24 in the configuration the runner reports, and the cap it
+used travels with every row). The reported cells are the first 400 eligible
+messages of each model, and the cap never bound: the largest eligible set is 382
+messages (smollm2-1.7b), so every arm attacks exactly the messages the attack
+tables report on, and one arm differs from another only in policy. The probe
+results are retained and only the \emph{policy} differs --- what the arm does with
+those measurements. Matching the budget by construction rather than by assumption
+is the point: a random-order arm pays exactly the 1 + $|C|$ calls a saliency arm
+pays before either starts substituting, so a difference in flips cannot be a
+difference in cost. The realised count is still stored per row, because a cap
+that is matched on paper and used up early in practice would be the same error as
+an unmatched total.
 
 \paragraph{Four cells and one stronger attack.} The factorial crosses the two
-orderings with the two oracles:
-\emph{random-prob} (uniform order, probability oracle), \emph{saliency-prob}
-(the attack of this section, so the cell doubles as its re-implementation),
-\emph{random-verdict} (uniform order, one-bit oracle) and \emph{group-verdict}
-(a binary search over candidate \emph{subsets}: apply half, query once, recurse
-into the half that flipped). A fifth arm, \emph{textfooler-prob}, implements
-TextFooler's search~\cite{jin2020textfooler} rather than PWWS's: word importance
-is leave-one-out --- each word replaced by a placeholder, importance the drop in
-$P(\text{malicious})$, doubled when the leave-one-out text has already flipped,
-which is the correction in the paper's Eq.~2 without which a word the model has
-already lost looks unimportant --- then words are substituted in descending
-importance with all of one word's candidates predicted in one batch, accepting
-a flip that passes the meaning check and otherwise keeping the candidate that
-lowers the malicious confidence most. It costs one extra query per position, so
-it is matched by the cap rather than by construction and is reported as a
-stronger reference point, not as a fifth cell of the factorial.
+orderings with the two information sources:
+\emph{random-prob} (random order, probability information),
+\emph{saliency-prob} (the attack of this section, so the cell doubles as its
+re-implementation), \emph{random-verdict} (random order, one-bit information) and
+\emph{group-verdict} (a binary search over candidate \emph{subsets}: apply half,
+query once, recurse into the half that flipped). A fifth arm,
+\emph{textfooler-prob}, implements TextFooler's search~\cite{jin2020textfooler}
+rather than PWWS's: word importance is leave-one-out --- each word replaced by a
+placeholder, importance the drop in $P(\text{malicious})$, doubled when the
+leave-one-out text has already flipped, which is the correction in the paper's
+Eq.~2 without which a word the model has already lost looks unimportant --- then
+words are substituted in descending importance with all of one word's candidates
+predicted in one batch, accepting a flip that passes the meaning check and
+otherwise keeping the candidate that lowers the malicious confidence most. It
+costs one extra query per position, so it is matched by the cap rather than by
+construction and is reported as a stronger reference point, not as a fifth cell
+of the factorial.
 
-The contrasts are then read as: \emph{random-prob} vs \emph{saliency-prob} is
-the ordering effect with vocabulary and budget held fixed; \emph{random-prob} vs
+The contrasts are then read as: \emph{random-prob} vs \emph{saliency-prob} is the
+ordering effect with vocabulary and budget held fixed; \emph{random-prob} vs
 \emph{random-verdict} is what probability access is worth to an attacker who
 cannot rank; \emph{random-verdict} vs \emph{group-verdict} is how much of that a
-one-bit oracle can recover by searching instead of ranking; and
-\emph{random-prob} against the recorded random word attack of
-\S\ref{sec:results} isolates the candidate set, which is the only thing those
-two do not share.
+one-bit answer can recover by searching instead of ranking; and
+\emph{random-prob} against the recorded random word attack of \S\ref{sec:results}
+isolates the candidate set, which is the only thing those two do not share.
 
-\paragraph{Meaning preservation is a constraint, not a claim.} Every arm gates
+\paragraph{Meaning preservation is a constraint, not a claim.} Every arm sends
 candidates through a lexical paraphrase test (WordNet-based, since this study
-ships no sentence-embedding model) and records, per applied perturbation, the
-similarity the gate used along with literal retention and paraphrase coverage.
-TextFooler's arm turns the gate on by default at a recorded threshold, because
+ships no sentence-embedding model) and records, for every applied edit, the
+similarity the test used along with literal retention and paraphrase coverage.
+TextFooler's arm turns the test on by default at a recorded threshold, because
 without a meaning constraint it is not TextFooler. All three scores travel with
 every row, so a reader can re-derive an acceptance decision at another threshold
 instead of taking ours.
 
 \paragraph{What a one-bit attacker can and cannot do.} PWWS's ordering needs a
-scalar per candidate. A verdict has one bit, and that bit is spent by the first
-flip, so a verdict-only arm \emph{cannot rank} by saliency at all. Its targeted
-policy is therefore a search over subsets, and the oracle contrast is reported as
-how much of the saliency advantage survives when the attacker holds only the bit
---- not as a like-for-like ranking comparison, which would be measuring an
-impossible attacker.
+single number per candidate. A verdict has one bit, and that bit is spent by the
+first flip, so a verdict-only arm \emph{cannot rank} by saliency at all. Its
+targeted policy is therefore a search over subsets, and the comparison is
+reported as how much of the saliency advantage survives when the attacker holds
+only the bit --- not as a like-for-like ranking comparison, which would be
+measuring an impossible attacker.
 
 \paragraph{Calibration, seeds and status.} The meaning threshold and $\alpha$ are
-tuned on the calibration slice, which is disjoint from both the evaluation and
-the attack slice (\texttt{src/build\_splits.py} asserts the disjointness), and
-never on the messages whose ASR is reported. Every arm takes a seed and the
-sweep driver re-runs it at several, so ordering effects can be separated from
-seed noise. One command per arm runs it
-(\texttt{python src/run\_ablation.py --model <key> --arm <arm>}), and the
-per-sample records are written in the same schema as the other attacks, which is
-what lets the paired test of \S\ref{sec:pairs} be applied to the ablation
-without new code.
+tuned on the calibration slice, which is disjoint from both the evaluation and the
+attack slice (\texttt{src/build\_splits.py} asserts the disjointness), and never on
+the messages whose ASR is reported. Every arm takes a seed and the sweep driver
+re-runs it at several, so ordering effects can be separated from seed noise. One
+command per arm runs it (\texttt{python src/run\_ablation.py --model <key> --arm
+<arm>}), and the per-sample records are written in the same schema as the other
+attacks, which is what lets the paired test of \S\ref{sec:pairs} be applied to the
+ablation without new code.
 
 % The table and its prose appear only when results/ablation_contrasts.csv
 % exists, so the PDF cannot advertise cells no run produced.
@@ -187,17 +189,17 @@ without new code.
 
 \paragraph{Reading the five contrasts.} The ordering contrast is the one this
 section was built for, and it is the cleanest result in the paper: with the
-candidate set, the probe phase and the cap held fixed, every discordant message
-went to saliency ordering. The candidate-set contrast is nearly as large again,
-which is the uncomfortable half of the finding --- most of the difference between
-Table~\ref{tab:saliency}'s two rows is vocabulary, not intelligence, so the
-unmatched comparison overstates what ordering buys. Probability access, the
-thing a saliency attack is supposed to need, is the weakest of the three: an
-attacker holding only the one-bit verdict loses messages in one direction and
-wins a few in the other, and the difference does not reach significance at this
-sample size. Searching subsets instead of ranking recovers a handful of the
-messages that bit costs, which is what the theory predicts, because one bit
-cannot rank.
+candidate set, the probe phase and the cap held fixed, every message the two arms
+disagreed on went to saliency ordering. The candidate-set contrast is nearly as
+large again, which is the uncomfortable half of the finding --- most of the
+difference between Table~\ref{tab:saliency}'s two rows is vocabulary, not
+intelligence, so the unmatched comparison overstates what ordering buys.
+Probability access, the thing a saliency attack is supposed to need, is the
+weakest of the three: an attacker holding only the one-bit verdict loses
+messages in one direction and wins a few in the other, and the difference does
+not reach significance at this sample size. Searching subsets instead of ranking
+recovers a handful of the messages that bit costs, which is what the theory
+predicts, because one bit cannot rank.
 
 The fifth contrast needs its budget read out loud before its number is quoted.
 TextFooler's leave-one-out importance spends 23.0 of the 24 calls per message
@@ -207,6 +209,6 @@ published search costs, and under a cap that has to cover both the probe and the
 substitutions, it is paid for out of the substitutions. So the contrast says what
 a query-starved importance ranking achieves inside this cap --- not that the
 published attack is weaker, which this design cannot test. It is reported as a
-reference point and not as a fifth cell for that reason, and the arm's
-per-sample records carry the realised query count so a reader can check the
-accounting rather than take it on faith.
+reference point and not as a fifth cell for that reason, and the arm's per-sample
+records carry the realised query count so a reader can check the accounting
+rather than take it on faith.

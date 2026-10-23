@@ -3,23 +3,23 @@
 
 \subsection{Clean baseline, and what it already tells us}
 
-Table~\ref{tab:baseline} is the clean zero-shot baseline. Two rows matter more
-than the accuracy column.
+Table~\ref{tab:baseline} is the clean zero-shot baseline, before any attack. Two
+rows matter more than the accuracy column.
 
-\textbf{Phi-3.5-mini is a conservative detector on e-mail.} Its precision is
-high (0.896) but it misses 80 of the 200 phishing messages, a catch rate of
-60.0\%. It is the model that leaves most malicious mail in the analyst's queue
-before any attack happens.
+\textbf{Phi-3.5-mini is a cautious detector on e-mail.} Its precision is high
+(0.896) but it misses 80 of the 200 phishing messages, a catch rate of 60.0\%.
+It is the model that leaves the most malicious mail in the analyst's queue before
+any attack happens.
 
-\textbf{SmolLM2-1.7B is a degenerate detector.} It reaches a catch rate of
-98.5\% on phishing e-mail, but its precision is 0.510 and its confusion matrix
-shows 189 false positives against 11 true negatives on the benign class: it
-calls nearly every message malicious. A detector that says \emph{malicious}
-almost always is trivially hard to flip towards \emph{benign}, and every
-robustness number for it has to be read against that fact.
+\textbf{SmolLM2-1.7B is a degenerate detector.} It reaches a catch rate of 98.5\%
+on phishing e-mail, but its precision is 0.510 and its confusion matrix shows 189
+false positives against 11 true negatives on the benign class: it calls nearly
+every message malicious. A detector that says \emph{malicious} almost always is
+easy to flip towards \emph{benign}, and every robustness number for it has to be
+read against that fact.
 
-Qwen2.5-3B is the strongest and most balanced classifier of the three
-(F1 0.923 on e-mail, 0.857 on SMS).
+Qwen2.5-3B is the strongest and most balanced classifier of the three (F1 0.923
+on e-mail, 0.857 on SMS).
 
 \input{tables/t1_baseline}
 
@@ -27,16 +27,15 @@ Qwen2.5-3B is the strongest and most balanced classifier of the three
 
 Table~\ref{tab:asr-char} reports the character-level attack. Of 1{,}044 caught
 messages attacked, 12 flipped: an aggregate of 1.1\%. Per row the ASR lies
-between 0.0\% and 5.0\%, and under a 15\% budget the mean perturbation actually
-spent was 13.3--13.6\% of characters, with no row above the budget (maximum
-13.6\%).
+between 0.0\% and 5.0\%, and under a 15\% budget the mean edit actually spent was
+13.3--13.6\% of characters, with no row above the budget (maximum 13.6\%).
 
 The highest row is Phi-3.5-mini on phishing e-mail: 6 flips in 120 attacked
-messages, 5.0\% (95\% CI 2.3--10.5). This is the model with the lowest catch
-rate on that task. The model that catches 95.5\% of e-mail (Qwen2.5-3B) flips
-once in 191 attacks, and on SMS it flips zero times in 188 attempts. A zero is
-reported as a bounded measurement, not a proof: the Wilson upper bound for that
-row is 2.0\%.
+messages, 5.0\% (95\% CI 2.3--10.5). This is the model with the lowest catch rate
+on that task. The model that catches 95.5\% of e-mail (Qwen2.5-3B) flips once in
+191 attacks, and on SMS it flips zero times in 188 attempts. A zero is reported
+as a bounded measurement, not as a proof: the Wilson upper bound for that row is
+2.0\%.
 
 \input{tables/t2_char}
 
@@ -45,26 +44,25 @@ row is 2.0\%.
 Table~\ref{tab:asr-word} applies the same budget to whole words. Of 1{,}035
 caught messages, 28 flipped --- more than twice the character-level count ---
 while changing only 6.2--9.2\% of words, roughly half the unit budget the
-character attack spent. Word-set Jaccard stays at 0.916--0.950, i.e.\ the
-messages are 92--95\% word-identical to what the model had already caught.
+character attack spent. Word-set Jaccard stays at 0.916--0.950, so the messages
+are 92--95\% word-identical to what the model had already caught.
 
-The ranking changes. The character attack leaves Qwen2.5-3B on SMS at zero
-flips; the word attack flips 6 of 186 (3.2\%, CI 1.5--6.9). Word-level changes
-carry semantic weight that a single glyph does not: replacing a suspicious verb
-with a neutral synonym, or deleting the word that carried the urgency, moves a
-verdict that typo noise does not.
+The ranking changes. The character attack leaves Qwen2.5-3B on SMS at zero flips;
+the word attack flips 6 of 186 (3.2\%, CI 1.5--6.9). A replaced word carries
+meaning that a single letter does not: swapping a suspicious verb for a neutral
+synonym, or deleting the word that carried the urgency, moves a verdict that typo
+noise leaves alone.
 
 \input{tables/t3_word}
 
 \subsection{Budget accounting}
 
-Table~\ref{tab:budget} is the accounting check, and Figure~\ref{fig:budget} is
-the same accounting drawn instead of summed: one point per model, task and
-attack, spent budget on the horizontal axis. Both modes stay inside the shared
-budget, and the word attack reaches a comparable number of flips with about half
-the fraction of units changed. That asymmetry is the paper's main empirical
-point: for these models, \emph{what} is changed matters more than \emph{how
-much}.
+Table~\ref{tab:budget} is the accounting check, and Figure~\ref{fig:budget} draws
+the same accounting instead of summing it: one point per model, task and attack,
+with the budget spent on the horizontal axis. Both modes stay inside the shared
+budget, and the word attack reaches a similar number of flips with about half the
+share of units changed. That imbalance is the paper's main measured point: for
+these models, \emph{what} is changed matters more than \emph{how much}.
 
 \input{tables/t4_budget}
 
@@ -72,11 +70,11 @@ much}.
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{figures/fig_budget}
-\caption{Each point is one (model, task, attack) cell: the perturbation actually
-spent on the horizontal axis, the ASR with its 95\% Wilson interval on the
-vertical one. The dotted line is the 15\% budget. Points to the left of a
-vertical pair are the same amount of visible change bought at half the unit
-cost \--- the word attack's advantage is horizontal as well as vertical.
+\caption{Each point is one (model, task, attack) cell: the edit actually spent on
+the horizontal axis, the ASR with its 95\% Wilson interval on the vertical one.
+The dotted line is the 15\% budget. Points to the left of a vertical pair are the
+same amount of visible change bought at half the unit cost \--- the word attack's
+advantage is horizontal as well as vertical.
 \label{fig:budget}}
 \end{figure}}{}
 
@@ -89,8 +87,8 @@ intervals on the flip count. Solid blue bars are the character attack, hatched
 red bars the word attack, and green cross-hatched bars the saliency-guided word
 attack of \S\ref{sec:saliency}, which is drawn here for comparison but costs
 22.9 model queries per message against 3.9 for the two random attacks, so the
-bars are not a cost-matched comparison. The number above
-each interval is the denominator:
+bars are not a comparison at equal cost. The number above
+each interval is the total count:
 the messages that model had caught on the clean text and that were therefore
 attacked. A cell at zero is drawn with its interval, not as a point at the
 origin, because 0/188 is a bounded measurement rather than a proof of
@@ -100,14 +98,14 @@ robustness.\label{fig:asr}}
 \subsection{What predicts fragility}
 \label{sec:fragility}
 
-Across the six model--task cells, the ASR orders by proximity to the decision
-boundary rather than by accuracy. Phi-3.5-mini has the highest character ASR on
-e-mail (5.0\%) and the weakest recall there (0.600). SmolLM2-1.7B has the
-highest recall (0.985) and among the lowest ASR (0.5\% on e-mail) --- because
-its decision rule is nearly constant. A small perturbation either does nothing
-or, in the case of the 2 of 196 word attacks that flipped it, pushes a
-barely-considered verdict across the line. Neither behaviour is robustness in
-the sense a deployment cares about.
+Across the six model--task cells, the ASR follows how close a model sits to its
+decision boundary rather than how accurate it is. Phi-3.5-mini has the highest
+character ASR on e-mail (5.0\%) and the weakest recall there (0.600). SmolLM2-1.7B
+has the highest recall (0.985) and among the lowest ASR (0.5\% on e-mail) ---
+because its decision rule is nearly constant. A small edit either does nothing
+or, as in the case of the 2 of 196 word attacks that flipped it, pushes a
+barely-considered verdict across the line. Neither behaviour is robustness in the
+sense a deployment cares about.
 
 \subsection{Interval discipline}
 
@@ -125,11 +123,11 @@ narrower width --- the one separation that survives the uncertainty is exactly
 the boundary-proximity effect of \S\ref{sec:fragility}.
 
 What the intervals do establish is magnitude, and the magnitude depends on the
-search. No random-perturbation cell exceeds 10.7\% at its upper bound; the
-saliency-guided cells of \S\ref{sec:saliency} reach 18.6\%. The claim ``under a
-15\% edit budget a random perturbation leaves these models close to robust''
-survives the uncertainty; the claim ``model A is more robust than model B'' does
-not, for most pairs, and neither claim extends to a better search.
+search. No random-edit cell exceeds 10.7\% at its upper bound; the saliency-guided
+cells of \S\ref{sec:saliency} reach 18.6\%. The claim ``under a 15\% edit budget
+a random edit leaves these models close to robust'' survives the uncertainty; the
+claim ``model A is more robust than model B'' does not, for most pairs, and
+neither claim extends to a better search.
 
 \subsection{Is the difference between the two modes real?}
 \label{sec:pairs}
@@ -137,9 +135,9 @@ not, for most pairs, and neither claim extends to a better search.
 Comparing a 3.7\% cell with a 1.8\% cell as if they were independent samples is
 the wrong test: both attacks ran on the \emph{same} messages, so the flips are
 paired, and the pairing is what makes a small difference measurable. We pair the
-per-sample outcomes on the message identifier and report the discordant counts,
-an exact McNemar test, and a paired bootstrap of the risk difference over
-messages.
+per-sample outcomes on the message identifier and report the counts of messages
+the two attacks disagree on, an exact McNemar test, and a paired bootstrap of the
+difference in risk over messages.
 
 \input{sections/gen_pairs_results}
 
@@ -147,8 +145,7 @@ messages.
 
 The honest reading is narrower than the raw table suggests. The direction is
 consistent --- word-level edits flip more messages than character-level ones in
-five of six cells and never fewer --- but only one cell is separately
-significant, because there the character attack flipped nothing at all. What
-survives is a pooled statement about this corpus and these three models, not a
-per-model ranking, and the interval widths in Table~\ref{tab:pairs} say the same
-thing.
+five of six cells and never fewer --- but only one cell is significant on its
+own, because there the character attack flipped nothing at all. What survives is
+a pooled statement about this corpus and these three models, not a per-model
+ranking, and the interval widths in Table~\ref{tab:pairs} say the same thing.

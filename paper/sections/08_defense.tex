@@ -2,39 +2,41 @@
 \label{sec:defense}
 
 If the mechanism of an evasion is understood, a cheap fix should blunt it. We
-test two post-hoc defences that require no fine-tuning, no extra data and no
-change to the deployed weights, and measure them on the \emph{same} stored
-perturbations the attacks produced, so the comparison is like-for-like.
+test two defences that can be applied after the model is trained, requiring no
+fine-tuning, no extra data and no change to the deployed weights, and we measure
+them on the \emph{same} stored perturbations the attacks produced, so the
+comparison is like for like.
 
-\paragraph{D1: input normalisation.} The text is NFKC-normalised, invisible and
-format characters are removed, Cyrillic and Greek homoglyphs are folded back to
-their ASCII look-alikes, and whitespace is collapsed. This targets exactly the
-mechanism of the character attack: the model sees a different token where a
-human sees the same word. It should therefore rescue character-level evasions
-and do almost nothing for word-level ones --- and that null result is the
-evidence that the two attack families fail for different reasons. The transform
-is idempotent, which is asserted in \texttt{tests/check\_defense.py}; a
-non-idempotent normaliser would make the ``defended'' number an artefact of
-running it twice.
+\paragraph{D1: input normalisation.} The text is NFKC-normalised (a standard
+Unicode cleanup), invisible and format characters are removed, Cyrillic and Greek
+look-alike characters are folded back to their ASCII equivalents, and whitespace
+is collapsed. This targets exactly the mechanism of the character attack: the
+model sees a different token where a human sees the same word. It should
+therefore rescue character-level evasions and do almost nothing for word-level
+ones --- and that null result is evidence that the two attack families fail for
+different reasons. The transform is idempotent (running it twice changes nothing
+the second time), which is checked in \texttt{tests/check\_defense.py}; a
+transform that was not idempotent would make the ``defended'' number an artefact
+of running it twice.
 
 \paragraph{D2: re-thresholding under a false-positive budget.} The model's
 $P(\text{malicious})$ is compared against a threshold $\tau$ instead of the
 default $0.5$. $\tau$ is fitted on the clean benign half of the evaluation split
 to a 5\% false-positive budget, and it is the \emph{smallest} threshold that meets
-that budget, i.e. the least conservative operating point the budget allows. Two
+that budget, that is, the least conservative setting the budget allows. Two
 figures travel with every headline number: the clean false-positive rate at
 $\tau$, and the clean true-positive rate it costs. Without the second, a drop in
-ASR cannot be distinguished from a filter that has simply stopped flagging mail.
+ASR cannot be told apart from a filter that has simply stopped flagging mail.
 
 The direction of the search matters and is easy to get backwards. A larger
-$\tau$ always has a lower false-positive rate, so maximising it under an
-upper bound is trivially satisfied by ``above every clean score'' --- a filter
-that rejects everything. Our first implementation did exactly that, and because
-it also counted a flip whenever a perturbed text fell below $\tau$, without
-asking whether the original was above it, it reported a 100\% ASR for the
-defence. Both rules are now enforced in code: $\tau$ is the minimum feasible
-value, and a sample counts as flipped only if the \emph{same} rule classified the
-\emph{original} text as malicious.
+$\tau$ always has a lower false-positive rate, so maximising it under an upper
+bound is trivially satisfied by ``above every clean score'' --- a filter that
+rejects everything. Our first implementation did exactly that, and because it
+also counted a flip whenever an edited text fell below $\tau$, without asking
+whether the original was above it, it reported a 100\% ASR for the defence. Both
+rules are now enforced in code: $\tau$ is the minimum feasible value, and a sample
+counts as flipped only if the \emph{same} rule classified the \emph{original}
+text as malicious.
 
 \paragraph{Reading the outcome.} Three outcomes are possible and all three are
 informative: a defence that removes the flips it targets (D1 against the
