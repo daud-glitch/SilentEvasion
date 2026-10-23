@@ -31,7 +31,7 @@ ASR cannot be told apart from a filter that has simply stopped flagging mail.
 The direction of the search matters and is easy to get backwards. A larger
 $\tau$ always has a lower false-positive rate, so maximising it under an upper
 bound is trivially satisfied by ``above every clean score'' --- a filter that
-rejects everything. Our first implementation did exactly that, and because it
+flags nothing. Our first implementation did exactly that, and because it
 also counted a flip whenever an edited text fell below $\tau$, without asking
 whether the original was above it, it reported a 100\% ASR for the defence. Both
 rules are now enforced in code: $\tau$ is the minimum feasible value, and a sample

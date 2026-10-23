@@ -422,7 +422,7 @@ def t6_defense():
         if len(missed):
             out.append("%d of %d model--task cells cannot meet the budget at all: "
                        "holding their false positives down requires a threshold "
-                       "that rejects every message." % (len(missed), len(thr)))
+                       "so high that it flags no message at all." % (len(missed), len(thr)))
     write_tex("gen_defense_results.tex", out, subdir="sections")
     return True
 

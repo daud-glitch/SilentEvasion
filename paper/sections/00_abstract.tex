@@ -15,7 +15,8 @@ and SMS spam (known as smishing). We test 2{,}079 caught messages using 8{,}047
 model queries under a 15\% total edit budget. At first glance, the models look
 quite resistant to simple edits. Small character changes (like typos or
 look-alike letters) flip only 0.0--5.0\% of caught messages. Simple word swaps
-flip only 1.0--5.1\% while modifying about half as many letters.
+flip only 1.0--5.1\% while changing only 6.2--9.2\% of words, about half the
+share of units the character attack spends.
 
 However, a more targeted search changes the picture. When we rank word
 replacements by their actual impact on the model's decision (a saliency-guided
@@ -34,16 +35,19 @@ transfer well across different models. When we test saved edits against other
 models, only 0.9\% of caught messages flip off the diagonal. Second,
 continuous probability scores (the model's internal confidence) do not always
 match the final text decision. The two readouts agree on 941 of 1{,}001 rows,
-matching perfectly for one model but diverging on another. We report final text
-decisions throughout and treat this gap as an important measurement finding. For
-defenses, cleaning look-alike characters stops all character-level evasions,
-but has little effect on word-level swaps (7.5\% to 6.9\%). Adjusting decision
+matching perfectly for one model and diverging on the other two. We report final
+text decisions throughout and treat this gap as an important measurement
+finding. For defenses, cleaning look-alike characters stops all character-level
+evasions, moves the random word attack only from 2.5\% to 2.0\%, and the guided
+attack from 7.5\% to 6.9\%. Adjusting decision
 cutoffs (re-thresholding) to maintain a 5\% false-alarm budget can actually
 increase evasions for models with uncalibrated probability scores.
 
-Our main practical takeaway is that with small edit budgets, the primary
-limitation of small triage models is basic classification accuracy rather than
-susceptibility to random text edits. Furthermore, attack success rates must
+Our main practical takeaway is that with small edit budgets, what limits a
+triage deployment first is how decisively a model separates the two classes,
+not how easily random edits fool it: the model that flips most sits closest to
+its decision boundary, not the one with the lowest overall accuracy.
+Furthermore, attack success rates must
 always be reported with their exact sample count (denominator), a statistical
 confidence interval, and the specific search method used. A result of 0 out of
 188 is an upper limit of 2.0\%, not proof of absolute security. We release all

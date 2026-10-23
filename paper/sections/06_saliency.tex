@@ -115,9 +115,10 @@ it edits anything: one query for the original, then one query per single
 substitution candidate, capped identically at the same number of calls per
 message for every arm (24 in the configuration the runner reports, and the cap it
 used travels with every row). The reported cells are the first 400 eligible
-messages of each model, and the cap never bound: the largest eligible set is 382
-messages (smollm2-1.7b), so every arm attacks exactly the messages the attack
-tables report on, and one arm differs from another only in policy. The probe
+messages of each model, and 400 covers the largest eligible set (382 messages,
+smollm2-1.7b), so every arm attacks exactly the messages the attack tables
+report on. The cap was not reached in practice --- the highest mean spend of any
+arm is 23.3 of its 24 calls --- so one arm differs from another only in policy. The probe
 results are retained and only the \emph{policy} differs --- what the arm does with
 those measurements. Matching the budget by construction rather than by assumption
 is the point: a random-order arm pays exactly the 1 + $|C|$ calls a saliency arm
